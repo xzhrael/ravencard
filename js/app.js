@@ -197,10 +197,10 @@ function renderCurrentCard() {
   }
 
   if (frontHint) {
-    if (card.category === 'kanji') {
-      frontHint.textContent = card.romaji ? `[ ${card.romaji} ]` : '';
+    if (card.category === 'kotoba' && card.reading && card.reading !== card.character) {
+      frontHint.textContent = `[ ${card.reading} ]`;
     } else {
-      frontHint.textContent = card.reading ? `[ ${card.reading} ]` : '';
+      frontHint.textContent = '';
     }
   }
 
