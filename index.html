@@ -74,26 +74,16 @@
       </div>
     </header>
 
-    <!-- Floating Sticky Filter Pills Bar -->
-    <div class="floating-pills-bar" id="floating-pills-bar">
-      <!-- Category Pills -->
-      <div class="category-pills" id="category-tabs">
-        <button class="pill-category active" data-category="hiragana">Hiragana</button>
-        <button class="pill-category" data-category="katakana">Katakana</button>
-        <button class="pill-category" data-category="kanji">Kanji</button>
-        <button class="pill-category" data-category="kotoba">Kotoba</button>
-      </div>
-
-      <!-- Sub-filter pills (Level/Group) -->
-      <div class="sub-filter-row">
-        <div class="filter-pills" id="sub-filter-pills">
-          <button class="pill-sub active" data-level="all">Semua</button>
-          <button class="pill-sub" data-level="seion">Seion</button>
-          <button class="pill-sub" data-level="dakuon">Dakuon</button>
-          <button class="pill-sub" data-level="yoon">Yoon</button>
-        </div>
-        <div class="deck-count-indicator" id="deck-counter">1 / 46</div>
-      </div>
+    <!-- Compact Minimalist Deck Selector Bar (Zero Noisy Cards Above Flashcard) -->
+    <div class="deck-selector-bar" id="deck-selector-bar">
+      <button id="deck-selector-btn" class="deck-selector-chip" aria-label="Ganti Kategori dan Level Materi" aria-haspopup="dialog">
+        <span class="deck-chip-dot" aria-hidden="true"></span>
+        <span id="deck-active-label" class="deck-active-label">Hiragana • Semua</span>
+        <svg class="deck-chip-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="deck-count-indicator" id="deck-counter">1 / 46</div>
     </div>
 
     <!-- ========================================== -->
@@ -344,6 +334,57 @@
       <button class="btn-banner-close" id="banner-dismiss-btn" aria-label="Tutup Banner">✕</button>
     </div>
   </aside>
+
+  <!-- Modal Bottom Sheet Pemilih Dek / Kategori Materi -->
+  <div class="modal-overlay" id="deck-modal" role="dialog" aria-modal="true" aria-labelledby="deck-modal-title">
+    <div class="modal-box deck-sheet-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="deck-modal-title">Pilih Materi Belajar</h3>
+        <button class="modal-close-btn" id="close-deck-modal-btn" aria-label="Tutup Dialog">✕</button>
+      </div>
+
+      <div class="deck-picker-section">
+        <div class="deck-picker-label">Kategori Aksara & Kosakata</div>
+        <div class="deck-category-grid" id="sheet-category-grid">
+          <button class="sheet-category-btn active" data-category="hiragana">
+            <span class="sheet-category-icon">あ</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Hiragana</span>
+              <span class="sheet-category-desc">Aksara fonetik dasar</span>
+            </div>
+          </button>
+          <button class="sheet-category-btn" data-category="katakana">
+            <span class="sheet-category-icon">ア</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Katakana</span>
+              <span class="sheet-category-desc">Kata serapan asing</span>
+            </div>
+          </button>
+          <button class="sheet-category-btn" data-category="kanji">
+            <span class="sheet-category-icon">漢</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Kanji</span>
+              <span class="sheet-category-desc">Ideogram N5–N3</span>
+            </div>
+          </button>
+          <button class="sheet-category-btn" data-category="kotoba">
+            <span class="sheet-category-icon">語</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Kotoba</span>
+              <span class="sheet-category-desc">Kosakata esensial</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="deck-picker-section">
+        <div class="deck-picker-label">Tingkat / Golongan</div>
+        <div class="sheet-level-chips" id="sheet-level-chips">
+          <!-- Populated dynamically based on category -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal Panduan Cara Install di Android -->
   <div class="modal-overlay" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">

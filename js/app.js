@@ -146,6 +146,7 @@ async function loadDeck() {
   }
 
   updateProgressUI();
+  updateDeckLabel();
 }
 
 function applyFilters() {
@@ -335,28 +336,70 @@ function resetDeck() {
   showToast('Status hafalan berhasil direset!');
 }
 
-function renderSubFilterPills() {
-  const container = document.getElementById('sub-filter-pills');
+function updateDeckLabel() {
+  const labelEl = document.getElementById('deck-active-label');
+  if (!labelEl) return;
+
+  const catNames = {
+    hiragana: 'Hiragana',
+    katakana: 'Katakana',
+    kanji: 'Kanji',
+    kotoba: 'Kotoba'
+  };
+
+  const catName = catNames[state.category] || state.category;
+  const levels = FILTER_CONFIG[state.category] || [];
+  const currentLevelObj = levels.find(l => l.id === state.level);
+  const levelLabel = currentLevelObj ? currentLevelObj.label : 'Semua';
+
+  labelEl.textContent = `${catName} • ${levelLabel}`;
+}
+
+function renderSheetLevelChips() {
+  const container = document.getElementById('sheet-level-chips');
   if (!container) return;
 
   const filters = FILTER_CONFIG[state.category] || [];
   container.innerHTML = '';
 
   filters.forEach(item => {
-    const btn = document.createElement('button');
-    btn.className = `pill-sub ${item.id === state.level ? 'active' : ''}`;
-    btn.dataset.level = item.id;
-    btn.textContent = item.label;
+    const chip = document.createElement('button');
+    chip.className = `sheet-level-chip ${item.id === state.level ? 'active' : ''}`;
+    chip.dataset.level = item.id;
+    chip.textContent = item.label;
 
-    btn.addEventListener('click', async () => {
-      container.querySelectorAll('.pill-sub').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    chip.addEventListener('click', async () => {
+      container.querySelectorAll('.sheet-level-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
       state.level = item.id;
+      updateDeckLabel();
       await loadDeck();
+      closeDeckModal();
     });
 
-    container.appendChild(btn);
+    container.appendChild(chip);
   });
+}
+
+function openDeckModal() {
+  const modal = document.getElementById('deck-modal');
+  if (!modal) return;
+
+  // Sync active category button in sheet
+  const catGrid = document.getElementById('sheet-category-grid');
+  if (catGrid) {
+    catGrid.querySelectorAll('.sheet-category-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.category === state.category);
+    });
+  }
+
+  renderSheetLevelChips();
+  modal.classList.add('active');
+}
+
+function closeDeckModal() {
+  const modal = document.getElementById('deck-modal');
+  if (modal) modal.classList.remove('active');
 }
 
 let dictVisibleCount = 60;
@@ -592,19 +635,38 @@ function setupEventListeners() {
     });
   }
 
-  const categoryTabs = document.getElementById('category-tabs');
-  if (categoryTabs) {
-    categoryTabs.addEventListener('click', async (e) => {
-      const btn = e.target.closest('.pill-category');
-      if (!btn || btn.classList.contains('active')) return;
+  const deckSelectorBtn = document.getElementById('deck-selector-btn');
+  const closeDeckModalBtn = document.getElementById('close-deck-modal-btn');
+  const deckModal = document.getElementById('deck-modal');
+  const sheetCategoryGrid = document.getElementById('sheet-category-grid');
 
-      categoryTabs.querySelectorAll('.pill-category').forEach(b => b.classList.remove('active'));
+  if (deckSelectorBtn) {
+    deckSelectorBtn.addEventListener('click', openDeckModal);
+  }
+
+  if (closeDeckModalBtn) {
+    closeDeckModalBtn.addEventListener('click', closeDeckModal);
+  }
+
+  if (deckModal) {
+    deckModal.addEventListener('click', (e) => {
+      if (e.target === deckModal) closeDeckModal();
+    });
+  }
+
+  if (sheetCategoryGrid) {
+    sheetCategoryGrid.addEventListener('click', async (e) => {
+      const btn = e.target.closest('.sheet-category-btn');
+      if (!btn) return;
+
+      sheetCategoryGrid.querySelectorAll('.sheet-category-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
       state.category = btn.dataset.category;
       state.level = 'all';
 
-      renderSubFilterPills();
+      renderSheetLevelChips();
+      updateDeckLabel();
       await loadDeck();
     });
   }
@@ -658,5 +720,5 @@ function setupEventListeners() {
     }
   }, { passive: true });
 
-  renderSubFilterPills();
+  updateDeckLabel();
 }

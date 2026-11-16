@@ -271,110 +271,57 @@ body {
 }
 
 /* ==========================================================================
-   2. Quiet Filter Chips Bar
+   2. Compact Minimalist Deck Selector Bar (Zero Noisy Cards Above Flashcard)
    ========================================================================== */
-.floating-pills-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-/* Category Filter Chips */
-.category-pills {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  padding: 2px 0 4px;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x proximity;
-}
-
-.category-pills::-webkit-scrollbar,
-.filter-pills::-webkit-scrollbar {
-  display: none;
-}
-
-.pill-category {
-  flex: 0 0 auto;
-  height: 36px;
-  padding: 0 16px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--md-sys-color-outline-variant);
-  background: var(--md-sys-color-surface-container-low);
-  color: var(--md-sys-color-on-surface-variant);
-  font-size: 0.82rem;
-  font-weight: 500;
-  cursor: pointer;
-  scroll-snap-align: start;
-  transition: var(--motion-fast);
-  white-space: nowrap;
-}
-
-.pill-category:hover {
-  background: var(--md-sys-color-surface-container);
-  color: var(--md-sys-color-on-surface);
-}
-
-.pill-category.active {
-  background: var(--md-sys-color-primary-container);
-  border-color: var(--md-sys-color-primary);
-  color: var(--md-sys-color-on-primary-container);
-  font-weight: 600;
-}
-
-.pill-category:active {
-  transform: scale(0.96);
-}
-
-/* Sub-filter / Level Row */
-.sub-filter-row {
+.deck-selector-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 0 2px;
+}
+
+.deck-selector-chip {
+  display: inline-flex;
+  align-items: center;
   gap: 8px;
-}
-
-.filter-pills {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x proximity;
-}
-
-.pill-sub {
-  flex: 0 0 auto;
-  height: 28px;
-  padding: 0 10px;
-  border-radius: var(--radius-sm);
+  height: 36px;
+  padding: 0 14px;
+  border-radius: var(--radius-full);
+  background: var(--md-sys-color-surface-container-low);
   border: 1px solid var(--md-sys-color-outline-variant);
-  background: var(--md-sys-color-surface-container-lowest);
-  color: var(--md-sys-color-on-surface-variant);
-  font-size: 0.74rem;
+  color: var(--md-sys-color-on-surface);
+  font-size: 0.82rem;
   font-weight: 500;
   cursor: pointer;
-  scroll-snap-align: start;
   transition: var(--motion-fast);
-  white-space: nowrap;
 }
 
-.pill-sub:hover {
-  background: var(--md-sys-color-surface-container-low);
-  color: var(--md-sys-color-on-surface);
+.deck-selector-chip:hover {
+  background: var(--md-sys-color-surface-container);
+  border-color: var(--md-sys-color-outline);
 }
 
-.pill-sub.active {
-  background: var(--md-sys-color-secondary-container);
-  border-color: var(--md-sys-color-secondary);
-  color: var(--md-sys-color-on-secondary-container);
-  font-weight: 600;
+.deck-selector-chip:active {
+  transform: scale(0.97);
 }
 
-.pill-sub:active {
-  transform: scale(0.96);
+.deck-chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--md-sys-color-primary);
+  flex-shrink: 0;
+}
+
+.deck-active-label {
+  letter-spacing: 0.01em;
+}
+
+.deck-chip-chevron {
+  color: var(--md-sys-color-on-surface-variant);
+  transition: transform var(--motion-fast);
 }
 
 .deck-count-indicator {
@@ -384,8 +331,7 @@ body {
   color: var(--md-sys-color-on-surface-variant);
   font-weight: 500;
   flex-shrink: 0;
-  margin-left: auto;
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: var(--radius-sm);
   background: var(--md-sys-color-surface-container-low);
   border: 1px solid var(--md-sys-color-outline-variant);
@@ -1400,6 +1346,131 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Deck Selector Bottom Sheet */
+.deck-sheet-box {
+  max-width: 440px;
+  width: 100%;
+}
+
+.deck-picker-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.deck-picker-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface-variant);
+  letter-spacing: 0.02em;
+}
+
+.deck-category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.sheet-category-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--radius-md);
+  color: var(--md-sys-color-on-surface);
+  cursor: pointer;
+  text-align: left;
+  transition: var(--motion-fast);
+}
+
+.sheet-category-btn:hover {
+  background: var(--md-sys-color-surface-container-high);
+  border-color: var(--md-sys-color-outline);
+}
+
+.sheet-category-btn.active {
+  background: var(--md-sys-color-primary-container);
+  border-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary-container);
+}
+
+.sheet-category-icon {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: var(--md-sys-color-surface-container);
+  flex-shrink: 0;
+}
+
+.sheet-category-btn.active .sheet-category-icon {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.sheet-category-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sheet-category-name {
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sheet-category-desc {
+  font-size: 0.68rem;
+  color: var(--md-sys-color-on-surface-variant);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sheet-category-btn.active .sheet-category-desc {
+  color: var(--md-sys-color-on-primary-container);
+  opacity: 0.85;
+}
+
+.sheet-level-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sheet-level-chip {
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--motion-fast);
+}
+
+.sheet-level-chip:hover {
+  background: var(--md-sys-color-surface-container);
+  color: var(--md-sys-color-on-surface);
+}
+
+.sheet-level-chip.active {
+  background: var(--md-sys-color-secondary-container);
+  border-color: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary-container);
+  font-weight: 600;
 }
 
 .install-steps-list {
