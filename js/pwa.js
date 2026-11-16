@@ -2,9 +2,20 @@ let deferredInstallPrompt = null;
 
 export function initPWA() {
   if ('serviceWorker' in navigator) {
+    let isRefreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!isRefreshing) {
+        isRefreshing = true;
+        window.location.reload();
+      }
+    });
+
     window.addEventListener('load', () => {
       navigator.serviceWorker
         .register('./sw.js')
+        .then((reg) => {
+          reg.update();
+        })
         .catch((err) => {
           console.error('[PWA] Service worker registration failed:', err);
         });

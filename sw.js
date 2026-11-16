@@ -1,11 +1,11 @@
-const CACHE_NAME = 'ravencard-cache-v18';
+const CACHE_NAME = 'ravencard-cache-v20';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
   './manifest.json?v=9',
   './css/style.css',
-  './css/style.css?v=18',
+  './css/style.css?v=20',
   './js/pwa.js',
   './js/kana-utils.js',
   './js/data-service.js',
@@ -13,6 +13,7 @@ const ASSETS_TO_CACHE = [
   './js/audio.js',
   './js/quiz.js',
   './js/app.js',
+  './js/app.js?v=20',
   './assets/icons/logo.svg',
   './assets/icons/icon-192.png',
   './assets/icons/icon-192.png?v=9',
@@ -64,6 +65,25 @@ self.addEventListener('fetch', (event) => {
 
   // Let browser natively handle cross-origin streams and external audio
   if (!event.request.url.startsWith(self.location.origin)) {
+    return;
+  }
+
+  const isNavigation = event.request.mode === 'navigate' ||
+    (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html'));
+
+  // Network-First for HTML navigation to guarantee fresh scripts and styles online
+  if (isNavigation) {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseToCache = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
+          }
+          return networkResponse;
+        })
+        .catch(() => caches.match('./index.html').then((res) => res || caches.match('./')))
+    );
     return;
   }
 

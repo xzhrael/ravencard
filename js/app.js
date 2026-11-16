@@ -199,8 +199,10 @@ function renderCurrentCard() {
   if (frontHint) {
     if (card.category === 'kotoba' && card.reading && card.reading !== card.character) {
       frontHint.textContent = `[ ${card.reading} ]`;
+      frontHint.style.display = '';
     } else {
       frontHint.textContent = '';
+      frontHint.style.display = 'none';
     }
   }
 
