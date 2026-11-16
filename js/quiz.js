@@ -72,7 +72,10 @@ function renderCurrentQuestion() {
   }
 
   if (audioBtn) {
-    audioBtn.onclick = () => speakJapanese(target.character || target.reading);
+    audioBtn.onclick = () => {
+      const text = (target.category === 'kanji' && target.reading) ? target.reading : (target.reading || target.character);
+      speakJapanese(text, audioBtn);
+    };
   }
 
   if (optionsContainer) {
@@ -104,7 +107,8 @@ function handleOptionSelection(selectedBtn, selectedOption, target) {
   const optionsContainer = document.getElementById('quiz-options-container');
   const allButtons = optionsContainer?.querySelectorAll('.quiz-option-btn') || [];
 
-  speakJapanese(target.character || target.reading);
+  const targetText = (target.category === 'kanji' && target.reading) ? target.reading : (target.reading || target.character);
+  speakJapanese(targetText);
 
   if (isCorrect) {
     correctCount++;

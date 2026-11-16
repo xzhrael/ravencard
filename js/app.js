@@ -290,10 +290,16 @@ function prevCard() {
   renderCurrentCard();
 }
 
-function playCurrentAudio() {
+function playCurrentAudio(btnEl = null) {
   if (!state.activeDeck.length) return;
   const card = state.activeDeck[state.currentIndex];
-  speakJapanese(card.character || card.reading);
+  // For Kanji cards, prefer phonetic reading (kana) because standalone ideographs
+  // are frequently skipped or mispronounced by mobile TTS engines
+  const text = (card.category === 'kanji' && card.reading)
+    ? card.reading
+    : (card.reading || card.character);
+  const targetBtn = btnEl || document.getElementById('card-audio-btn') || document.getElementById('card-audio-back-btn');
+  speakJapanese(text, targetBtn);
 }
 
 function rateCard(rating) {
@@ -465,7 +471,8 @@ function createDictRow(card) {
   `;
   audioBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    speakJapanese(card.character || card.reading);
+    const textToSpeak = (card.category === 'kanji' && card.reading) ? card.reading : (card.reading || card.character);
+    speakJapanese(textToSpeak, audioBtn);
   });
 
   row.appendChild(charCol);
@@ -558,14 +565,14 @@ function setupEventListeners() {
   if (audioBtn) {
     audioBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      playCurrentAudio();
+      playCurrentAudio(audioBtn);
     });
   }
 
   if (audioBackBtn) {
     audioBackBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      playCurrentAudio();
+      playCurrentAudio(audioBackBtn);
     });
   }
 
