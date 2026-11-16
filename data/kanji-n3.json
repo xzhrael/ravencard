@@ -1,0 +1,5056 @@
+[
+  {
+    "char": "丁",
+    "onyomi": "チョウ, テイ, チン, トウ, チ",
+    "kunyomi": "ひのと",
+    "meaning_id": "Blok / Satuan Jalan / Tepat",
+    "meaning_en": "street, ward, town",
+    "level": "N3",
+    "strokes": 2,
+    "example": {
+      "ja": "丁目",
+      "reading": "ちょうめ",
+      "meaning": "Blok distrik / Wilayah"
+    }
+  },
+  {
+    "char": "両",
+    "onyomi": "リョウ",
+    "kunyomi": "てる, ふたつ",
+    "meaning_id": "Kedua-duanya / Gerbong",
+    "meaning_en": "both, old Japanese coin, counter for carriages (e.g., in a train)",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "両親",
+      "reading": "りょうしん",
+      "meaning": "Kedua orang tua"
+    }
+  },
+  {
+    "char": "丸",
+    "onyomi": "ガン",
+    "kunyomi": "まる, まる.める, まる.い",
+    "meaning_id": "Bulat / Lingkaran",
+    "meaning_en": "round, full (month), perfection",
+    "level": "N3",
+    "strokes": 3,
+    "example": {
+      "ja": "丸い",
+      "reading": "まるい",
+      "meaning": "Bulat / Melingkar"
+    }
+  },
+  {
+    "char": "予",
+    "onyomi": "ヨ, シャ",
+    "kunyomi": "あらかじ.め",
+    "meaning_id": "Sebelumnya / Rencana awal",
+    "meaning_en": "beforehand, previous, myself",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "予定",
+      "reading": "よてい",
+      "meaning": "Rencana / Jadwal"
+    }
+  },
+  {
+    "char": "争",
+    "onyomi": "ソウ",
+    "kunyomi": "あらそ.う, いか.でか",
+    "meaning_id": "Bersaing / Berdebat / Bertikai",
+    "meaning_en": "contend, dispute, argue",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "戦争",
+      "reading": "せんそう",
+      "meaning": "Perang"
+    }
+  },
+  {
+    "char": "交",
+    "onyomi": "コウ",
+    "kunyomi": "まじ.わる, まじ.える, ま.じる, まじ.る, ま.ざる, ま.ぜる, -か.う, か.わす, かわ.す, こもごも",
+    "meaning_id": "Bergaul / Persimpangan",
+    "meaning_en": "mingle, mixing, association",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "交通",
+      "reading": "こうつう",
+      "meaning": "Lalu lintas"
+    }
+  },
+  {
+    "char": "他",
+    "onyomi": "タ",
+    "kunyomi": "ほか",
+    "meaning_id": "Lain / Selain itu",
+    "meaning_en": "other, another, the others",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "他人",
+      "reading": "たにん",
+      "meaning": "Orang lain"
+    }
+  },
+  {
+    "char": "付",
+    "onyomi": "フ",
+    "kunyomi": "つ.ける, -つ.ける, -づ.ける, つ.け, つ.け-, -つ.け, -づ.け, -づけ, つ.く, -づ.く, つ.き, -つ.き, -つき, -づ.き, -づき",
+    "meaning_id": "Menempel / Melekat",
+    "meaning_en": "adhere, attach, refer to",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "片付ける",
+      "reading": "かたづける",
+      "meaning": "Merapikan / Membereskan"
+    }
+  },
+  {
+    "char": "令",
+    "onyomi": "レイ",
+    "kunyomi": "-",
+    "meaning_id": "Perintah / Dekrit",
+    "meaning_en": "orders, laws, command",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "命令",
+      "reading": "めいれい",
+      "meaning": "Perintah"
+    }
+  },
+  {
+    "char": "仲",
+    "onyomi": "チュウ",
+    "kunyomi": "なか",
+    "meaning_id": "Hubungan / Antara sesama",
+    "meaning_en": "go-between, relationship",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "仲間",
+      "reading": "なかま",
+      "meaning": "Teman / Kawan seperjuangan"
+    }
+  },
+  {
+    "char": "伝",
+    "onyomi": "デン, テン",
+    "kunyomi": "つた.わる, つた.える, つた.う, つだ.う, -づた.い, つて",
+    "meaning_id": "Menyampaikan / Menular",
+    "meaning_en": "transmit, go along, walk along",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "伝える",
+      "reading": "つたえる",
+      "meaning": "Menyampaikan pesan"
+    }
+  },
+  {
+    "char": "位",
+    "onyomi": "イ",
+    "kunyomi": "くらい, ぐらい",
+    "meaning_id": "Peringkat / Posisi",
+    "meaning_en": "rank, grade, throne",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "位置",
+      "reading": "いち",
+      "meaning": "Posisi / Letak"
+    }
+  },
+  {
+    "char": "例",
+    "onyomi": "レイ",
+    "kunyomi": "たと.える",
+    "meaning_id": "Contoh / Teladan",
+    "meaning_en": "example, custom, usage",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "例えば",
+      "reading": "たとえば",
+      "meaning": "Contohnya / Misalnya"
+    }
+  },
+  {
+    "char": "係",
+    "onyomi": "ケイ",
+    "kunyomi": "かか.る, かかり, -がかり, かか.わる",
+    "meaning_id": "Petugas penanggung jawab",
+    "meaning_en": "person in charge, connection, duty",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "関係",
+      "reading": "かんけい",
+      "meaning": "Hubungan / Relasi"
+    }
+  },
+  {
+    "char": "信",
+    "onyomi": "シン",
+    "kunyomi": "-",
+    "meaning_id": "Percaya / Keyakinan / Sinyal",
+    "meaning_en": "faith, truth, fidelity",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "信じる",
+      "reading": "しんじる",
+      "meaning": "Percaya"
+    }
+  },
+  {
+    "char": "倉",
+    "onyomi": "ソウ",
+    "kunyomi": "くら",
+    "meaning_id": "Gudang / Lumbung",
+    "meaning_en": "godown, warehouse, storehouse",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "倉庫",
+      "reading": "そうこ",
+      "meaning": "Gudang"
+    }
+  },
+  {
+    "char": "倍",
+    "onyomi": "バイ",
+    "kunyomi": "-",
+    "meaning_id": "Kali lipat / Ganda",
+    "meaning_en": "double, twice, times",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "二倍",
+      "reading": "にばい",
+      "meaning": "Dua kali lipat"
+    }
+  },
+  {
+    "char": "候",
+    "onyomi": "コウ",
+    "kunyomi": "そうろう",
+    "meaning_id": "Musim / Cuaca / Kandidat",
+    "meaning_en": "climate, season, weather",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "気候",
+      "reading": "きこう",
+      "meaning": "Iklim / Cuaca"
+    }
+  },
+  {
+    "char": "停",
+    "onyomi": "テイ",
+    "kunyomi": "と.める, と.まる",
+    "meaning_id": "Berhenti singgah",
+    "meaning_en": "halt, stopping",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "停電",
+      "reading": "ていでん",
+      "meaning": "Listrik padam"
+    }
+  },
+  {
+    "char": "健",
+    "onyomi": "ケン",
+    "kunyomi": "すこ.やか",
+    "meaning_id": "Sehat / Bugar",
+    "meaning_en": "healthy, health, strength",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "健康",
+      "reading": "けんこう",
+      "meaning": "Kesehatan"
+    }
+  },
+  {
+    "char": "側",
+    "onyomi": "ソク",
+    "kunyomi": "かわ, がわ, そば",
+    "meaning_id": "Sisi / Sebelah",
+    "meaning_en": "side, lean, oppose",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "右側",
+      "reading": "みぎがわ",
+      "meaning": "Sisi sebelah kanan"
+    }
+  },
+  {
+    "char": "億",
+    "onyomi": "オク",
+    "kunyomi": "-",
+    "meaning_id": "Ratusan juta (100.000.000)",
+    "meaning_en": "hundred million, 10**8",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "一億",
+      "reading": "いちおく",
+      "meaning": "Seratus juta"
+    }
+  },
+  {
+    "char": "兆",
+    "onyomi": "チョウ",
+    "kunyomi": "きざ.す, きざ.し",
+    "meaning_id": "Triliun / Pertanda",
+    "meaning_en": "portent, 10**12, trillion",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "兆",
+      "reading": "ちょう",
+      "meaning": "Triliun"
+    }
+  },
+  {
+    "char": "児",
+    "onyomi": "ジ, ニ, ゲイ",
+    "kunyomi": "こ, -こ, -っこ",
+    "meaning_id": "Anak-anak / Balita",
+    "meaning_en": "newborn babe, child, young of animals",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "育児",
+      "reading": "いくじ",
+      "meaning": "Pengasuhan anak"
+    }
+  },
+  {
+    "char": "全",
+    "onyomi": "ゼン",
+    "kunyomi": "まった.く, すべ.て",
+    "meaning_id": "Seluruh / Semua / Lengkap",
+    "meaning_en": "whole, entire, all",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "全部",
+      "reading": "ぜんぶ",
+      "meaning": "Semuanya"
+    }
+  },
+  {
+    "char": "公",
+    "onyomi": "コウ, ク",
+    "kunyomi": "おおやけ",
+    "meaning_id": "Publik / Umum / Resmi",
+    "meaning_en": "public, prince, official",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "公園",
+      "reading": "こうえん",
+      "meaning": "Taman umum"
+    }
+  },
+  {
+    "char": "共",
+    "onyomi": "キョウ",
+    "kunyomi": "とも, とも.に, -ども",
+    "meaning_id": "Bersama-sama / Keduanya",
+    "meaning_en": "together, both, neither",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "共に",
+      "reading": "ともに",
+      "meaning": "Bersama-sama"
+    }
+  },
+  {
+    "char": "兵",
+    "onyomi": "ヘイ, ヒョウ",
+    "kunyomi": "つわもの",
+    "meaning_id": "Prajurit / Tentara",
+    "meaning_en": "soldier, private, troops",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "兵士",
+      "reading": "へいし",
+      "meaning": "Prajurit tentara"
+    }
+  },
+  {
+    "char": "具",
+    "onyomi": "グ",
+    "kunyomi": "そな.える, つぶさ.に",
+    "meaning_id": "Alat / Bahan / Perkakas",
+    "meaning_en": "tool, utensil, means",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "道具",
+      "reading": "どうぐ",
+      "meaning": "Alat / Perkakas"
+    }
+  },
+  {
+    "char": "典",
+    "onyomi": "テン, デン",
+    "kunyomi": "ふみ, のり",
+    "meaning_id": "Aturan baku / Kamus / Upacara",
+    "meaning_en": "code, ceremony, law",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "辞典",
+      "reading": "じてん",
+      "meaning": "Kamus ensiklopedia"
+    }
+  },
+  {
+    "char": "内",
+    "onyomi": "ナイ, ダイ",
+    "kunyomi": "うち",
+    "meaning_id": "Dalam / Internal",
+    "meaning_en": "inside, within, between",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "案内",
+      "reading": "あんない",
+      "meaning": "Pemandu / Informasi"
+    }
+  },
+  {
+    "char": "冷",
+    "onyomi": "レイ",
+    "kunyomi": "つめ.たい, ひ.える, ひ.や, ひ.ややか, ひ.やす, ひ.やかす, さ.める, さ.ます",
+    "meaning_id": "Dingin (benda) / Bersikap dingin",
+    "meaning_en": "cool, cold (beer, person), chill",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "冷たい",
+      "reading": "つめたい",
+      "meaning": "Dingin (saat disentuh)"
+    }
+  },
+  {
+    "char": "刀",
+    "onyomi": "トウ",
+    "kunyomi": "かたな, そり",
+    "meaning_id": "Pedang / Pisau katana",
+    "meaning_en": "sword, saber, knife",
+    "level": "N3",
+    "strokes": 2,
+    "example": {
+      "ja": "日本刀",
+      "reading": "にほんとう",
+      "meaning": "Pedang katana Jepang"
+    }
+  },
+  {
+    "char": "列",
+    "onyomi": "レツ, レ",
+    "kunyomi": "-",
+    "meaning_id": "Barisan / Deretan",
+    "meaning_en": "file, row, rank",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "列車",
+      "reading": "れっしゃ",
+      "meaning": "Kereta api"
+    }
+  },
+  {
+    "char": "初",
+    "onyomi": "ショ",
+    "kunyomi": "はじ.め, はじ.めて, はつ, はつ-, うい-, -そ.める, -ぞ.め",
+    "meaning_id": "Pertama / Awal",
+    "meaning_en": "first time, beginning",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "初めて",
+      "reading": "はじめて",
+      "meaning": "Untuk pertama kalinya"
+    }
+  },
+  {
+    "char": "利",
+    "onyomi": "リ",
+    "kunyomi": "き.く",
+    "meaning_id": "Keuntungan / Laba / Tajam",
+    "meaning_en": "profit, advantage, benefit",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "利用",
+      "reading": "りよう",
+      "meaning": "Penggunaan / Pemanfaatan"
+    }
+  },
+  {
+    "char": "刷",
+    "onyomi": "サツ",
+    "kunyomi": "す.る, -ず.り, -ずり, は.く",
+    "meaning_id": "Mencetak / Menggosok",
+    "meaning_en": "printing, print, brush",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "印刷",
+      "reading": "いんさつ",
+      "meaning": "Pencetakan (print)"
+    }
+  },
+  {
+    "char": "副",
+    "onyomi": "フク",
+    "kunyomi": "-",
+    "meaning_id": "Wakil / Tambahan",
+    "meaning_en": "vice-, assistant, aide",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "副詞",
+      "reading": "ふくし",
+      "meaning": "Kata keterangan (adverb)"
+    }
+  },
+  {
+    "char": "功",
+    "onyomi": "コウ, ク",
+    "kunyomi": "いさお",
+    "meaning_id": "Jasa / Prestasi / Keberhasilan",
+    "meaning_en": "achievement, merits, success",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "成功",
+      "reading": "せいこう",
+      "meaning": "Kesuksesan"
+    }
+  },
+  {
+    "char": "加",
+    "onyomi": "カ",
+    "kunyomi": "くわ.える, くわ.わる",
+    "meaning_id": "Menambah / Ikut serta",
+    "meaning_en": "add, addition, increase",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "参加",
+      "reading": "さんか",
+      "meaning": "Partisipasi / Ikut serta"
+    }
+  },
+  {
+    "char": "助",
+    "onyomi": "ジョ",
+    "kunyomi": "たす.ける, たす.かる, す.ける, すけ",
+    "meaning_id": "Membantu / Menolong",
+    "meaning_en": "help, rescue, assist",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "助ける",
+      "reading": "たすける",
+      "meaning": "Menolong / Menyelamatkan"
+    }
+  },
+  {
+    "char": "努",
+    "onyomi": "ド",
+    "kunyomi": "つと-める",
+    "meaning_id": "Berusaha keras",
+    "meaning_en": "Effort / Exertion",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "努力",
+      "reading": "どりょく",
+      "meaning": "Kerja keras / Usaha"
+    }
+  },
+  {
+    "char": "労",
+    "onyomi": "ロウ",
+    "kunyomi": "ろう.する, いたわ.る, いた.ずき, ねぎら, つか.れる, ねぎら.う",
+    "meaning_id": "Kerja keras / Tenaga kerja",
+    "meaning_en": "labor, thank for, reward for",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "苦労",
+      "reading": "くろう",
+      "meaning": "Jerih payah / Kesulitan"
+    }
+  },
+  {
+    "char": "勇",
+    "onyomi": "ユウ",
+    "kunyomi": "いさ.む",
+    "meaning_id": "Berani / Keberanian",
+    "meaning_en": "courage, cheer up, be in high spirits",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "勇気",
+      "reading": "ゆうき",
+      "meaning": "Keberanian"
+    }
+  },
+  {
+    "char": "勝",
+    "onyomi": "ショウ",
+    "kunyomi": "か.つ, -が.ち, まさ.る, すぐ.れる, かつ",
+    "meaning_id": "Menang / Unggul",
+    "meaning_en": "victory, win, prevail",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "勝つ",
+      "reading": "かつ",
+      "meaning": "Menang"
+    }
+  },
+  {
+    "char": "包",
+    "onyomi": "ホウ",
+    "kunyomi": "つつ.む, くる.む",
+    "meaning_id": "Membungkus / Paket",
+    "meaning_en": "wrap, pack up, cover",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "包む",
+      "reading": "つつむ",
+      "meaning": "Membungkus"
+    }
+  },
+  {
+    "char": "化",
+    "onyomi": "カ, ケ",
+    "kunyomi": "ば.ける, ば.かす, ふ.ける, け.する",
+    "meaning_id": "Berubah wujud / Kimia",
+    "meaning_en": "change, take the form of, influence",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "化学",
+      "reading": "かがく",
+      "meaning": "Ilmu kimia"
+    }
+  },
+  {
+    "char": "卒",
+    "onyomi": "ソツ, シュツ",
+    "kunyomi": "そっ.する, お.える, お.わる, ついに, にわか",
+    "meaning_id": "Lulus sekolah / Prajurit",
+    "meaning_en": "graduate, soldier, private",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "卒業",
+      "reading": "そつぎょう",
+      "meaning": "Kelulusan sekolah"
+    }
+  },
+  {
+    "char": "協",
+    "onyomi": "キョウ",
+    "kunyomi": "-",
+    "meaning_id": "Kerja sama",
+    "meaning_en": "Cooperation",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "協力",
+      "reading": "きょうりょく",
+      "meaning": "Kerja sama"
+    }
+  },
+  {
+    "char": "単",
+    "onyomi": "タン",
+    "kunyomi": "ひとえ",
+    "meaning_id": "Tunggal / Sederhana",
+    "meaning_en": "simple, one, single",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "簡単",
+      "reading": "かんたん",
+      "meaning": "Mudah / Sederhana"
+    }
+  },
+  {
+    "char": "博",
+    "onyomi": "ハク, バク",
+    "kunyomi": "-",
+    "meaning_id": "Pameran / Luas pengetahuannya",
+    "meaning_en": "Dr., command, esteem",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "博物館",
+      "reading": "はくぶつかん",
+      "meaning": "Museum"
+    }
+  },
+  {
+    "char": "印",
+    "onyomi": "イン",
+    "kunyomi": "しるし, -じるし, しる.す",
+    "meaning_id": "Cap / Tanda / Segel",
+    "meaning_en": "stamp, seal, mark",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "目印",
+      "reading": "めじるし",
+      "meaning": "Tanda patokan"
+    }
+  },
+  {
+    "char": "原",
+    "onyomi": "ゲン",
+    "kunyomi": "はら",
+    "meaning_id": "Padang rumput / Sumber asal",
+    "meaning_en": "meadow, original, primitive",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "原因",
+      "reading": "げんいん",
+      "meaning": "Penyebab / Asal mula"
+    }
+  },
+  {
+    "char": "参",
+    "onyomi": "サン, シン",
+    "kunyomi": "まい.る, まい-, まじわる, みつ",
+    "meaning_id": "Berkunjung / Ikut serta",
+    "meaning_en": "nonplussed, three (in documents), going",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "参加",
+      "reading": "さんか",
+      "meaning": "Ikut serta"
+    }
+  },
+  {
+    "char": "反",
+    "onyomi": "ハン, ホン, タン, ホ",
+    "kunyomi": "そ.る, そ.らす, かえ.す, かえ.る, -かえ.る",
+    "meaning_id": "Melawan / Terbalik",
+    "meaning_en": "anti-",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "反対",
+      "reading": "はんたい",
+      "meaning": "Berlawanan / Menentang"
+    }
+  },
+  {
+    "char": "取",
+    "onyomi": "シュ",
+    "kunyomi": "と.る, と.り, と.り-, とり, -ど.り",
+    "meaning_id": "Mengambil",
+    "meaning_en": "take, fetch, take up",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "取る",
+      "reading": "とる",
+      "meaning": "Mengambil"
+    }
+  },
+  {
+    "char": "受",
+    "onyomi": "ジュ",
+    "kunyomi": "う.ける, -う.け, う.かる",
+    "meaning_id": "Menerima / Mengikuti ujian",
+    "meaning_en": "accept, undergo, answer (phone)",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "受ける",
+      "reading": "うける",
+      "meaning": "Menerima / Ikut ujian"
+    }
+  },
+  {
+    "char": "史",
+    "onyomi": "シ",
+    "kunyomi": "-",
+    "meaning_id": "Sejarah / Riwayat",
+    "meaning_en": "history, chronicle",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "歴史",
+      "reading": "れきし",
+      "meaning": "Sejarah"
+    }
+  },
+  {
+    "char": "号",
+    "onyomi": "ゴウ",
+    "kunyomi": "さけ.ぶ, よびな",
+    "meaning_id": "Nomor / Panggilan / Gelar",
+    "meaning_en": "nickname, number, item",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "番号",
+      "reading": "ばんごう",
+      "meaning": "Nomor"
+    }
+  },
+  {
+    "char": "司",
+    "onyomi": "シ",
+    "kunyomi": "つかさど.る",
+    "meaning_id": "Memimpin / Mengatur",
+    "meaning_en": "director, official, govt office",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "司会",
+      "reading": "しかい",
+      "meaning": "Pembawa acara (MC)"
+    }
+  },
+  {
+    "char": "各",
+    "onyomi": "カク",
+    "kunyomi": "おのおの",
+    "meaning_id": "Masing-masing / Setiap",
+    "meaning_en": "each, every, either",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "各自",
+      "reading": "かくじ",
+      "meaning": "Masing-masing orang"
+    }
+  },
+  {
+    "char": "向",
+    "onyomi": "コウ",
+    "kunyomi": "む.く, む.い, -む.き, む.ける, -む.け, む.かう, む.かい, む.こう, む.こう-, むこ, むか.い",
+    "meaning_id": "Menghadap / Mengarah",
+    "meaning_en": "yonder, facing, beyond",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "向かう",
+      "reading": "むかう",
+      "meaning": "Menuju / Menghadap ke"
+    }
+  },
+  {
+    "char": "君",
+    "onyomi": "クン",
+    "kunyomi": "きみ, -ぎみ",
+    "meaning_id": "Kamu (akrab) / Penguasa",
+    "meaning_en": "mister, you, ruler",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "君",
+      "reading": "きみ",
+      "meaning": "Kamu (akrab)"
+    }
+  },
+  {
+    "char": "告",
+    "onyomi": "コク",
+    "kunyomi": "つ.げる",
+    "meaning_id": "Memberitahu / Mengumumkan",
+    "meaning_en": "revelation, tell, inform",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "報告",
+      "reading": "ほうこく",
+      "meaning": "Laporan"
+    }
+  },
+  {
+    "char": "周",
+    "onyomi": "シュウ",
+    "kunyomi": "まわ.り",
+    "meaning_id": "Sekeliling / Keliling lingkaran",
+    "meaning_en": "circumference, circuit, lap",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "周り",
+      "reading": "まわり",
+      "meaning": "Sekitar / Sekeliling"
+    }
+  },
+  {
+    "char": "命",
+    "onyomi": "メイ, ミョウ",
+    "kunyomi": "いのち",
+    "meaning_id": "Nyawa / Kehidupan / Perintah",
+    "meaning_en": "fate, command, decree",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "命",
+      "reading": "いのち",
+      "meaning": "Nyawa"
+    }
+  },
+  {
+    "char": "和",
+    "onyomi": "ワ, オ, カ",
+    "kunyomi": "やわ.らぐ, やわ.らげる, なご.む, なご.やか, あ.える",
+    "meaning_id": "Kedamaian / Tradisi Jepang / Harmoni",
+    "meaning_en": "harmony, Japanese style, peace",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "平和",
+      "reading": "へいわ",
+      "meaning": "Perdamaian"
+    }
+  },
+  {
+    "char": "唱",
+    "onyomi": "ショウ",
+    "kunyomi": "とな.える",
+    "meaning_id": "Mendendangkan / Menyerukan",
+    "meaning_en": "chant, recite, call upon",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "合唱",
+      "reading": "がっしょう",
+      "meaning": "Paduan suara"
+    }
+  },
+  {
+    "char": "商",
+    "onyomi": "ショウ",
+    "kunyomi": "あきな.う",
+    "meaning_id": "Perdagangan / Berniaga",
+    "meaning_en": "make a deal, selling, dealing in",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "商品",
+      "reading": "しょうひん",
+      "meaning": "Barang komoditas"
+    }
+  },
+  {
+    "char": "喜",
+    "onyomi": "キ",
+    "kunyomi": "よろこ.ぶ, よろこ.ばす",
+    "meaning_id": "Kegembiraan / Bersuka ria",
+    "meaning_en": "rejoice, take pleasure in",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "喜ぶ",
+      "reading": "よろこぶ",
+      "meaning": "Bergembira"
+    }
+  },
+  {
+    "char": "器",
+    "onyomi": "キ",
+    "kunyomi": "うつわ",
+    "meaning_id": "Wadah / Perabot / Alat",
+    "meaning_en": "utensil, vessel, receptacle",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "食器",
+      "reading": "しょっき",
+      "meaning": "Peralatan makan"
+    }
+  },
+  {
+    "char": "囲",
+    "onyomi": "イ",
+    "kunyomi": "かこ.む, かこ.う, かこ.い",
+    "meaning_id": "Mengepung / Mengelilingi",
+    "meaning_en": "surround, besiege, store",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "周囲",
+      "reading": "しゅうい",
+      "meaning": "Lingkungan sekitar"
+    }
+  },
+  {
+    "char": "固",
+    "onyomi": "コ",
+    "kunyomi": "かた.める, かた.まる, かた.まり, かた.い",
+    "meaning_id": "Keras / Padat / Kaku",
+    "meaning_en": "harden, set, clot",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "固い",
+      "reading": "かたい",
+      "meaning": "Keras / Padat"
+    }
+  },
+  {
+    "char": "園",
+    "onyomi": "エン",
+    "kunyomi": "その",
+    "meaning_id": "Taman / Kebun",
+    "meaning_en": "park, garden, yard",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "公園",
+      "reading": "こうえん",
+      "meaning": "Taman kota"
+    }
+  },
+  {
+    "char": "坂",
+    "onyomi": "ハン",
+    "kunyomi": "さか",
+    "meaning_id": "Lereng / Tanjakan",
+    "meaning_en": "slope, incline, hill",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "坂道",
+      "reading": "さかみち",
+      "meaning": "Jalan menanjak"
+    }
+  },
+  {
+    "char": "型",
+    "onyomi": "ケイ",
+    "kunyomi": "かた, -がた",
+    "meaning_id": "Model / Tipe / Cetakan",
+    "meaning_en": "mould, type, model",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "大型",
+      "reading": "おおがた",
+      "meaning": "Ukuran besar"
+    }
+  },
+  {
+    "char": "塩",
+    "onyomi": "エン",
+    "kunyomi": "しお",
+    "meaning_id": "Garam",
+    "meaning_en": "salt",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "塩",
+      "reading": "しお",
+      "meaning": "Garam dapur"
+    }
+  },
+  {
+    "char": "士",
+    "onyomi": "シ",
+    "kunyomi": "さむらい",
+    "meaning_id": "Pria terpelajar / Ksatria / Ahli",
+    "meaning_en": "gentleman, scholar, samurai",
+    "level": "N3",
+    "strokes": 3,
+    "example": {
+      "ja": "弁護士",
+      "reading": "べんごし",
+      "meaning": "Pengacara"
+    }
+  },
+  {
+    "char": "変",
+    "onyomi": "ヘン",
+    "kunyomi": "か.わる, か.わり, か.える",
+    "meaning_id": "Aneh / Berubah",
+    "meaning_en": "unusual, change, strange",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "大変",
+      "reading": "たいへん",
+      "meaning": "Sangat sulit / Berat"
+    }
+  },
+  {
+    "char": "夫",
+    "onyomi": "フ, フウ, ブ",
+    "kunyomi": "おっと, それ",
+    "meaning_id": "Suami / Pria dewasa",
+    "meaning_en": "husband, man",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "夫",
+      "reading": "おっと",
+      "meaning": "Suami"
+    }
+  },
+  {
+    "char": "央",
+    "onyomi": "オウ",
+    "kunyomi": "-",
+    "meaning_id": "Pusat / Tengah",
+    "meaning_en": "center, middle",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "中央",
+      "reading": "ちゅうおう",
+      "meaning": "Pusat / Sentral"
+    }
+  },
+  {
+    "char": "失",
+    "onyomi": "シツ",
+    "kunyomi": "うしな.う, う.せる",
+    "meaning_id": "Hilang / Kegagalan",
+    "meaning_en": "lose, error, fault",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "失敗",
+      "reading": "しっぱい",
+      "meaning": "Kegagalan"
+    }
+  },
+  {
+    "char": "委",
+    "onyomi": "イ",
+    "kunyomi": "ゆだ.ねる",
+    "meaning_id": "Mempercayakan / Komite",
+    "meaning_en": "committee, entrust to, leave to",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "委員会",
+      "reading": "いいんかい",
+      "meaning": "Rapat komite"
+    }
+  },
+  {
+    "char": "季",
+    "onyomi": "キ",
+    "kunyomi": "-",
+    "meaning_id": "Musim",
+    "meaning_en": "seasons",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "季節",
+      "reading": "きせつ",
+      "meaning": "Musim"
+    }
+  },
+  {
+    "char": "孫",
+    "onyomi": "ソン",
+    "kunyomi": "まご",
+    "meaning_id": "Cucu",
+    "meaning_en": "grandchild, descendants",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "孫",
+      "reading": "まご",
+      "meaning": "Cucu"
+    }
+  },
+  {
+    "char": "守",
+    "onyomi": "シュ, ス",
+    "kunyomi": "まも.る, まも.り, もり, -もり, かみ",
+    "meaning_id": "Melindungi / Mematuhi",
+    "meaning_en": "guard, protect, defend",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "守る",
+      "reading": "まもる",
+      "meaning": "Melindungi / Menepati janji"
+    }
+  },
+  {
+    "char": "完",
+    "onyomi": "カン",
+    "kunyomi": "-",
+    "meaning_id": "Sempurna / Tuntas",
+    "meaning_en": "Complete / Perfect",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "完成",
+      "reading": "かんせい",
+      "meaning": "Selesai / Rampung"
+    }
+  },
+  {
+    "char": "官",
+    "onyomi": "カン",
+    "kunyomi": "-",
+    "meaning_id": "Pemerintah / Pejabat birokrasi",
+    "meaning_en": "bureaucrat, the government, organ",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "警察官",
+      "reading": "けいさつかん",
+      "meaning": "Petugas polisi"
+    }
+  },
+  {
+    "char": "定",
+    "onyomi": "テイ, ジョウ",
+    "kunyomi": "さだ.める, さだ.まる, さだ.か",
+    "meaning_id": "Menetapkan / Menentukan",
+    "meaning_en": "determine, fix, establish",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "予定",
+      "reading": "よてい",
+      "meaning": "Rencana"
+    }
+  },
+  {
+    "char": "実",
+    "onyomi": "ジツ, シツ",
+    "kunyomi": "み, みの.る, まこと, みの, みち.る",
+    "meaning_id": "Kebenaran / Buah / Nyata",
+    "meaning_en": "reality, truth, seed",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "実は",
+      "reading": "じつは",
+      "meaning": "Sebenarnya"
+    }
+  },
+  {
+    "char": "客",
+    "onyomi": "キャク, カク",
+    "kunyomi": "-",
+    "meaning_id": "Tamu / Pelanggan",
+    "meaning_en": "guest, visitor, customer",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "お客様",
+      "reading": "おきゃくさま",
+      "meaning": "Pelanggan yang terhormat"
+    }
+  },
+  {
+    "char": "宮",
+    "onyomi": "キュウ, グウ, ク, クウ",
+    "kunyomi": "みや",
+    "meaning_id": "Istana / Kuil Shinto agung",
+    "meaning_en": "Shinto shrine, constellations, palace",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "神宮",
+      "reading": "じんぐう",
+      "meaning": "Kuil Shinto agung"
+    }
+  },
+  {
+    "char": "害",
+    "onyomi": "ガイ",
+    "kunyomi": "-",
+    "meaning_id": "Bahaya / Kerugian / Kerusakan",
+    "meaning_en": "harm, injury",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "公害",
+      "reading": "こうがい",
+      "meaning": "Polusi pencemaran"
+    }
+  },
+  {
+    "char": "宿",
+    "onyomi": "シュク",
+    "kunyomi": "やど, やど.る, やど.す",
+    "meaning_id": "Penginapan / Menginap",
+    "meaning_en": "inn, lodging, relay station",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "宿題",
+      "reading": "しゅくだい",
+      "meaning": "Pekerjaan rumah (PR)"
+    }
+  },
+  {
+    "char": "察",
+    "onyomi": "サツ",
+    "kunyomi": "-",
+    "meaning_id": "Memeriksa / Menduga / Polisi",
+    "meaning_en": "guess, presume, surmise",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "警察",
+      "reading": "けいさつ",
+      "meaning": "Polisi"
+    }
+  },
+  {
+    "char": "寺",
+    "onyomi": "ジ",
+    "kunyomi": "てら",
+    "meaning_id": "Kuil Buddha",
+    "meaning_en": "Buddhist temple",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "寺院",
+      "reading": "じいん",
+      "meaning": "Kuil Buddha"
+    }
+  },
+  {
+    "char": "対",
+    "onyomi": "タイ, ツイ",
+    "kunyomi": "あいて, こた.える, そろ.い, つれあ.い, なら.ぶ, むか.う",
+    "meaning_id": "Lawan / Terhadap / Pasangan",
+    "meaning_en": "vis-a-vis, opposite, even",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "反対",
+      "reading": "はんたい",
+      "meaning": "Menentang / Berlawanan"
+    }
+  },
+  {
+    "char": "局",
+    "onyomi": "キョク",
+    "kunyomi": "つぼね",
+    "meaning_id": "Biro / Kantor jawatan",
+    "meaning_en": "bureau, board, office",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "郵便局",
+      "reading": "ゆうびんきょく",
+      "meaning": "Kantor pos"
+    }
+  },
+  {
+    "char": "岩",
+    "onyomi": "ガン",
+    "kunyomi": "いわ",
+    "meaning_id": "Batu karang / Cadas",
+    "meaning_en": "boulder, rock, cliff",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "岩石",
+      "reading": "がんせき",
+      "meaning": "Batu karang"
+    }
+  },
+  {
+    "char": "岸",
+    "onyomi": "ガン",
+    "kunyomi": "きし",
+    "meaning_id": "Pesisir / Tepi pantai",
+    "meaning_en": "beach",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "海岸",
+      "reading": "かいがん",
+      "meaning": "Tepi laut / Pantai"
+    }
+  },
+  {
+    "char": "島",
+    "onyomi": "トウ",
+    "kunyomi": "しま",
+    "meaning_id": "Pulau",
+    "meaning_en": "island",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "島国",
+      "reading": "しまぐに",
+      "meaning": "Negara kepulauan"
+    }
+  },
+  {
+    "char": "州",
+    "onyomi": "シュウ, ス",
+    "kunyomi": "す",
+    "meaning_id": "Negara bagian / Provinsi pulau",
+    "meaning_en": "state, province",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "本州",
+      "reading": "ほんしゅう",
+      "meaning": "Pulau Honshu"
+    }
+  },
+  {
+    "char": "巣",
+    "onyomi": "ソウ",
+    "kunyomi": "す, す.くう",
+    "meaning_id": "Sarang burung / Tempat berdiam",
+    "meaning_en": "nest, rookery, hive",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "巣",
+      "reading": "す",
+      "meaning": "Sarang"
+    }
+  },
+  {
+    "char": "差",
+    "onyomi": "サ",
+    "kunyomi": "さ-す",
+    "meaning_id": "Perbedaan / Selisih",
+    "meaning_en": "Difference / Distinction",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "交差点",
+      "reading": "こうさてん",
+      "meaning": "Persimpangan jalan"
+    }
+  },
+  {
+    "char": "希",
+    "onyomi": "キ, ケ",
+    "kunyomi": "まれ, こいねが.う",
+    "meaning_id": "Harapan / Langka",
+    "meaning_en": "hope, beg, request",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "希望",
+      "reading": "きぼう",
+      "meaning": "Harapan / Cita-cita"
+    }
+  },
+  {
+    "char": "席",
+    "onyomi": "セキ",
+    "kunyomi": "むしろ",
+    "meaning_id": "Tempat duduk / Kursi",
+    "meaning_en": "seat, mat, occasion",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "出席",
+      "reading": "しゅっせき",
+      "meaning": "Kehadiran"
+    }
+  },
+  {
+    "char": "帯",
+    "onyomi": "タイ",
+    "kunyomi": "お.びる, おび",
+    "meaning_id": "Ikat pinggang obi / Sabuk / Zona",
+    "meaning_en": "sash, belt, obi",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "地帯",
+      "reading": "ちたい",
+      "meaning": "Wilayah zona"
+    }
+  },
+  {
+    "char": "帳",
+    "onyomi": "チョウ",
+    "kunyomi": "とばり",
+    "meaning_id": "Buku catatan / Register",
+    "meaning_en": "notebook, account book, album",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "手帳",
+      "reading": "てちょう",
+      "meaning": "Buku agenda saku"
+    }
+  },
+  {
+    "char": "平",
+    "onyomi": "ヘイ, ビョウ, ヒョウ",
+    "kunyomi": "たい.ら, たい.らげる, ひら",
+    "meaning_id": "Datar / Rata / Damai",
+    "meaning_en": "even, flat, peace",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "平日",
+      "reading": "へいじつ",
+      "meaning": "Hari kerja (bukan akhir pekan)"
+    }
+  },
+  {
+    "char": "幸",
+    "onyomi": "コウ",
+    "kunyomi": "さいわ.い, さち, しあわ.せ",
+    "meaning_id": "Kebahagiaan / Keberuntungan",
+    "meaning_en": "happiness, blessing, fortune",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "幸せ",
+      "reading": "しあわせ",
+      "meaning": "Bahagia"
+    }
+  },
+  {
+    "char": "底",
+    "onyomi": "テイ",
+    "kunyomi": "そこ",
+    "meaning_id": "Dasar / Bagian terbawah",
+    "meaning_en": "bottom, sole, depth",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "海底",
+      "reading": "かいてい",
+      "meaning": "Dasar laut"
+    }
+  },
+  {
+    "char": "府",
+    "onyomi": "フ",
+    "kunyomi": "-",
+    "meaning_id": "Pemerintah prefektur urban",
+    "meaning_en": "borough, urban prefecture, govt office",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "大阪府",
+      "reading": "おおさかふ",
+      "meaning": "Prefektur Osaka"
+    }
+  },
+  {
+    "char": "庫",
+    "onyomi": "コ, ク",
+    "kunyomi": "くら",
+    "meaning_id": "Gudang penyimpanan",
+    "meaning_en": "warehouse, storehouse",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "meaning": "Kulkas / Lemari es"
+    }
+  },
+  {
+    "char": "庭",
+    "onyomi": "テイ",
+    "kunyomi": "にわ",
+    "meaning_id": "Halaman / Pekarangan rumah",
+    "meaning_en": "courtyard, garden, yard",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "庭",
+      "reading": "にわ",
+      "meaning": "Halaman rumah"
+    }
+  },
+  {
+    "char": "康",
+    "onyomi": "コウ",
+    "kunyomi": "-",
+    "meaning_id": "Kesehatan / Sentosa",
+    "meaning_en": "ease, peace",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "健康",
+      "reading": "けんこう",
+      "meaning": "Kesehatan"
+    }
+  },
+  {
+    "char": "式",
+    "onyomi": "シキ",
+    "kunyomi": "-",
+    "meaning_id": "Upacara / Rumus / Gaya",
+    "meaning_en": "style, ceremony, rite",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "結婚式",
+      "reading": "けっこんしき",
+      "meaning": "Upacara pernikahan"
+    }
+  },
+  {
+    "char": "弓",
+    "onyomi": "キュウ",
+    "kunyomi": "ゆみ",
+    "meaning_id": "Busur panah",
+    "meaning_en": "bow, bow (archery, violin)",
+    "level": "N3",
+    "strokes": 3,
+    "example": {
+      "ja": "弓道",
+      "reading": "きゅうどう",
+      "meaning": "Panahan tradisional Jepang"
+    }
+  },
+  {
+    "char": "当",
+    "onyomi": "トウ",
+    "kunyomi": "あ.たる, あ.たり, あ.てる, あ.て, まさ.に, まさ.にべし",
+    "meaning_id": "Tepat mengenai / Sasaran",
+    "meaning_en": "hit, right, appropriate",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "本当",
+      "reading": "ほんとう",
+      "meaning": "Sungguh / Benar"
+    }
+  },
+  {
+    "char": "形",
+    "onyomi": "ケイ, ギョウ",
+    "kunyomi": "かた, -がた, かたち, なり",
+    "meaning_id": "Bentuk / Wujud",
+    "meaning_en": "shape, form, style",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "形",
+      "reading": "かたち",
+      "meaning": "Bentuk fisik"
+    }
+  },
+  {
+    "char": "役",
+    "onyomi": "ヤク, エキ",
+    "kunyomi": "-",
+    "meaning_id": "Peran / Tugas",
+    "meaning_en": "Role / Service",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "役に立つ",
+      "reading": "やくにたつ",
+      "meaning": "Bermanfaat"
+    }
+  },
+  {
+    "char": "径",
+    "onyomi": "ケイ",
+    "kunyomi": "みち, こみち, さしわたし, ただちに",
+    "meaning_id": "Diameter / Lintasan jalan",
+    "meaning_en": "diameter, path, method",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "直径",
+      "reading": "ちょっけい",
+      "meaning": "Diameter"
+    }
+  },
+  {
+    "char": "徒",
+    "onyomi": "ト",
+    "kunyomi": "いたずら, あだ",
+    "meaning_id": "Murid / Pengikut",
+    "meaning_en": "on foot, junior, emptiness",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "生徒",
+      "reading": "せいと",
+      "meaning": "Siswa / Murid"
+    }
+  },
+  {
+    "char": "得",
+    "onyomi": "トク",
+    "kunyomi": "え.る, う.る",
+    "meaning_id": "Memperoleh / Keuntungan",
+    "meaning_en": "gain, get, find",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "得る",
+      "reading": "える",
+      "meaning": "Mendapatkan"
+    }
+  },
+  {
+    "char": "必",
+    "onyomi": "ヒツ",
+    "kunyomi": "かなら.ず",
+    "meaning_id": "Pasti / Mutlak harus",
+    "meaning_en": "invariably, certain, inevitable",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "必ず",
+      "reading": "かならず",
+      "meaning": "Pasti / Selalu"
+    }
+  },
+  {
+    "char": "念",
+    "onyomi": "ネン",
+    "kunyomi": "-",
+    "meaning_id": "Pikiran / Keinginan / Perhatian",
+    "meaning_en": "Thought / Desire / Care",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "残念",
+      "reading": "ざんねん",
+      "meaning": "Sayang sekali"
+    }
+  },
+  {
+    "char": "息",
+    "onyomi": "ソク",
+    "kunyomi": "いき",
+    "meaning_id": "Napas / Hembusan udara",
+    "meaning_en": "breath, respiration, son",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "息",
+      "reading": "いき",
+      "meaning": "Napas"
+    }
+  },
+  {
+    "char": "悲",
+    "onyomi": "ヒ",
+    "kunyomi": "かな.しい, かな.しむ",
+    "meaning_id": "Sedih / Kedukaan",
+    "meaning_en": "grieve, sad, deplore",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "悲しい",
+      "reading": "かなしい",
+      "meaning": "Sedih"
+    }
+  },
+  {
+    "char": "想",
+    "onyomi": "ソウ, ソ",
+    "kunyomi": "おも.う",
+    "meaning_id": "Gagasan / Anggapan / Pikiran",
+    "meaning_en": "idea, thought, conception",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "感想",
+      "reading": "かんそう",
+      "meaning": "Kesan / Pandangan"
+    }
+  },
+  {
+    "char": "愛",
+    "onyomi": "アイ",
+    "kunyomi": "いと.しい, かな.しい, め.でる, お.しむ, まな",
+    "meaning_id": "Cinta / Kasih sayang",
+    "meaning_en": "love, affection, favourite",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "愛する",
+      "reading": "あいする",
+      "meaning": "Mencintai"
+    }
+  },
+  {
+    "char": "感",
+    "onyomi": "カン",
+    "kunyomi": "-",
+    "meaning_id": "Merasa / Emosi / Kepekaan",
+    "meaning_en": "emotion, feeling, sensation",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "感じる",
+      "reading": "かんじる",
+      "meaning": "Merasakan"
+    }
+  },
+  {
+    "char": "成",
+    "onyomi": "セイ, ジョウ",
+    "kunyomi": "な-る, な-す",
+    "meaning_id": "Menjadi / Tercapai",
+    "meaning_en": "Turn into / Become",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "成功",
+      "reading": "せいこう",
+      "meaning": "Kesuksesan"
+    }
+  },
+  {
+    "char": "戦",
+    "onyomi": "セン",
+    "kunyomi": "いくさ, たたか.う, おのの.く, そよ.ぐ, わなな.く",
+    "meaning_id": "Pertempuran / Berjuang",
+    "meaning_en": "war, battle, match",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "戦争",
+      "reading": "せんそう",
+      "meaning": "Perang"
+    }
+  },
+  {
+    "char": "戸",
+    "onyomi": "コ",
+    "kunyomi": "と",
+    "meaning_id": "Pintu geser gaya Jepang",
+    "meaning_en": "door, counter for houses, door radical (no. 63)",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "戸棚",
+      "reading": "とだな",
+      "meaning": "Lemari"
+    }
+  },
+  {
+    "char": "才",
+    "onyomi": "サイ",
+    "kunyomi": "-",
+    "meaning_id": "Bakat / Usia umur",
+    "meaning_en": "genius, years old, cubic shaku",
+    "level": "N3",
+    "strokes": 3,
+    "example": {
+      "ja": "天才",
+      "reading": "てんさい",
+      "meaning": "Jenius"
+    }
+  },
+  {
+    "char": "打",
+    "onyomi": "ダ, ダース",
+    "kunyomi": "う.つ, う.ち-, ぶ.つ",
+    "meaning_id": "Memukul / Mengetik",
+    "meaning_en": "strike, hit, knock",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "打つ",
+      "reading": "うつ",
+      "meaning": "Memukul"
+    }
+  },
+  {
+    "char": "投",
+    "onyomi": "トウ",
+    "kunyomi": "な.げる, -な.げ",
+    "meaning_id": "Melempar",
+    "meaning_en": "throw, discard, abandon",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "投げる",
+      "reading": "なげる",
+      "meaning": "Melempar"
+    }
+  },
+  {
+    "char": "折",
+    "onyomi": "セツ, シャク",
+    "kunyomi": "お.る, おり, お.り, -お.り, お.れる",
+    "meaning_id": "Melipat / Patah",
+    "meaning_en": "fold, break, fracture",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "折り紙",
+      "reading": "おりがみ",
+      "meaning": "Seni melipat kertas (origami)"
+    }
+  },
+  {
+    "char": "拾",
+    "onyomi": "シュウ, ジュウ",
+    "kunyomi": "ひろ.う",
+    "meaning_id": "Memungut / Menemukan di jalan",
+    "meaning_en": "pick up, gather, find",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "拾う",
+      "reading": "ひろう",
+      "meaning": "Memungut barang"
+    }
+  },
+  {
+    "char": "指",
+    "onyomi": "シ",
+    "kunyomi": "ゆび, さ.す, -さ.し",
+    "meaning_id": "Jari / Menunjuk",
+    "meaning_en": "finger, point to, indicate",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "指",
+      "reading": "ゆび",
+      "meaning": "Jari"
+    }
+  },
+  {
+    "char": "挙",
+    "onyomi": "キョ",
+    "kunyomi": "あ.げる, あ.がる, こぞ.る",
+    "meaning_id": "Mengangkat tangan / Pemilihan",
+    "meaning_en": "raise, plan, project",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "選挙",
+      "reading": "せんきょ",
+      "meaning": "Pemilihan umum"
+    }
+  },
+  {
+    "char": "改",
+    "onyomi": "カイ",
+    "kunyomi": "あらた.める, あらた.まる",
+    "meaning_id": "Memperbaiki / Memperbarui",
+    "meaning_en": "reformation, change, modify",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "改札口",
+      "reading": "かいさつぐち",
+      "meaning": "Pintu gerbang tiket"
+    }
+  },
+  {
+    "char": "放",
+    "onyomi": "ホウ",
+    "kunyomi": "はな.す, -っぱな.し, はな.つ, はな.れる, こ.く, ほう.る",
+    "meaning_id": "Melepaskan / Membebaskan",
+    "meaning_en": "set free, release, fire",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "放送",
+      "reading": "ほうそう",
+      "meaning": "Siaran"
+    }
+  },
+  {
+    "char": "救",
+    "onyomi": "キュウ",
+    "kunyomi": "すく.う",
+    "meaning_id": "Menyelamatkan / Pertolongan",
+    "meaning_en": "salvation, save, help",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "救急車",
+      "reading": "きゅうきゅうしゃ",
+      "meaning": "Ambulans"
+    }
+  },
+  {
+    "char": "敗",
+    "onyomi": "ハイ",
+    "kunyomi": "やぶ.れる",
+    "meaning_id": "Kalah / Gagal",
+    "meaning_en": "failure, defeat, reversal",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "失敗",
+      "reading": "しっぱい",
+      "meaning": "Kegagalan"
+    }
+  },
+  {
+    "char": "散",
+    "onyomi": "サン",
+    "kunyomi": "ち.る, ち.らす, -ち.らす, ち.らかす, ち.らかる, ち.らばる, ばら, ばら.ける",
+    "meaning_id": "Menyebar / Berserakan",
+    "meaning_en": "scatter, disperse, spend",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "散歩",
+      "reading": "さんぽ",
+      "meaning": "Jalan-jalan santai"
+    }
+  },
+  {
+    "char": "数",
+    "onyomi": "スウ, ス, サク, ソク, シュ",
+    "kunyomi": "かず, かぞ.える, しばしば, せ.める, わずらわ.しい",
+    "meaning_id": "Angka / Menghitung",
+    "meaning_en": "number, strength, fate",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "数学",
+      "reading": "すうがく",
+      "meaning": "Matematika"
+    }
+  },
+  {
+    "char": "整",
+    "onyomi": "セイ",
+    "kunyomi": "ととの.える, ととの.う",
+    "meaning_id": "Merapikan / Menata teratur",
+    "meaning_en": "organize, arranging, tune",
+    "level": "N3",
+    "strokes": 16,
+    "example": {
+      "ja": "整理",
+      "reading": "せいり",
+      "meaning": "Menata rapi"
+    }
+  },
+  {
+    "char": "旗",
+    "onyomi": "キ",
+    "kunyomi": "はた",
+    "meaning_id": "Bendera",
+    "meaning_en": "flag, banner, standard",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "国旗",
+      "reading": "こっき",
+      "meaning": "Bendera kebangsaan"
+    }
+  },
+  {
+    "char": "昔",
+    "onyomi": "セキ, シャク",
+    "kunyomi": "むかし",
+    "meaning_id": "Masa lampau / Zaman dahulu",
+    "meaning_en": "once upon a time, antiquity, old times",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "昔",
+      "reading": "むかし",
+      "meaning": "Dahulu kala"
+    }
+  },
+  {
+    "char": "星",
+    "onyomi": "セイ, ショウ",
+    "kunyomi": "ほし, -ぼし",
+    "meaning_id": "Bintang / Benda langit",
+    "meaning_en": "star, spot, dot",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "流れ星",
+      "reading": "ながれぼし",
+      "meaning": "Bintang jatuh"
+    }
+  },
+  {
+    "char": "昨",
+    "onyomi": "サク",
+    "kunyomi": "-",
+    "meaning_id": "Kemarin / Waktu yang lalu",
+    "meaning_en": "yesterday, previous",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "昨日",
+      "reading": "きのう",
+      "meaning": "Kemarin"
+    }
+  },
+  {
+    "char": "昭",
+    "onyomi": "ショウ",
+    "kunyomi": "-",
+    "meaning_id": "Terang benderang / Era Showa",
+    "meaning_en": "shining, bright",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "昭和",
+      "reading": "しょうわ",
+      "meaning": "Zaman Showa"
+    }
+  },
+  {
+    "char": "景",
+    "onyomi": "ケイ",
+    "kunyomi": "-",
+    "meaning_id": "Pemandangan alam",
+    "meaning_en": "scenery, view",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "景色",
+      "reading": "けしき",
+      "meaning": "Pemandangan"
+    }
+  },
+  {
+    "char": "晴",
+    "onyomi": "セイ",
+    "kunyomi": "は.れる, は.れ, は.れ-, -ば.れ, は.らす",
+    "meaning_id": "Cerah (cuaca)",
+    "meaning_en": "clear up",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "晴れ",
+      "reading": "はれ",
+      "meaning": "Cuaca cerah"
+    }
+  },
+  {
+    "char": "曲",
+    "onyomi": "キョク",
+    "kunyomi": "ま.がる, ま.げる, くま",
+    "meaning_id": "Melodi lagu / Berkelok",
+    "meaning_en": "bend, music, melody",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "曲",
+      "reading": "きょく",
+      "meaning": "Lagu / Melodi"
+    }
+  },
+  {
+    "char": "最",
+    "onyomi": "サイ, シュ",
+    "kunyomi": "もっと.も, つま",
+    "meaning_id": "Paling / Ter-",
+    "meaning_en": "utmost, most, extreme",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "最近",
+      "reading": "さいきん",
+      "meaning": "Akhir-akhir ini"
+    }
+  },
+  {
+    "char": "望",
+    "onyomi": "ボウ, モウ",
+    "kunyomi": "のぞ-む",
+    "meaning_id": "Mengharap / Memandang jauh",
+    "meaning_en": "Hope / Wish / Desire",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "希望",
+      "reading": "きぼう",
+      "meaning": "Harapan"
+    }
+  },
+  {
+    "char": "期",
+    "onyomi": "キ, ゴ",
+    "kunyomi": "-",
+    "meaning_id": "Periode waktu / Masa",
+    "meaning_en": "period, time, date",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "期間",
+      "reading": "きかん",
+      "meaning": "Jangka waktu"
+    }
+  },
+  {
+    "char": "未",
+    "onyomi": "ミ, ビ",
+    "kunyomi": "いま.だ, ま.だ, ひつじ",
+    "meaning_id": "Belum / Belum terjadi",
+    "meaning_en": "un-, not yet, hitherto",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "未来",
+      "reading": "みらい",
+      "meaning": "Masa depan"
+    }
+  },
+  {
+    "char": "末",
+    "onyomi": "マツ, バツ",
+    "kunyomi": "すえ, うら, うれ",
+    "meaning_id": "Ujung / Akhir",
+    "meaning_en": "end, close, tip",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "週末",
+      "reading": "しゅうまつ",
+      "meaning": "Akhir pekan"
+    }
+  },
+  {
+    "char": "札",
+    "onyomi": "サツ",
+    "kunyomi": "ふだ",
+    "meaning_id": "Uang kertas / Kartu label",
+    "meaning_en": "tag, paper money, counter for bonds",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "札",
+      "reading": "さつ",
+      "meaning": "Uang kertas"
+    }
+  },
+  {
+    "char": "材",
+    "onyomi": "ザイ",
+    "kunyomi": "-",
+    "meaning_id": "Bahan baku / Material",
+    "meaning_en": "lumber, log, timber",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "材料",
+      "reading": "ざいりょう",
+      "meaning": "Bahan baku"
+    }
+  },
+  {
+    "char": "束",
+    "onyomi": "ソク",
+    "kunyomi": "たば, たば-ねる",
+    "meaning_id": "Ikat / Berkas / Terikat",
+    "meaning_en": "Bundle / Tie",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "花束",
+      "reading": "はなたば",
+      "meaning": "Buket bunga"
+    }
+  },
+  {
+    "char": "松",
+    "onyomi": "ショウ",
+    "kunyomi": "まつ",
+    "meaning_id": "Pohon pinus",
+    "meaning_en": "pine tree",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "松",
+      "reading": "まつ",
+      "meaning": "Pohon pinus"
+    }
+  },
+  {
+    "char": "板",
+    "onyomi": "ハン, バン",
+    "kunyomi": "いた",
+    "meaning_id": "Papan kayu",
+    "meaning_en": "plank, board, plate",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "黒板",
+      "reading": "こくばん",
+      "meaning": "Papan tulis hitam"
+    }
+  },
+  {
+    "char": "果",
+    "onyomi": "カ",
+    "kunyomi": "は-たす, くだもの",
+    "meaning_id": "Buah / Mencapai / Hasil",
+    "meaning_en": "Fruit / Result",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "結果",
+      "reading": "けっか",
+      "meaning": "Hasil"
+    }
+  },
+  {
+    "char": "柱",
+    "onyomi": "チュウ",
+    "kunyomi": "はしら",
+    "meaning_id": "Tiang pilar",
+    "meaning_en": "pillar, post, cylinder",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "電柱",
+      "reading": "でんちゅう",
+      "meaning": "Tiang listrik"
+    }
+  },
+  {
+    "char": "栄",
+    "onyomi": "エイ, ヨウ",
+    "kunyomi": "さか.える, は.え, -ば.え, は.える, え",
+    "meaning_id": "Kemakmuran / Kejayaan",
+    "meaning_en": "flourish, prosperity, honor",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "栄養",
+      "reading": "えいよう",
+      "meaning": "Gizi / Nutrisi"
+    }
+  },
+  {
+    "char": "根",
+    "onyomi": "コン",
+    "kunyomi": "ね, -ね",
+    "meaning_id": "Akar tanaman / Asal mula",
+    "meaning_en": "root, radical, head (pimple)",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "屋根",
+      "reading": "やね",
+      "meaning": "Atap rumah"
+    }
+  },
+  {
+    "char": "案",
+    "onyomi": "アン",
+    "kunyomi": "つくえ",
+    "meaning_id": "Usulan rencana / Ide",
+    "meaning_en": "plan, suggestion, draft",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "案内",
+      "reading": "あんない",
+      "meaning": "Panduan informasi"
+    }
+  },
+  {
+    "char": "梅",
+    "onyomi": "バイ",
+    "kunyomi": "うめ",
+    "meaning_id": "Prem Jepang (Ume)",
+    "meaning_en": "plum",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "梅干し",
+      "reading": "うめぼし",
+      "meaning": "Asinan prem"
+    }
+  },
+  {
+    "char": "械",
+    "onyomi": "カイ",
+    "kunyomi": "かせ",
+    "meaning_id": "Peralatan mesin",
+    "meaning_en": "contraption, fetter, machine",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "機械",
+      "reading": "きかい",
+      "meaning": "Mesin"
+    }
+  },
+  {
+    "char": "植",
+    "onyomi": "ショク",
+    "kunyomi": "う.える, う.わる",
+    "meaning_id": "Menanam / Tumbuhan",
+    "meaning_en": "plant",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "植物",
+      "reading": "しょくぶつ",
+      "meaning": "Tumbuhan"
+    }
+  },
+  {
+    "char": "極",
+    "onyomi": "キョク, ゴク",
+    "kunyomi": "きわ.める, きわ.まる, きわ.まり, きわ.み, き.める, -ぎ.め, き.まる",
+    "meaning_id": "Kutub / Paling ujung",
+    "meaning_en": "extreme, pole, extremely",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "北極",
+      "reading": "ほっきょく",
+      "meaning": "Kutub utara"
+    }
+  },
+  {
+    "char": "様",
+    "onyomi": "ヨウ, ショウ",
+    "kunyomi": "さま, さん",
+    "meaning_id": "Tuan / Nyonya / Penampilan sopan",
+    "meaning_en": "Esq., way, manner",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "皆様",
+      "reading": "みなさま",
+      "meaning": "Hadirin sekalian"
+    }
+  },
+  {
+    "char": "標",
+    "onyomi": "ヒョウ",
+    "kunyomi": "しるべ, しるし",
+    "meaning_id": "Tanda patokan / Rambu",
+    "meaning_en": "signpost, seal, mark",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "目標",
+      "reading": "もくひょう",
+      "meaning": "Target / Sasaran"
+    }
+  },
+  {
+    "char": "横",
+    "onyomi": "オウ",
+    "kunyomi": "よこ",
+    "meaning_id": "Samping / Horizontal",
+    "meaning_en": "sideways, side, horizontal",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "横",
+      "reading": "よこ",
+      "meaning": "Samping"
+    }
+  },
+  {
+    "char": "橋",
+    "onyomi": "キョウ",
+    "kunyomi": "はし",
+    "meaning_id": "Jembatan",
+    "meaning_en": "bridge",
+    "level": "N3",
+    "strokes": 16,
+    "example": {
+      "ja": "歩道橋",
+      "reading": "ほどうきょう",
+      "meaning": "Jembatan penyeberangan orang"
+    }
+  },
+  {
+    "char": "機",
+    "onyomi": "キ",
+    "kunyomi": "はた",
+    "meaning_id": "Mesin / Kesempatan",
+    "meaning_en": "loom, mechanism, machine",
+    "level": "N3",
+    "strokes": 16,
+    "example": {
+      "ja": "飛行機",
+      "reading": "ひこうき",
+      "meaning": "Pesawat terbang"
+    }
+  },
+  {
+    "char": "欠",
+    "onyomi": "ケツ, ケン",
+    "kunyomi": "か.ける, か.く",
+    "meaning_id": "Kekurangan / Absen",
+    "meaning_en": "lack, gap, fail",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "欠席",
+      "reading": "けっせき",
+      "meaning": "Ketidakhadiran"
+    }
+  },
+  {
+    "char": "次",
+    "onyomi": "ジ, シ",
+    "kunyomi": "つ.ぐ, つぎ",
+    "meaning_id": "Berikutnya / Selanjutnya",
+    "meaning_en": "next, order, sequence",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "次",
+      "reading": "つぎ",
+      "meaning": "Berikutnya"
+    }
+  },
+  {
+    "char": "歯",
+    "onyomi": "シ",
+    "kunyomi": "よわい, は, よわ.い, よわい.する",
+    "meaning_id": "Gigi",
+    "meaning_en": "tooth, cog",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "歯医者",
+      "reading": "はいしゃ",
+      "meaning": "Dokter gigi"
+    }
+  },
+  {
+    "char": "歴",
+    "onyomi": "レキ, レッキ",
+    "kunyomi": "-",
+    "meaning_id": "Melewati / Riwayat perjalanan",
+    "meaning_en": "curriculum, continuation, passage of time",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "歴史",
+      "reading": "れきし",
+      "meaning": "Sejarah"
+    }
+  },
+  {
+    "char": "残",
+    "onyomi": "ザン, サン",
+    "kunyomi": "のこ.る, のこ.す, そこな.う, のこ.り",
+    "meaning_id": "Tersisa / Tertinggal",
+    "meaning_en": "remainder, leftover, balance",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "残業",
+      "reading": "ざんぎょう",
+      "meaning": "Lembur kerja"
+    }
+  },
+  {
+    "char": "殺",
+    "onyomi": "サツ, サイ, セツ",
+    "kunyomi": "ころ.す, -ごろ.し, そ.ぐ, あや.める",
+    "meaning_id": "Membunuh",
+    "meaning_en": "kill, murder, butcher",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "自殺",
+      "reading": "じさつ",
+      "meaning": "Bunuh diri"
+    }
+  },
+  {
+    "char": "毒",
+    "onyomi": "ドク",
+    "kunyomi": "-",
+    "meaning_id": "Racun",
+    "meaning_en": "poison, virus, venom",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "消毒",
+      "reading": "しょうどく",
+      "meaning": "Disinfeksi"
+    }
+  },
+  {
+    "char": "毛",
+    "onyomi": "モウ",
+    "kunyomi": "け",
+    "meaning_id": "Bulu / Rambut halus",
+    "meaning_en": "fur, hair, feather",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "毛糸",
+      "reading": "けいと",
+      "meaning": "Benang wol"
+    }
+  },
+  {
+    "char": "氏",
+    "onyomi": "シ",
+    "kunyomi": "うじ, -うじ",
+    "meaning_id": "Marga keluarga / Tuan",
+    "meaning_en": "family name, surname, clan",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "氏名",
+      "reading": "しめい",
+      "meaning": "Nama lengkap"
+    }
+  },
+  {
+    "char": "氷",
+    "onyomi": "ヒョウ",
+    "kunyomi": "こおり, ひ, こお.る",
+    "meaning_id": "Es batu",
+    "meaning_en": "icicle, ice, hail",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "氷",
+      "reading": "こおり",
+      "meaning": "Es"
+    }
+  },
+  {
+    "char": "求",
+    "onyomi": "キュウ, グ",
+    "kunyomi": "もと.める",
+    "meaning_id": "Meminta / Mencari tuntutan",
+    "meaning_en": "request, want, wish for",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "要求",
+      "reading": "ようきゅう",
+      "meaning": "Tuntutan / Permintaan"
+    }
+  },
+  {
+    "char": "決",
+    "onyomi": "ケツ",
+    "kunyomi": "き-める, き-まる",
+    "meaning_id": "Memutuskan",
+    "meaning_en": "Decide / Fix",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "決して",
+      "reading": "けっして",
+      "meaning": "Sama sekali tidak"
+    }
+  },
+  {
+    "char": "汽",
+    "onyomi": "キ",
+    "kunyomi": "-",
+    "meaning_id": "Uap air (mesin)",
+    "meaning_en": "vapor, steam",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "汽車",
+      "reading": "きしゃ",
+      "meaning": "Kereta api uap"
+    }
+  },
+  {
+    "char": "油",
+    "onyomi": "ユ, ユウ",
+    "kunyomi": "あぶら",
+    "meaning_id": "Minyak",
+    "meaning_en": "oil, fat",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "石油",
+      "reading": "せきゆ",
+      "meaning": "Minyak bumi"
+    }
+  },
+  {
+    "char": "治",
+    "onyomi": "ジ, チ",
+    "kunyomi": "おさ-める, なお-る",
+    "meaning_id": "Memerintah / Sembuh",
+    "meaning_en": "Cure / Heal / Rule",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "治療",
+      "reading": "ちりょう",
+      "meaning": "Pengobatan / Terapi"
+    }
+  },
+  {
+    "char": "法",
+    "onyomi": "ホウ, ハッ, ホッ, フラン",
+    "kunyomi": "のり",
+    "meaning_id": "Hukum / Cara aturan",
+    "meaning_en": "method, law, rule",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "方法",
+      "reading": "ほうほう",
+      "meaning": "Metode / Cara"
+    }
+  },
+  {
+    "char": "波",
+    "onyomi": "ハ",
+    "kunyomi": "なみ",
+    "meaning_id": "Gelombang ombak",
+    "meaning_en": "waves, billows, Poland",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "津波",
+      "reading": "つなみ",
+      "meaning": "Gelombang tsunami"
+    }
+  },
+  {
+    "char": "泣",
+    "onyomi": "キュウ",
+    "kunyomi": "な.く",
+    "meaning_id": "Menangis",
+    "meaning_en": "cry, weep, moan",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "泣く",
+      "reading": "なく",
+      "meaning": "Menangis"
+    }
+  },
+  {
+    "char": "泳",
+    "onyomi": "エイ",
+    "kunyomi": "およ.ぐ",
+    "meaning_id": "Berenang",
+    "meaning_en": "swim",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "水泳",
+      "reading": "すいえい",
+      "meaning": "Olahraga renang"
+    }
+  },
+  {
+    "char": "活",
+    "onyomi": "カツ",
+    "kunyomi": "い.きる, い.かす, い.ける",
+    "meaning_id": "Hidup aktif / Dinamis",
+    "meaning_en": "lively, resuscitation, being helped",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "生活",
+      "reading": "せいかつ",
+      "meaning": "Kehidupan sehari-hari"
+    }
+  },
+  {
+    "char": "流",
+    "onyomi": "リュウ, ル",
+    "kunyomi": "なが.れる, なが.れ, なが.す, -なが.す",
+    "meaning_id": "Mengalir / Aliran",
+    "meaning_en": "current, a sink, flow",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "流行",
+      "reading": "りゅうこう",
+      "meaning": "Tren / Mode populer"
+    }
+  },
+  {
+    "char": "浅",
+    "onyomi": "セン",
+    "kunyomi": "あさ.い",
+    "meaning_id": "Dangkal",
+    "meaning_en": "shallow, superficial, frivolous",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "浅い",
+      "reading": "あさい",
+      "meaning": "Dangkal"
+    }
+  },
+  {
+    "char": "浴",
+    "onyomi": "ヨク",
+    "kunyomi": "あ.びる, あ.びせる",
+    "meaning_id": "Mandi / Berjemur",
+    "meaning_en": "bathe, be favored with, bask in",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "シャワーを浴びる",
+      "reading": "シャワーをあびる",
+      "meaning": "Mandi dengan pancuran"
+    }
+  },
+  {
+    "char": "消",
+    "onyomi": "ショウ",
+    "kunyomi": "き.える, け.す",
+    "meaning_id": "Padam / Menghapus",
+    "meaning_en": "extinguish, blow out, turn off",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "消しゴム",
+      "reading": "けしごむ",
+      "meaning": "Karet penghapus"
+    }
+  },
+  {
+    "char": "深",
+    "onyomi": "シン",
+    "kunyomi": "ふか.い, -ぶか.い, ふか.まる, ふか.める, み-",
+    "meaning_id": "Dalam (kedalaman)",
+    "meaning_en": "deep, heighten, intensify",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "深い",
+      "reading": "ふかい",
+      "meaning": "Dalam"
+    }
+  },
+  {
+    "char": "清",
+    "onyomi": "セイ, ショウ, シン",
+    "kunyomi": "きよ.い, きよ.まる, きよ.める",
+    "meaning_id": "Bersih jernih / Murni",
+    "meaning_en": "pure, purify, cleanse",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "清潔",
+      "reading": "せいけつ",
+      "meaning": "Higienis / Bersih"
+    }
+  },
+  {
+    "char": "温",
+    "onyomi": "オン",
+    "kunyomi": "あたた.か, あたた.かい, あたた.まる, あたた.める, ぬく",
+    "meaning_id": "Hangat",
+    "meaning_en": "warm",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "温度",
+      "reading": "おんど",
+      "meaning": "Suhu temperatur"
+    }
+  },
+  {
+    "char": "港",
+    "onyomi": "コウ",
+    "kunyomi": "みなと",
+    "meaning_id": "Pelabuhan laut",
+    "meaning_en": "harbor",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "空港",
+      "reading": "くうこう",
+      "meaning": "Bandara udara"
+    }
+  },
+  {
+    "char": "湖",
+    "onyomi": "コ",
+    "kunyomi": "みずうみ",
+    "meaning_id": "Danau",
+    "meaning_en": "lake",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "湖",
+      "reading": "みずうみ",
+      "meaning": "Danau"
+    }
+  },
+  {
+    "char": "湯",
+    "onyomi": "トウ",
+    "kunyomi": "ゆ",
+    "meaning_id": "Air panas",
+    "meaning_en": "hot water, bath, hot spring",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "お湯",
+      "reading": "おゆ",
+      "meaning": "Air panas"
+    }
+  },
+  {
+    "char": "満",
+    "onyomi": "マン",
+    "kunyomi": "み-ちる, み-たす",
+    "meaning_id": "Penuh / Puas",
+    "meaning_en": "Full / Satisfy",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "満足",
+      "reading": "まんぞく",
+      "meaning": "Puas"
+    }
+  },
+  {
+    "char": "漁",
+    "onyomi": "ギョ, リョウ",
+    "kunyomi": "あさ.る",
+    "meaning_id": "Menangkap ikan / Perikanan",
+    "meaning_en": "fishing, fishery",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "漁業",
+      "reading": "ぎょぎょう",
+      "meaning": "Industri perikanan"
+    }
+  },
+  {
+    "char": "灯",
+    "onyomi": "トウ",
+    "kunyomi": "ひ, ほ-, ともしび, とも.す, あかり",
+    "meaning_id": "Lampu lentera",
+    "meaning_en": "lamp, a light, light",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "電灯",
+      "reading": "でんとう",
+      "meaning": "Lampu listrik"
+    }
+  },
+  {
+    "char": "炭",
+    "onyomi": "タン",
+    "kunyomi": "すみ",
+    "meaning_id": "Arang batu",
+    "meaning_en": "charcoal, coal",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "石炭",
+      "reading": "せきたん",
+      "meaning": "Batu bara"
+    }
+  },
+  {
+    "char": "点",
+    "onyomi": "テン",
+    "kunyomi": "つ.ける, つ.く, た.てる, さ.す, とぼ.す, とも.す, ぼち",
+    "meaning_id": "Titik / Nilai poin",
+    "meaning_en": "spot, point, mark",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "交差点",
+      "reading": "こうさてん",
+      "meaning": "Persimpangan"
+    }
+  },
+  {
+    "char": "無",
+    "onyomi": "ム, ブ",
+    "kunyomi": "な.い",
+    "meaning_id": "Tidak ada / Nihil",
+    "meaning_en": "nothingness, none, ain't",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "無理",
+      "reading": "むり",
+      "meaning": "Mustahil / Terlalu memaksakan"
+    }
+  },
+  {
+    "char": "然",
+    "onyomi": "ゼン, ネン",
+    "kunyomi": "しか, しか.り, しか.し, さ",
+    "meaning_id": "Wajar demikian / Keadaan alami",
+    "meaning_en": "sort of thing, so, if so",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "全然",
+      "reading": "ぜんぜん",
+      "meaning": "Sama sekali tidak"
+    }
+  },
+  {
+    "char": "焼",
+    "onyomi": "ショウ",
+    "kunyomi": "や.く, や.き, や.き-, -や.き, や.ける",
+    "meaning_id": "Membakar / Memanggang",
+    "meaning_en": "bake, burning",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "焼き肉",
+      "reading": "やきにく",
+      "meaning": "Daging panggang"
+    }
+  },
+  {
+    "char": "照",
+    "onyomi": "ショウ",
+    "kunyomi": "て.る, て.らす, て.れる",
+    "meaning_id": "Menyinari / Bersinar terang",
+    "meaning_en": "illuminate, shine, compare",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "照れる",
+      "reading": "てれる",
+      "meaning": "Malu-malu tersipu"
+    }
+  },
+  {
+    "char": "熱",
+    "onyomi": "ネツ",
+    "kunyomi": "あつ.い",
+    "meaning_id": "Panas suhu / Demam",
+    "meaning_en": "heat, temperature, fever",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "熱心",
+      "reading": "ねっしん",
+      "meaning": "Antusias / Tekun"
+    }
+  },
+  {
+    "char": "牧",
+    "onyomi": "ボク",
+    "kunyomi": "まき",
+    "meaning_id": "Peternakan / Menggembala",
+    "meaning_en": "breed, care for, shepherd",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "牧場",
+      "reading": "ぼくじょう",
+      "meaning": "Lahan peternakan"
+    }
+  },
+  {
+    "char": "玉",
+    "onyomi": "ギョク",
+    "kunyomi": "たま, たま-, -だま",
+    "meaning_id": "Permata / Bola kelereng",
+    "meaning_en": "jewel, ball",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "目玉",
+      "reading": "めだま",
+      "meaning": "Bola mata"
+    }
+  },
+  {
+    "char": "王",
+    "onyomi": "オウ, -ノウ",
+    "kunyomi": "-",
+    "meaning_id": "Raja",
+    "meaning_en": "king, rule, magnate",
+    "level": "N3",
+    "strokes": 4,
+    "example": {
+      "ja": "王様",
+      "reading": "おうさま",
+      "meaning": "Baginda raja"
+    }
+  },
+  {
+    "char": "球",
+    "onyomi": "キュウ",
+    "kunyomi": "たま",
+    "meaning_id": "Bola bulat / Bola olahraga",
+    "meaning_en": "ball, sphere",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "野球",
+      "reading": "やきゅう",
+      "meaning": "Olahraga bisbol"
+    }
+  },
+  {
+    "char": "由",
+    "onyomi": "ユ, ユウ, ユイ",
+    "kunyomi": "よし, よ.る",
+    "meaning_id": "Alasan / Sebab mula",
+    "meaning_en": "wherefore, a reason",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "自由",
+      "reading": "じゆう",
+      "meaning": "Bebas / Kemerdekaan"
+    }
+  },
+  {
+    "char": "申",
+    "onyomi": "シン",
+    "kunyomi": "もう.す, もう.し-, さる",
+    "meaning_id": "Menyatakan sopan",
+    "meaning_en": "have the honor to, sign of the monkey, 3-5PM",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "申し込む",
+      "reading": "もうしこむ",
+      "meaning": "Mendaftar"
+    }
+  },
+  {
+    "char": "畑",
+    "onyomi": "-",
+    "kunyomi": "はた, はたけ, -ばたけ",
+    "meaning_id": "Ladang kebun kering",
+    "meaning_en": "farm, field, garden",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "畑",
+      "reading": "はたけ",
+      "meaning": "Ladang sayur"
+    }
+  },
+  {
+    "char": "番",
+    "onyomi": "バン",
+    "kunyomi": "つが.い",
+    "meaning_id": "Nomor urutan / Giliran",
+    "meaning_en": "turn, number in a series",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "交番",
+      "reading": "こうばん",
+      "meaning": "Pos polisi lingkungan"
+    }
+  },
+  {
+    "char": "登",
+    "onyomi": "トウ, ト, ドウ, ショウ, チョウ",
+    "kunyomi": "のぼ.る, あ.がる",
+    "meaning_id": "Mendaki / Memanjat",
+    "meaning_en": "ascend, climb up",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "登山",
+      "reading": "とざん",
+      "meaning": "Mendaki gunung"
+    }
+  },
+  {
+    "char": "的",
+    "onyomi": "テキ",
+    "kunyomi": "まと",
+    "meaning_id": "Sasaran / Sasaran target",
+    "meaning_en": "bull's eye, mark, target",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "目的",
+      "reading": "もくてき",
+      "meaning": "Tujuan sasaran"
+    }
+  },
+  {
+    "char": "皮",
+    "onyomi": "ヒ",
+    "kunyomi": "かわ",
+    "meaning_id": "Kulit buah / Kulit luar",
+    "meaning_en": "pelt, skin, hide",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "皮",
+      "reading": "かわ",
+      "meaning": "Kulit"
+    }
+  },
+  {
+    "char": "皿",
+    "onyomi": "ベイ",
+    "kunyomi": "さら",
+    "meaning_id": "Piring",
+    "meaning_en": "dish, a helping, plate",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "灰皿",
+      "reading": "はいざら",
+      "meaning": "Asbak"
+    }
+  },
+  {
+    "char": "直",
+    "onyomi": "チョク, ジキ, ジカ",
+    "kunyomi": "ただ.ちに, なお.す, -なお.す, なお.る, なお.き, す.ぐ",
+    "meaning_id": "Lurus / Memperbaiki langsung",
+    "meaning_en": "straightaway, honesty, frankness",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "直す",
+      "reading": "なおす",
+      "meaning": "Memperbaiki"
+    }
+  },
+  {
+    "char": "相",
+    "onyomi": "ソウ, ショウ",
+    "kunyomi": "あい-",
+    "meaning_id": "Saling / Mitra / Penampilan",
+    "meaning_en": "inter-, mutual, together",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "相談",
+      "reading": "そうだん",
+      "meaning": "Konsultasi"
+    }
+  },
+  {
+    "char": "省",
+    "onyomi": "セイ, ショウ",
+    "kunyomi": "かえり.みる, はぶ.く",
+    "meaning_id": "Kementerian / Menghemat / Meninjau diri",
+    "meaning_en": "government ministry, conserve, omit",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "反省",
+      "reading": "はんせい",
+      "meaning": "Instrospeksi diri"
+    }
+  },
+  {
+    "char": "矢",
+    "onyomi": "シ",
+    "kunyomi": "や",
+    "meaning_id": "Anak panah",
+    "meaning_en": "dart, arrow",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "矢印",
+      "reading": "やじるし",
+      "meaning": "Tanda panah petunjuk"
+    }
+  },
+  {
+    "char": "石",
+    "onyomi": "セキ, シャク, コク",
+    "kunyomi": "いし",
+    "meaning_id": "Batu",
+    "meaning_en": "stone",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "石けん",
+      "reading": "せっけん",
+      "meaning": "Sabun cuci"
+    }
+  },
+  {
+    "char": "礼",
+    "onyomi": "レイ, ライ",
+    "kunyomi": "-",
+    "meaning_id": "Tata krama / Ucapan terima kasih",
+    "meaning_en": "salute, bow, ceremony",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "お礼",
+      "reading": "おれい",
+      "meaning": "Ucapan terima kasih"
+    }
+  },
+  {
+    "char": "祝",
+    "onyomi": "シュク, シュウ",
+    "kunyomi": "いわ.う",
+    "meaning_id": "Merayakan / Ucapan selamat",
+    "meaning_en": "celebrate, congratulate",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "祝日",
+      "reading": "しゅくじつ",
+      "meaning": "Hari libur perayaan"
+    }
+  },
+  {
+    "char": "神",
+    "onyomi": "シン, ジン",
+    "kunyomi": "かみ, かん-, こう-",
+    "meaning_id": "Tuhan / Dewa Kami",
+    "meaning_en": "gods, mind, soul",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "神社",
+      "reading": "じんじゃ",
+      "meaning": "Kuil Shinto"
+    }
+  },
+  {
+    "char": "票",
+    "onyomi": "ヒョウ",
+    "kunyomi": "-",
+    "meaning_id": "Surat suara pemilu",
+    "meaning_en": "ballot, label, ticket",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "投票",
+      "reading": "とうひょう",
+      "meaning": "Pemungutan suara"
+    }
+  },
+  {
+    "char": "祭",
+    "onyomi": "サイ",
+    "kunyomi": "まつ.る, まつ.り, まつり",
+    "meaning_id": "Festival / Perayaan kuil",
+    "meaning_en": "ritual, offer prayers, celebrate",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "お祭り",
+      "reading": "おまつり",
+      "meaning": "Festival tradisional"
+    }
+  },
+  {
+    "char": "福",
+    "onyomi": "フク",
+    "kunyomi": "-",
+    "meaning_id": "Keberkahan / Rezeki baik",
+    "meaning_en": "blessing, fortune, luck",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "幸福",
+      "reading": "こうふく",
+      "meaning": "Kebahagiaan hakiki"
+    }
+  },
+  {
+    "char": "科",
+    "onyomi": "カ",
+    "kunyomi": "-",
+    "meaning_id": "Jurusan ilmu / Bagian sains",
+    "meaning_en": "department, course, section",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "科学",
+      "reading": "かがく",
+      "meaning": "Ilmu pengetahuan (sains)"
+    }
+  },
+  {
+    "char": "秒",
+    "onyomi": "ビョウ",
+    "kunyomi": "-",
+    "meaning_id": "Detik",
+    "meaning_en": "second (1/60 minute)",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "何秒",
+      "reading": "なんびょう",
+      "meaning": "Berapa detik"
+    }
+  },
+  {
+    "char": "種",
+    "onyomi": "シュ",
+    "kunyomi": "たね, -ぐさ",
+    "meaning_id": "Biji benih / Spesies jenis",
+    "meaning_en": "species, kind, class",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "種類",
+      "reading": "しゅるい",
+      "meaning": "Ragam jenis"
+    }
+  },
+  {
+    "char": "積",
+    "onyomi": "セキ",
+    "kunyomi": "つ.む, -づ.み, つ.もる, つ.もり",
+    "meaning_id": "Menumpuk / Mengumpulkan",
+    "meaning_en": "volume, product (x*y), acreage",
+    "level": "N3",
+    "strokes": 16,
+    "example": {
+      "ja": "積もる",
+      "reading": "つもる",
+      "meaning": "Menumpuk (salju)"
+    }
+  },
+  {
+    "char": "章",
+    "onyomi": "ショウ",
+    "kunyomi": "-",
+    "meaning_id": "Bab buku / Lambang lencana",
+    "meaning_en": "badge, chapter, composition",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "文章",
+      "reading": "ぶんしょう",
+      "meaning": "Kalimat / Paragraf teks"
+    }
+  },
+  {
+    "char": "童",
+    "onyomi": "ドウ",
+    "kunyomi": "わらべ",
+    "meaning_id": "Bocah / Anak kecil",
+    "meaning_en": "juvenile, child",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "童話",
+      "reading": "どうわ",
+      "meaning": "Dongeng anak-anak"
+    }
+  },
+  {
+    "char": "競",
+    "onyomi": "キョウ, ケイ",
+    "kunyomi": "きそ.う, せ.る, くら.べる",
+    "meaning_id": "Bertanding / Bersaing ketat",
+    "meaning_en": "emulate, compete with, bid",
+    "level": "N3",
+    "strokes": 20,
+    "example": {
+      "ja": "競争",
+      "reading": "きょうそう",
+      "meaning": "Kompetisi persaingan"
+    }
+  },
+  {
+    "char": "竹",
+    "onyomi": "チク",
+    "kunyomi": "たけ",
+    "meaning_id": "Bambu",
+    "meaning_en": "bamboo",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "竹",
+      "reading": "たけ",
+      "meaning": "Pohon bambu"
+    }
+  },
+  {
+    "char": "笑",
+    "onyomi": "ショウ",
+    "kunyomi": "わら.う, え.む",
+    "meaning_id": "Tersenyum / Tertawa",
+    "meaning_en": "laugh",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "笑う",
+      "reading": "わらう",
+      "meaning": "Tertawa"
+    }
+  },
+  {
+    "char": "笛",
+    "onyomi": "テキ",
+    "kunyomi": "ふえ",
+    "meaning_id": "Seruling / Peluit",
+    "meaning_en": "flute, clarinet, pipe",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "口笛",
+      "reading": "くちぶえ",
+      "meaning": "Siulan mulut"
+    }
+  },
+  {
+    "char": "第",
+    "onyomi": "ダイ, テイ",
+    "kunyomi": "-",
+    "meaning_id": "Tingkat / Urutan ke-",
+    "meaning_en": "No., residence",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "第一",
+      "reading": "だいいち",
+      "meaning": "Nomor satu / Pertama"
+    }
+  },
+  {
+    "char": "筆",
+    "onyomi": "ヒツ",
+    "kunyomi": "ふで",
+    "meaning_id": "Kuas kaligrafi / Menulis",
+    "meaning_en": "writing brush, writing, painting brush",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "筆記試験",
+      "reading": "ひっきしけん",
+      "meaning": "Ujian tertulis"
+    }
+  },
+  {
+    "char": "等",
+    "onyomi": "トウ",
+    "kunyomi": "ひと.しい, など, -ら",
+    "meaning_id": "Dan sebagainya / Setara",
+    "meaning_en": "etc., and so forth, class (first)",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "高等",
+      "reading": "こうとう",
+      "meaning": "Tingkat tinggi"
+    }
+  },
+  {
+    "char": "算",
+    "onyomi": "サン",
+    "kunyomi": "そろ",
+    "meaning_id": "Berhitung / Perhitungan",
+    "meaning_en": "calculate, divining, number",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "計算",
+      "reading": "けいさん",
+      "meaning": "Perhitungan matematis"
+    }
+  },
+  {
+    "char": "管",
+    "onyomi": "カン",
+    "kunyomi": "くだ",
+    "meaning_id": "Pipa saluran / Mengelola",
+    "meaning_en": "pipe, tube, wind instrument",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "管理",
+      "reading": "かんり",
+      "meaning": "Manajemen pengawasan"
+    }
+  },
+  {
+    "char": "箱",
+    "onyomi": "ソウ",
+    "kunyomi": "はこ",
+    "meaning_id": "Kotak / Kardus",
+    "meaning_en": "box, chest, case",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "ゴミ箱",
+      "reading": "ごみばこ",
+      "meaning": "Tempat sampah"
+    }
+  },
+  {
+    "char": "節",
+    "onyomi": "セツ, セチ",
+    "kunyomi": "ふし, -ぶし, のっと",
+    "meaning_id": "Buku sendi / Musim perayaan",
+    "meaning_en": "node, season, period",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "季節",
+      "reading": "きせつ",
+      "meaning": "Musim"
+    }
+  },
+  {
+    "char": "米",
+    "onyomi": "ベイ, マイ, メエトル",
+    "kunyomi": "こめ, よね",
+    "meaning_id": "Beras / Amerika Serikat",
+    "meaning_en": "rice, USA, metre",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "米",
+      "reading": "こめ",
+      "meaning": "Beras"
+    }
+  },
+  {
+    "char": "粉",
+    "onyomi": "フン",
+    "kunyomi": "デシメートル, こ, こな",
+    "meaning_id": "Tepung bubuk",
+    "meaning_en": "flour, powder, dust",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "粉",
+      "reading": "こな",
+      "meaning": "Tepung"
+    }
+  },
+  {
+    "char": "糸",
+    "onyomi": "シ",
+    "kunyomi": "いと",
+    "meaning_id": "Benang rajut",
+    "meaning_en": "thread",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "毛糸",
+      "reading": "けいと",
+      "meaning": "Benang wol"
+    }
+  },
+  {
+    "char": "紀",
+    "onyomi": "キ",
+    "kunyomi": "-",
+    "meaning_id": "Abad era / Catatan sejarah",
+    "meaning_en": "chronicle, account, narrative",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "世紀",
+      "reading": "せいき",
+      "meaning": "Abad"
+    }
+  },
+  {
+    "char": "約",
+    "onyomi": "ヤク",
+    "kunyomi": "-",
+    "meaning_id": "Janji / Kira-kira / Singkat",
+    "meaning_en": "Promise / Approximate",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "約束",
+      "reading": "やくそく",
+      "meaning": "Janji"
+    }
+  },
+  {
+    "char": "級",
+    "onyomi": "キュウ",
+    "kunyomi": "-",
+    "meaning_id": "Tingkatan / Kelas level",
+    "meaning_en": "class, rank, grade",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "学級",
+      "reading": "がっきゅう",
+      "meaning": "Rombongan belajar kelas"
+    }
+  },
+  {
+    "char": "細",
+    "onyomi": "サイ",
+    "kunyomi": "ほそ.い, ほそ.る, こま.か, こま.かい",
+    "meaning_id": "Kecil halus / Sempit",
+    "meaning_en": "dainty, get thin, taper",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "細かい",
+      "reading": "こまかい",
+      "meaning": "Kecil terperinci"
+    }
+  },
+  {
+    "char": "組",
+    "onyomi": "ソ",
+    "kunyomi": "く.む, くみ, -ぐみ",
+    "meaning_id": "Merangkai / Kelompok tim",
+    "meaning_en": "association, braid, plait",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "番組",
+      "reading": "ばんぐみ",
+      "meaning": "Acara siaran TV"
+    }
+  },
+  {
+    "char": "結",
+    "onyomi": "ケツ",
+    "kunyomi": "むす-ぶ, ゆ-わえる",
+    "meaning_id": "Mengikat / Menghubungkan",
+    "meaning_en": "Tie / Bind / Conclude",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "結果",
+      "reading": "けっか",
+      "meaning": "Hasil"
+    }
+  },
+  {
+    "char": "給",
+    "onyomi": "キュウ",
+    "kunyomi": "たま.う, たも.う, -たま.え",
+    "meaning_id": "Memberi upah / Pasokan",
+    "meaning_en": "salary, wage, gift",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "給料",
+      "reading": "きゅうりょう",
+      "meaning": "Gaji upah kerja"
+    }
+  },
+  {
+    "char": "絵",
+    "onyomi": "カイ, エ",
+    "kunyomi": "-",
+    "meaning_id": "Lukisan / Gambar seni",
+    "meaning_en": "picture, drawing, painting",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "絵本",
+      "reading": "えほん",
+      "meaning": "Buku bergambar"
+    }
+  },
+  {
+    "char": "続",
+    "onyomi": "ゾク, ショク, コウ, キョウ",
+    "kunyomi": "つづ.く, つづ.ける, つぐ.ない",
+    "meaning_id": "Berlanjut / Meneruskan",
+    "meaning_en": "continue, series, sequel",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "続ける",
+      "reading": "つづける",
+      "meaning": "Melanjutkan"
+    }
+  },
+  {
+    "char": "緑",
+    "onyomi": "リョク, ロク",
+    "kunyomi": "みどり",
+    "meaning_id": "Warna hijau",
+    "meaning_en": "green",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "緑色",
+      "reading": "みどりいろ",
+      "meaning": "Warna hijau"
+    }
+  },
+  {
+    "char": "線",
+    "onyomi": "セン",
+    "kunyomi": "すじ",
+    "meaning_id": "Garis / Rel jalur kereta",
+    "meaning_en": "line, track",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "新幹線",
+      "reading": "しんかんせん",
+      "meaning": "Kereta cepat Shinkansen"
+    }
+  },
+  {
+    "char": "練",
+    "onyomi": "レン",
+    "kunyomi": "ね.る, ね.り",
+    "meaning_id": "Berlatih / Menggembleng",
+    "meaning_en": "practice, gloss, train",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "練習",
+      "reading": "れんしゅう",
+      "meaning": "Latihan"
+    }
+  },
+  {
+    "char": "置",
+    "onyomi": "チ",
+    "kunyomi": "お.く, -お.き",
+    "meaning_id": "Menaruh / Meletakkan",
+    "meaning_en": "placement, put, set",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "置く",
+      "reading": "おく",
+      "meaning": "Meletakkan"
+    }
+  },
+  {
+    "char": "羊",
+    "onyomi": "ヨウ",
+    "kunyomi": "ひつじ",
+    "meaning_id": "Domba biri-biri",
+    "meaning_en": "sheep",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "羊",
+      "reading": "ひつじ",
+      "meaning": "Domba"
+    }
+  },
+  {
+    "char": "美",
+    "onyomi": "ビ, ミ",
+    "kunyomi": "うつく.しい",
+    "meaning_id": "Indah / Kecantikan",
+    "meaning_en": "beauty, beautiful",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "美しい",
+      "reading": "うつくしい",
+      "meaning": "Indah / Cantik"
+    }
+  },
+  {
+    "char": "羽",
+    "onyomi": "ウ",
+    "kunyomi": "は, わ, はね",
+    "meaning_id": "Sayap burung / Lembar bulu",
+    "meaning_en": "feathers, counter for birds, rabbits",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "羽",
+      "reading": "はね",
+      "meaning": "Sayap"
+    }
+  },
+  {
+    "char": "老",
+    "onyomi": "ロウ",
+    "kunyomi": "お.いる, ふ.ける",
+    "meaning_id": "Tua lanjut usia",
+    "meaning_en": "old man, old age, grow old",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "老人",
+      "reading": "ろうじん",
+      "meaning": "Lanjut usia (lansia)"
+    }
+  },
+  {
+    "char": "育",
+    "onyomi": "イク",
+    "kunyomi": "そだ.つ, そだ.ち, そだ.てる, はぐく.む",
+    "meaning_id": "Membesarkan / Mendidik",
+    "meaning_en": "bring up, grow up, raise",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "育てる",
+      "reading": "そだてる",
+      "meaning": "Mengasuh / Mendidik"
+    }
+  },
+  {
+    "char": "胃",
+    "onyomi": "イ",
+    "kunyomi": "-",
+    "meaning_id": "Lambung perut",
+    "meaning_en": "stomach, paunch, crop",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "胃",
+      "reading": "い",
+      "meaning": "Organ lambung"
+    }
+  },
+  {
+    "char": "脈",
+    "onyomi": "ミャク",
+    "kunyomi": "すじ",
+    "meaning_id": "Denyut nadi / Aliran",
+    "meaning_en": "vein, pulse, hope",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "脈",
+      "reading": "みゃく",
+      "meaning": "Denyut nadi"
+    }
+  },
+  {
+    "char": "腸",
+    "onyomi": "チョウ",
+    "kunyomi": "はらわた, わた",
+    "meaning_id": "Usus organ dalam",
+    "meaning_en": "intestines, guts, bowels",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "胃腸",
+      "reading": "いちょう",
+      "meaning": "Saluran pencernaan"
+    }
+  },
+  {
+    "char": "臣",
+    "onyomi": "シン, ジン",
+    "kunyomi": "-",
+    "meaning_id": "Menteri pembantu raja",
+    "meaning_en": "retainer, subject",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "大臣",
+      "reading": "だいじん",
+      "meaning": "Menteri kabinet"
+    }
+  },
+  {
+    "char": "航",
+    "onyomi": "コウ",
+    "kunyomi": "-",
+    "meaning_id": "Pelayaran / Penerbangan udara",
+    "meaning_en": "navigate, sail, cruise",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "航空",
+      "reading": "こうくう",
+      "meaning": "Penerbangan"
+    }
+  },
+  {
+    "char": "船",
+    "onyomi": "セン",
+    "kunyomi": "ふね, ふな-",
+    "meaning_id": "Perahu / Kapal laut",
+    "meaning_en": "ship, boat",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "風船",
+      "reading": "ふうせん",
+      "meaning": "Balon tiup"
+    }
+  },
+  {
+    "char": "良",
+    "onyomi": "リョウ",
+    "kunyomi": "よ.い, -よ.い, い.い, -い.い",
+    "meaning_id": "Bagus / Baik",
+    "meaning_en": "good, pleasing, skilled",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "良い",
+      "reading": "よい",
+      "meaning": "Bagus"
+    }
+  },
+  {
+    "char": "芸",
+    "onyomi": "ゲイ, ウン",
+    "kunyomi": "う.える, のり, わざ",
+    "meaning_id": "Seni pertunjukan / Keterampilan",
+    "meaning_en": "technique, art, craft",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "芸術",
+      "reading": "げいじゅつ",
+      "meaning": "Karya seni"
+    }
+  },
+  {
+    "char": "芽",
+    "onyomi": "ガ",
+    "kunyomi": "め",
+    "meaning_id": "Tunas tanaman baru",
+    "meaning_en": "bud, sprout, spear",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "芽",
+      "reading": "め",
+      "meaning": "Tunas muda"
+    }
+  },
+  {
+    "char": "苦",
+    "onyomi": "ク",
+    "kunyomi": "くる-しい, にが-い",
+    "meaning_id": "Pahit / Menderita",
+    "meaning_en": "Bitter / Suffering",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "苦手",
+      "reading": "にがて",
+      "meaning": "Kelemahan / Tidak pandai"
+    }
+  },
+  {
+    "char": "草",
+    "onyomi": "ソウ",
+    "kunyomi": "くさ, くさ-, -ぐさ",
+    "meaning_id": "Rumput ilalang",
+    "meaning_en": "grass, weeds, herbs",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "草",
+      "reading": "くさ",
+      "meaning": "Rumput"
+    }
+  },
+  {
+    "char": "荷",
+    "onyomi": "カ",
+    "kunyomi": "に",
+    "meaning_id": "Muatan barang bagasi",
+    "meaning_en": "baggage, shoulder-pole load, bear (a burden)",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "荷物",
+      "reading": "にもつ",
+      "meaning": "Barang bawaan"
+    }
+  },
+  {
+    "char": "落",
+    "onyomi": "ラク",
+    "kunyomi": "お.ちる, お.ち, お.とす",
+    "meaning_id": "Jatuh gugur / Runtuh",
+    "meaning_en": "fall, drop, come down",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "落とす",
+      "reading": "おとす",
+      "meaning": "Menjatuhkan"
+    }
+  },
+  {
+    "char": "葉",
+    "onyomi": "ヨウ",
+    "kunyomi": "は",
+    "meaning_id": "Daun dedaunan",
+    "meaning_en": "leaf, plane, lobe",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "葉っぱ",
+      "reading": "はっぱ",
+      "meaning": "Daun"
+    }
+  },
+  {
+    "char": "虫",
+    "onyomi": "チュウ, キ",
+    "kunyomi": "むし",
+    "meaning_id": "Serangga binatang melata",
+    "meaning_en": "insect, bug, temper",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "虫",
+      "reading": "むし",
+      "meaning": "Serangga"
+    }
+  },
+  {
+    "char": "血",
+    "onyomi": "ケツ",
+    "kunyomi": "ち",
+    "meaning_id": "Darah",
+    "meaning_en": "blood",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "血",
+      "reading": "ち",
+      "meaning": "Darah"
+    }
+  },
+  {
+    "char": "街",
+    "onyomi": "ガイ, カイ",
+    "kunyomi": "まち",
+    "meaning_id": "Jalanan kota / Pertokoan",
+    "meaning_en": "boulevard, street, town",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "街",
+      "reading": "まち",
+      "meaning": "Jalanan kota"
+    }
+  },
+  {
+    "char": "衣",
+    "onyomi": "イ, エ",
+    "kunyomi": "ころも, きぬ, -ぎ",
+    "meaning_id": "Pakaian busana",
+    "meaning_en": "garment, clothes, dressing",
+    "level": "N3",
+    "strokes": 6,
+    "example": {
+      "ja": "衣服",
+      "reading": "いふく",
+      "meaning": "Pakaian"
+    }
+  },
+  {
+    "char": "表",
+    "onyomi": "ヒョウ",
+    "kunyomi": "おもて, -おもて, あらわ.す, あらわ.れる, あら.わす",
+    "meaning_id": "Permukaan luar / Tabel daftar",
+    "meaning_en": "surface, table, chart",
+    "level": "N3",
+    "strokes": 8,
+    "example": {
+      "ja": "表",
+      "reading": "おもて",
+      "meaning": "Tampak depan"
+    }
+  },
+  {
+    "char": "要",
+    "onyomi": "ヨウ",
+    "kunyomi": "い.る, かなめ",
+    "meaning_id": "Penting / Membutuhkan",
+    "meaning_en": "need, main point, essence",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "必要",
+      "reading": "ひつよう",
+      "meaning": "Perlu / Dibutuhkan"
+    }
+  },
+  {
+    "char": "覚",
+    "onyomi": "カク",
+    "kunyomi": "おぼ.える, さ.ます, さ.める, さと.る",
+    "meaning_id": "Mengingat / Sadar terjaga",
+    "meaning_en": "memorize, learn, remember",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "覚える",
+      "reading": "おぼえる",
+      "meaning": "Menghafal / Mengingat"
+    }
+  },
+  {
+    "char": "観",
+    "onyomi": "カン",
+    "kunyomi": "み.る, しめ.す",
+    "meaning_id": "Mengamati / Menonton / Pandangan",
+    "meaning_en": "outlook, look, appearance",
+    "level": "N3",
+    "strokes": 18,
+    "example": {
+      "ja": "観光",
+      "reading": "かんこう",
+      "meaning": "Pariwisata tour"
+    }
+  },
+  {
+    "char": "角",
+    "onyomi": "カク",
+    "kunyomi": "かど, つの",
+    "meaning_id": "Sudut tikungan / Tanduk",
+    "meaning_en": "angle, corner, square",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "角",
+      "reading": "かど",
+      "meaning": "Sudut belokan jalan"
+    }
+  },
+  {
+    "char": "訓",
+    "onyomi": "クン, キン",
+    "kunyomi": "おし.える, よ.む, くん.ずる",
+    "meaning_id": "Petuah ajaran / Latihan",
+    "meaning_en": "instruction, Japanese character reading, explanation",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "訓読み",
+      "reading": "くんよみ",
+      "meaning": "Cara baca Kunyomi"
+    }
+  },
+  {
+    "char": "記",
+    "onyomi": "キ",
+    "kunyomi": "しる.す",
+    "meaning_id": "Mencatat riwayat / Artikel",
+    "meaning_en": "scribe, account, narrative",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "日記",
+      "reading": "にっき",
+      "meaning": "Buku harian"
+    }
+  },
+  {
+    "char": "詩",
+    "onyomi": "シ",
+    "kunyomi": "うた",
+    "meaning_id": "Puisi sajak",
+    "meaning_en": "poem, poetry",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "詩",
+      "reading": "し",
+      "meaning": "Karya puisi"
+    }
+  },
+  {
+    "char": "課",
+    "onyomi": "カ",
+    "kunyomi": "-",
+    "meaning_id": "Bab pelajaran / Divisi seksi",
+    "meaning_en": "chapter, lesson, section",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "課長",
+      "reading": "かちょう",
+      "meaning": "Kepala divisi (Kacho)"
+    }
+  },
+  {
+    "char": "調",
+    "onyomi": "チョウ",
+    "kunyomi": "しら.べる, しら.べ, ととの.う, ととの.える",
+    "meaning_id": "Menyelidiki / Meneliti nada",
+    "meaning_en": "tune, tone, meter",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "調べる",
+      "reading": "しらべる",
+      "meaning": "Mencari tahu / Menyelidiki"
+    }
+  },
+  {
+    "char": "談",
+    "onyomi": "ダン",
+    "kunyomi": "-",
+    "meaning_id": "Percakapan bincang-bincang",
+    "meaning_en": "discuss, talk",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "相談",
+      "reading": "そうだん",
+      "meaning": "Konsultasi"
+    }
+  },
+  {
+    "char": "議",
+    "onyomi": "ギ",
+    "kunyomi": "-",
+    "meaning_id": "Bermusyawarah / Rapat perdebatan",
+    "meaning_en": "deliberation, consultation, debate",
+    "level": "N3",
+    "strokes": 20,
+    "example": {
+      "ja": "会議",
+      "reading": "かいぎ",
+      "meaning": "Rapat pertemuan"
+    }
+  },
+  {
+    "char": "谷",
+    "onyomi": "コク",
+    "kunyomi": "たに, きわ.まる",
+    "meaning_id": "Lembah ngarai jurang",
+    "meaning_en": "valley",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "谷",
+      "reading": "たに",
+      "meaning": "Lembah"
+    }
+  },
+  {
+    "char": "豆",
+    "onyomi": "トウ, ズ",
+    "kunyomi": "まめ, まめ-",
+    "meaning_id": "Kacang kedelai",
+    "meaning_en": "beans, pea, midget",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "大豆",
+      "reading": "だいず",
+      "meaning": "Kacang kedelai"
+    }
+  },
+  {
+    "char": "象",
+    "onyomi": "ショウ, ゾウ",
+    "kunyomi": "かたど-る",
+    "meaning_id": "Fenomena / Gambar / Gajah",
+    "meaning_en": "Phenomenon / Elephant",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "印象",
+      "reading": "いんしょう",
+      "meaning": "Kesan"
+    }
+  },
+  {
+    "char": "貝",
+    "onyomi": "バイ",
+    "kunyomi": "かい",
+    "meaning_id": "Kerang moluska",
+    "meaning_en": "shellfish",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "貝",
+      "reading": "かい",
+      "meaning": "Kerang laut"
+    }
+  },
+  {
+    "char": "負",
+    "onyomi": "フ",
+    "kunyomi": "ま.ける, ま.かす, お.う",
+    "meaning_id": "Kalah bertanding / Menanggung beban",
+    "meaning_en": "defeat, negative, -",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "負ける",
+      "reading": "まける",
+      "meaning": "Kalah"
+    }
+  },
+  {
+    "char": "貨",
+    "onyomi": "カ",
+    "kunyomi": "たから",
+    "meaning_id": "Komoditas barang / Mata uang",
+    "meaning_en": "freight, goods, property",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "通貨",
+      "reading": "つうか",
+      "meaning": "Mata uang moneter"
+    }
+  },
+  {
+    "char": "貯",
+    "onyomi": "チョ",
+    "kunyomi": "た.める, たくわ.える",
+    "meaning_id": "Menabung / Menyimpan dana",
+    "meaning_en": "savings, store, lay in",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "貯金",
+      "reading": "ちょきん",
+      "meaning": "Tabungan uang"
+    }
+  },
+  {
+    "char": "費",
+    "onyomi": "ヒ",
+    "kunyomi": "つい.やす, つい.える",
+    "meaning_id": "Pengeluaran biaya belanja",
+    "meaning_en": "expense, cost, spend",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "費用",
+      "reading": "ひよう",
+      "meaning": "Ongkos biaya"
+    }
+  },
+  {
+    "char": "賞",
+    "onyomi": "ショウ",
+    "kunyomi": "ほ.める",
+    "meaning_id": "Hadiah penghargaan piala",
+    "meaning_en": "prize, reward, praise",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "賞金",
+      "reading": "しょうきん",
+      "meaning": "Uang hadiah"
+    }
+  },
+  {
+    "char": "路",
+    "onyomi": "ロ, ル",
+    "kunyomi": "-じ, みち",
+    "meaning_id": "Jalanan lintasan",
+    "meaning_en": "path, route, road",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "線路",
+      "reading": "せんろ",
+      "meaning": "Rel kereta"
+    }
+  },
+  {
+    "char": "身",
+    "onyomi": "シン",
+    "kunyomi": "み",
+    "meaning_id": "Tubuh raga / Kedudukan diri",
+    "meaning_en": "somebody, person, one's station in life",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "自分自身",
+      "reading": "じぶんじしん",
+      "meaning": "Diri sendiri"
+    }
+  },
+  {
+    "char": "軍",
+    "onyomi": "グン",
+    "kunyomi": "いくさ",
+    "meaning_id": "Angkatan bersenjata militer",
+    "meaning_en": "army, force, troops",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "軍隊",
+      "reading": "ぐんたい",
+      "meaning": "Pasukan militer"
+    }
+  },
+  {
+    "char": "輪",
+    "onyomi": "リン",
+    "kunyomi": "わ",
+    "meaning_id": "Roda lingkaran cincin",
+    "meaning_en": "wheel, ring, circle",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "指輪",
+      "reading": "ゆびわ",
+      "meaning": "Cincin jari"
+    }
+  },
+  {
+    "char": "辞",
+    "onyomi": "ジ",
+    "kunyomi": "や.める, いな.む",
+    "meaning_id": "Mengundurkan diri / Kata ucapan",
+    "meaning_en": "resign, word, term",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "辞書",
+      "reading": "じしょ",
+      "meaning": "Kamus kata"
+    }
+  },
+  {
+    "char": "農",
+    "onyomi": "ノウ",
+    "kunyomi": "-",
+    "meaning_id": "Pertanian / Agraris",
+    "meaning_en": "agriculture, farmers",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "農業",
+      "reading": "のうぎょう",
+      "meaning": "Sektor pertanian"
+    }
+  },
+  {
+    "char": "辺",
+    "onyomi": "ヘン",
+    "kunyomi": "あた.り, ほと.り, -べ",
+    "meaning_id": "Tepi kawasan / Area sekeliling",
+    "meaning_en": "environs, boundary, border",
+    "level": "N3",
+    "strokes": 5,
+    "example": {
+      "ja": "この辺",
+      "reading": "このへん",
+      "meaning": "Sekitar area sini"
+    }
+  },
+  {
+    "char": "返",
+    "onyomi": "ヘン",
+    "kunyomi": "かえ.す, -かえ.す, かえ.る, -かえ.る",
+    "meaning_id": "Mengembalikan / Membalas",
+    "meaning_en": "return, answer, fade",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "返す",
+      "reading": "かえす",
+      "meaning": "Mengembalikan barang"
+    }
+  },
+  {
+    "char": "追",
+    "onyomi": "ツイ",
+    "kunyomi": "お.う",
+    "meaning_id": "Mengejar / Menyusul",
+    "meaning_en": "chase, drive away, follow",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "追う",
+      "reading": "おう",
+      "meaning": "Mengejar"
+    }
+  },
+  {
+    "char": "速",
+    "onyomi": "ソク",
+    "kunyomi": "はや.い, はや-, はや.める, すみ.やか",
+    "meaning_id": "Cepat laju kecepatan",
+    "meaning_en": "quick, fast",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "速い",
+      "reading": "はやい",
+      "meaning": "Cepat lajunya"
+    }
+  },
+  {
+    "char": "連",
+    "onyomi": "レン",
+    "kunyomi": "つら-なる, つ-れる",
+    "meaning_id": "Menghubungkan / Bergabung",
+    "meaning_en": "Connect / Link",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "連絡",
+      "reading": "れんらく",
+      "meaning": "Kontak / Hubungi"
+    }
+  },
+  {
+    "char": "遊",
+    "onyomi": "ユウ, ユ",
+    "kunyomi": "あそ.ぶ, あそ.ばす",
+    "meaning_id": "Bermain / Berpesiar santai",
+    "meaning_en": "play",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "遊ぶ",
+      "reading": "あそぶ",
+      "meaning": "Bermain"
+    }
+  },
+  {
+    "char": "達",
+    "onyomi": "タツ, ダ",
+    "kunyomi": "-たち",
+    "meaning_id": "Mencapai target / Bentuk jamak plural",
+    "meaning_en": "accomplished, reach, arrive",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "友達",
+      "reading": "ともだち",
+      "meaning": "Teman-teman"
+    }
+  },
+  {
+    "char": "選",
+    "onyomi": "セン",
+    "kunyomi": "えら.ぶ, え.る, よ.る",
+    "meaning_id": "Memilih / Seleksi",
+    "meaning_en": "elect, select, choose",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "選ぶ",
+      "reading": "えらぶ",
+      "meaning": "Memilih"
+    }
+  },
+  {
+    "char": "郡",
+    "onyomi": "グン",
+    "kunyomi": "こおり",
+    "meaning_id": "Kabupaten pedesaan",
+    "meaning_en": "county, district",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "郡",
+      "reading": "ぐん",
+      "meaning": "Wilayah kabupaten"
+    }
+  },
+  {
+    "char": "部",
+    "onyomi": "ブ",
+    "kunyomi": "-べ",
+    "meaning_id": "Bagian divisi / Departemen",
+    "meaning_en": "section, bureau, dept",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "部屋",
+      "reading": "へや",
+      "meaning": "Kamar ruangan"
+    }
+  },
+  {
+    "char": "配",
+    "onyomi": "ハイ",
+    "kunyomi": "くば.る",
+    "meaning_id": "Membagikan kuota / Khawatir",
+    "meaning_en": "distribute, spouse, exile",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "心配",
+      "reading": "しんぱい",
+      "meaning": "Khawatir cemas"
+    }
+  },
+  {
+    "char": "酒",
+    "onyomi": "シュ",
+    "kunyomi": "さけ, さか-",
+    "meaning_id": "Minuman beralkohol sake",
+    "meaning_en": "sake, alcohol",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "お酒",
+      "reading": "おさけ",
+      "meaning": "Sake / Minuman alkohol"
+    }
+  },
+  {
+    "char": "里",
+    "onyomi": "リ",
+    "kunyomi": "さと",
+    "meaning_id": "Desa asal kampung halaman",
+    "meaning_en": "ri, village, parent's home",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "故郷",
+      "reading": "ふるさと",
+      "meaning": "Kampung halaman"
+    }
+  },
+  {
+    "char": "量",
+    "onyomi": "リョウ",
+    "kunyomi": "はか.る",
+    "meaning_id": "Jumlah kuantitas / Takaran",
+    "meaning_en": "quantity, measure, weight",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "重量",
+      "reading": "じゅうりょう",
+      "meaning": "Bobot berat"
+    }
+  },
+  {
+    "char": "鉄",
+    "onyomi": "テツ",
+    "kunyomi": "くろがね",
+    "meaning_id": "Besi logam",
+    "meaning_en": "iron",
+    "level": "N3",
+    "strokes": 13,
+    "example": {
+      "ja": "地下鉄",
+      "reading": "ちかてつ",
+      "meaning": "Kereta bawah tanah"
+    }
+  },
+  {
+    "char": "録",
+    "onyomi": "ロク",
+    "kunyomi": "しる.す, と.る",
+    "meaning_id": "Merekam catatan arsip",
+    "meaning_en": "record",
+    "level": "N3",
+    "strokes": 16,
+    "example": {
+      "ja": "記録",
+      "reading": "きろく",
+      "meaning": "Rekor / Catatan"
+    }
+  },
+  {
+    "char": "鏡",
+    "onyomi": "キョウ, ケイ",
+    "kunyomi": "かがみ",
+    "meaning_id": "Cermin kaca pantul",
+    "meaning_en": "mirror, speculum, barrel-head",
+    "level": "N3",
+    "strokes": 19,
+    "example": {
+      "ja": "鏡",
+      "reading": "かがみ",
+      "meaning": "Cermin"
+    }
+  },
+  {
+    "char": "関",
+    "onyomi": "カン",
+    "kunyomi": "せき, -ぜき, かか.わる, からくり, かんぬき",
+    "meaning_id": "Gerbang pintu / Kaitan relasi",
+    "meaning_en": "connection, barrier, gateway",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "関係",
+      "reading": "かんけい",
+      "meaning": "Hubungan"
+    }
+  },
+  {
+    "char": "陸",
+    "onyomi": "リク, ロク",
+    "kunyomi": "おか",
+    "meaning_id": "Daratan benua",
+    "meaning_en": "land, six",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "大陸",
+      "reading": "たいりく",
+      "meaning": "Benua"
+    }
+  },
+  {
+    "char": "陽",
+    "onyomi": "ヨウ",
+    "kunyomi": "ひ",
+    "meaning_id": "Matahari siang cerah / Positif Yang",
+    "meaning_en": "sunshine, yang principle, positive",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "太陽",
+      "reading": "たいよう",
+      "meaning": "Matahari surya"
+    }
+  },
+  {
+    "char": "隊",
+    "onyomi": "タイ",
+    "kunyomi": "-",
+    "meaning_id": "Regu tim korps",
+    "meaning_en": "regiment, party, company",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "軍隊",
+      "reading": "ぐんたい",
+      "meaning": "Pasukan militer"
+    }
+  },
+  {
+    "char": "階",
+    "onyomi": "カイ",
+    "kunyomi": "きざはし",
+    "meaning_id": "Lantai tingkat / Tangga",
+    "meaning_en": "storey, stair, counter for storeys of a building",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "階段",
+      "reading": "かいだん",
+      "meaning": "Tangga"
+    }
+  },
+  {
+    "char": "雪",
+    "onyomi": "セツ",
+    "kunyomi": "ゆき",
+    "meaning_id": "Salju",
+    "meaning_en": "snow",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "雪だるま",
+      "reading": "ゆきだるま",
+      "meaning": "Orang-orangan salju"
+    }
+  },
+  {
+    "char": "雲",
+    "onyomi": "ウン",
+    "kunyomi": "くも, -ぐも",
+    "meaning_id": "Awan mega di langit",
+    "meaning_en": "cloud",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "雨雲",
+      "reading": "あまぐも",
+      "meaning": "Awan mendung"
+    }
+  },
+  {
+    "char": "静",
+    "onyomi": "セイ, ジョウ",
+    "kunyomi": "しず-, しず.か, しず.まる, しず.める",
+    "meaning_id": "Sunyi tenang / Hening",
+    "meaning_en": "quiet",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "静か",
+      "reading": "しずか",
+      "meaning": "Tenang / Sunyi"
+    }
+  },
+  {
+    "char": "面",
+    "onyomi": "メン, ベン",
+    "kunyomi": "おも, おもて, つら",
+    "meaning_id": "Wajah paras / Permukaan bidang",
+    "meaning_en": "mask, face, features",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "面白い",
+      "reading": "おもしろい",
+      "meaning": "Menarik / Asyik"
+    }
+  },
+  {
+    "char": "順",
+    "onyomi": "ジュン",
+    "kunyomi": "-",
+    "meaning_id": "Urutan bergiliran / Teratur patuh",
+    "meaning_en": "obey, order, turn",
+    "level": "N3",
+    "strokes": 12,
+    "example": {
+      "ja": "順番",
+      "reading": "じゅんばん",
+      "meaning": "Giliran urutan"
+    }
+  },
+  {
+    "char": "願",
+    "onyomi": "ガン",
+    "kunyomi": "ねが-う",
+    "meaning_id": "Memohon / Harapan",
+    "meaning_en": "Request / Wish",
+    "level": "N3",
+    "strokes": 19,
+    "example": {
+      "ja": "お願いします",
+      "reading": "おねがいします",
+      "meaning": "Tolong / Mohon"
+    }
+  },
+  {
+    "char": "類",
+    "onyomi": "ルイ",
+    "kunyomi": "たぐ.い",
+    "meaning_id": "Jenis variasi / Klasifikasi",
+    "meaning_en": "sort, kind, variety",
+    "level": "N3",
+    "strokes": 18,
+    "example": {
+      "ja": "書類",
+      "reading": "しょるい",
+      "meaning": "Dokumen berkas"
+    }
+  },
+  {
+    "char": "飛",
+    "onyomi": "ヒ",
+    "kunyomi": "と.ぶ, と.ばす, -と.ばす",
+    "meaning_id": "Terbang melayang di udara",
+    "meaning_en": "fly, skip (pages), scatter",
+    "level": "N3",
+    "strokes": 9,
+    "example": {
+      "ja": "飛行機",
+      "reading": "ひこうき",
+      "meaning": "Pesawat terbang"
+    }
+  },
+  {
+    "char": "養",
+    "onyomi": "ヨウ, リョウ",
+    "kunyomi": "やしな.う",
+    "meaning_id": "Memelihara / Memberi nafkah gizi",
+    "meaning_en": "foster, bring up, rear",
+    "level": "N3",
+    "strokes": 15,
+    "example": {
+      "ja": "教養",
+      "reading": "きょうよう",
+      "meaning": "Pendidikan etika"
+    }
+  },
+  {
+    "char": "馬",
+    "onyomi": "バ, メ, マ, ボ, モ",
+    "kunyomi": "うま, ま",
+    "meaning_id": "Kuda",
+    "meaning_en": "horse",
+    "level": "N3",
+    "strokes": 10,
+    "example": {
+      "ja": "乗馬",
+      "reading": "じょうば",
+      "meaning": "Berkuda"
+    }
+  },
+  {
+    "char": "鳴",
+    "onyomi": "メイ",
+    "kunyomi": "な.く, な.る, な.らす",
+    "meaning_id": "Berbunyi dering / Kicauan",
+    "meaning_en": "chirp, cry, bark",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "鳴る",
+      "reading": "なる",
+      "meaning": "Berdering"
+    }
+  },
+  {
+    "char": "麦",
+    "onyomi": "バク",
+    "kunyomi": "むぎ",
+    "meaning_id": "Gandum jelai",
+    "meaning_en": "barley, wheat",
+    "level": "N3",
+    "strokes": 7,
+    "example": {
+      "ja": "小麦粉",
+      "reading": "こむぎこ",
+      "meaning": "Tepung terigu"
+    }
+  },
+  {
+    "char": "黄",
+    "onyomi": "コウ, オウ",
+    "kunyomi": "き, こ-",
+    "meaning_id": "Warna kuning",
+    "meaning_en": "yellow",
+    "level": "N3",
+    "strokes": 11,
+    "example": {
+      "ja": "黄色",
+      "reading": "きいろ",
+      "meaning": "Warna kuning"
+    }
+  },
+  {
+    "char": "鼻",
+    "onyomi": "ビ",
+    "kunyomi": "はな",
+    "meaning_id": "Hidung indra penciuman",
+    "meaning_en": "nose, snout",
+    "level": "N3",
+    "strokes": 14,
+    "example": {
+      "ja": "鼻",
+      "reading": "はな",
+      "meaning": "Hidung"
+    }
+  }
+]

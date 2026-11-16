@@ -1,0 +1,1444 @@
+[
+  {
+    "char": "一",
+    "onyomi": "イチ, イツ",
+    "kunyomi": "ひと, ひと-つ",
+    "meaning_id": "Satu",
+    "meaning_en": "One",
+    "level": "N5",
+    "strokes": 1,
+    "example": {
+      "ja": "一人",
+      "reading": "ひとり",
+      "meaning": "Satu orang / Sendirian"
+    }
+  },
+  {
+    "char": "二",
+    "onyomi": "ニ",
+    "kunyomi": "ふた, ふた-つ",
+    "meaning_id": "Dua",
+    "meaning_en": "Two",
+    "level": "N5",
+    "strokes": 2,
+    "example": {
+      "ja": "二日",
+      "reading": "ふつか",
+      "meaning": "Tanggal 2 / Dua hari"
+    }
+  },
+  {
+    "char": "三",
+    "onyomi": "サン",
+    "kunyomi": "み, みっ-つ",
+    "meaning_id": "Tiga",
+    "meaning_en": "Three",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "三月",
+      "reading": "さんがつ",
+      "meaning": "Maret"
+    }
+  },
+  {
+    "char": "四",
+    "onyomi": "シ",
+    "kunyomi": "よ, よっ-つ, よん",
+    "meaning_id": "Empat",
+    "meaning_en": "Four",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "四季",
+      "reading": "しき",
+      "meaning": "Empat musim"
+    }
+  },
+  {
+    "char": "五",
+    "onyomi": "ゴ",
+    "kunyomi": "いつ, いつ-つ",
+    "meaning_id": "Lima",
+    "meaning_en": "Five",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "五人",
+      "reading": "ごにん",
+      "meaning": "Lima orang"
+    }
+  },
+  {
+    "char": "六",
+    "onyomi": "ロク",
+    "kunyomi": "む, むっ-つ",
+    "meaning_id": "Enam",
+    "meaning_en": "Six",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "六本木",
+      "reading": "ろっぽんぎ",
+      "meaning": "Roppongi"
+    }
+  },
+  {
+    "char": "七",
+    "onyomi": "シチ",
+    "kunyomi": "なな, なな-つ",
+    "meaning_id": "Tujuh",
+    "meaning_en": "Seven",
+    "level": "N5",
+    "strokes": 2,
+    "example": {
+      "ja": "七夕",
+      "reading": "たなばた",
+      "meaning": "Festival Tanabata"
+    }
+  },
+  {
+    "char": "八",
+    "onyomi": "ハチ",
+    "kunyomi": "や, やっ-つ",
+    "meaning_id": "Delapan",
+    "meaning_en": "Eight",
+    "level": "N5",
+    "strokes": 2,
+    "example": {
+      "ja": "八百屋",
+      "reading": "やおや",
+      "meaning": "Toko sayur"
+    }
+  },
+  {
+    "char": "九",
+    "onyomi": "キュウ, ク",
+    "kunyomi": "ここの, ここの-つ",
+    "meaning_id": "Sembilan",
+    "meaning_en": "Nine",
+    "level": "N5",
+    "strokes": 2,
+    "example": {
+      "ja": "九月",
+      "reading": "くがつ",
+      "meaning": "September"
+    }
+  },
+  {
+    "char": "十",
+    "onyomi": "ジュウ, ジッ",
+    "kunyomi": "とお, と",
+    "meaning_id": "Sepuluh",
+    "meaning_en": "Ten",
+    "level": "N5",
+    "strokes": 2,
+    "example": {
+      "ja": "十分",
+      "reading": "じっぷん / じゅうぶん",
+      "meaning": "10 Menit / Cukup"
+    }
+  },
+  {
+    "char": "百",
+    "onyomi": "ヒャク",
+    "kunyomi": "もも",
+    "meaning_id": "Ratusan",
+    "meaning_en": "Hundred",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "百円",
+      "reading": "ひゃくえん",
+      "meaning": "100 Yen"
+    }
+  },
+  {
+    "char": "千",
+    "onyomi": "セン",
+    "kunyomi": "ち",
+    "meaning_id": "Ribuan",
+    "meaning_en": "Thousand",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "三千",
+      "reading": "さんぜん",
+      "meaning": "3000"
+    }
+  },
+  {
+    "char": "万",
+    "onyomi": "マン, バン",
+    "kunyomi": "よろず",
+    "meaning_id": "Puluh ribu",
+    "meaning_en": "Ten thousand",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "一万円",
+      "reading": "いちまんえん",
+      "meaning": "10.000 Yen"
+    }
+  },
+  {
+    "char": "月",
+    "onyomi": "ゲツ, ガツ",
+    "kunyomi": "つき",
+    "meaning_id": "Bulan",
+    "meaning_en": "Moon / Month",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "今月",
+      "reading": "こんげつ",
+      "meaning": "Bulan ini"
+    }
+  },
+  {
+    "char": "火",
+    "onyomi": "カ",
+    "kunyomi": "ひ, ほ",
+    "meaning_id": "Api",
+    "meaning_en": "Fire",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "火曜日",
+      "reading": "かようび",
+      "meaning": "Hari Selasa"
+    }
+  },
+  {
+    "char": "水",
+    "onyomi": "スイ",
+    "kunyomi": "みず",
+    "meaning_id": "Air",
+    "meaning_en": "Water",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "水泳",
+      "reading": "すいえい",
+      "meaning": "Berenang"
+    }
+  },
+  {
+    "char": "木",
+    "onyomi": "ボク, モク",
+    "kunyomi": "き, こ",
+    "meaning_id": "Pohon / Kayu",
+    "meaning_en": "Tree / Wood",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "木曜日",
+      "reading": "もくようび",
+      "meaning": "Hari Kamis"
+    }
+  },
+  {
+    "char": "金",
+    "onyomi": "キン, コン",
+    "kunyomi": "かね, かな",
+    "meaning_id": "Emas / Uang",
+    "meaning_en": "Gold / Money",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "お金",
+      "reading": "おかね",
+      "meaning": "Uang"
+    }
+  },
+  {
+    "char": "土",
+    "onyomi": "ド, ト",
+    "kunyomi": "つち",
+    "meaning_id": "Tanah / Bumi",
+    "meaning_en": "Earth / Soil",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "土曜日",
+      "reading": "どようび",
+      "meaning": "Hari Sabtu"
+    }
+  },
+  {
+    "char": "日",
+    "onyomi": "ニチ, ジツ",
+    "kunyomi": "ひ, -び, -か",
+    "meaning_id": "Matahari / Hari",
+    "meaning_en": "Sun / Day",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "日曜日",
+      "reading": "にちようび",
+      "meaning": "Hari Minggu"
+    }
+  },
+  {
+    "char": "年",
+    "onyomi": "ネン",
+    "kunyomi": "とし",
+    "meaning_id": "Tahun",
+    "meaning_en": "Year",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "今年",
+      "reading": "ことし",
+      "meaning": "Tahun ini"
+    }
+  },
+  {
+    "char": "週",
+    "onyomi": "シュウ",
+    "kunyomi": "-",
+    "meaning_id": "Minggu / Pekan",
+    "meaning_en": "week",
+    "level": "N5",
+    "strokes": 11,
+    "example": {
+      "ja": "今週",
+      "reading": "こんしゅう",
+      "meaning": "Minggu ini"
+    }
+  },
+  {
+    "char": "時",
+    "onyomi": "ジ",
+    "kunyomi": "とき",
+    "meaning_id": "Waktu / Jam",
+    "meaning_en": "Time / Hour",
+    "level": "N5",
+    "strokes": 10,
+    "example": {
+      "ja": "時間",
+      "reading": "じかん",
+      "meaning": "Waktu"
+    }
+  },
+  {
+    "char": "間",
+    "onyomi": "カン, ケン",
+    "kunyomi": "あいだ, ま, あい",
+    "meaning_id": "Antara / Waktu / Jarak",
+    "meaning_en": "interval, space",
+    "level": "N5",
+    "strokes": 12,
+    "example": {
+      "ja": "時間",
+      "reading": "じかん",
+      "meaning": "Waktu / Jam"
+    }
+  },
+  {
+    "char": "分",
+    "onyomi": "ブン, フン, ブ",
+    "kunyomi": "わ-ける, わ-かる",
+    "meaning_id": "Menit / Mengerti / Bagian",
+    "meaning_en": "Minute / Part / Understand",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "半分",
+      "reading": "はんぶん",
+      "meaning": "Setengah"
+    }
+  },
+  {
+    "char": "半",
+    "onyomi": "ハン",
+    "kunyomi": "なか.ば",
+    "meaning_id": "Setengah / Separuh",
+    "meaning_en": "half, middle, odd number",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "半分",
+      "reading": "はんぶん",
+      "meaning": "Setengah bagian"
+    }
+  },
+  {
+    "char": "今",
+    "onyomi": "コン, キン",
+    "kunyomi": "いま",
+    "meaning_id": "Sekarang / Saat ini",
+    "meaning_en": "now",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "今月",
+      "reading": "こんげつ",
+      "meaning": "Bulan ini"
+    }
+  },
+  {
+    "char": "毎",
+    "onyomi": "マイ",
+    "kunyomi": "ごと, -ごと.に",
+    "meaning_id": "Setiap / Tiap",
+    "meaning_en": "every",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "毎日",
+      "reading": "まいにち",
+      "meaning": "Setiap hari"
+    }
+  },
+  {
+    "char": "午",
+    "onyomi": "ゴ",
+    "kunyomi": "うま",
+    "meaning_id": "Tengah hari / Siang",
+    "meaning_en": "noon, sign of the horse, 11AM-1PM",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "午前",
+      "reading": "ごぜん",
+      "meaning": "Pagi (A.M.)"
+    }
+  },
+  {
+    "char": "何",
+    "onyomi": "カ",
+    "kunyomi": "なに, なん, なに-, なん-",
+    "meaning_id": "Apa",
+    "meaning_en": "what",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "何時",
+      "reading": "なんじ",
+      "meaning": "Jam berapa"
+    }
+  },
+  {
+    "char": "人",
+    "onyomi": "ジン, ニン",
+    "kunyomi": "ひと",
+    "meaning_id": "Orang",
+    "meaning_en": "Person",
+    "level": "N5",
+    "strokes": 2,
+    "example": {
+      "ja": "日本人",
+      "reading": "にほんじん",
+      "meaning": "Orang Jepang"
+    }
+  },
+  {
+    "char": "男",
+    "onyomi": "ダン, ナン",
+    "kunyomi": "おとこ",
+    "meaning_id": "Laki-laki",
+    "meaning_en": "Man / Male",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "男の子",
+      "reading": "おとこのこ",
+      "meaning": "Anak laki-laki"
+    }
+  },
+  {
+    "char": "女",
+    "onyomi": "ジョ, ニョ",
+    "kunyomi": "おんな, め",
+    "meaning_id": "Perempuan",
+    "meaning_en": "Woman / Female",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "女の子",
+      "reading": "おんなのこ",
+      "meaning": "Anak perempuan"
+    }
+  },
+  {
+    "char": "子",
+    "onyomi": "シ, ス",
+    "kunyomi": "こ",
+    "meaning_id": "Anak",
+    "meaning_en": "Child",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "子ども",
+      "reading": "こども",
+      "meaning": "Anak-anak"
+    }
+  },
+  {
+    "char": "父",
+    "onyomi": "フ",
+    "kunyomi": "ちち, とう",
+    "meaning_id": "Ayah",
+    "meaning_en": "Father",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "お父さん",
+      "reading": "おとうさん",
+      "meaning": "Ayah"
+    }
+  },
+  {
+    "char": "母",
+    "onyomi": "ボ",
+    "kunyomi": "はは, かあ",
+    "meaning_id": "Ibu",
+    "meaning_en": "Mother",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "お母さん",
+      "reading": "おかあさん",
+      "meaning": "Ibu"
+    }
+  },
+  {
+    "char": "学",
+    "onyomi": "ガク",
+    "kunyomi": "まな-ぶ",
+    "meaning_id": "Belajar / Ilmu",
+    "meaning_en": "Study / Learning",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "学校",
+      "reading": "がっこう",
+      "meaning": "Sekolah"
+    }
+  },
+  {
+    "char": "校",
+    "onyomi": "コウ",
+    "kunyomi": "-",
+    "meaning_id": "Sekolah",
+    "meaning_en": "School",
+    "level": "N5",
+    "strokes": 10,
+    "example": {
+      "ja": "高校",
+      "reading": "こうこう",
+      "meaning": "SMA"
+    }
+  },
+  {
+    "char": "先",
+    "onyomi": "セン",
+    "kunyomi": "さき, ま-ず",
+    "meaning_id": "Sebelum / Ujung",
+    "meaning_en": "Before / Ahead",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "先生",
+      "reading": "せんせい",
+      "meaning": "Guru"
+    }
+  },
+  {
+    "char": "生",
+    "onyomi": "セイ, ショウ",
+    "kunyomi": "い-きる, う-まれる, なま",
+    "meaning_id": "Hidup / Lahir / Mentah",
+    "meaning_en": "Life / Birth / Raw",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "学生",
+      "reading": "がくせい",
+      "meaning": "Siswa / Mahasiswa"
+    }
+  },
+  {
+    "char": "口",
+    "onyomi": "コウ, ク",
+    "kunyomi": "くち",
+    "meaning_id": "Mulut / Pintu masuk",
+    "meaning_en": "Mouth / Entrance",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "入口",
+      "reading": "いりぐち",
+      "meaning": "Pintu masuk"
+    }
+  },
+  {
+    "char": "目",
+    "onyomi": "モク, ボク",
+    "kunyomi": "め, ま",
+    "meaning_id": "Mata",
+    "meaning_en": "Eye",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "目的",
+      "reading": "もくてき",
+      "meaning": "Tujuan"
+    }
+  },
+  {
+    "char": "耳",
+    "onyomi": "ジ",
+    "kunyomi": "みみ",
+    "meaning_id": "Telinga",
+    "meaning_en": "Ear",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "耳",
+      "reading": "みみ",
+      "meaning": "Telinga"
+    }
+  },
+  {
+    "char": "手",
+    "onyomi": "シュ",
+    "kunyomi": "て, た",
+    "meaning_id": "Tangan",
+    "meaning_en": "Hand",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "上手",
+      "reading": "じょうず",
+      "meaning": "Pandai / Mahir"
+    }
+  },
+  {
+    "char": "足",
+    "onyomi": "ソク",
+    "kunyomi": "あし, た-りる",
+    "meaning_id": "Kaki / Cukup",
+    "meaning_en": "Foot / Leg / Sufficient",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "足りる",
+      "reading": "たりる",
+      "meaning": "Cukup"
+    }
+  },
+  {
+    "char": "上",
+    "onyomi": "ジョウ, ショウ",
+    "kunyomi": "うえ, あ-がる, のぼ-る",
+    "meaning_id": "Atas / Naik",
+    "meaning_en": "Above / Up",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "上手",
+      "reading": "じょうず",
+      "meaning": "Pintar"
+    }
+  },
+  {
+    "char": "中",
+    "onyomi": "チュウ",
+    "kunyomi": "なか",
+    "meaning_id": "Dalam / Tengah",
+    "meaning_en": "Inside / Middle",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "一日中",
+      "reading": "いちにちじゅう",
+      "meaning": "Sepanjang hari"
+    }
+  },
+  {
+    "char": "下",
+    "onyomi": "カ, ゲ",
+    "kunyomi": "した, さ-がる, くだ-る",
+    "meaning_id": "Bawah / Turun",
+    "meaning_en": "Under / Below",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "下手",
+      "reading": "へた",
+      "meaning": "Kurang pandai"
+    }
+  },
+  {
+    "char": "左",
+    "onyomi": "サ, シャ",
+    "kunyomi": "ひだり",
+    "meaning_id": "Kiri",
+    "meaning_en": "left",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "左手",
+      "reading": "ひだりて",
+      "meaning": "Tangan kiri"
+    }
+  },
+  {
+    "char": "右",
+    "onyomi": "ウ, ユウ",
+    "kunyomi": "みぎ",
+    "meaning_id": "Kanan",
+    "meaning_en": "right",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "右手",
+      "reading": "みぎて",
+      "meaning": "Tangan kanan"
+    }
+  },
+  {
+    "char": "東",
+    "onyomi": "トウ",
+    "kunyomi": "ひがし",
+    "meaning_id": "Timur",
+    "meaning_en": "east",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "東京",
+      "reading": "とうきょう",
+      "meaning": "Tokyo"
+    }
+  },
+  {
+    "char": "西",
+    "onyomi": "セイ, サイ, ス",
+    "kunyomi": "にし",
+    "meaning_id": "Barat",
+    "meaning_en": "west, Spain",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "東西",
+      "reading": "とうざい",
+      "meaning": "Timur dan Barat"
+    }
+  },
+  {
+    "char": "南",
+    "onyomi": "ナン, ナ",
+    "kunyomi": "みなみ",
+    "meaning_id": "Selatan",
+    "meaning_en": "south",
+    "level": "N5",
+    "strokes": 9,
+    "example": {
+      "ja": "南口",
+      "reading": "みなみぐち",
+      "meaning": "Pintu keluar selatan"
+    }
+  },
+  {
+    "char": "北",
+    "onyomi": "ホク",
+    "kunyomi": "きた",
+    "meaning_id": "Utara",
+    "meaning_en": "north",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "北東",
+      "reading": "ほくとう",
+      "meaning": "Timur Laut"
+    }
+  },
+  {
+    "char": "外",
+    "onyomi": "ガイ, ゲ",
+    "kunyomi": "そと, ほか, はず.す, はず.れる, と-",
+    "meaning_id": "Luar",
+    "meaning_en": "outside",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "外国",
+      "reading": "がいこく",
+      "meaning": "Luar negeri"
+    }
+  },
+  {
+    "char": "前",
+    "onyomi": "ゼン",
+    "kunyomi": "まえ",
+    "meaning_id": "Depan / Sebelum",
+    "meaning_en": "Front / Before",
+    "level": "N5",
+    "strokes": 9,
+    "example": {
+      "ja": "午前",
+      "reading": "ごぜん",
+      "meaning": "Pagi (a.m.)"
+    }
+  },
+  {
+    "char": "後",
+    "onyomi": "ゴ, コウ",
+    "kunyomi": "のち, うし-ろ, あと",
+    "meaning_id": "Belakang / Setelah",
+    "meaning_en": "After / Behind",
+    "level": "N5",
+    "strokes": 9,
+    "example": {
+      "ja": "午後",
+      "reading": "ごご",
+      "meaning": "Sore/Malam (p.m.)"
+    }
+  },
+  {
+    "char": "天",
+    "onyomi": "テン",
+    "kunyomi": "あまつ, あめ",
+    "meaning_id": "Langit / Surga",
+    "meaning_en": "Heaven / Sky",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "天気",
+      "reading": "てんき",
+      "meaning": "Cuaca"
+    }
+  },
+  {
+    "char": "気",
+    "onyomi": "キ, ケ",
+    "kunyomi": "いき",
+    "meaning_id": "Jiwa / Udara / Energi",
+    "meaning_en": "Spirit / Mind / Air",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "元気",
+      "reading": "げんき",
+      "meaning": "Sehat / Semangat"
+    }
+  },
+  {
+    "char": "雨",
+    "onyomi": "ウ",
+    "kunyomi": "あめ, あま",
+    "meaning_id": "Hujan",
+    "meaning_en": "Rain",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "大雨",
+      "reading": "おおあめ",
+      "meaning": "Hujan lebat"
+    }
+  },
+  {
+    "char": "空",
+    "onyomi": "クウ",
+    "kunyomi": "そら, あ.く, あ.き, あ.ける, から, す.く, す.かす, むな.しい",
+    "meaning_id": "Langit / Kosong",
+    "meaning_en": "empty, sky, void",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "青空",
+      "reading": "あおぞら",
+      "meaning": "Langit biru"
+    }
+  },
+  {
+    "char": "白",
+    "onyomi": "ハク, ビャク",
+    "kunyomi": "しろ, しら-, しろ.い",
+    "meaning_id": "Putih",
+    "meaning_en": "white",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "白い",
+      "reading": "しろい",
+      "meaning": "Berwarna putih"
+    }
+  },
+  {
+    "char": "大",
+    "onyomi": "ダイ, タイ",
+    "kunyomi": "おお-きい",
+    "meaning_id": "Besar",
+    "meaning_en": "Big / Great",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "大学",
+      "reading": "だいがく",
+      "meaning": "Universitas"
+    }
+  },
+  {
+    "char": "小",
+    "onyomi": "ショウ",
+    "kunyomi": "ちい-さい, こ, お",
+    "meaning_id": "Kecil",
+    "meaning_en": "Small",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "小学校",
+      "reading": "しょうがっこう",
+      "meaning": "Sekolah Dasar"
+    }
+  },
+  {
+    "char": "高",
+    "onyomi": "コウ",
+    "kunyomi": "たか.い, たか, -だか, たか.まる, たか.める",
+    "meaning_id": "Tinggi / Mahal",
+    "meaning_en": "tall, high, expensive",
+    "level": "N5",
+    "strokes": 10,
+    "example": {
+      "ja": "高い",
+      "reading": "たかい",
+      "meaning": "Tinggi / Mahal"
+    }
+  },
+  {
+    "char": "長",
+    "onyomi": "チョウ",
+    "kunyomi": "なが.い, おさ",
+    "meaning_id": "Panjang / Pemimpin",
+    "meaning_en": "long, leader, superior",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "長い",
+      "reading": "ながい",
+      "meaning": "Panjang"
+    }
+  },
+  {
+    "char": "多",
+    "onyomi": "タ",
+    "kunyomi": "おお.い, まさ.に, まさ.る",
+    "meaning_id": "Banyak",
+    "meaning_en": "many, frequent, much",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "多い",
+      "reading": "おおい",
+      "meaning": "Banyak"
+    }
+  },
+  {
+    "char": "少",
+    "onyomi": "ショウ",
+    "kunyomi": "すく.ない, すこ.し",
+    "meaning_id": "Sedikit",
+    "meaning_en": "few, little",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "少し",
+      "reading": "すこし",
+      "meaning": "Sedikit"
+    }
+  },
+  {
+    "char": "新",
+    "onyomi": "シン",
+    "kunyomi": "あたら.しい, あら.た, あら-, にい-",
+    "meaning_id": "Baru",
+    "meaning_en": "new",
+    "level": "N5",
+    "strokes": 13,
+    "example": {
+      "ja": "新しい",
+      "reading": "あたらしい",
+      "meaning": "Baru"
+    }
+  },
+  {
+    "char": "古",
+    "onyomi": "コ",
+    "kunyomi": "ふる.い, ふる-, -ふる.す",
+    "meaning_id": "Lama / Kuno",
+    "meaning_en": "old",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "古い",
+      "reading": "ふるい",
+      "meaning": "Lama / Kuno"
+    }
+  },
+  {
+    "char": "安",
+    "onyomi": "アン",
+    "kunyomi": "やす.い, やす.まる, やす, やす.らか",
+    "meaning_id": "Murah / Aman / Tenang",
+    "meaning_en": "relax, cheap, low",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "安い",
+      "reading": "やすい",
+      "meaning": "Murah"
+    }
+  },
+  {
+    "char": "行",
+    "onyomi": "コウ, ギョウ",
+    "kunyomi": "い-く, ゆ-く, おこな-う",
+    "meaning_id": "Pergi / Mengadakan",
+    "meaning_en": "Go / Conduct",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "旅行",
+      "reading": "りょこう",
+      "meaning": "Wisata / Traveling"
+    }
+  },
+  {
+    "char": "来",
+    "onyomi": "ライ",
+    "kunyomi": "く-る, きた-る",
+    "meaning_id": "Datang",
+    "meaning_en": "Come / Next",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "来週",
+      "reading": "らいしゅう",
+      "meaning": "Minggu depan"
+    }
+  },
+  {
+    "char": "食",
+    "onyomi": "ショク",
+    "kunyomi": "た-べる, く-う",
+    "meaning_id": "Makan / Makanan",
+    "meaning_en": "Eat / Food",
+    "level": "N5",
+    "strokes": 9,
+    "example": {
+      "ja": "食事",
+      "reading": "しょくじ",
+      "meaning": "Makan"
+    }
+  },
+  {
+    "char": "飲",
+    "onyomi": "イン",
+    "kunyomi": "の-む",
+    "meaning_id": "Minum",
+    "meaning_en": "Drink",
+    "level": "N5",
+    "strokes": 12,
+    "example": {
+      "ja": "飲み物",
+      "reading": "のみもの",
+      "meaning": "Minuman"
+    }
+  },
+  {
+    "char": "話",
+    "onyomi": "ワ",
+    "kunyomi": "はな.す, はなし",
+    "meaning_id": "Bicara / Percakapan",
+    "meaning_en": "tale, talk",
+    "level": "N5",
+    "strokes": 13,
+    "example": {
+      "ja": "電話",
+      "reading": "でんわ",
+      "meaning": "Telepon"
+    }
+  },
+  {
+    "char": "見",
+    "onyomi": "ケン",
+    "kunyomi": "み-る, み-える",
+    "meaning_id": "Melihat",
+    "meaning_en": "See / Look",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "意見",
+      "reading": "いけん",
+      "meaning": "Pendapat"
+    }
+  },
+  {
+    "char": "立",
+    "onyomi": "リツ, リュウ, リットル",
+    "kunyomi": "た.つ, -た.つ, た.ち-, た.てる, -た.てる, た.て-, たて-, -た.て, -だ.て, -だ.てる",
+    "meaning_id": "Berdiri",
+    "meaning_en": "stand up, rise, set up",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "立つ",
+      "reading": "たつ",
+      "meaning": "Berdiri"
+    }
+  },
+  {
+    "char": "入",
+    "onyomi": "ニュウ, ジュ",
+    "kunyomi": "い.る, -い.る, -い.り, い.れる, -い.れ, はい.る",
+    "meaning_id": "Masuk",
+    "meaning_en": "enter, insert",
+    "level": "N5",
+    "strokes": 2,
+    "example": {
+      "ja": "入口",
+      "reading": "いりぐち",
+      "meaning": "Pintu masuk"
+    }
+  },
+  {
+    "char": "出",
+    "onyomi": "シュツ, スイ",
+    "kunyomi": "で.る, -で, だ.す, -だ.す, い.でる, い.だす",
+    "meaning_id": "Keluar",
+    "meaning_en": "exit, leave, go out",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "出口",
+      "reading": "でぐち",
+      "meaning": "Pintu keluar"
+    }
+  },
+  {
+    "char": "言",
+    "onyomi": "ゲン, ゴン",
+    "kunyomi": "い.う, こと",
+    "meaning_id": "Berkata / Kata",
+    "meaning_en": "say, word",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "言う",
+      "reading": "いう",
+      "meaning": "Berkata / Mengatakan"
+    }
+  },
+  {
+    "char": "聞",
+    "onyomi": "ブン, モン",
+    "kunyomi": "き-く, き-こえる",
+    "meaning_id": "Mendengar / Bertanya",
+    "meaning_en": "Hear / Listen / Ask",
+    "level": "N5",
+    "strokes": 14,
+    "example": {
+      "ja": "新聞",
+      "reading": "しんぶん",
+      "meaning": "Koran"
+    }
+  },
+  {
+    "char": "読",
+    "onyomi": "ドク, トク",
+    "kunyomi": "よ-む",
+    "meaning_id": "Membaca",
+    "meaning_en": "Read",
+    "level": "N5",
+    "strokes": 14,
+    "example": {
+      "ja": "読書",
+      "reading": "どくしょ",
+      "meaning": "Membaca buku"
+    }
+  },
+  {
+    "char": "書",
+    "onyomi": "ショ",
+    "kunyomi": "か-く",
+    "meaning_id": "Menulis / Dokumen",
+    "meaning_en": "Write / Book",
+    "level": "N5",
+    "strokes": 10,
+    "example": {
+      "ja": "辞書",
+      "reading": "じしょ",
+      "meaning": "Kamus"
+    }
+  },
+  {
+    "char": "買",
+    "onyomi": "バイ",
+    "kunyomi": "か.う",
+    "meaning_id": "Membeli",
+    "meaning_en": "buy",
+    "level": "N5",
+    "strokes": 12,
+    "example": {
+      "ja": "買い物",
+      "reading": "かいもの",
+      "meaning": "Belanja"
+    }
+  },
+  {
+    "char": "円",
+    "onyomi": "エン",
+    "kunyomi": "まる-い",
+    "meaning_id": "Yen / Lingkaran",
+    "meaning_en": "Yen / Circle",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "円高",
+      "reading": "えんだか",
+      "meaning": "Penguatan kurs Yen"
+    }
+  },
+  {
+    "char": "休",
+    "onyomi": "キュウ",
+    "kunyomi": "やす.む, やす.まる, やす.める",
+    "meaning_id": "Istirahat / Libur",
+    "meaning_en": "rest, day off, retire",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "休日",
+      "reading": "きゅうじつ",
+      "meaning": "Hari libur"
+    }
+  },
+  {
+    "char": "電",
+    "onyomi": "デン",
+    "kunyomi": "-",
+    "meaning_id": "Listrik",
+    "meaning_en": "electricity",
+    "level": "N5",
+    "strokes": 13,
+    "example": {
+      "ja": "電車",
+      "reading": "でんしゃ",
+      "meaning": "Kereta listrik"
+    }
+  },
+  {
+    "char": "車",
+    "onyomi": "シャ",
+    "kunyomi": "くるま",
+    "meaning_id": "Mobil / Roda",
+    "meaning_en": "Car / Vehicle",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "電車",
+      "reading": "でんしゃ",
+      "meaning": "Kereta listrik"
+    }
+  },
+  {
+    "char": "名",
+    "onyomi": "メイ, ミョウ",
+    "kunyomi": "な",
+    "meaning_id": "Nama / Terkenal",
+    "meaning_en": "Name / Famous",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "名前",
+      "reading": "なまえ",
+      "meaning": "Nama"
+    }
+  },
+  {
+    "char": "友",
+    "onyomi": "ユウ",
+    "kunyomi": "とも",
+    "meaning_id": "Teman / Sahabat",
+    "meaning_en": "Friend",
+    "level": "N5",
+    "strokes": 4,
+    "example": {
+      "ja": "友達",
+      "reading": "ともだち",
+      "meaning": "Teman"
+    }
+  },
+  {
+    "char": "山",
+    "onyomi": "サン",
+    "kunyomi": "やま",
+    "meaning_id": "Gunung",
+    "meaning_en": "Mountain",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "富士山",
+      "reading": "ふじさん",
+      "meaning": "Gunung Fuji"
+    }
+  },
+  {
+    "char": "川",
+    "onyomi": "セン",
+    "kunyomi": "かわ",
+    "meaning_id": "Sungai",
+    "meaning_en": "River",
+    "level": "N5",
+    "strokes": 3,
+    "example": {
+      "ja": "小川",
+      "reading": "おがわ",
+      "meaning": "Sungai kecil"
+    }
+  },
+  {
+    "char": "道",
+    "onyomi": "ドウ, トウ",
+    "kunyomi": "みち",
+    "meaning_id": "Jalan / Jalur",
+    "meaning_en": "Road / Path / Way",
+    "level": "N5",
+    "strokes": 12,
+    "example": {
+      "ja": "書道",
+      "reading": "しょどう",
+      "meaning": "Kaligrafi Jepang"
+    }
+  },
+  {
+    "char": "駅",
+    "onyomi": "エキ",
+    "kunyomi": "-",
+    "meaning_id": "Stasiun",
+    "meaning_en": "Station",
+    "level": "N5",
+    "strokes": 14,
+    "example": {
+      "ja": "駅前",
+      "reading": "えきまえ",
+      "meaning": "Depan stasiun"
+    }
+  },
+  {
+    "char": "本",
+    "onyomi": "ホン",
+    "kunyomi": "もと",
+    "meaning_id": "Buku / Asal",
+    "meaning_en": "Book / Origin",
+    "level": "N5",
+    "strokes": 5,
+    "example": {
+      "ja": "日本",
+      "reading": "にほん",
+      "meaning": "Jepang"
+    }
+  },
+  {
+    "char": "国",
+    "onyomi": "コク",
+    "kunyomi": "くに",
+    "meaning_id": "Negara",
+    "meaning_en": "Country",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "外国",
+      "reading": "がいこく",
+      "meaning": "Luar negeri"
+    }
+  },
+  {
+    "char": "語",
+    "onyomi": "ゴ",
+    "kunyomi": "かた.る, かた.らう",
+    "meaning_id": "Bahasa / Kata",
+    "meaning_en": "word, speech, language",
+    "level": "N5",
+    "strokes": 14,
+    "example": {
+      "ja": "日本語",
+      "reading": "にほんご",
+      "meaning": "Bahasa Jepang"
+    }
+  },
+  {
+    "char": "花",
+    "onyomi": "カ, ケ",
+    "kunyomi": "はな",
+    "meaning_id": "Bunga",
+    "meaning_en": "flower",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "花火",
+      "reading": "はなび",
+      "meaning": "Kembang api"
+    }
+  },
+  {
+    "char": "魚",
+    "onyomi": "ギョ",
+    "kunyomi": "うお, さかな, -ざかな",
+    "meaning_id": "Ikan",
+    "meaning_en": "fish",
+    "level": "N5",
+    "strokes": 11,
+    "example": {
+      "ja": "金魚",
+      "reading": "きんぎょ",
+      "meaning": "Ikan mas koki"
+    }
+  },
+  {
+    "char": "店",
+    "onyomi": "テン",
+    "kunyomi": "みせ",
+    "meaning_id": "Toko",
+    "meaning_en": "Shop / Store",
+    "level": "N5",
+    "strokes": 8,
+    "example": {
+      "ja": "喫茶店",
+      "reading": "きっさてん",
+      "meaning": "Kafe"
+    }
+  },
+  {
+    "char": "会",
+    "onyomi": "カイ, エ",
+    "kunyomi": "あ-う",
+    "meaning_id": "Bertemu / Perkumpulan",
+    "meaning_en": "Meet / Society",
+    "level": "N5",
+    "strokes": 6,
+    "example": {
+      "ja": "会社",
+      "reading": "かいしゃ",
+      "meaning": "Perusahaan"
+    }
+  },
+  {
+    "char": "社",
+    "onyomi": "シャ",
+    "kunyomi": "やしろ",
+    "meaning_id": "Perusahaan / Kuil Shinto",
+    "meaning_en": "Company / Shrine",
+    "level": "N5",
+    "strokes": 7,
+    "example": {
+      "ja": "社会",
+      "reading": "しゃかい",
+      "meaning": "Masyarakat"
+    }
+  }
+]

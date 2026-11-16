@@ -1,0 +1,1535 @@
+/* ==========================================================================
+   RavenCard - Material Design 3 Expressive (MD3E) Design System
+   Identity: Authentic Japanese Learning (Sumi & Aizome) with Tactile MD3E
+   ========================================================================== */
+
+:root {
+  /* MD3E Core Tonal Surfaces (Dark Theme Default) */
+  --md-sys-color-surface: #111318;
+  --md-sys-color-surface-container-lowest: #0c0e12;
+  --md-sys-color-surface-container-low: #181b20;
+  --md-sys-color-surface-container: #1c2025;
+  --md-sys-color-surface-container-high: #262a30;
+  --md-sys-color-surface-container-highest: #31353c;
+  --md-sys-color-surface-tint: #a8c7fa;
+
+  /* MD3E Text & Content Roles */
+  --md-sys-color-on-surface: #e2e2e9;
+  --md-sys-color-on-surface-variant: #c4c6cf;
+  --md-sys-color-outline: #8e9199;
+  --md-sys-color-outline-variant: #3c4048;
+
+  /* Primary Accent: Japanese Indigo (Aizome) */
+  --md-sys-color-primary: #a8c7fa;
+  --md-sys-color-on-primary: #04316b;
+  --md-sys-color-primary-container: #1b4377;
+  --md-sys-color-on-primary-container: #d6e3ff;
+
+  /* Secondary: Slate Paper Neutral */
+  --md-sys-color-secondary: #bfc7d5;
+  --md-sys-color-on-secondary: #29313d;
+  --md-sys-color-secondary-container: #39424f;
+  --md-sys-color-on-secondary-container: #dbe3f1;
+
+  /* Tertiary: Soft Washi Lavender / Purple Accent */
+  --md-sys-color-tertiary: #d7bde6;
+  --md-sys-color-on-tertiary: #3c2949;
+  --md-sys-color-tertiary-container: #533f61;
+  --md-sys-color-on-tertiary-container: #f3daff;
+
+  /* Semantic Feedback Containers (MD3 Expressive Tonal Roles) */
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #5c181b;
+  --md-sys-color-on-error-container: #ffdad6;
+
+  --md-sys-color-warning: #e6c264;
+  --md-sys-color-on-warning: #3f2f00;
+  --md-sys-color-warning-container: #4f3c0b;
+  --md-sys-color-on-warning-container: #ffe088;
+
+  --md-sys-color-success: #7cdb99;
+  --md-sys-color-on-success: #003915;
+  --md-sys-color-success-container: #174726;
+  --md-sys-color-on-success-container: #a2f8ba;
+
+  /* Backward Compatibility Variables */
+  --bg-primary: var(--md-sys-color-surface-container-lowest);
+  --bg-secondary: var(--md-sys-color-surface-container-low);
+  --bg-surface: var(--md-sys-color-surface-container);
+  --bg-surface-elevated: var(--md-sys-color-surface-container-high);
+  --border-subtle: var(--md-sys-color-outline-variant);
+  --border-focus: var(--md-sys-color-primary);
+  --text-primary: var(--md-sys-color-on-surface);
+  --text-secondary: var(--md-sys-color-on-surface-variant);
+  --text-muted: var(--md-sys-color-outline);
+  --accent-primary: var(--md-sys-color-primary);
+
+  /* MD3 Expressive Organic Shapes Scale */
+  --md-sys-shape-corner-none: 0px;
+  --md-sys-shape-corner-xs: 4px;
+  --md-sys-shape-corner-sm: 8px;
+  --md-sys-shape-corner-md: 12px;
+  --md-sys-shape-corner-lg: 16px;
+  --md-sys-shape-corner-xl: 28px;
+  --md-sys-shape-corner-full: 9999px;
+
+  /* Backward Compatibility Radii */
+  --radius-sm: var(--md-sys-shape-corner-sm);
+  --radius-md: var(--md-sys-shape-corner-md);
+  --radius-lg: var(--md-sys-shape-corner-xl);
+  --radius-full: var(--md-sys-shape-corner-full);
+
+  /* Typography Scale */
+  --font-cjk: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display-kanji: 'Noto Sans JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+
+  /* MD3 Ambient Tonal Elevation (Soft, Tactile, No Slop) */
+  --md-sys-elevation-0: none;
+  --md-sys-elevation-1: 0 1px 3px 1px rgba(0, 0, 0, 0.22), 0 1px 2px 0 rgba(0, 0, 0, 0.35);
+  --md-sys-elevation-2: 0 3px 8px 2px rgba(0, 0, 0, 0.25), 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  --md-sys-elevation-3: 0 6px 16px 3px rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 0.45);
+  --md-sys-elevation-4: 0 12px 28px 4px rgba(0, 0, 0, 0.35), 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+
+  --shadow-card: var(--md-sys-elevation-2);
+  --shadow-float: var(--md-sys-elevation-3);
+
+  /* MD3 Expressive Motion Curves */
+  --md-sys-motion-standard: all 0.22s cubic-bezier(0.2, 0, 0, 1);
+  --md-sys-motion-expressive: all 0.34s cubic-bezier(0.34, 1.25, 0.64, 1);
+  --md-sys-motion-bounce: transform 0.16s cubic-bezier(0.34, 1.5, 0.64, 1);
+  --transition-smooth: var(--md-sys-motion-standard);
+}
+
+/* Light Theme (MD3 Expressive Tonal Mapping) */
+[data-theme="light"] {
+  --md-sys-color-surface: #fdfcff;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f3f3f8;
+  --md-sys-color-surface-container: #ededf3;
+  --md-sys-color-surface-container-high: #e7e7ee;
+  --md-sys-color-surface-container-highest: #e1e1e8;
+  --md-sys-color-surface-tint: #005fb0;
+
+  --md-sys-color-on-surface: #191c20;
+  --md-sys-color-on-surface-variant: #44474f;
+  --md-sys-color-outline: #74777f;
+  --md-sys-color-outline-variant: #c4c6cf;
+
+  /* Indigo Primary */
+  --md-sys-color-primary: #005fb0;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #d4e3ff;
+  --md-sys-color-on-primary-container: #001c3b;
+
+  /* Secondary Neutral */
+  --md-sys-color-secondary: #535f70;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #d7e3f8;
+  --md-sys-color-on-secondary-container: #101c2b;
+
+  /* Tertiary */
+  --md-sys-color-tertiary: #6b5778;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #f3daff;
+  --md-sys-color-on-tertiary-container: #251432;
+
+  /* Light Feedback Containers */
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+
+  --md-sys-color-warning: #725b00;
+  --md-sys-color-on-warning: #ffffff;
+  --md-sys-color-warning-container: #ffe088;
+  --md-sys-color-on-warning-container: #241a00;
+
+  --md-sys-color-success: #146c36;
+  --md-sys-color-on-success: #ffffff;
+  --md-sys-color-success-container: #b9f2c9;
+  --md-sys-color-on-success-container: #00210b;
+
+  --md-sys-elevation-1: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --md-sys-elevation-2: 0 3px 8px 1px rgba(0, 0, 0, 0.09), 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+  --md-sys-elevation-3: 0 6px 16px 2px rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.07);
+  --md-sys-elevation-4: 0 12px 28px 3px rgba(0, 0, 0, 0.12), 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+
+  --shadow-card: var(--md-sys-elevation-2);
+  --shadow-float: var(--md-sys-elevation-3);
+}
+
+/* Base Reset & Core Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: var(--font-cjk);
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.5;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding-top: max(12px, env(safe-area-inset-top));
+  padding-bottom: max(96px, calc(env(safe-area-inset-bottom) + 84px));
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+}
+
+/* ==========================================================================
+   1. MD3 Expressive Top App Bar
+   ========================================================================== */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0 14px;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+  margin-bottom: 12px;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--md-sys-shape-corner-md);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  flex-shrink: 0;
+}
+
+.brand-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.2;
+}
+
+.brand-subtitle {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+}
+
+.btn-icon:hover {
+  background: var(--md-sys-color-surface-container-high);
+  border-color: var(--md-sys-color-outline);
+}
+
+.btn-icon:active {
+  transform: scale(0.92);
+}
+
+.btn-install-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 4px 14px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--md-sys-color-primary);
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+}
+
+.btn-install-header.hidden {
+  display: none !important;
+}
+
+.btn-install-header:hover {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.btn-install-header:active {
+  transform: scale(0.95);
+}
+
+/* ==========================================================================
+   2. MD3 Expressive Floating Filter Chips
+   ========================================================================== */
+.floating-pills-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+/* Category Filter Chips */
+.category-pills {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 2px 4px 2px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+
+.category-pills::-webkit-scrollbar,
+.filter-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.pill-category {
+  flex: 0 0 auto;
+  min-height: 40px;
+  padding: 6px 18px;
+  border-radius: var(--md-sys-shape-corner-full);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  background: var(--md-sys-color-surface-container-low);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: var(--md-sys-motion-standard);
+  white-space: nowrap;
+}
+
+.pill-category:hover {
+  background: var(--md-sys-color-surface-container);
+  color: var(--md-sys-color-on-surface);
+}
+
+.pill-category.active {
+  background: var(--md-sys-color-primary-container);
+  border-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary-container);
+  box-shadow: var(--md-sys-elevation-1);
+}
+
+.pill-category:active {
+  transform: scale(0.95);
+}
+
+/* Sub-filter / Level Chips */
+.sub-filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+
+.pill-sub {
+  flex: 0 0 auto;
+  min-height: 32px;
+  padding: 4px 14px;
+  border-radius: var(--md-sys-shape-corner-md);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  background: var(--md-sys-color-surface-container-lowest);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: var(--md-sys-motion-standard);
+  white-space: nowrap;
+}
+
+.pill-sub:hover {
+  background: var(--md-sys-color-surface-container);
+  color: var(--md-sys-color-on-surface);
+}
+
+.pill-sub.active {
+  background: var(--md-sys-color-secondary-container);
+  border-color: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.pill-sub:active {
+  transform: scale(0.95);
+}
+
+.deck-count-indicator {
+  font-size: 0.78rem;
+  color: var(--md-sys-color-on-surface-variant);
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 4px 10px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+/* Page Views */
+.page-view {
+  display: none;
+  width: 100%;
+}
+
+.page-view.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ==========================================================================
+   3. MD3 Expressive Progress Hairline
+   ========================================================================== */
+.progress-bar-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--md-sys-color-on-surface-variant);
+  font-weight: 600;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container-high);
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-primary);
+  transition: width 0.35s cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* ==========================================================================
+   4. MD3 Expressive 3D Flashcard Stage
+   ========================================================================== */
+.flashcard-stage {
+  perspective: 1200px;
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.flashcard-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: clamp(310px, 47vh, 400px);
+  max-width: 520px;
+  transform-style: preserve-3d;
+  transition: transform 0.52s cubic-bezier(0.34, 1.4, 0.64, 1);
+  cursor: pointer;
+}
+
+.flashcard-wrapper.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--md-sys-shape-corner-xl);
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  box-shadow: var(--md-sys-elevation-2);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 18px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-face:hover {
+  border-color: var(--md-sys-color-primary);
+  box-shadow: var(--md-sys-elevation-3);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: var(--md-sys-color-surface-container);
+}
+
+.card-face-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: var(--md-sys-shape-corner-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--md-sys-color-surface-container-highest);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface-variant);
+  letter-spacing: 0.02em;
+}
+
+.card-audio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container-high);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+}
+
+.card-audio-btn:hover {
+  background: var(--md-sys-color-primary-container);
+  border-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary-container);
+}
+
+.card-audio-btn:active {
+  transform: scale(0.92);
+}
+
+.card-face-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+  padding: 10px 6px;
+}
+
+/* Expressive Hero Japanese Kanji & Kana */
+.japanese-character {
+  font-family: var(--font-cjk);
+  font-size: clamp(3.4rem, 14vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: var(--md-sys-color-on-surface);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.frequent-kanji-reading {
+  font-size: 1rem;
+  color: var(--md-sys-color-on-surface-variant);
+  margin-top: 8px;
+  font-weight: 500;
+  background: var(--md-sys-color-surface-container);
+  padding: 2px 12px;
+  border-radius: var(--md-sys-shape-corner-full);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.frequent-kanji-reading:empty {
+  display: none;
+}
+
+/* Card Back Content */
+.back-reading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.back-character-small {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface);
+}
+
+.back-romaji {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--md-sys-color-primary);
+  letter-spacing: 0.02em;
+}
+
+.back-meaning-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.meaning-id {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.35;
+}
+
+.meaning-en {
+  font-size: 0.82rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.yomi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.yomi-box {
+  background: var(--md-sys-color-surface-container-high);
+  padding: 8px 10px;
+  border-radius: var(--md-sys-shape-corner-md);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  text-align: left;
+}
+
+.yomi-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-sys-color-on-surface-variant);
+  margin-bottom: 2px;
+}
+
+.yomi-text {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+}
+
+.example-section {
+  background: var(--md-sys-color-surface-container-high);
+  border-radius: var(--md-sys-shape-corner-md);
+  padding: 8px 12px;
+  width: 100%;
+  border-left: 4px solid var(--md-sys-color-primary);
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+  border-right: 1px solid var(--md-sys-color-outline-variant);
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+  text-align: left;
+}
+
+.example-ja {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+  margin-bottom: 2px;
+}
+
+.example-meaning {
+  font-size: 0.74rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.card-face-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* ==========================================================================
+   5. MD3 Expressive Action Bar & Mastery Tonal Buttons
+   ========================================================================== */
+.card-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.btn-nav-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+  flex-shrink: 0;
+}
+
+.btn-nav-arrow:hover {
+  background: var(--md-sys-color-surface-container-high);
+  border-color: var(--md-sys-color-outline);
+}
+
+.btn-nav-arrow:active {
+  transform: scale(0.92);
+}
+
+.mastery-rating-group {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+
+/* MD3 Expressive Tonal Semantic Buttons */
+.btn-rate {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 6px 8px;
+  border-radius: var(--md-sys-shape-corner-lg);
+  border: 1px solid transparent;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+}
+
+/* Again (Ulangi): Error Container */
+.btn-rate-again {
+  background: var(--md-sys-color-error-container);
+  color: var(--md-sys-color-on-error-container);
+  border-color: rgba(255, 180, 171, 0.22);
+}
+
+.btn-rate-again:hover {
+  filter: brightness(1.1);
+  box-shadow: var(--md-sys-elevation-1);
+}
+
+/* Hard (Ragu): Warning / Tertiary Container */
+.btn-rate-hard {
+  background: var(--md-sys-color-warning-container);
+  color: var(--md-sys-color-on-warning-container);
+  border-color: rgba(229, 193, 88, 0.22);
+}
+
+.btn-rate-hard:hover {
+  filter: brightness(1.1);
+  box-shadow: var(--md-sys-elevation-1);
+}
+
+/* Easy (Hafal): Success / Primary Container */
+.btn-rate-easy {
+  background: var(--md-sys-color-success-container);
+  color: var(--md-sys-color-on-success-container);
+  border-color: rgba(124, 219, 153, 0.22);
+}
+
+.btn-rate-easy:hover {
+  filter: brightness(1.1);
+  box-shadow: var(--md-sys-elevation-1);
+}
+
+.btn-rate:active {
+  transform: scale(0.95);
+}
+
+.btn-rate.active {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  font-weight: 700;
+}
+
+/* Quiet Utility Strip */
+.quiet-tools-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 6px;
+  font-size: 0.78rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.btn-quiet-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: var(--md-sys-shape-corner-sm);
+  transition: var(--md-sys-motion-standard);
+}
+
+.btn-quiet-action:hover {
+  color: var(--md-sys-color-on-surface);
+  background: var(--md-sys-color-surface-container);
+}
+
+.toggle-unmastered {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* MD3 Switch Element */
+.toggle-checkbox {
+  appearance: none;
+  width: 36px;
+  height: 20px;
+  background: var(--md-sys-color-surface-container-highest);
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: var(--md-sys-shape-corner-full);
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+}
+
+.toggle-checkbox::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: var(--md-sys-color-outline);
+  border-radius: 50%;
+  transition: var(--md-sys-motion-standard);
+}
+
+.toggle-checkbox:checked {
+  background: var(--md-sys-color-primary-container);
+  border-color: var(--md-sys-color-primary);
+}
+
+.toggle-checkbox:checked::after {
+  background: var(--md-sys-color-primary);
+  transform: translateX(16px);
+}
+
+/* ==========================================================================
+   6. MD3 Expressive Page 2: Quiz Stage
+   ========================================================================== */
+.quiz-card {
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-xl);
+  padding: 20px 18px;
+  box-shadow: var(--md-sys-elevation-2);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-counter {
+  font-size: 0.8rem;
+  color: var(--md-sys-color-on-surface-variant);
+  font-weight: 600;
+}
+
+.quiz-target-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 22px 14px;
+  background: var(--md-sys-color-surface-container);
+  border-radius: var(--md-sys-shape-corner-lg);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.quiz-character {
+  font-size: clamp(3rem, 13vw, 4.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--md-sys-color-on-surface);
+}
+
+.quiz-prompt {
+  font-size: 0.84rem;
+  color: var(--md-sys-color-on-surface-variant);
+  text-align: center;
+  font-weight: 500;
+}
+
+.quiz-options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 480px) {
+  .quiz-options-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.quiz-option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 10px 16px;
+  border-radius: var(--md-sys-shape-corner-lg);
+  background: var(--md-sys-color-surface-container-high);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: var(--md-sys-motion-standard);
+}
+
+.quiz-option-btn:hover {
+  border-color: var(--md-sys-color-primary);
+  background: var(--md-sys-color-surface-container-highest);
+}
+
+.quiz-option-btn:active {
+  transform: scale(0.97);
+}
+
+.quiz-option-btn.correct {
+  background: var(--md-sys-color-success-container) !important;
+  border-color: var(--md-sys-color-success) !important;
+  color: var(--md-sys-color-on-success-container) !important;
+}
+
+.quiz-option-btn.wrong {
+  background: var(--md-sys-color-error-container) !important;
+  border-color: var(--md-sys-color-error) !important;
+  color: var(--md-sys-color-on-error-container) !important;
+}
+
+.quiz-result-card {
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-xl);
+  padding: 32px 20px;
+  box-shadow: var(--md-sys-elevation-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.quiz-result-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.quiz-result-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface);
+}
+
+.quiz-result-score {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--md-sys-color-primary);
+}
+
+.quiz-result-desc {
+  font-size: 0.88rem;
+  color: var(--md-sys-color-on-surface-variant);
+  max-width: 320px;
+}
+
+.quiz-result-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 12px;
+}
+
+.btn-control {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 16px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container-high);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+}
+
+.btn-flip-main {
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  border-color: var(--md-sys-color-primary);
+}
+
+.btn-flip-main:hover {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+/* ==========================================================================
+   7. MD3 Expressive Page 3: Dictionary List & Search
+   ========================================================================== */
+.dict-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.dict-search-wrap .search-icon {
+  position: absolute;
+  left: 16px;
+  color: var(--md-sys-color-on-surface-variant);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dict-search-input {
+  width: 100%;
+  min-height: 48px;
+  background: var(--md-sys-color-surface-container-high);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-full);
+  padding: 10px 18px 10px 46px;
+  color: var(--md-sys-color-on-surface);
+  font-size: 0.9rem;
+  outline: none;
+  transition: var(--md-sys-motion-standard);
+}
+
+.dict-search-input:focus {
+  border-color: var(--md-sys-color-primary);
+  box-shadow: 0 0 0 1px var(--md-sys-color-primary);
+}
+
+.dict-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Expressive List Row */
+.dict-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-lg);
+  gap: 14px;
+  transition: var(--md-sys-motion-standard);
+}
+
+.dict-item-row:hover {
+  background: var(--md-sys-color-surface-container);
+  border-color: var(--md-sys-color-outline);
+}
+
+.dict-char-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 56px;
+}
+
+.dict-char {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.1;
+}
+
+.dict-romaji {
+  font-size: 0.78rem;
+  color: var(--md-sys-color-primary);
+  font-weight: 600;
+}
+
+.dict-info-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+
+.dict-meaning {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.35;
+}
+
+.dict-subinfo {
+  font-size: 0.74rem;
+  color: var(--md-sys-color-on-surface-variant);
+  margin-top: 2px;
+}
+
+.dict-status-tag {
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: var(--md-sys-shape-corner-full);
+  font-weight: 600;
+}
+
+.dict-status-tag.mastered {
+  background: var(--md-sys-color-success-container);
+  color: var(--md-sys-color-on-success-container);
+}
+
+.dict-status-tag.doubt {
+  background: var(--md-sys-color-warning-container);
+  color: var(--md-sys-color-on-warning-container);
+}
+
+.dict-status-tag.learning {
+  background: var(--md-sys-color-error-container);
+  color: var(--md-sys-color-on-error-container);
+}
+
+.dict-audio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+  flex-shrink: 0;
+}
+
+.dict-audio-btn:hover {
+  background: var(--md-sys-color-primary-container);
+  border-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary-container);
+}
+
+/* ==========================================================================
+   8. MD3 Expressive Floating Bottom Navigation Bar (Dock)
+   ========================================================================== */
+.floating-botnav {
+  position: fixed;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-full);
+  box-shadow: var(--md-sys-elevation-3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 900;
+}
+
+.botnav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-width: 68px;
+  min-height: 48px;
+  padding: 4px 10px;
+  border: none;
+  background: transparent;
+  color: var(--md-sys-color-on-surface-variant);
+  border-radius: var(--md-sys-shape-corner-full);
+  cursor: pointer;
+  transition: var(--md-sys-motion-standard);
+}
+
+.botnav-item:hover {
+  color: var(--md-sys-color-on-surface);
+}
+
+/* MD3 Expressive Active Indicator Pill */
+.botnav-item.active {
+  color: var(--md-sys-color-on-surface);
+}
+
+.botnav-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 32px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: transparent;
+  transition: var(--md-sys-motion-standard);
+}
+
+.botnav-item.active .botnav-indicator {
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+}
+
+.botnav-item:not(.active):hover .botnav-indicator {
+  background: var(--md-sys-color-surface-container-high);
+}
+
+.botnav-icon {
+  width: 20px;
+  height: 20px;
+  transition: var(--md-sys-motion-standard);
+}
+
+.botnav-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.botnav-item.active .botnav-label {
+  font-weight: 700;
+  color: var(--md-sys-color-primary);
+}
+
+/* ==========================================================================
+   9. Android PWA Banner & Modals
+   ========================================================================== */
+.pwa-banner {
+  position: fixed;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 24px);
+  max-width: 520px;
+  background: var(--md-sys-color-surface-container-high);
+  border: 1px solid var(--md-sys-color-primary);
+  border-radius: var(--md-sys-shape-corner-xl);
+  padding: 12px 16px;
+  box-shadow: var(--md-sys-elevation-4);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: bottom 0.38s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.pwa-banner.visible {
+  bottom: max(80px, calc(env(safe-area-inset-bottom) + 72px));
+}
+
+.pwa-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pwa-banner-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--md-sys-shape-corner-md);
+  flex-shrink: 0;
+}
+
+.pwa-banner-text h4 {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface);
+}
+
+.pwa-banner-text p {
+  font-size: 0.72rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.pwa-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-banner-install {
+  min-height: 40px;
+  padding: 6px 14px;
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  border-radius: var(--md-sys-shape-corner-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--md-sys-color-primary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-banner-close {
+  min-width: 40px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Modal Dialog */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-box {
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-xl);
+  max-width: 460px;
+  width: 100%;
+  padding: 24px 20px;
+  box-shadow: var(--md-sys-elevation-4);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface);
+}
+
+.modal-close-btn {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-surface-container-high);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.install-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.install-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  border: 1px solid var(--md-sys-color-primary);
+  font-size: 0.74rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-text h5 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+  margin-bottom: 2px;
+}
+
+.step-text p {
+  font-size: 0.8rem;
+  color: var(--md-sys-color-on-surface-variant);
+  line-height: 1.45;
+}
+
+.step-badge {
+  display: inline-block;
+  background: var(--md-sys-color-surface-container-high);
+  padding: 2px 8px;
+  border-radius: var(--md-sys-shape-corner-sm);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  font-family: monospace;
+  font-size: 0.82rem;
+}
+
+/* Toast */
+.toast-notification {
+  position: fixed;
+  bottom: max(80px, calc(env(safe-area-inset-bottom) + 72px));
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--md-sys-color-surface-container-highest);
+  color: var(--md-sys-color-on-surface);
+  border: 1px solid var(--md-sys-color-outline);
+  padding: 10px 20px;
+  border-radius: var(--md-sys-shape-corner-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  box-shadow: var(--md-sys-elevation-3);
+  z-index: 1100;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.toast-notification.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 360px) {
+  .app-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .yomi-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-actions-bar {
+    gap: 6px;
+  }
+  .btn-rate {
+    font-size: 0.78rem;
+    padding: 6px 4px;
+  }
+}

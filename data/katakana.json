@@ -1,0 +1,1250 @@
+[
+  {
+    "char": "ア",
+    "romaji": "a",
+    "group": "seion",
+    "meaning_id": "Huruf Vokal A",
+    "meaning_en": "Vowel A",
+    "example": {
+      "ja": "アイス",
+      "reading": "aisu",
+      "meaning": "Es krim"
+    }
+  },
+  {
+    "char": "イ",
+    "romaji": "i",
+    "group": "seion",
+    "meaning_id": "Huruf Vokal I",
+    "meaning_en": "Vowel I",
+    "example": {
+      "ja": "インドネシア",
+      "reading": "indoneshia",
+      "meaning": "Indonesia"
+    }
+  },
+  {
+    "char": "ウ",
+    "romaji": "u",
+    "group": "seion",
+    "meaning_id": "Huruf Vokal U",
+    "meaning_en": "Vowel U",
+    "example": {
+      "ja": "ウェブ",
+      "reading": "webu",
+      "meaning": "Web"
+    }
+  },
+  {
+    "char": "エ",
+    "romaji": "e",
+    "group": "seion",
+    "meaning_id": "Huruf Vokal E",
+    "meaning_en": "Vowel E",
+    "example": {
+      "ja": "エレベーター",
+      "reading": "erebeetaa",
+      "meaning": "Lift / Elevator"
+    }
+  },
+  {
+    "char": "オ",
+    "romaji": "o",
+    "group": "seion",
+    "meaning_id": "Huruf Vokal O",
+    "meaning_en": "Vowel O",
+    "example": {
+      "ja": "オレンジ",
+      "reading": "orenji",
+      "meaning": "Jeruk / Oranye"
+    }
+  },
+  {
+    "char": "カ",
+    "romaji": "ka",
+    "group": "seion",
+    "meaning_id": "Konsonan Ka",
+    "meaning_en": "Consonant Ka",
+    "example": {
+      "ja": "カメラ",
+      "reading": "kamera",
+      "meaning": "Kamera"
+    }
+  },
+  {
+    "char": "キ",
+    "romaji": "ki",
+    "group": "seion",
+    "meaning_id": "Konsonan Ki",
+    "meaning_en": "Consonant Ki",
+    "example": {
+      "ja": "キッチン",
+      "reading": "kicchin",
+      "meaning": "Dapur"
+    }
+  },
+  {
+    "char": "ク",
+    "romaji": "ku",
+    "group": "seion",
+    "meaning_id": "Konsonan Ku",
+    "meaning_en": "Consonant Ku",
+    "example": {
+      "ja": "クラス",
+      "reading": "kurasu",
+      "meaning": "Kelas"
+    }
+  },
+  {
+    "char": "ケ",
+    "romaji": "ke",
+    "group": "seion",
+    "meaning_id": "Konsonan Ke",
+    "meaning_en": "Consonant Ke",
+    "example": {
+      "ja": "ケーキ",
+      "reading": "keeki",
+      "meaning": "Kue / Cake"
+    }
+  },
+  {
+    "char": "コ",
+    "romaji": "ko",
+    "group": "seion",
+    "meaning_id": "Konsonan Ko",
+    "meaning_en": "Consonant Ko",
+    "example": {
+      "ja": "コーヒー",
+      "reading": "koohii",
+      "meaning": "Kopi"
+    }
+  },
+  {
+    "char": "サ",
+    "romaji": "sa",
+    "group": "seion",
+    "meaning_id": "Konsonan Sa",
+    "meaning_en": "Consonant Sa",
+    "example": {
+      "ja": "サラダ",
+      "reading": "sarada",
+      "meaning": "Salad"
+    }
+  },
+  {
+    "char": "シ",
+    "romaji": "shi",
+    "group": "seion",
+    "meaning_id": "Konsonan Shi",
+    "meaning_en": "Consonant Shi",
+    "example": {
+      "ja": "シャツ",
+      "reading": "shatsu",
+      "meaning": "Kemeja"
+    }
+  },
+  {
+    "char": "ス",
+    "romaji": "su",
+    "group": "seion",
+    "meaning_id": "Konsonan Su",
+    "meaning_en": "Consonant Su",
+    "example": {
+      "ja": "スポーツ",
+      "reading": "supootsu",
+      "meaning": "Olahraga"
+    }
+  },
+  {
+    "char": "セ",
+    "romaji": "se",
+    "group": "seion",
+    "meaning_id": "Konsonan Se",
+    "meaning_en": "Consonant Se",
+    "example": {
+      "ja": "セーター",
+      "reading": "seetaa",
+      "meaning": "Sweter"
+    }
+  },
+  {
+    "char": "ソ",
+    "romaji": "so",
+    "group": "seion",
+    "meaning_id": "Konsonan So",
+    "meaning_en": "Consonant So",
+    "example": {
+      "ja": "ソファ",
+      "reading": "sofa",
+      "meaning": "Sofa"
+    }
+  },
+  {
+    "char": "タ",
+    "romaji": "ta",
+    "group": "seion",
+    "meaning_id": "Konsonan Ta",
+    "meaning_en": "Consonant Ta",
+    "example": {
+      "ja": "タクシー",
+      "reading": "takushii",
+      "meaning": "Taksi"
+    }
+  },
+  {
+    "char": "チ",
+    "romaji": "chi",
+    "group": "seion",
+    "meaning_id": "Konsonan Chi",
+    "meaning_en": "Consonant Chi",
+    "example": {
+      "ja": "チーズ",
+      "reading": "chiizu",
+      "meaning": "Keju"
+    }
+  },
+  {
+    "char": "ツ",
+    "romaji": "tsu",
+    "group": "seion",
+    "meaning_id": "Konsonan Tsu",
+    "meaning_en": "Consonant Tsu",
+    "example": {
+      "ja": "ツアー",
+      "reading": "tsuaa",
+      "meaning": "Tur / Wisata"
+    }
+  },
+  {
+    "char": "テ",
+    "romaji": "te",
+    "group": "seion",
+    "meaning_id": "Konsonan Te",
+    "meaning_en": "Consonant Te",
+    "example": {
+      "ja": "テレビ",
+      "reading": "terebi",
+      "meaning": "Televisi"
+    }
+  },
+  {
+    "char": "ト",
+    "romaji": "to",
+    "group": "seion",
+    "meaning_id": "Konsonan To",
+    "meaning_en": "Consonant To",
+    "example": {
+      "ja": "トイレ",
+      "reading": "toire",
+      "meaning": "Toilet"
+    }
+  },
+  {
+    "char": "ナ",
+    "romaji": "na",
+    "group": "seion",
+    "meaning_id": "Konsonan Na",
+    "meaning_en": "Consonant Na",
+    "example": {
+      "ja": "ナイフ",
+      "reading": "naifu",
+      "meaning": "Pisau"
+    }
+  },
+  {
+    "char": "ニ",
+    "romaji": "ni",
+    "group": "seion",
+    "meaning_id": "Konsonan Ni",
+    "meaning_en": "Consonant Ni",
+    "example": {
+      "ja": "ニュース",
+      "reading": "nyuusu",
+      "meaning": "Berita"
+    }
+  },
+  {
+    "char": "ヌ",
+    "romaji": "nu",
+    "group": "seion",
+    "meaning_id": "Konsonan Nu",
+    "meaning_en": "Consonant Nu",
+    "example": {
+      "ja": "ヌードル",
+      "reading": "nuudoru",
+      "meaning": "Mie"
+    }
+  },
+  {
+    "char": "ネ",
+    "romaji": "ne",
+    "group": "seion",
+    "meaning_id": "Konsonan Ne",
+    "meaning_en": "Consonant Ne",
+    "example": {
+      "ja": "ネクタイ",
+      "reading": "nekutai",
+      "meaning": "Dasi"
+    }
+  },
+  {
+    "char": "ノ",
+    "romaji": "no",
+    "group": "seion",
+    "meaning_id": "Konsonan No",
+    "meaning_en": "Consonant No",
+    "example": {
+      "ja": "ノート",
+      "reading": "nooto",
+      "meaning": "Buku catatan"
+    }
+  },
+  {
+    "char": "ハ",
+    "romaji": "ha",
+    "group": "seion",
+    "meaning_id": "Konsonan Ha",
+    "meaning_en": "Consonant Ha",
+    "example": {
+      "ja": "ハンバーガー",
+      "reading": "hanbaagaa",
+      "meaning": "Hamburger"
+    }
+  },
+  {
+    "char": "ヒ",
+    "romaji": "hi",
+    "group": "seion",
+    "meaning_id": "Konsonan Hi",
+    "meaning_en": "Consonant Hi",
+    "example": {
+      "ja": "ヒーター",
+      "reading": "hiitaa",
+      "meaning": "Pemanas ruangan"
+    }
+  },
+  {
+    "char": "フ",
+    "romaji": "fu",
+    "group": "seion",
+    "meaning_id": "Konsonan Fu",
+    "meaning_en": "Consonant Fu",
+    "example": {
+      "ja": "フォーク",
+      "reading": "fooku",
+      "meaning": "Garpu"
+    }
+  },
+  {
+    "char": "ヘ",
+    "romaji": "he",
+    "group": "seion",
+    "meaning_id": "Konsonan He",
+    "meaning_en": "Consonant He",
+    "example": {
+      "ja": "ヘリコプター",
+      "reading": "herikoputaa",
+      "meaning": "Helikopter"
+    }
+  },
+  {
+    "char": "ホ",
+    "romaji": "ho",
+    "group": "seion",
+    "meaning_id": "Konsonan Ho",
+    "meaning_en": "Consonant Ho",
+    "example": {
+      "ja": "ホテル",
+      "reading": "hoteru",
+      "meaning": "Hotel"
+    }
+  },
+  {
+    "char": "マ",
+    "romaji": "ma",
+    "group": "seion",
+    "meaning_id": "Konsonan Ma",
+    "meaning_en": "Consonant Ma",
+    "example": {
+      "ja": "マスク",
+      "reading": "masuku",
+      "meaning": "Masker"
+    }
+  },
+  {
+    "char": "ミ",
+    "romaji": "mi",
+    "group": "seion",
+    "meaning_id": "Konsonan Mi",
+    "meaning_en": "Consonant Mi",
+    "example": {
+      "ja": "ミルク",
+      "reading": "miruku",
+      "meaning": "Susu"
+    }
+  },
+  {
+    "char": "ム",
+    "romaji": "mu",
+    "group": "seion",
+    "meaning_id": "Konsonan Mu",
+    "meaning_en": "Consonant Mu",
+    "example": {
+      "ja": "ムービー",
+      "reading": "muubii",
+      "meaning": "Film / Movie"
+    }
+  },
+  {
+    "char": "メ",
+    "romaji": "me",
+    "group": "seion",
+    "meaning_id": "Konsonan Me",
+    "meaning_en": "Consonant Me",
+    "example": {
+      "ja": "メニュー",
+      "reading": "menyuu",
+      "meaning": "Buku Menu"
+    }
+  },
+  {
+    "char": "モ",
+    "romaji": "mo",
+    "group": "seion",
+    "meaning_id": "Konsonan Mo",
+    "meaning_en": "Consonant Mo",
+    "example": {
+      "ja": "モデル",
+      "reading": "moderu",
+      "meaning": "Model"
+    }
+  },
+  {
+    "char": "ヤ",
+    "romaji": "ya",
+    "group": "seion",
+    "meaning_id": "Konsonan Ya",
+    "meaning_en": "Consonant Ya",
+    "example": {
+      "ja": "ヤング",
+      "reading": "yangu",
+      "meaning": "Muda (Young)"
+    }
+  },
+  {
+    "char": "ユ",
+    "romaji": "yu",
+    "group": "seion",
+    "meaning_id": "Konsonan Yu",
+    "meaning_en": "Consonant Yu",
+    "example": {
+      "ja": "ユーザー",
+      "reading": "yuuzaa",
+      "meaning": "Pengguna (User)"
+    }
+  },
+  {
+    "char": "ヨ",
+    "romaji": "yo",
+    "group": "seion",
+    "meaning_id": "Konsonan Yo",
+    "meaning_en": "Consonant Yo",
+    "example": {
+      "ja": "ヨーグルト",
+      "reading": "yooguruto",
+      "meaning": "Yogurt"
+    }
+  },
+  {
+    "char": "ラ",
+    "romaji": "ra",
+    "group": "seion",
+    "meaning_id": "Konsonan Ra",
+    "meaning_en": "Consonant Ra",
+    "example": {
+      "ja": "ラジオ",
+      "reading": "rajio",
+      "meaning": "Radio"
+    }
+  },
+  {
+    "char": "リ",
+    "romaji": "ri",
+    "group": "seion",
+    "meaning_id": "Konsonan Ri",
+    "meaning_en": "Consonant Ri",
+    "example": {
+      "ja": "リモコン",
+      "reading": "rimokon",
+      "meaning": "Remote control"
+    }
+  },
+  {
+    "char": "ル",
+    "romaji": "ru",
+    "group": "seion",
+    "meaning_id": "Konsonan Ru",
+    "meaning_en": "Consonant Ru",
+    "example": {
+      "ja": "ルール",
+      "reading": "ruuru",
+      "meaning": "Peraturan / Aturan"
+    }
+  },
+  {
+    "char": "レ",
+    "romaji": "re",
+    "group": "seion",
+    "meaning_id": "Konsonan Re",
+    "meaning_en": "Consonant Re",
+    "example": {
+      "ja": "レストラン",
+      "reading": "resutoran",
+      "meaning": "Restoran"
+    }
+  },
+  {
+    "char": "ロ",
+    "romaji": "ro",
+    "group": "seion",
+    "meaning_id": "Konsonan Ro",
+    "meaning_en": "Consonant Ro",
+    "example": {
+      "ja": "ロボット",
+      "reading": "robotto",
+      "meaning": "Robot"
+    }
+  },
+  {
+    "char": "ワ",
+    "romaji": "wa",
+    "group": "seion",
+    "meaning_id": "Konsonan Wa",
+    "meaning_en": "Consonant Wa",
+    "example": {
+      "ja": "ワイシャツ",
+      "reading": "waishatsu",
+      "meaning": "Kemeja putih"
+    }
+  },
+  {
+    "char": "ヲ",
+    "romaji": "wo",
+    "group": "seion",
+    "meaning_id": "Konsonan Wo (o)",
+    "meaning_en": "Consonant Wo",
+    "example": {
+      "ja": "ヲタク",
+      "reading": "wotaku",
+      "meaning": "Otaku"
+    }
+  },
+  {
+    "char": "ン",
+    "romaji": "n",
+    "group": "seion",
+    "meaning_id": "Konsonan N",
+    "meaning_en": "Consonant N",
+    "example": {
+      "ja": "パン",
+      "reading": "pan",
+      "meaning": "Roti"
+    }
+  },
+  {
+    "char": "ガ",
+    "romaji": "ga",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Ga",
+    "meaning_en": "Voiced Ga",
+    "example": {
+      "ja": "ガラス",
+      "reading": "garasu",
+      "meaning": "Kaca"
+    }
+  },
+  {
+    "char": "ギ",
+    "romaji": "gi",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Gi",
+    "meaning_en": "Voiced Gi",
+    "example": {
+      "ja": "ギター",
+      "reading": "gitaa",
+      "meaning": "Gitar"
+    }
+  },
+  {
+    "char": "グ",
+    "romaji": "gu",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Gu",
+    "meaning_en": "Voiced Gu",
+    "example": {
+      "ja": "グラス",
+      "reading": "gurasu",
+      "meaning": "Gelas kaca"
+    }
+  },
+  {
+    "char": "ゲ",
+    "romaji": "ge",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Ge",
+    "meaning_en": "Voiced Ge",
+    "example": {
+      "ja": "ゲーム",
+      "reading": "geemu",
+      "meaning": "Permainan / Game"
+    }
+  },
+  {
+    "char": "ゴ",
+    "romaji": "go",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Go",
+    "meaning_en": "Voiced Go",
+    "example": {
+      "ja": "ゴルフ",
+      "reading": "gorufu",
+      "meaning": "Golf"
+    }
+  },
+  {
+    "char": "ザ",
+    "romaji": "za",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Za",
+    "meaning_en": "Voiced Za",
+    "example": {
+      "ja": "デザイン",
+      "reading": "dezain",
+      "meaning": "Desain"
+    }
+  },
+  {
+    "char": "ジ",
+    "romaji": "ji",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Ji",
+    "meaning_en": "Voiced Ji",
+    "example": {
+      "ja": "ジュース",
+      "reading": "juusu",
+      "meaning": "Jus"
+    }
+  },
+  {
+    "char": "ズ",
+    "romaji": "zu",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Zu",
+    "meaning_en": "Voiced Zu",
+    "example": {
+      "ja": "ズボン",
+      "reading": "zubon",
+      "meaning": "Celana panjang"
+    }
+  },
+  {
+    "char": "ゼ",
+    "romaji": "ze",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Ze",
+    "meaning_en": "Voiced Ze",
+    "example": {
+      "ja": "ゼロ",
+      "reading": "zero",
+      "meaning": "Nol"
+    }
+  },
+  {
+    "char": "ゾ",
+    "romaji": "zo",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Zo",
+    "meaning_en": "Voiced Zo",
+    "example": {
+      "ja": "ゾーン",
+      "reading": "zoon",
+      "meaning": "Zona"
+    }
+  },
+  {
+    "char": "ダ",
+    "romaji": "da",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Da",
+    "meaning_en": "Voiced Da",
+    "example": {
+      "ja": "ダンス",
+      "reading": "dansu",
+      "meaning": "Menari / Dance"
+    }
+  },
+  {
+    "char": "ヂ",
+    "romaji": "ji (di)",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Ji",
+    "meaning_en": "Voiced Ji",
+    "example": {
+      "ja": "ヂ",
+      "reading": "ji",
+      "meaning": "Karakter Ji (di)"
+    }
+  },
+  {
+    "char": "ヅ",
+    "romaji": "zu (du)",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Zu",
+    "meaning_en": "Voiced Zu",
+    "example": {
+      "ja": "ヅ",
+      "reading": "zu",
+      "meaning": "Karakter Zu (du)"
+    }
+  },
+  {
+    "char": "デ",
+    "romaji": "de",
+    "group": "dakuon",
+    "meaning_id": "Dakuon De",
+    "meaning_en": "Voiced De",
+    "example": {
+      "ja": "デパート",
+      "reading": "depaato",
+      "meaning": "Dept Store"
+    }
+  },
+  {
+    "char": "ド",
+    "romaji": "do",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Do",
+    "meaning_en": "Voiced Do",
+    "example": {
+      "ja": "ドア",
+      "reading": "doa",
+      "meaning": "Pintu"
+    }
+  },
+  {
+    "char": "バ",
+    "romaji": "ba",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Ba",
+    "meaning_en": "Voiced Ba",
+    "example": {
+      "ja": "バス",
+      "reading": "basu",
+      "meaning": "Bus"
+    }
+  },
+  {
+    "char": "ビ",
+    "romaji": "bi",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Bi",
+    "meaning_en": "Voiced Bi",
+    "example": {
+      "ja": "ビル",
+      "reading": "biru",
+      "meaning": "Gedung / Bangunan"
+    }
+  },
+  {
+    "char": "ブ",
+    "romaji": "bu",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Bu",
+    "meaning_en": "Voiced Bu",
+    "example": {
+      "ja": "ブラウス",
+      "reading": "burausu",
+      "meaning": "Blus"
+    }
+  },
+  {
+    "char": "ベ",
+    "romaji": "be",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Be",
+    "meaning_en": "Voiced Be",
+    "example": {
+      "ja": "ベッド",
+      "reading": "beddo",
+      "meaning": "Tempat tidur"
+    }
+  },
+  {
+    "char": "ボ",
+    "romaji": "bo",
+    "group": "dakuon",
+    "meaning_id": "Dakuon Bo",
+    "meaning_en": "Voiced Bo",
+    "example": {
+      "ja": "ボールペン",
+      "reading": "boorupen",
+      "meaning": "Pulpen"
+    }
+  },
+  {
+    "char": "パ",
+    "romaji": "pa",
+    "group": "dakuon",
+    "meaning_id": "Handakuon Pa",
+    "meaning_en": "Semi-voiced Pa",
+    "example": {
+      "ja": "パン",
+      "reading": "pan",
+      "meaning": "Roti"
+    }
+  },
+  {
+    "char": "ピ",
+    "romaji": "pi",
+    "group": "dakuon",
+    "meaning_id": "Handakuon Pi",
+    "meaning_en": "Semi-voiced Pi",
+    "example": {
+      "ja": "ピアノ",
+      "reading": "piano",
+      "meaning": "Piano"
+    }
+  },
+  {
+    "char": "プ",
+    "romaji": "pu",
+    "group": "dakuon",
+    "meaning_id": "Handakuon Pu",
+    "meaning_en": "Semi-voiced Pu",
+    "example": {
+      "ja": "プール",
+      "reading": "puuru",
+      "meaning": "Kolam renang"
+    }
+  },
+  {
+    "char": "ペ",
+    "romaji": "pe",
+    "group": "dakuon",
+    "meaning_id": "Handakuon Pe",
+    "meaning_en": "Semi-voiced Pe",
+    "example": {
+      "ja": "ペン",
+      "reading": "pen",
+      "meaning": "Pena / Pulpen"
+    }
+  },
+  {
+    "char": "ポ",
+    "romaji": "po",
+    "group": "dakuon",
+    "meaning_id": "Handakuon Po",
+    "meaning_en": "Semi-voiced Po",
+    "example": {
+      "ja": "ポスト",
+      "reading": "posuto",
+      "meaning": "Kotak pos"
+    }
+  },
+  {
+    "char": "キャ",
+    "romaji": "kya",
+    "group": "yoon",
+    "meaning_id": "Yoon Kya",
+    "meaning_en": "Contracted Kya",
+    "example": {
+      "ja": "キャンプ",
+      "reading": "kyanpu",
+      "meaning": "Berkemah (Camping)"
+    }
+  },
+  {
+    "char": "キュ",
+    "romaji": "kyu",
+    "group": "yoon",
+    "meaning_id": "Yoon Kyu",
+    "meaning_en": "Contracted Kyu",
+    "example": {
+      "ja": "キューブ",
+      "reading": "kyuubu",
+      "meaning": "Kubus"
+    }
+  },
+  {
+    "char": "キョ",
+    "romaji": "kyo",
+    "group": "yoon",
+    "meaning_id": "Yoon Kyo",
+    "meaning_en": "Contracted Kyo",
+    "example": {
+      "ja": "キログラム",
+      "reading": "kiroguramu",
+      "meaning": "Kilogram"
+    }
+  },
+  {
+    "char": "シャ",
+    "romaji": "sha",
+    "group": "yoon",
+    "meaning_id": "Yoon Sha",
+    "meaning_en": "Contracted Sha",
+    "example": {
+      "ja": "シャワー",
+      "reading": "shawaa",
+      "meaning": "Mandi shower"
+    }
+  },
+  {
+    "char": "シュ",
+    "romaji": "shu",
+    "group": "yoon",
+    "meaning_id": "Yoon Shu",
+    "meaning_en": "Contracted Shu",
+    "example": {
+      "ja": "シューズ",
+      "reading": "shuuzu",
+      "meaning": "Sepatu"
+    }
+  },
+  {
+    "char": "ショ",
+    "romaji": "sho",
+    "group": "yoon",
+    "meaning_id": "Yoon Sho",
+    "meaning_en": "Contracted Sho",
+    "example": {
+      "ja": "シャツ",
+      "reading": "shatsu",
+      "meaning": "Kemeja"
+    }
+  },
+  {
+    "char": "チャ",
+    "romaji": "cha",
+    "group": "yoon",
+    "meaning_id": "Yoon Cha",
+    "meaning_en": "Contracted Cha",
+    "example": {
+      "ja": "チャット",
+      "reading": "chatto",
+      "meaning": "Mengobrol / Chat"
+    }
+  },
+  {
+    "char": "チュ",
+    "romaji": "chu",
+    "group": "yoon",
+    "meaning_id": "Yoon Chu",
+    "meaning_en": "Contracted Chu",
+    "example": {
+      "ja": "チューリップ",
+      "reading": "chuurippu",
+      "meaning": "Bunga tulip"
+    }
+  },
+  {
+    "char": "チョ",
+    "romaji": "cho",
+    "group": "yoon",
+    "meaning_id": "Yoon Cho",
+    "meaning_en": "Contracted Cho",
+    "example": {
+      "ja": "チョコレート",
+      "reading": "chokoreeto",
+      "meaning": "Cokelat"
+    }
+  },
+  {
+    "char": "ニャ",
+    "romaji": "nya",
+    "group": "yoon",
+    "meaning_id": "Yoon Nya",
+    "meaning_en": "Contracted Nya",
+    "example": {
+      "ja": "ニャー",
+      "reading": "nyaa",
+      "meaning": "Suara meong kucing"
+    }
+  },
+  {
+    "char": "ニュ",
+    "romaji": "nyu",
+    "group": "yoon",
+    "meaning_id": "Yoon Nyu",
+    "meaning_en": "Contracted Nyu",
+    "example": {
+      "ja": "ニュース",
+      "reading": "nyuusu",
+      "meaning": "Berita"
+    }
+  },
+  {
+    "char": "ニョ",
+    "romaji": "nyo",
+    "group": "yoon",
+    "meaning_id": "Yoon Nyo",
+    "meaning_en": "Contracted Nyo",
+    "example": {
+      "ja": "ニョッキ",
+      "reading": "nyokki",
+      "meaning": "Pasta Gnocchi"
+    }
+  },
+  {
+    "char": "ヒャ",
+    "romaji": "hya",
+    "group": "yoon",
+    "meaning_id": "Yoon Hya",
+    "meaning_en": "Contracted Hya",
+    "example": {
+      "ja": "ヒャ",
+      "reading": "hya",
+      "meaning": "Kombinasi Hya"
+    }
+  },
+  {
+    "char": "ヒュ",
+    "romaji": "hyu",
+    "group": "yoon",
+    "meaning_id": "Yoon Hyu",
+    "meaning_en": "Contracted Hyu",
+    "example": {
+      "ja": "ヒューズ",
+      "reading": "hyuuzu",
+      "meaning": "Sekring (Fuse)"
+    }
+  },
+  {
+    "char": "ヒョ",
+    "romaji": "hyo",
+    "group": "yoon",
+    "meaning_id": "Yoon Hyo",
+    "meaning_en": "Contracted Hyo",
+    "example": {
+      "ja": "ヒョウ",
+      "reading": "hyou",
+      "meaning": "Macan tutul"
+    }
+  },
+  {
+    "char": "ミャ",
+    "romaji": "mya",
+    "group": "yoon",
+    "meaning_id": "Yoon Mya",
+    "meaning_en": "Contracted Mya",
+    "example": {
+      "ja": "ミャンマー",
+      "reading": "myanmaa",
+      "meaning": "Myanmar"
+    }
+  },
+  {
+    "char": "ミュ",
+    "romaji": "myu",
+    "group": "yoon",
+    "meaning_id": "Yoon Myu",
+    "meaning_en": "Contracted Myu",
+    "example": {
+      "ja": "ミュージアム",
+      "reading": "myuujiamu",
+      "meaning": "Museum"
+    }
+  },
+  {
+    "char": "ミョ",
+    "romaji": "myo",
+    "group": "yoon",
+    "meaning_id": "Yoon Myo",
+    "meaning_en": "Contracted Myo",
+    "example": {
+      "ja": "ミョウガ",
+      "reading": "myouga",
+      "meaning": "Jahe Jepang"
+    }
+  },
+  {
+    "char": "リャ",
+    "romaji": "rya",
+    "group": "yoon",
+    "meaning_id": "Yoon Rya",
+    "meaning_en": "Contracted Rya",
+    "example": {
+      "ja": "リャ",
+      "reading": "rya",
+      "meaning": "Kombinasi Rya"
+    }
+  },
+  {
+    "char": "リュ",
+    "romaji": "ryu",
+    "group": "yoon",
+    "meaning_id": "Yoon Ryu",
+    "meaning_en": "Contracted Ryu",
+    "example": {
+      "ja": "リュック",
+      "reading": "ryukku",
+      "meaning": "Ransel"
+    }
+  },
+  {
+    "char": "リョ",
+    "romaji": "ryo",
+    "group": "yoon",
+    "meaning_id": "Yoon Ryo",
+    "meaning_en": "Contracted Ryo",
+    "example": {
+      "ja": "リョ",
+      "reading": "ryo",
+      "meaning": "Kombinasi Ryo"
+    }
+  },
+  {
+    "char": "ギャ",
+    "romaji": "gya",
+    "group": "yoon",
+    "meaning_id": "Yoon Gya",
+    "meaning_en": "Contracted Gya",
+    "example": {
+      "ja": "ギャラリー",
+      "reading": "gyararii",
+      "meaning": "Galeri"
+    }
+  },
+  {
+    "char": "ギュ",
+    "romaji": "gyu",
+    "group": "yoon",
+    "meaning_id": "Yoon Gyu",
+    "meaning_en": "Contracted Gyu",
+    "example": {
+      "ja": "ギュ",
+      "reading": "gyu",
+      "meaning": "Kombinasi Gyu"
+    }
+  },
+  {
+    "char": "ギョ",
+    "romaji": "gyo",
+    "group": "yoon",
+    "meaning_id": "Yoon Gyo",
+    "meaning_en": "Contracted Gyo",
+    "example": {
+      "ja": "ギョーザ",
+      "reading": "gyooza",
+      "meaning": "Gyoza"
+    }
+  },
+  {
+    "char": "ジャ",
+    "romaji": "ja",
+    "group": "yoon",
+    "meaning_id": "Yoon Ja",
+    "meaning_en": "Contracted Ja",
+    "example": {
+      "ja": "ジャケット",
+      "reading": "jaketto",
+      "meaning": "Jaket"
+    }
+  },
+  {
+    "char": "ジュ",
+    "romaji": "ju",
+    "group": "yoon",
+    "meaning_id": "Yoon Ju",
+    "meaning_en": "Contracted Ju",
+    "example": {
+      "ja": "ジュース",
+      "reading": "juusu",
+      "meaning": "Jus"
+    }
+  },
+  {
+    "char": "ジョ",
+    "romaji": "jo",
+    "group": "yoon",
+    "meaning_id": "Yoon Jo",
+    "meaning_en": "Contracted Jo",
+    "example": {
+      "ja": "ジョギング",
+      "reading": "jogingu",
+      "meaning": "Jogging"
+    }
+  },
+  {
+    "char": "ビャ",
+    "romaji": "bya",
+    "group": "yoon",
+    "meaning_id": "Yoon Bya",
+    "meaning_en": "Contracted Bya",
+    "example": {
+      "ja": "ビャ",
+      "reading": "bya",
+      "meaning": "Kombinasi Bya"
+    }
+  },
+  {
+    "char": "ビュ",
+    "romaji": "byu",
+    "group": "yoon",
+    "meaning_id": "Yoon Byu",
+    "meaning_en": "Contracted Byu",
+    "example": {
+      "ja": "ビュッフェ",
+      "reading": "byuffe",
+      "meaning": "Prasmanan (Buffet)"
+    }
+  },
+  {
+    "char": "ビョ",
+    "romaji": "byo",
+    "group": "yoon",
+    "meaning_id": "Yoon Byo",
+    "meaning_en": "Contracted Byo",
+    "example": {
+      "ja": "ビョ",
+      "reading": "byo",
+      "meaning": "Kombinasi Byo"
+    }
+  },
+  {
+    "char": "ピャ",
+    "romaji": "pya",
+    "group": "yoon",
+    "meaning_id": "Yoon Pya",
+    "meaning_en": "Contracted Pya",
+    "example": {
+      "ja": "ピャ",
+      "reading": "pya",
+      "meaning": "Kombinasi Pya"
+    }
+  },
+  {
+    "char": "ピュ",
+    "romaji": "pyu",
+    "group": "yoon",
+    "meaning_id": "Yoon Pyu",
+    "meaning_en": "Contracted Pyu",
+    "example": {
+      "ja": "ピューター",
+      "reading": "pyuutaa",
+      "meaning": "Logam timah"
+    }
+  },
+  {
+    "char": "ピョ",
+    "romaji": "pyo",
+    "group": "yoon",
+    "meaning_id": "Yoon Pyo",
+    "meaning_en": "Contracted Pyo",
+    "example": {
+      "ja": "ピョンピョン",
+      "reading": "pyonpyon",
+      "meaning": "Melompat-lompat"
+    }
+  }
+]
