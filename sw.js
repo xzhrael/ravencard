@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ravencard-cache-v7';
+const CACHE_NAME = 'ravencard-cache-v8';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -10,6 +10,7 @@ const ASSETS_TO_CACHE = [
   './js/audio.js',
   './js/quiz.js',
   './js/app.js',
+  './assets/icons/logo.svg',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './assets/icons/icon-512-maskable.png',

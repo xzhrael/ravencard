@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Canvas Base: Deep Sumi Surface (MD3E Squircle) -->
+  <rect width="512" height="512" rx="112" fill="#111318"/>
+  <!-- Subtle tactile hairline rim -->
+  <rect x="10" y="10" width="492" height="492" rx="102" fill="none" stroke="#262a30" stroke-width="4"/>
+
+  <g transform="translate(256, 256)">
+    <!-- Clean Tactile Flashcard -->
+    <rect x="-120" y="-155" width="240" height="310" rx="24" fill="#fcfcfc"/>
+    <rect x="-120" y="-155" width="240" height="310" rx="24" fill="none" stroke="#e2e2e9" stroke-width="3"/>
+
+    <!-- Origami Raven (Sumi Ink on Washi) -->
+    <!-- Head & Sharp Beak -->
+    <path d="M-20,-75 L80,-40 L-5,-10 Z" fill="#111318"/>
+    <path d="M-20,-75 L-5,-10 L-65,-35 Z" fill="#1c2025"/>
+    
+    <!-- Hero Wing / Body -->
+    <path d="M-5,-10 L35,80 L-65,45 Z" fill="#111318"/>
+    <path d="M-65,-35 L-5,-10 L-65,45 Z" fill="#262a30"/>
+    
+    <!-- Secondary Wing Edge -->
+    <path d="M-65,-35 L-95,15 L-65,45 Z" fill="#31353c"/>
+    
+    <!-- Eye Accent (Clean Washi Pinpoint) -->
+    <circle cx="-15" cy="-38" r="4.5" fill="#fcfcfc"/>
+
+    <!-- Red Hanko Seal Accent (Traditional Japanese Seal) -->
+    <rect x="55" y="85" width="38" height="38" rx="8" fill="#d32f2f"/>
+    <!-- Seal Inscription: Miniature Kanji 札 (Fuda / Card) -->
+    <path d="M67,97 L81,97 M74,92 L74,115 M65,105 L72,110 M83,103 L76,112" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
