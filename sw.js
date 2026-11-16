@@ -87,8 +87,8 @@ self.addEventListener('fetch', (event) => {
         })
         .catch(() => {
           // Fall back to index.html for navigation requests when offline
-          if (event.request.headers.get('accept')?.includes('text/html')) {
-            return caches.match('./index.html');
+          if (event.request.mode === 'navigate' || event.request.headers.get('accept')?.includes('text/html')) {
+            return caches.match('./index.html').then((res) => res || caches.match('./'));
           }
         });
     })
