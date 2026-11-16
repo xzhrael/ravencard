@@ -1,140 +1,169 @@
 import { showToast } from './pwa.js';
 
+/**
+ * Global audio engine state
+ */
 let jaVoice = null;
-let voicesLoaded = false;
 let activeAudioElement = null;
 let activeUtterance = null;
+let voicesLoaded = false;
 
-// Initialize voices as soon as module loads
+// Preload available speech synthesis voices as early as possible
 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  loadVoices();
+  findJapaneseVoice();
   if (window.speechSynthesis.onvoiceschanged !== undefined) {
-    window.speechSynthesis.onvoiceschanged = loadVoices;
+    window.speechSynthesis.onvoiceschanged = () => {
+      findJapaneseVoice();
+    };
   }
-}
-
-function loadVoices() {
-  if (!('speechSynthesis' in window)) return [];
-  const voices = window.speechSynthesis.getVoices() || [];
-  if (voices.length > 0) {
-    voicesLoaded = true;
-    jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP' || v.lang.startsWith('ja')) || null;
-  }
-  return voices;
 }
 
 /**
- * Robust, resilient Japanese TTS engine with Web Speech API and instant fallback
- * @param {string} text - The Japanese character, word, or sentence to pronounce
- * @param {HTMLElement} [triggerBtn] - Optional button element to provide visual playing feedback
+ * Searches and caches available Japanese TTS voices from the browser/OS.
+ * @returns {SpeechSynthesisVoice|null}
+ */
+function findJapaneseVoice() {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return null;
+
+  try {
+    const voices = window.speechSynthesis.getVoices() || [];
+    if (voices.length > 0) {
+      voicesLoaded = true;
+      // Prioritize exact match ja-JP, then any Japanese dialect/voice
+      jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP') ||
+                voices.find(v => v.lang && v.lang.toLowerCase().startsWith('ja')) ||
+                null;
+    }
+  } catch (_) {
+    jaVoice = null;
+  }
+  return jaVoice;
+}
+
+/**
+ * Speaks Japanese text using the best available engine:
+ * 1. Native Web Speech API if a Japanese voice is installed on the device.
+ * 2. High-fidelity cloud TTS stream if native Japanese voice is absent or fails.
+ * 
+ * @param {string} text - Character, reading, or vocabulary word to speak.
+ * @param {HTMLElement} [triggerBtn] - Optional button element to receive active animation.
  */
 export function speakJapanese(text, triggerBtn = null) {
   if (!text) return;
 
-  // Clean text: strip brackets, slashes, or romaji hints e.g. "[ あ ]" -> "あ"
+  // Sanitize text: strip furigana brackets, romaji hints, slashes
   const cleanText = String(text).replace(/[[\]()（）/]/g, '').trim();
   if (!cleanText) return;
 
-  // Haptic feedback for tactile feel on mobile
+  // Haptic feedback for tactile response on mobile
   if (typeof navigator !== 'undefined' && navigator.vibrate) {
-    try { navigator.vibrate(15); } catch (_) {}
+    try { navigator.vibrate(12); } catch (_) {}
   }
 
-  // Visual feedback on the button
+  // Visual animation on audio trigger button
   if (triggerBtn) {
     triggerBtn.classList.add('audio-playing');
   }
 
-  const cleanupFeedback = () => {
+  const cleanup = () => {
     if (triggerBtn) {
       triggerBtn.classList.remove('audio-playing');
     }
     activeUtterance = null;
   };
 
-  // Try Web Speech API first
-  const hasSpeech = typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
+  // Stop any currently playing audio streams
+  stopCurrentAudio();
 
-  if (hasSpeech) {
-    try {
-      // Unfreeze queue on mobile Chromium if it was paused
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-      }
+  const voice = findJapaneseVoice();
+  const hasSpeech = typeof window !== 'undefined' &&
+                    'speechSynthesis' in window &&
+                    typeof SpeechSynthesisUtterance !== 'undefined';
 
-      const voices = loadVoices();
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'ja-JP';
-      utterance.rate = 0.88;
-
-      if (jaVoice) {
-        utterance.voice = jaVoice;
-      } else if (voices.length > 0) {
-        const found = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP' || v.lang.startsWith('ja'));
-        if (found) {
-          jaVoice = found;
-          utterance.voice = found;
-        }
-      }
-
-      let started = false;
-      let fallbackTriggered = false;
-
-      // Watchdog timer: If Android SpeechSynthesis hangs or doesn't start within 450ms,
-      // fallback to audio stream
-      const fallbackTimer = setTimeout(() => {
-        if (!started && !fallbackTriggered) {
-          fallbackTriggered = true;
-          tryFallbackAudio(cleanText, cleanupFeedback);
-        }
-      }, 450);
-
-      utterance.onstart = () => {
-        started = true;
-        clearTimeout(fallbackTimer);
-      };
-
-      utterance.onend = () => {
-        clearTimeout(fallbackTimer);
-        cleanupFeedback();
-      };
-
-      utterance.onerror = (err) => {
-        clearTimeout(fallbackTimer);
-        if (!fallbackTriggered) {
-          fallbackTriggered = true;
-          tryFallbackAudio(cleanText, cleanupFeedback);
-        } else {
-          cleanupFeedback();
-        }
-      };
-
-      // Keep strong global reference to prevent Chrome V8 garbage collection bug
-      activeUtterance = utterance;
-      window.__rc_active_utterance = utterance;
-
-      window.speechSynthesis.speak(utterance);
-      return;
-    } catch (e) {
-      console.warn('[Audio] SpeechSynthesis error:', e);
-    }
+  // If native Japanese voice is explicitly detected and verified, use native Web Speech
+  if (hasSpeech && voice) {
+    speakWithWebSpeech(cleanText, voice, cleanup);
+    return;
   }
 
-  // If SpeechSynthesis not available or errored synchronously
-  tryFallbackAudio(cleanText, cleanupFeedback);
+  // If no native Japanese voice is available, immediately stream audio
+  // Triggered synchronously to preserve user gesture activation on mobile
+  speakWithStreamingAudio(cleanText, cleanup);
 }
 
-function tryFallbackAudio(text, onComplete) {
+/**
+ * Plays speech using browser native SpeechSynthesisUtterance.
+ */
+function speakWithWebSpeech(text, voice, onComplete) {
   try {
-    if (activeAudioElement) {
-      activeAudioElement.pause();
-      activeAudioElement = null;
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
     }
+    window.speechSynthesis.cancel();
 
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'ja-JP';
+    utterance.voice = voice;
+    utterance.rate = 0.88;
+
+    let hasStarted = false;
+    let fallbackInvoked = false;
+
+    // Safety watchdog: fallback if mobile speech engine hangs or fails to start
+    const watchdogTimer = setTimeout(() => {
+      if (!hasStarted && !fallbackInvoked) {
+        fallbackInvoked = true;
+        speakWithStreamingAudio(text, onComplete);
+      }
+    }, 1500);
+
+    utterance.onstart = () => {
+      hasStarted = true;
+      clearTimeout(watchdogTimer);
+    };
+
+    utterance.onend = () => {
+      clearTimeout(watchdogTimer);
+      onComplete();
+    };
+
+    utterance.onerror = (e) => {
+      clearTimeout(watchdogTimer);
+      if (!fallbackInvoked) {
+        fallbackInvoked = true;
+        speakWithStreamingAudio(text, onComplete);
+      } else {
+        onComplete();
+      }
+    };
+
+    // Keep global reference to prevent Chrome garbage collection bug
+    activeUtterance = utterance;
+    window.__rc_utterance = utterance;
+
+    window.speechSynthesis.speak(utterance);
+  } catch (err) {
+    console.warn('[Audio] WebSpeech failed, falling back to audio stream:', err);
+    speakWithStreamingAudio(text, onComplete);
+  }
+}
+
+/**
+ * Plays speech via natural Japanese neural TTS audio stream without referrer leakage.
+ */
+function speakWithStreamingAudio(text, onComplete) {
+  try {
     const encoded = encodeURIComponent(text);
-    const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ja&q=${encoded}`;
-    const audio = new Audio(audioUrl);
+    // client=gtx and client=tw-ob provide clear Japanese pronunciation
+    const primaryUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&tl=ja&q=${encoded}`;
+    const secondaryUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ja&q=${encoded}`;
+
+    const audio = new Audio();
+    // Essential: prevents Referer header to bypass anti-hotlink 404 blocks
+    audio.referrerPolicy = 'no-referrer';
     activeAudioElement = audio;
+
+    let triedSecondary = false;
 
     audio.onended = () => {
       activeAudioElement = null;
@@ -142,19 +171,53 @@ function tryFallbackAudio(text, onComplete) {
     };
 
     audio.onerror = () => {
-      activeAudioElement = null;
-      if (onComplete) onComplete();
-      showToast('Audio gagal diputar. Periksa koneksi internet atau aktifkan suara Bahasa Jepang di Setelan TTS HP.');
+      if (!triedSecondary) {
+        triedSecondary = true;
+        audio.src = secondaryUrl;
+        audio.play().catch(() => {
+          handleStreamFailure(onComplete);
+        });
+      } else {
+        handleStreamFailure(onComplete);
+      }
     };
 
+    audio.src = primaryUrl;
     const playPromise = audio.play();
     if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        if (onComplete) onComplete();
-        showToast('Ketuk layar untuk mengizinkan pemutaran audio peramban.');
+      playPromise.catch((err) => {
+        // Handle browser autoplay policy rejection
+        console.warn('[Audio] Stream play promise rejected:', err);
+        handleStreamFailure(onComplete);
       });
     }
   } catch (err) {
-    if (onComplete) onComplete();
+    console.error('[Audio] Stream init failed:', err);
+    handleStreamFailure(onComplete);
+  }
+}
+
+function handleStreamFailure(onComplete) {
+  activeAudioElement = null;
+  if (onComplete) onComplete();
+  showToast('Audio gagal dimuat. Periksa koneksi internet atau aktifkan suara Bahasa Jepang di Setelan HP.');
+}
+
+/**
+ * Stops any ongoing audio playback and speech synthesis.
+ */
+export function stopCurrentAudio() {
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch (_) {}
+  }
+
+  if (activeAudioElement) {
+    try {
+      activeAudioElement.pause();
+      activeAudioElement.currentTime = 0;
+    } catch (_) {}
+    activeAudioElement = null;
   }
 }

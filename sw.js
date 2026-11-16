@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ravencard-cache-v11';
+const CACHE_NAME = 'ravencard-cache-v12';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -59,6 +59,11 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+
+  // Let browser natively handle cross-origin streams and external audio
+  if (!event.request.url.startsWith(self.location.origin)) {
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
