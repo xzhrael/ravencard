@@ -573,6 +573,13 @@ body {
   color: var(--md-sys-color-on-surface);
 }
 
+.yomi-romaji {
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--md-sys-color-primary);
+  margin-top: 2px;
+}
+
 .example-section {
   background: var(--md-sys-color-surface-container-high);
   border-radius: var(--radius-sm);
@@ -583,11 +590,24 @@ body {
   text-align: left;
 }
 
+.example-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
 .example-ja {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--md-sys-color-on-surface);
-  margin-bottom: 2px;
+}
+
+.example-reading {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--md-sys-color-primary);
 }
 
 .example-meaning {

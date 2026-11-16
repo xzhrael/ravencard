@@ -197,7 +197,11 @@ function renderCurrentCard() {
   }
 
   if (frontHint) {
-    frontHint.textContent = card.reading ? `[ ${card.reading} ]` : '';
+    if (card.category === 'kanji') {
+      frontHint.textContent = card.romaji ? `[ ${card.romaji} ]` : '';
+    } else {
+      frontHint.textContent = card.reading ? `[ ${card.reading} ]` : '';
+    }
   }
 
   const backBadge = document.getElementById('card-badge-back');
@@ -214,23 +218,37 @@ function renderCurrentCard() {
 
   const yomiBox = document.getElementById('kanji-yomi-box');
   const onyomiEl = document.getElementById('kanji-onyomi');
+  const onyomiRomajiEl = document.getElementById('kanji-onyomi-romaji');
   const kunyomiEl = document.getElementById('kanji-kunyomi');
+  const kunyomiRomajiEl = document.getElementById('kanji-kunyomi-romaji');
 
   if (card.category === 'kanji') {
     if (yomiBox) yomiBox.style.display = 'grid';
     if (onyomiEl) onyomiEl.textContent = card.onyomi || '-';
+    if (onyomiRomajiEl) onyomiRomajiEl.textContent = card.onyomi_romaji ? `(${card.onyomi_romaji})` : '-';
     if (kunyomiEl) kunyomiEl.textContent = card.kunyomi || '-';
+    if (kunyomiRomajiEl) kunyomiRomajiEl.textContent = card.kunyomi_romaji ? `(${card.kunyomi_romaji})` : '-';
   } else if (yomiBox) {
     yomiBox.style.display = 'none';
   }
 
   const exampleBox = document.getElementById('card-example-box');
   const exampleJa = document.getElementById('example-ja');
+  const exampleReading = document.getElementById('example-reading');
   const exampleMeaning = document.getElementById('example-meaning');
 
   if (card.example && card.example.ja) {
     if (exampleBox) exampleBox.style.display = 'block';
     if (exampleJa) exampleJa.textContent = card.example.ja;
+    if (exampleReading) {
+      if (card.example.reading && card.example.romaji) {
+        exampleReading.textContent = `${card.example.reading} (${card.example.romaji})`;
+      } else if (card.example.reading) {
+        exampleReading.textContent = card.example.reading;
+      } else {
+        exampleReading.textContent = '';
+      }
+    }
     if (exampleMeaning) exampleMeaning.textContent = card.example.meaning || '';
   } else if (exampleBox) {
     exampleBox.style.display = 'none';
@@ -489,7 +507,9 @@ function createDictRow(card) {
 
   let subinfoText = '';
   if (card.onyomi || card.kunyomi) {
-    subinfoText = `On: ${card.onyomi || '-'} | Kun: ${card.kunyomi || '-'}`;
+    const onStr = card.onyomi_romaji ? `${card.onyomi} (${card.onyomi_romaji})` : (card.onyomi || '-');
+    const kunStr = card.kunyomi_romaji ? `${card.kunyomi} (${card.kunyomi_romaji})` : (card.kunyomi || '-');
+    subinfoText = `On: ${onStr} | Kun: ${kunStr}`;
   } else if (card.reading) {
     subinfoText = `Kategori: ${card.badge || state.category}`;
   }

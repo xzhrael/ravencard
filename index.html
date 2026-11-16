@@ -20,7 +20,7 @@
 
   <title>RavenCard - Nihongo Flashcard N5-N3</title>
   
-  <link rel="stylesheet" href="./css/style.css?v=16">
+  <link rel="stylesheet" href="./css/style.css?v=17">
 </head>
 <body>
   <div class="app-container">
@@ -145,15 +145,20 @@
                 <div class="yomi-box">
                   <div class="yomi-label">Onyomi</div>
                   <div class="yomi-text" id="kanji-onyomi">-</div>
+                  <div class="yomi-romaji" id="kanji-onyomi-romaji">-</div>
                 </div>
                 <div class="yomi-box">
                   <div class="yomi-label">Kunyomi</div>
                   <div class="yomi-text" id="kanji-kunyomi">-</div>
+                  <div class="yomi-romaji" id="kanji-kunyomi-romaji">-</div>
                 </div>
               </div>
 
               <div class="example-section" id="card-example-box" style="display: none;">
-                <div class="example-ja" id="example-ja">おはようございます</div>
+                <div class="example-header">
+                  <span class="example-ja" id="example-ja">おはようございます</span>
+                  <span class="example-reading" id="example-reading"></span>
+                </div>
                 <div class="example-meaning" id="example-meaning">Selamat pagi</div>
               </div>
             </div>
