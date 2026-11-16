@@ -153,7 +153,7 @@ function applyFilters() {
   if (state.onlyUnmastered) {
     state.activeDeck = state.rawDeck.filter(card => getCardRating(card.id) !== 'mastered');
     if (state.activeDeck.length === 0 && state.rawDeck.length > 0) {
-      showToast('Semua kartu pada kategori ini sudah Anda kuasai!');
+      showToast('Semua kartu pada kategori ini sudah dikuasai.');
       state.activeDeck = [...state.rawDeck];
       const toggle = document.getElementById('unmastered-only-toggle');
       if (toggle) toggle.checked = false;
@@ -325,7 +325,7 @@ function shuffleDeck() {
 
   state.currentIndex = 0;
   renderCurrentCard();
-  showToast('Kartu berhasil diacak!');
+  showToast('Urutan kartu diacak.');
 }
 
 function resetDeck() {
@@ -333,7 +333,7 @@ function resetDeck() {
   resetDeckMastery(state.rawDeck);
   updateProgressUI();
   updateRatingButtonsUI(state.activeDeck[state.currentIndex]?.id);
-  showToast('Status hafalan berhasil direset!');
+  showToast('Status hafalan direset.');
 }
 
 function updateDeckLabel() {

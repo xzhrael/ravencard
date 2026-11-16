@@ -149,13 +149,13 @@ function showQuizResults() {
 
   if (percent === 100) {
     if (icon) icon.textContent = 'Sempurna';
-    if (desc) desc.textContent = 'Penguasaan materi Anda pada deck ini telah mencapai 100%.';
+    if (desc) desc.textContent = 'Semua soal dijawab dengan benar.';
   } else if (percent >= 70) {
-    if (icon) icon.textContent = 'Bagus Sekali';
-    if (desc) desc.textContent = 'Pemahaman Anda sudah solid. Lanjutkan ke materi berikutnya.';
+    if (icon) icon.textContent = 'Bagus';
+    if (desc) desc.textContent = 'Pemahaman sudah baik. Lanjutkan ke materi berikutnya.';
   } else {
     if (icon) icon.textContent = 'Perlu Latihan';
-    if (desc) desc.textContent = 'Ulangi beberapa kartu yang belum hafal untuk memperkuat ingatan.';
+    if (desc) desc.textContent = 'Ulangi kartu yang belum hafal untuk memperkuat ingatan.';
   }
 }
 

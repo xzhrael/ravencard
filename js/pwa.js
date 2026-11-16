@@ -102,7 +102,7 @@ function setupInstallPrompt() {
     deferredInstallPrompt = null;
     if (installBtn) installBtn.classList.add('hidden');
     if (installBanner) installBanner.classList.remove('visible');
-    showToast('Aplikasi berhasil dipasang di layar utama Android!');
+    showToast('RavenCard terpasang di layar utama.');
   });
 }
 

@@ -20,7 +20,7 @@
 
   <title>RavenCard - Nihongo Flashcard N5-N3</title>
   
-  <link rel="stylesheet" href="./css/style.css?v=14">
+  <link rel="stylesheet" href="./css/style.css?v=16">
 </head>
 <body>
   <div class="app-container">
@@ -38,7 +38,6 @@
       }
     </script>
 
-    <!-- Top Minimalist App Bar -->
     <header class="top-bar">
       <div class="brand-section">
         <img src="./assets/icons/logo.svg" alt="RavenCard Logo" class="brand-icon">
@@ -74,7 +73,6 @@
       </div>
     </header>
 
-    <!-- Compact Minimalist Deck Selector Bar (Zero Noisy Cards Above Flashcard) -->
     <div class="deck-selector-bar" id="deck-selector-bar">
       <button id="deck-selector-btn" class="deck-selector-chip" aria-label="Ganti Kategori dan Level Materi" aria-haspopup="dialog">
         <span class="deck-chip-dot" aria-hidden="true"></span>
@@ -86,11 +84,7 @@
       <div class="deck-count-indicator" id="deck-counter">1 / 46</div>
     </div>
 
-    <!-- ========================================== -->
-    <!-- PAGE 1: BELAJAR (FLASHCARD) -->
-    <!-- ========================================== -->
     <section class="page-view active" id="page-cards">
-      <!-- Minimalist Progress Hairline -->
       <div class="progress-bar-wrap">
         <div class="progress-header">
           <span id="mastery-percent-text">0% Dikuasai</span>
@@ -101,11 +95,9 @@
         </div>
       </div>
 
-      <!-- Flashcard 3D Stage -->
       <div class="flashcard-stage">
         <div class="flashcard-wrapper" id="flashcard-card" role="button" tabindex="0" aria-label="Flashcard. Ketuk untuk membalik.">
           
-          <!-- Front Face -->
           <div class="card-face card-front">
             <div class="card-face-header">
               <span class="card-badge" id="card-badge-front">Hiragana</span>
@@ -127,7 +119,6 @@
             </div>
           </div>
 
-          <!-- Back Face -->
           <div class="card-face card-back">
             <div class="card-face-header">
               <span class="card-badge" id="card-badge-back">Arti</span>
@@ -175,7 +166,6 @@
         </div>
       </div>
 
-      <!-- Action & Rating Row -->
       <div class="card-actions-bar">
         <button class="btn-nav-arrow" id="prev-card-btn" aria-label="Kartu Sebelumnya" title="Sebelumnya">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -196,7 +186,6 @@
         </button>
       </div>
 
-      <!-- Quiet Utility Strip -->
       <div class="quiet-tools-strip">
         <button class="btn-quiet-action" id="shuffle-deck-btn" title="Acak urutan">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -224,9 +213,6 @@
       </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- PAGE 2: KUIS (QUIZ) -->
-    <!-- ========================================== -->
     <section class="page-view" id="page-quiz">
       <div class="quiz-card">
         <div class="quiz-header">
@@ -248,7 +234,6 @@
         <div class="quiz-options-grid" id="quiz-options-container"></div>
       </div>
 
-      <!-- Result Card -->
       <div class="quiz-result-card hidden" id="quiz-result-card">
         <div class="quiz-result-badge" id="quiz-result-icon">Hasil Kuis</div>
         <h3 class="quiz-result-title" id="quiz-result-title">Kuis Selesai</h3>
@@ -260,9 +245,6 @@
       </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- PAGE 3: DAFTAR / KAMUS (DICTIONARY) -->
-    <!-- ========================================== -->
     <section class="page-view" id="page-list">
       <div class="dict-search-wrap">
         <span class="search-icon" aria-hidden="true">
@@ -274,15 +256,11 @@
         <input type="text" id="dict-search-input" class="dict-search-input" placeholder="Cari karakter, romaji, atau arti..." aria-label="Cari entri">
       </div>
       <div class="dict-list-container" id="dict-list-container">
-        <!-- Rendered dynamically by app.js -->
       </div>
     </section>
 
   </div>
 
-  <!-- ========================================== -->
-  <!-- FLOATING BOTTOM NAVIGATION (BOTNAV) -->
-  <!-- ========================================== -->
   <nav class="floating-botnav" id="floating-botnav" aria-label="Navigasi Halaman Utama">
     <button class="botnav-item active" data-page="cards" aria-label="Belajar Flashcard">
       <div class="botnav-indicator">
@@ -320,13 +298,12 @@
     </button>
   </nav>
 
-  <!-- PWA Install Banner Android Bottom Popup -->
   <aside class="pwa-banner" id="pwa-install-banner" aria-label="Pasang Aplikasi">
     <div class="pwa-banner-content">
       <img src="./assets/icons/logo.svg" alt="RavenCard Icon" class="pwa-banner-icon">
       <div class="pwa-banner-text">
-        <h4>Instal RavenCard ke Android</h4>
-        <p>Bisa dibuka langsung dari beranda HP & hemat kuota 100% offline.</p>
+        <h4>Pasang di Layar Utama</h4>
+        <p>Buka langsung dari beranda ponsel dan gunakan tanpa koneksi internet.</p>
       </div>
     </div>
     <div class="pwa-banner-actions">
@@ -335,7 +312,6 @@
     </div>
   </aside>
 
-  <!-- Modal Bottom Sheet Pemilih Dek / Kategori Materi -->
   <div class="modal-overlay" id="deck-modal" role="dialog" aria-modal="true" aria-labelledby="deck-modal-title">
     <div class="modal-box deck-sheet-box">
       <div class="modal-header">
@@ -364,7 +340,7 @@
             <span class="sheet-category-icon">漢</span>
             <div class="sheet-category-info">
               <span class="sheet-category-name">Kanji</span>
-              <span class="sheet-category-desc">Ideogram N5–N3</span>
+              <span class="sheet-category-desc">Ideogram N5-N3</span>
             </div>
           </button>
           <button class="sheet-category-btn" data-category="kotoba">
@@ -386,7 +362,6 @@
     </div>
   </div>
 
-  <!-- Modal Panduan Cara Install di Android -->
   <div class="modal-overlay" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-box">
       <div class="modal-header">
@@ -398,38 +373,38 @@
         <div class="install-step-item">
           <div class="step-num">1</div>
           <div class="step-text">
-            <h5>Buka dengan Google Chrome</h5>
-            <p>Buka website RavenCard melalui browser <strong>Google Chrome</strong> di smartphone Android Anda.</p>
+            <h5>Buka di Google Chrome</h5>
+            <p>Akses RavenCard melalui browser Google Chrome di ponsel Android.</p>
           </div>
         </div>
 
         <div class="install-step-item">
           <div class="step-num">2</div>
           <div class="step-text">
-            <h5>Klik Menu Titik Tiga (⋮)</h5>
-            <p>Ketuk ikon menu titik tiga <span class="step-badge">⋮</span> yang berada di pojok kanan atas browser Chrome.</p>
+            <h5>Ketuk Menu Titik Tiga (⋮)</h5>
+            <p>Ketuk ikon menu titik tiga <span class="step-badge">⋮</span> di pojok kanan atas browser.</p>
           </div>
         </div>
 
         <div class="install-step-item">
           <div class="step-num">3</div>
           <div class="step-text">
-            <h5>Pilih "Instal aplikasi" / "Tambahkan ke Layar Utama"</h5>
-            <p>Pilih opsi <strong>"Instal aplikasi"</strong> (atau <em>"Add to Home screen" / "Tambahkan ke layar utama"</em>).</p>
+            <h5>Pilih Instal Aplikasi</h5>
+            <p>Pilih opsi <strong>Instal aplikasi</strong> atau <strong>Tambahkan ke layar utama</strong>.</p>
           </div>
         </div>
 
         <div class="install-step-item">
           <div class="step-num">4</div>
           <div class="step-text">
-            <h5>Selesai! Nikmati Layaknya Aplikasi Native</h5>
-            <p>RavenCard akan memiliki ikon aplikasi sendiri di menu HP Android Anda, berjalan fullscreen tanpa bar URL, dan berfungsi <strong>100% offline</strong> tanpa internet.</p>
+            <h5>Selesai</h5>
+            <p>Ikon RavenCard akan muncul di layar utama ponsel dan dapat dibuka langsung tanpa internet.</p>
           </div>
         </div>
       </div>
 
       <button class="btn-control btn-flip-main" style="width: 100%;" onclick="document.getElementById('install-modal').classList.remove('active')">
-        Saya Mengerti
+        Mengerti
       </button>
     </div>
   </div>

@@ -1,11 +1,7 @@
-/* ==========================================================================
-   RavenCard - Material Design 3 Expressive (MD3E) Design System
-   Crafted & Unslopped: Authentic Japanese Minimalist Learning App
-   Identity: Authentic Sumi (墨) & Aizome (藍染) with Tactile MD3E
-   ========================================================================== */
+/* RavenCard Material Design 3 Expressive theme */
 
 :root {
-  /* MD3E Core Tonal Surfaces (Dark Theme Default - Deep Sumi Charcoal) */
+  /* Tonal surfaces */
   --md-sys-color-surface: #0c0e12;
   --md-sys-color-surface-container-lowest: #07080a;
   --md-sys-color-surface-container-low: #13161c;
@@ -14,41 +10,40 @@
   --md-sys-color-surface-container-highest: #2a313e;
   --md-sys-color-surface-tint: #9ec5fe;
 
-  /* Typography Roles (High Legibility & Contrast) */
+  /* Content colors */
   --md-sys-color-on-surface: #f3f4f8;
   --md-sys-color-on-surface-variant: #a0a6b5;
-  --md-sys-color-outline: rgba(255, 255, 255, 0.18);
-  --md-sys-color-outline-variant: rgba(255, 255, 255, 0.10);
 
-  /* Primary Accent: Japanese Indigo (Aizome) */
+  /* Outlines */
+  --md-sys-color-outline: rgba(255, 255, 255, 0.08);
+  --md-sys-color-outline-variant: rgba(255, 255, 255, 0.04);
+
+  /* Primary accent */
   --md-sys-color-primary: #9ec5fe;
   --md-sys-color-on-primary: #05295c;
   --md-sys-color-primary-container: #163a6e;
   --md-sys-color-on-primary-container: #d9e5ff;
 
-  /* Secondary: Neutral Washi Slate */
+  /* Secondary accent */
   --md-sys-color-secondary: #c8ceda;
   --md-sys-color-on-secondary: #272d38;
   --md-sys-color-secondary-container: #394252;
   --md-sys-color-on-secondary-container: #e0e5f0;
 
-  /* Semantic Feedback Containers (MD3 Expressive Tonal Roles) */
+  /* Feedback states */
   --md-sys-color-error: #fca5a5;
   --md-sys-color-error-container: rgba(239, 68, 68, 0.16);
   --md-sys-color-on-error-container: #fecaca;
-  --md-sys-color-error-border: rgba(239, 68, 68, 0.32);
 
   --md-sys-color-warning: #fde68a;
   --md-sys-color-warning-container: rgba(245, 158, 11, 0.16);
   --md-sys-color-on-warning-container: #fef3c7;
-  --md-sys-color-warning-border: rgba(245, 158, 11, 0.32);
 
   --md-sys-color-success: #86efac;
   --md-sys-color-success-container: rgba(34, 197, 94, 0.16);
   --md-sys-color-on-success-container: #dcfce7;
-  --md-sys-color-success-border: rgba(34, 197, 94, 0.32);
 
-  /* Backward Compatibility Variables */
+  /* Legacy aliases */
   --bg-primary: var(--md-sys-color-surface-container-lowest);
   --bg-secondary: var(--md-sys-color-surface-container-low);
   --bg-surface: var(--md-sys-color-surface-container);
@@ -60,7 +55,7 @@
   --text-muted: var(--md-sys-color-outline);
   --accent-primary: var(--md-sys-color-primary);
 
-  /* Mathematical Nested Radius Scale */
+  /* Radii */
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -68,24 +63,24 @@
   --radius-xl: 22px;
   --radius-full: 9999px;
 
-  /* Typography Scale */
+  /* Typography */
   --font-cjk: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display-kanji: 'Noto Sans JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
 
-  /* Tactile Ambient Elevation */
+  /* Shadows */
   --shadow-none: none;
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.35);
-  --shadow-card: 0 8px 24px -4px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.35);
-  --shadow-float: 0 12px 32px -4px rgba(0, 0, 0, 0.65), 0 4px 10px rgba(0, 0, 0, 0.4);
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 8px 24px -4px rgba(0, 0, 0, 0.50), 0 2px 6px rgba(0, 0, 0, 0.30);
+  --shadow-float: 0 12px 32px -4px rgba(0, 0, 0, 0.60), 0 4px 10px rgba(0, 0, 0, 0.35);
 
-  /* Motion Curves */
+  /* Transitions */
   --motion-fast: 0.16s cubic-bezier(0.2, 0, 0, 1);
   --motion-standard: 0.24s cubic-bezier(0.2, 0, 0, 1);
   --motion-spring: 0.38s cubic-bezier(0.34, 1.25, 0.64, 1);
   --motion-flip: 0.50s cubic-bezier(0.34, 1.3, 0.64, 1);
 }
 
-/* Light Theme (Clean Washi & Aizome) */
+/* Light theme */
 [data-theme="light"] {
   --md-sys-color-surface: #f4f5f8;
   --md-sys-color-surface-container-lowest: #ffffff;
@@ -97,8 +92,8 @@
 
   --md-sys-color-on-surface: #111827;
   --md-sys-color-on-surface-variant: #4b5565;
-  --md-sys-color-outline: rgba(0, 0, 0, 0.16);
-  --md-sys-color-outline-variant: rgba(0, 0, 0, 0.08);
+  --md-sys-color-outline: rgba(0, 0, 0, 0.08);
+  --md-sys-color-outline-variant: rgba(0, 0, 0, 0.04);
 
   --md-sys-color-primary: #1a56db;
   --md-sys-color-on-primary: #ffffff;
@@ -113,24 +108,21 @@
   --md-sys-color-error: #dc2626;
   --md-sys-color-error-container: #fee2e2;
   --md-sys-color-on-error-container: #991b1b;
-  --md-sys-color-error-border: #fca5a5;
 
   --md-sys-color-warning: #d97706;
   --md-sys-color-warning-container: #fef3c7;
   --md-sys-color-on-warning-container: #92400e;
-  --md-sys-color-warning-border: #fcd34d;
 
   --md-sys-color-success: #16a34a;
   --md-sys-color-success-container: #dcfce7;
   --md-sys-color-on-success-container: #166534;
-  --md-sys-color-success-border: #86efac;
 
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-card: 0 4px 16px -2px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
-  --shadow-float: 0 10px 28px -4px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.06);
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 16px -2px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.03);
+  --shadow-float: 0 10px 28px -4px rgba(0, 0, 0, 0.08), 0 3px 8px rgba(0, 0, 0, 0.04);
 }
 
-/* Base Reset & Setup */
+/* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -155,7 +147,7 @@ body {
   flex-direction: column;
 }
 
-/* Mobile-First Container (Max 480px) */
+/* Layout container */
 .app-container {
   display: flex;
   flex-direction: column;
@@ -169,9 +161,7 @@ body {
   padding-right: max(16px, env(safe-area-inset-right));
 }
 
-/* ==========================================================================
-   1. Minimalist Top App Bar
-   ========================================================================== */
+/* Top app bar */
 .top-bar {
   display: flex;
   align-items: center;
@@ -229,7 +219,7 @@ body {
   height: 38px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface);
   cursor: pointer;
   transition: var(--motion-fast);
@@ -237,7 +227,6 @@ body {
 
 .btn-icon:hover {
   background: var(--md-sys-color-surface-container-high);
-  border-color: var(--md-sys-color-outline);
 }
 
 .btn-icon:active {
@@ -255,7 +244,7 @@ body {
   color: var(--md-sys-color-on-primary-container);
   font-size: 0.80rem;
   font-weight: 600;
-  border: 1px solid var(--md-sys-color-primary);
+  border: none;
   cursor: pointer;
   transition: var(--motion-fast);
 }
@@ -273,9 +262,7 @@ body {
   transform: scale(0.95);
 }
 
-/* ==========================================================================
-   2. Compact Minimalist Deck Selector Bar (Zero Cards Above Flashcard)
-   ========================================================================== */
+/* Deck selector bar */
 .deck-selector-bar {
   display: flex;
   align-items: center;
@@ -303,7 +290,6 @@ body {
 
 .deck-selector-chip:hover {
   background: var(--md-sys-color-surface-container-high);
-  border-color: var(--md-sys-color-primary);
 }
 
 .deck-selector-chip:active {
@@ -337,10 +323,10 @@ body {
   padding: 5px 12px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
 }
 
-/* Page Views */
+/* Page views */
 .page-view {
   display: none;
   width: 100%;
@@ -352,9 +338,7 @@ body {
   width: 100%;
 }
 
-/* ==========================================================================
-   3. Minimalist Progress Bar
-   ========================================================================== */
+/* Progress indicator */
 .progress-bar-wrap {
   display: flex;
   flex-direction: column;
@@ -388,9 +372,7 @@ body {
   transition: width 0.3s cubic-bezier(0.2, 0, 0, 1);
 }
 
-/* ==========================================================================
-   4. Tactile 3D Flashcard Stage (Unmistakable Presence & Polish)
-   ========================================================================== */
+/* Flashcard stage */
 .flashcard-stage {
   perspective: 1200px;
   width: 100%;
@@ -429,11 +411,6 @@ body {
   justify-content: space-between;
   padding: 18px 20px;
   overflow: hidden;
-  transition: border-color var(--motion-fast), box-shadow var(--motion-fast);
-}
-
-.card-face:hover {
-  border-color: var(--md-sys-color-outline);
 }
 
 .card-back {
@@ -456,7 +433,7 @@ body {
   font-size: 0.72rem;
   font-weight: 500;
   background: var(--md-sys-color-surface-container-high);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface-variant);
   letter-spacing: 0.02em;
 }
@@ -469,7 +446,7 @@ body {
   height: 40px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container-high);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface);
   cursor: pointer;
   transition: var(--motion-fast);
@@ -478,7 +455,6 @@ body {
 .card-audio-btn:hover {
   background: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary-container);
-  border-color: var(--md-sys-color-primary);
 }
 
 .card-audio-btn:active {
@@ -489,7 +465,6 @@ body {
 .dict-audio-btn.audio-playing {
   background: var(--md-sys-color-primary) !important;
   color: var(--md-sys-color-on-primary) !important;
-  border-color: var(--md-sys-color-primary) !important;
   transform: scale(1.05);
 }
 
@@ -503,7 +478,6 @@ body {
   padding: 10px 4px;
 }
 
-/* The Hero Moment: Authentic Japanese Glyph */
 .japanese-character {
   font-family: var(--font-cjk);
   font-size: clamp(3.6rem, 15vw, 5.5rem);
@@ -521,14 +495,13 @@ body {
   background: var(--md-sys-color-surface-container);
   padding: 3px 12px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
 }
 
 .frequent-kanji-reading:empty {
   display: none;
 }
 
-/* Card Back Content */
 .back-reading-section {
   display: flex;
   flex-direction: column;
@@ -583,7 +556,7 @@ body {
   background: var(--md-sys-color-surface-container-high);
   padding: 8px 12px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   text-align: left;
 }
 
@@ -605,6 +578,7 @@ body {
   border-radius: var(--radius-sm);
   padding: 8px 12px;
   width: 100%;
+  border: none;
   border-left: 3px solid var(--md-sys-color-primary);
   text-align: left;
 }
@@ -629,9 +603,7 @@ body {
   color: var(--md-sys-color-on-surface-variant);
 }
 
-/* ==========================================================================
-   5. Action Bar & Tactile Mastery Tonal Buttons
-   ========================================================================== */
+/* Action bar and rating controls */
 .card-actions-bar {
   display: flex;
   align-items: center;
@@ -648,7 +620,7 @@ body {
   height: 46px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface);
   cursor: pointer;
   box-shadow: var(--shadow-subtle);
@@ -658,7 +630,6 @@ body {
 
 .btn-nav-arrow:hover {
   background: var(--md-sys-color-surface-container-high);
-  border-color: var(--md-sys-color-outline);
 }
 
 .btn-nav-arrow:active {
@@ -671,7 +642,6 @@ body {
   gap: 8px;
 }
 
-/* MD3 Expressive Tactile Mastery Buttons */
 .btn-rate {
   flex: 1;
   display: flex;
@@ -680,6 +650,7 @@ body {
   height: 46px;
   padding: 0 6px;
   border-radius: var(--radius-md);
+  border: none;
   font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
@@ -687,11 +658,9 @@ body {
   transition: var(--motion-fast);
 }
 
-/* Again (Ulangi): Tonal Rose */
 .btn-rate-again {
   background: var(--md-sys-color-error-container);
   color: var(--md-sys-color-error);
-  border: 1px solid var(--md-sys-color-error-border);
 }
 
 .btn-rate-again:hover {
@@ -699,11 +668,9 @@ body {
   box-shadow: var(--shadow-card);
 }
 
-/* Hard (Ragu): Tonal Amber */
 .btn-rate-hard {
   background: var(--md-sys-color-warning-container);
   color: var(--md-sys-color-warning);
-  border: 1px solid var(--md-sys-color-warning-border);
 }
 
 .btn-rate-hard:hover {
@@ -711,11 +678,9 @@ body {
   box-shadow: var(--shadow-card);
 }
 
-/* Easy (Hafal): Tonal Emerald */
 .btn-rate-easy {
   background: var(--md-sys-color-success-container);
   color: var(--md-sys-color-success);
-  border: 1px solid var(--md-sys-color-success-border);
 }
 
 .btn-rate-easy:hover {
@@ -728,11 +693,9 @@ body {
 }
 
 .btn-rate.active {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px currentColor;
 }
 
-/* Quiet Utility Strip */
 .quiet-tools-strip {
   display: flex;
   align-items: center;
@@ -770,13 +733,12 @@ body {
   font-weight: 500;
 }
 
-/* Minimalist Switch Element */
 .toggle-checkbox {
   appearance: none;
   width: 34px;
   height: 20px;
   background: var(--md-sys-color-surface-container-highest);
-  border: 1px solid var(--md-sys-color-outline);
+  border: none;
   border-radius: var(--radius-full);
   position: relative;
   outline: none;
@@ -798,7 +760,6 @@ body {
 
 .toggle-checkbox:checked {
   background: var(--md-sys-color-primary-container);
-  border-color: var(--md-sys-color-primary);
 }
 
 .toggle-checkbox:checked::after {
@@ -806,9 +767,7 @@ body {
   transform: translateX(14px);
 }
 
-/* ==========================================================================
-   6. Page 2: Quiz Stage
-   ========================================================================== */
+/* Quiz view */
 .quiz-card {
   background: var(--md-sys-color-surface-container-low);
   border: 1px solid var(--md-sys-color-outline-variant);
@@ -842,7 +801,7 @@ body {
   padding: 20px 14px;
   background: var(--md-sys-color-surface-container);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
 }
 
 .quiz-character {
@@ -879,7 +838,7 @@ body {
   padding: 10px 16px;
   border-radius: var(--radius-md);
   background: var(--md-sys-color-surface-container-high);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface);
   font-size: 0.90rem;
   font-weight: 500;
@@ -890,7 +849,6 @@ body {
 
 .quiz-option-btn:hover {
   background: var(--md-sys-color-surface-container-highest);
-  border-color: var(--md-sys-color-outline);
 }
 
 .quiz-option-btn:active {
@@ -900,13 +858,11 @@ body {
 .quiz-option-btn.correct {
   background: var(--md-sys-color-success-container) !important;
   color: var(--md-sys-color-on-success-container) !important;
-  border-color: var(--md-sys-color-success) !important;
 }
 
 .quiz-option-btn.wrong {
   background: var(--md-sys-color-error-container) !important;
   color: var(--md-sys-color-on-error-container) !important;
-  border-color: var(--md-sys-color-error) !important;
 }
 
 .quiz-result-card {
@@ -926,7 +882,7 @@ body {
   display: inline-block;
   padding: 4px 14px;
   background: var(--md-sys-color-surface-container-high);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   border-radius: var(--radius-full);
   font-size: 0.76rem;
   font-weight: 600;
@@ -969,7 +925,7 @@ body {
   padding: 0 18px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container-high);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface);
   font-size: 0.86rem;
   font-weight: 500;
@@ -980,7 +936,6 @@ body {
 .btn-flip-main {
   background: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary-container);
-  border-color: var(--md-sys-color-primary);
 }
 
 .btn-flip-main:hover {
@@ -988,9 +943,7 @@ body {
   color: var(--md-sys-color-on-primary);
 }
 
-/* ==========================================================================
-   7. Page 3: Dictionary List & Search
-   ========================================================================== */
+/* Dictionary view */
 .dict-search-wrap {
   position: relative;
   display: flex;
@@ -1038,7 +991,7 @@ body {
   justify-content: space-between;
   padding: 12px 14px;
   background: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   border-radius: var(--radius-md);
   gap: 12px;
   box-shadow: var(--shadow-subtle);
@@ -1047,7 +1000,6 @@ body {
 
 .dict-item-row:hover {
   background: var(--md-sys-color-surface-container);
-  border-color: var(--md-sys-color-outline);
 }
 
 .dict-char-col {
@@ -1120,7 +1072,7 @@ body {
   height: 38px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface);
   cursor: pointer;
   transition: var(--motion-fast);
@@ -1130,12 +1082,9 @@ body {
 .dict-audio-btn:hover {
   background: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary-container);
-  border-color: var(--md-sys-color-primary);
 }
 
-/* ==========================================================================
-   8. Floating Bottom Navigation Dock (MD3E Tactile Presence)
-   ========================================================================== */
+/* Bottom navigation */
 .floating-botnav {
   position: fixed;
   bottom: max(16px, env(safe-area-inset-bottom));
@@ -1212,9 +1161,7 @@ body {
   color: var(--md-sys-color-primary);
 }
 
-/* ==========================================================================
-   9. Android PWA Install Sheet & Modals
-   ========================================================================== */
+/* PWA banner */
 .pwa-banner {
   position: fixed;
   bottom: -150px;
@@ -1223,7 +1170,7 @@ body {
   width: calc(100% - 24px);
   max-width: 460px;
   background: var(--md-sys-color-surface-container-high);
-  border: 1px solid var(--md-sys-color-outline);
+  border: 1px solid var(--md-sys-color-outline-variant);
   border-radius: var(--radius-lg);
   padding: 12px 14px;
   box-shadow: var(--shadow-float);
@@ -1277,7 +1224,7 @@ body {
   border-radius: var(--radius-full);
   font-size: 0.78rem;
   font-weight: 600;
-  border: 1px solid var(--md-sys-color-primary);
+  border: none;
   cursor: pointer;
   white-space: nowrap;
   transition: var(--motion-fast);
@@ -1301,7 +1248,7 @@ body {
   cursor: pointer;
 }
 
-/* Modal Overlay & Dialog */
+/* Modals */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -1352,7 +1299,7 @@ body {
   height: 34px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container-high);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface-variant);
   font-size: 1.1rem;
   cursor: pointer;
@@ -1361,7 +1308,7 @@ body {
   justify-content: center;
 }
 
-/* Deck Selector Bottom Sheet */
+/* Deck selector sheet */
 .deck-sheet-box {
   max-width: 440px;
   width: 100%;
@@ -1393,7 +1340,7 @@ body {
   gap: 10px;
   padding: 12px 14px;
   background: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   border-radius: var(--radius-md);
   color: var(--md-sys-color-on-surface);
   cursor: pointer;
@@ -1404,12 +1351,10 @@ body {
 
 .sheet-category-btn:hover {
   background: var(--md-sys-color-surface-container-high);
-  border-color: var(--md-sys-color-outline);
 }
 
 .sheet-category-btn.active {
   background: var(--md-sys-color-primary-container);
-  border-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary-container);
 }
 
@@ -1467,7 +1412,7 @@ body {
   padding: 7px 16px;
   border-radius: var(--radius-full);
   background: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface-variant);
   font-size: 0.80rem;
   font-weight: 500;
@@ -1482,7 +1427,6 @@ body {
 
 .sheet-level-chip.active {
   background: var(--md-sys-color-secondary-container);
-  border-color: var(--md-sys-color-secondary);
   color: var(--md-sys-color-on-secondary-container);
   font-weight: 600;
 }
@@ -1509,7 +1453,7 @@ body {
   border-radius: var(--radius-full);
   background: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary-container);
-  border: 1px solid var(--md-sys-color-primary);
+  border: none;
   font-size: 0.72rem;
   font-weight: 600;
   flex-shrink: 0;
@@ -1533,13 +1477,13 @@ body {
   background: var(--md-sys-color-surface-container-high);
   padding: 1px 6px;
   border-radius: var(--radius-xs);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: none;
   color: var(--md-sys-color-on-surface);
   font-family: monospace;
   font-size: 0.76rem;
 }
 
-/* Toast */
+/* Toast notifications */
 .toast-notification {
   position: fixed;
   bottom: max(76px, calc(env(safe-area-inset-bottom) + 70px));
@@ -1547,7 +1491,7 @@ body {
   transform: translateX(-50%) translateY(80px);
   background: var(--md-sys-color-surface-container-highest);
   color: var(--md-sys-color-on-surface);
-  border: 1px solid var(--md-sys-color-outline);
+  border: none;
   padding: 9px 18px;
   border-radius: var(--radius-full);
   font-size: 0.80rem;
