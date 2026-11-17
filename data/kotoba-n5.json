@@ -23,7 +23,7 @@
     "example": {
       "ja": "信号が青に変わったわよ。",
       "reading": "{信号|しんごう}が{青|あお}に{変|か}わったわよ。",
-      "meaning": "The traffic light turned green."
+      "meaning": "Lampu lalu lintas berubah menjadi hijau."
     }
   },
   {
@@ -51,7 +51,7 @@
     "example": {
       "ja": "赤インクで書いてはいけない。",
       "reading": "{赤|あか}インクで{書|か}いてはいけない。",
-      "meaning": "Don't write in red ink."
+      "meaning": "Jangan menulis dengan tinta merah."
     }
   },
   {
@@ -65,7 +65,7 @@
     "example": {
       "ja": "彼女は赤いスカートをはいていた。",
       "reading": "{彼女|かのじょ}は{赤|あか}いスカートをはいていた。",
-      "meaning": "She was wearing a red skirt."
+      "meaning": "Dia mengenakan rok merah."
     }
   },
   {
@@ -79,7 +79,7 @@
     "example": {
       "ja": "外はだんだん明るくなっていく。",
       "reading": "{外|そと}はだんだん{明|あか}るくなっていく。",
-      "meaning": "It is getting lighter outside."
+      "meaning": "Di luar semakin terang."
     }
   },
   {
@@ -93,7 +93,7 @@
     "example": {
       "ja": "秋はもうすぐそこまで来ている。",
       "reading": "{秋|あき}はもうすぐそこまで{来|き}ている。",
-      "meaning": "Autumn is just around the corner."
+      "meaning": "Musim gugur hampir tiba."
     }
   },
   {
@@ -107,7 +107,7 @@
     "example": {
       "ja": "ぐいと押すとドアは開いた。",
       "reading": "ぐいと{押|お}すとドアは{開|あ}いた。",
-      "meaning": "The door yielded to a strong push."
+      "meaning": "Aku mendorongnya dengan keras dan pintu terbuka."
     }
   },
   {
@@ -121,7 +121,7 @@
     "example": {
       "ja": "ドアはジムによって開けられます。",
       "reading": "ドアはジムによって{開|あ}けられます。",
-      "meaning": "The door is opened by Jim."
+      "meaning": "Pintu akan dibuka oleh Jim."
     }
   },
   {
@@ -135,7 +135,7 @@
     "example": {
       "ja": "左手を上げなさい。",
       "reading": "{左手|ひだりて}を{上|あ}げなさい。",
-      "meaning": "Raise your left hand."
+      "meaning": "Angkat tangan kiri Anda."
     }
   },
   {
@@ -149,7 +149,7 @@
     "example": {
       "ja": "朝のラッシュは今がピークだ。",
       "reading": "{朝|あさ}のラッシュは{今|いま}がピークだ。",
-      "meaning": "The morning rush is at its peak now."
+      "meaning": "Kesibukan pagi hari kini mencapai puncaknya."
     }
   },
   {
@@ -163,7 +163,7 @@
     "example": {
       "ja": "朝ごはんにはなにがよろしいですか。",
       "reading": "",
-      "meaning": "What would you like for breakfast?"
+      "meaning": "Apa yang Anda inginkan untuk sarapan?"
     }
   },
   {
@@ -177,7 +177,7 @@
     "example": {
       "ja": "あさって彼にここへ来てもらうつもりです。",
       "reading": "あさって{彼|かれ}にここへ{来|き}てもらうつもりです。",
-      "meaning": "I will have him come here the day after tomorrow."
+      "meaning": "Aku akan menyuruhnya datang ke sini besok."
     }
   },
   {
@@ -191,7 +191,7 @@
     "example": {
       "ja": "また足がしびれた。",
       "reading": "また{足|あし}がしびれた。",
-      "meaning": "My foot's asleep again!"
+      "meaning": "Kakiku mati rasa lagi."
     }
   },
   {
@@ -219,21 +219,21 @@
     "example": {
       "ja": "先生、アソコがかゆいんです。",
       "reading": "{先生|せんせい}、アソコがかゆいんです。",
-      "meaning": "Doctor, I've got an itch in my crotch."
+      "meaning": "Dokter, penisku gatal."
     }
   },
   {
     "word": "遊ぶ",
     "reading": "あそぶ",
     "romaji": "asobu",
-    "meaning_id": "Bermain / Me-make a visit",
+    "meaning_id": "Bermain / Berkunjung santai",
     "meaning_en": "to play, to make a visit",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ビルはよく一人でおもちゃで遊ぶ。",
       "reading": "ビルはよく{一人|ひとり}でおもちゃで{遊|あそ}ぶ。",
-      "meaning": "Bill often plays with toys by himself."
+      "meaning": "Bill sering bermain sendiri dengan mainannya."
     }
   },
   {
@@ -247,7 +247,7 @@
     "example": {
       "ja": "だんだん暖かくなります。",
       "reading": "だんだん{暖|あたた}かくなります。",
-      "meaning": "It will get warmer and warmer."
+      "meaning": "Ini semakin hangat."
     }
   },
   {
@@ -261,7 +261,7 @@
     "example": {
       "ja": "アリスは頭に花をさしています。",
       "reading": "アリスは{頭|あたま}に{花|はな}をさしています。",
-      "meaning": "Alice has a flower in her hair."
+      "meaning": "Alice memiliki bunga di kepalanya."
     }
   },
   {
@@ -288,7 +288,7 @@
     "example": {
       "ja": "こっちの本はあっちの本よりやさしい。",
       "reading": "こっちの{本|ほん}はあっちの{本|ほん}よりやさしい。",
-      "meaning": "These books are easier than those books."
+      "meaning": "Buku ini lebih mudah dari buku itu."
     }
   },
   {
@@ -302,7 +302,7 @@
     "example": {
       "ja": "それは４ｃｍの厚さです。",
       "reading": "それは４ｃｍの{厚|あつ}さです。",
-      "meaning": "It is four centimeters thick."
+      "meaning": "Tebalnya 4cm."
     }
   },
   {
@@ -316,7 +316,7 @@
     "example": {
       "ja": "どうして、こんなに暑いのですか。",
       "reading": "どうして、こんなに{暑|あつ}いのですか。",
-      "meaning": "Why is it so hot?"
+      "meaning": "Mengapa panas sekali?"
     }
   },
   {
@@ -330,7 +330,7 @@
     "example": {
       "ja": "熱いコーヒーを入れてあげましょう。",
       "reading": "{熱|あつ}いコーヒーを{入|い}れてあげましょう。",
-      "meaning": "Let me make you a cup of hot coffee."
+      "meaning": "Mari kita membuat kopi panas."
     }
   },
   {
@@ -344,7 +344,7 @@
     "example": {
       "ja": "こっちの本はあっちの本よりやさしい。",
       "reading": "こっちの{本|ほん}はあっちの{本|ほん}よりやさしい。",
-      "meaning": "These books are easier than those books."
+      "meaning": "Buku ini lebih mudah dari buku itu."
     }
   },
   {
@@ -365,56 +365,56 @@
     "word": "あなた",
     "reading": "あなた",
     "romaji": "anata",
-    "meaning_id": "You",
+    "meaning_id": "Anda / Kamu",
     "meaning_en": "you",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "ねえあなたたち行かないで。",
       "reading": "",
-      "meaning": "Don't go, dears."
+      "meaning": "Hei teman-teman, jangan pergi."
     }
   },
   {
     "word": "兄",
     "reading": "あに",
     "romaji": "ani",
-    "meaning_id": "(humble) older brother",
+    "meaning_id": "Kakak laki-laki (sendiri)",
     "meaning_en": "(humble) older brother",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "これは兄です。かっこいいですね。",
       "reading": "これは{兄|あに}です。かっこいいですね。",
-      "meaning": "This is my brother. Handsome, isn't he?"
+      "meaning": "Ini saudaraku. Itu keren."
     }
   },
   {
     "word": "姉",
     "reading": "あね",
     "romaji": "ane",
-    "meaning_id": "(humble) older sister",
+    "meaning_id": "Kakak perempuan (sendiri)",
     "meaning_en": "(humble) older sister",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "先月、姉は６ポンドの男の子を生んだ。",
       "reading": "{先月|せんげつ}、{姉|あね}は６ポンドの{男|おとこ}の{子|こ}を{生|う}んだ。",
-      "meaning": "Last month my sister gave birth to a six-pound baby."
+      "meaning": "Bulan lalu, saudara perempuan saya melahirkan bayi laki-laki seberat 6 pon."
     }
   },
   {
     "word": "あの",
     "reading": "あの",
     "romaji": "ano",
-    "meaning_id": "That over there",
+    "meaning_id": "Itu (jauh) / Anu...",
     "meaning_en": "that over there",
     "level": "N5",
     "type": "Kata Sifat Pronominal",
     "example": {
       "ja": "あのおいしいワインをなぜ飲まないんだい。",
       "reading": "あのおいしいワインをなぜ{飲|の}まないんだい。",
-      "meaning": "Why not try that delicious wine?"
+      "meaning": "Mengapa kamu tidak minum anggur lezat itu?"
     }
   },
   {
@@ -428,21 +428,21 @@
     "example": {
       "ja": "兄はアパートをさがしています。",
       "reading": "{兄|あに}はアパートをさがしています。",
-      "meaning": "My brother is looking for an apartment."
+      "meaning": "Adikku sedang mencari apartemen."
     }
   },
   {
     "word": "あびる",
     "reading": "あびる",
     "romaji": "abiru",
-    "meaning_id": "Me-bathe / Me-shower",
+    "meaning_id": "Mandi (mengguyur air) / Menyiram",
     "meaning_en": "to bathe, to shower",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "その時はシャワーを浴びていた。",
       "reading": "その{時|とき}はシャワーを{浴|あ}びていた。",
-      "meaning": "I was taking a shower then."
+      "meaning": "Saat itu aku sedang mandi."
     }
   },
   {
@@ -456,7 +456,7 @@
     "example": {
       "ja": "間一髪！危ないところでした。",
       "reading": "{間一髪|かんいっぱつ}！{危|あぶ}ないところでした。",
-      "meaning": "That was a close call."
+      "meaning": "Tepat pada waktunya! Itu adalah tempat yang berbahaya."
     }
   },
   {
@@ -470,21 +470,21 @@
     "example": {
       "ja": "メアリーにはつい甘くなってしまう。",
       "reading": "メアリーにはつい{甘|あま}くなってしまう。",
-      "meaning": "I have always had a soft spot in my heart for Mary."
+      "meaning": "Aku merasa kasihan pada Mary."
     }
   },
   {
     "word": "あまり",
     "reading": "あまり",
     "romaji": "amari",
-    "meaning_id": "Not very",
+    "meaning_id": "Tidak terlalu / Tidak seberapa (dengan kalimat negatif)",
     "meaning_en": "not very",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "この手の本はあまり読まない。",
       "reading": "この{手|て}の{本|ほん}はあまり{読|よ}まない。",
-      "meaning": "I don't read this kind of book much."
+      "meaning": "Saya tidak membaca banyak buku seperti ini."
     }
   },
   {
@@ -498,7 +498,7 @@
     "example": {
       "ja": "いい子にしていたら、あめをあげよう。",
       "reading": "",
-      "meaning": "If you are a good girl, you shall have candy."
+      "meaning": "Jika kamu menjadi anak baik, aku akan memberimu permen."
     }
   },
   {
@@ -512,21 +512,21 @@
     "example": {
       "ja": "木のおかげで雨にぬれずにすんだ。",
       "reading": "{木|き}のおかげで{雨|あめ}にぬれずにすんだ。",
-      "meaning": "The trees kept me out of the rain."
+      "meaning": "Berkat pepohonan, kami tidak basah kuyup saat hujan."
     }
   },
   {
     "word": "洗う",
     "reading": "あらう",
     "romaji": "arau",
-    "meaning_id": "Me-wash",
+    "meaning_id": "Mencuci / Membasuh",
     "meaning_en": "to wash",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "いつこの車は洗われましたか。",
       "reading": "いつこの{車|くるま}は{洗|あら}われましたか。",
-      "meaning": "When was this car washed?"
+      "meaning": "Kapan mobil ini dicuci?"
     }
   },
   {
@@ -546,14 +546,14 @@
     "word": "ある",
     "reading": "ある",
     "romaji": "aru",
-    "meaning_id": "Me-be / Me-have (used for inanimate objects)",
+    "meaning_id": "Ada / Berada / Memiliki (untuk benda mati)",
     "meaning_en": "to be, to have (used for inanimate objects)",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "話があったら電話をかけて下さい。",
       "reading": "{話|はなし}があったら{電話|でんわ}をかけて{下|くだ}さい。",
-      "meaning": "If you want to speak to me, please call me up."
+      "meaning": "Silakan hubungi saya jika Anda perlu bicara."
     }
   },
   {
@@ -567,14 +567,14 @@
     "example": {
       "ja": "歩いて行きますか？それともバスで行きますか？",
       "reading": "",
-      "meaning": "Will you go on foot or by bus?"
+      "meaning": "Bagaimana kalau kita berjalan? Atau sebaiknya aku naik bus?"
     }
   },
   {
     "word": "あれ",
     "reading": "あれ",
     "romaji": "are",
-    "meaning_id": "That",
+    "meaning_id": "Itu (benda jauh dari pembicara dan lawan bicara)",
     "meaning_en": "that",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
@@ -595,14 +595,14 @@
     "example": {
       "ja": "もう２、３ページ読みさえすればいい。",
       "reading": "もう２、３ページ{読|よ}みさえすればいい。",
-      "meaning": "You have only to read a few more pages."
+      "meaning": "Yang perlu Anda lakukan hanyalah membaca beberapa halaman lagi."
     }
   },
   {
     "word": "いいえ",
     "reading": "いいえ",
     "romaji": "iie",
-    "meaning_id": "No",
+    "meaning_id": "Tidak / Bukan",
     "meaning_en": "no",
     "level": "N5",
     "type": "Kata Seru (Interjeksi)",
@@ -616,14 +616,14 @@
     "word": "言う",
     "reading": "いう",
     "romaji": "iu",
-    "meaning_id": "Me-say",
+    "meaning_id": "Berkata / Mengatakan",
     "meaning_en": "to say",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "「みんなひと休みしようぜ」とジョンは言った。",
       "reading": "",
-      "meaning": "John said, \"Hey guys, let's take a break.\""
+      "meaning": "``Mari kita semua istirahat,'' kata John."
     }
   },
   {
@@ -637,7 +637,7 @@
     "example": {
       "ja": "木立の間に家が見える。",
       "reading": "{木立|こだち}の{間|あいだ}に{家|いえ}が{見|み}える。",
-      "meaning": "I see a house among the trees."
+      "meaning": "Sebuah rumah terlihat di antara pepohonan."
     }
   },
   {
@@ -671,28 +671,28 @@
     "word": "いくつ",
     "reading": "いくつ",
     "romaji": "ikutsu",
-    "meaning_id": "How many? / how old?",
+    "meaning_id": "Berapa buah? / Berapa umur?",
     "meaning_en": "how many?, how old?",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "あなたのお父さんはおいくつですか。",
       "reading": "あなたのお{父|とう}さんはおいくつですか。",
-      "meaning": "How old is your father?"
+      "meaning": "Berapa umur ayahmu?"
     }
   },
   {
     "word": "いくら",
     "reading": "いくら",
     "romaji": "ikura",
-    "meaning_id": "How much?",
+    "meaning_id": "Berapa harganya?",
     "meaning_en": "how much?",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "このハンカチはいくらですか。",
       "reading": "",
-      "meaning": "How much is this handkerchief?"
+      "meaning": "Berapa harga saputangan ini?"
     }
   },
   {
@@ -706,7 +706,7 @@
     "example": {
       "ja": "その池にはほとんど水がない。",
       "reading": "その{池|いけ}にはほとんど{水|みず}がない。",
-      "meaning": "There is little water in the pond."
+      "meaning": "Hampir tidak ada air di kolam."
     }
   },
   {
@@ -720,7 +720,7 @@
     "example": {
       "ja": "医者になるつもりだったのですが。",
       "reading": "{医者|いしゃ}になるつもりだったのですが。",
-      "meaning": "I intended to become a doctor."
+      "meaning": "Saya berencana menjadi seorang dokter."
     }
   },
   {
@@ -734,7 +734,7 @@
     "example": {
       "ja": "ちょっと椅子をずらしてくれない？",
       "reading": "ちょっと{椅子|いす}をずらしてくれない？",
-      "meaning": "Could you move the chair a bit?"
+      "meaning": "Bisakah Anda memindahkan kursi Anda sedikit?"
     }
   },
   {
@@ -748,7 +748,7 @@
     "example": {
       "ja": "忙しくてそれどころじゃないよ。",
       "reading": "{忙|いそが}しくてそれどころじゃないよ。",
-      "meaning": "I've got no time for that now."
+      "meaning": "Saya terlalu sibuk untuk melakukan itu."
     }
   },
   {
@@ -762,14 +762,14 @@
     "example": {
       "ja": "ほかに痛いところはありますか。",
       "reading": "ほかに{痛|いた}いところはありますか。",
-      "meaning": "Do you feel pain in any other part of your body?"
+      "meaning": "Apakah ada rasa sakit lainnya?"
     }
   },
   {
     "word": "いただきます",
     "reading": "いただきます",
     "romaji": "itadakimasu",
-    "meaning_id": "Expression of gratitude before meals",
+    "meaning_id": "Selamat makan (ungkapan syukur sebelum makan)",
     "meaning_en": "expression of gratitude before meals",
     "level": "N5",
     "type": "Ungkapan / Frasa",
@@ -790,35 +790,35 @@
     "example": {
       "ja": "これは東京一のインドレストランです。",
       "reading": "これは{東京|とうきょう}{一|いち}のインドレストランです。",
-      "meaning": "This is the best Indian restaurant anywhere in Tokyo."
+      "meaning": "Ini adalah restoran India terbaik di Tokyo."
     }
   },
   {
     "word": "一日",
     "reading": "いちにち",
     "romaji": "ichinichi",
-    "meaning_id": "Satu hari / Tanggal 1 / first of month",
+    "meaning_id": "Satu hari / Tanggal 1",
     "meaning_en": "one day, first of month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "一日で５００ドルつかってしまった。",
       "reading": "{一日|いちにち}で５００ドルつかってしまった。",
-      "meaning": "I've spent $500 a day."
+      "meaning": "Saya menghabiskan 500 dolar dalam satu hari."
     }
   },
   {
     "word": "いちばん",
     "reading": "いちばん",
     "romaji": "ichiban",
-    "meaning_id": "Paling / Terbaik / first",
+    "meaning_id": "Paling / Nomor satu / Terbaik",
     "meaning_en": "best, first",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "このリンゴがいちばんおいしい。",
       "reading": "",
-      "meaning": "This is the most delicious apple."
+      "meaning": "Apel ini yang paling enak."
     }
   },
   {
@@ -832,21 +832,21 @@
     "example": {
       "ja": "いつ旅行においでになりますか。",
       "reading": "いつ{旅行|りょこう}においでになりますか。",
-      "meaning": "When will you go on a journey?"
+      "meaning": "Kapan Anda akan bepergian?"
     }
   },
   {
     "word": "五日",
     "reading": "いつか",
     "romaji": "itsuka",
-    "meaning_id": "Lima hari / Tanggal 5 / fifth day",
+    "meaning_id": "Lima hari / Tanggal 5",
     "meaning_en": "five days, fifth day",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "１月５日から１月１５日までおねがいします。",
       "reading": "",
-      "meaning": "From the 5th to the 15th of January, please."
+      "meaning": "Silakan mendaftar mulai 5 Januari hingga 15 Januari."
     }
   },
   {
@@ -860,7 +860,7 @@
     "example": {
       "ja": "「ご一緒してもいいですか」「もちろんです」",
       "reading": "「ご{一緒|いっしょ}してもいいですか」「もちろんです」",
-      "meaning": "\"May I go with you?\" \"Of course.\""
+      "meaning": "\"Bolehkah aku ikut denganmu?\" \"Tentu saja.\""
     }
   },
   {
@@ -874,7 +874,7 @@
     "example": {
       "ja": "この箱にはリンゴが五つ入っている。",
       "reading": "この{箱|はこ}にはリンゴが{五|いつ}つ{入|はい}っている。",
-      "meaning": "This box contains five apples."
+      "meaning": "Kotak ini berisi lima buah apel."
     }
   },
   {
@@ -888,7 +888,7 @@
     "example": {
       "ja": "あの子はいつもニコニコしている。",
       "reading": "あの{子|こ}はいつもニコニコしている。",
-      "meaning": "She is always smiling."
+      "meaning": "Anak itu selalu tersenyum."
     }
   },
   {
@@ -902,7 +902,7 @@
     "example": {
       "ja": "その犬はかみついたりしませんよ。",
       "reading": "その{犬|いぬ}はかみついたりしませんよ。",
-      "meaning": "The dog will not harm you."
+      "meaning": "Anjing itu tidak akan menggigit."
     }
   },
   {
@@ -916,49 +916,49 @@
     "example": {
       "ja": "今のアナウンスは何だったのですか。",
       "reading": "{今|いま}のアナウンスは{何|なに}だったのですか。",
-      "meaning": "What did the announcement just say?"
+      "meaning": "Apa pengumumannya tadi?"
     }
   },
   {
     "word": "意味",
     "reading": "いみ",
     "romaji": "imi",
-    "meaning_id": "Meaning",
+    "meaning_id": "Arti / Makna",
     "meaning_en": "meaning",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "その語にはいくつかの意味がある。",
       "reading": "その{語|ご}にはいくつかの{意味|いみ}がある。",
-      "meaning": "The word has several meanings."
+      "meaning": "Kata tersebut mempunyai beberapa arti."
     }
   },
   {
     "word": "妹",
     "reading": "いもうと",
     "romaji": "imouto",
-    "meaning_id": "(humble) younger sister",
+    "meaning_id": "Adik perempuan (sendiri)",
     "meaning_en": "(humble) younger sister",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "男の子は妹を見下ろしがちである。",
       "reading": "{男|おとこ}の{子|こ}は{妹|いもうと}を{見下|みお}ろしがちである。",
-      "meaning": "Boys tend to look down on their younger sisters."
+      "meaning": "Anak laki-laki cenderung memandang rendah adik perempuannya."
     }
   },
   {
     "word": "嫌",
     "reading": "いや",
     "romaji": "iya",
-    "meaning_id": "Unpleasant",
+    "meaning_id": "Tidak suka / Menolak / Benci",
     "meaning_en": "unpleasant",
     "level": "N5",
     "type": "Kata Sifat (-na)",
     "example": {
       "ja": "毎日うっとうしくていやですね。",
       "reading": "{毎日|まいにち}うっとうしくていやですね。",
-      "meaning": "Don't you just hate this weather?"
+      "meaning": "Itu menjengkelkan dan menjengkelkan setiap hari."
     }
   },
   {
@@ -972,35 +972,35 @@
     "example": {
       "ja": "１台の車が入り口に止まった。",
       "reading": "",
-      "meaning": "A car stopped at the entrance."
+      "meaning": "Sebuah mobil berhenti di pintu masuk."
     }
   },
   {
     "word": "いる",
     "reading": "いる",
     "romaji": "iru",
-    "meaning_id": "Me-be / Me-have (used for people and animals)",
+    "meaning_id": "Ada / Berada / Tinggal (untuk makhluk hidup)",
     "meaning_en": "to be, to have (used for people and animals)",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "すっかり食べ終わってはいない。",
       "reading": "すっかり{食|た}べ{終|お}わってはいない。",
-      "meaning": "I haven't quite finished eating."
+      "meaning": "Saya belum selesai makan sepenuhnya."
     }
   },
   {
     "word": "要る",
     "reading": "いる",
     "romaji": "iru",
-    "meaning_id": "Me-need",
+    "meaning_id": "Membutuhkan / Memerlukan",
     "meaning_en": "to need",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "今のところお金はいらない。",
       "reading": "{今|いま}のところお{金|かね}はいらない。",
-      "meaning": "I don't need money at present."
+      "meaning": "Saya tidak butuh uang untuk saat ini."
     }
   },
   {
@@ -1014,77 +1014,77 @@
     "example": {
       "ja": "それは引き出しに入れておきました。",
       "reading": "それは{引|ひ}き{出|だ}しに{入|い}れておきました。",
-      "meaning": "I put it in the drawer."
+      "meaning": "Saya menyimpannya di laci."
     }
   },
   {
     "word": "色",
     "reading": "いろ",
     "romaji": "iro",
-    "meaning_id": "Colour",
+    "meaning_id": "Warna",
     "meaning_en": "colour",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "カメレオンはどんな色にでもなれる。",
       "reading": "カメレオンはどんな{色|いろ}にでもなれる。",
-      "meaning": "The chameleon can take on any color."
+      "meaning": "Bunglon bisa berwarna apa saja."
     }
   },
   {
     "word": "いろいろ",
     "reading": "いろいろ",
     "romaji": "iroiro",
-    "meaning_id": "Various",
+    "meaning_id": "Bermacam-macam / Berbagai",
     "meaning_en": "various",
     "level": "N5",
     "type": "Kata Sifat (-na)",
     "example": {
       "ja": "先生といってもいろいろある。",
       "reading": "{先生|せんせい}といってもいろいろある。",
-      "meaning": "There are teachers and then there are teachers."
+      "meaning": "Ada banyak tipe guru."
     }
   },
   {
     "word": "上",
     "reading": "うえ",
     "romaji": "ue",
-    "meaning_id": "On top of",
+    "meaning_id": "Atas / Di atas",
     "meaning_en": "on top of",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "テーブルの上にリンゴがあります。",
       "reading": "テーブルの{上|うえ}にリンゴがあります。",
-      "meaning": "There is an apple on the table."
+      "meaning": "Ada sebuah apel di atas meja."
     }
   },
   {
     "word": "後ろ",
     "reading": "うしろ",
     "romaji": "ushiro",
-    "meaning_id": "Behind",
+    "meaning_id": "Belakang / Di belakang",
     "meaning_en": "behind",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "校長が先生の後ろから入ってきた。",
       "reading": "{校長|こうちょう}が{先生|せんせい}の{後|うし}ろから{入|はい}ってきた。",
-      "meaning": "The principal came in after the teacher."
+      "meaning": "Kepala sekolah masuk dari belakang guru."
     }
   },
   {
     "word": "薄い",
     "reading": "うすい",
     "romaji": "usui",
-    "meaning_id": "Thin / weak",
+    "meaning_id": "Tipis / Hambar / Encer",
     "meaning_en": "thin, weak",
     "level": "N5",
     "type": "Kata Sifat (-i)",
     "example": {
       "ja": "コーヒーは薄いのが好きです。",
       "reading": "コーヒーは{薄|うす}いのが{好|す}きです。",
-      "meaning": "I'd like my coffee weak."
+      "meaning": "Saya suka kopi saya yang lemah."
     }
   },
   {
@@ -1098,35 +1098,35 @@
     "example": {
       "ja": "歌がうまければいいのになあ。",
       "reading": "{歌|うた}がうまければいいのになあ。",
-      "meaning": "I wish I were a good singer."
+      "meaning": "Saya berharap saya bisa bernyanyi dengan baik."
     }
   },
   {
     "word": "歌う",
     "reading": "うたう",
     "romaji": "utau",
-    "meaning_id": "Me-sing",
+    "meaning_id": "Menyanyi",
     "meaning_en": "to sing",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ジョンはステージで何を歌いましたか。",
       "reading": "ジョンはステージで{何|なに}を{歌|うた}いましたか。",
-      "meaning": "What did John sing on the stage?"
+      "meaning": "Apa yang John nyanyikan di atas panggung?"
     }
   },
   {
     "word": "生まれる",
     "reading": "うまれる",
     "romaji": "umareru",
-    "meaning_id": "Me-be born",
+    "meaning_id": "Lahir / Dilahirkan",
     "meaning_en": "to be born",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "どんぐりからオークが生まれる。",
       "reading": "どんぐりからオークが{生|う}まれる。",
-      "meaning": "From acorns come oaks."
+      "meaning": "Pohon ek lahir dari biji pohon ek."
     }
   },
   {
@@ -1140,7 +1140,7 @@
     "example": {
       "ja": "何としても海をひと目みたいものだ。",
       "reading": "",
-      "meaning": "I ache for a sight of the sea."
+      "meaning": "Saya ingin melihat laut apapun yang terjadi."
     }
   },
   {
@@ -1154,7 +1154,7 @@
     "example": {
       "ja": "トムはメアリーにバイクを売った。",
       "reading": "トムはメアリーにバイクを{売|う}った。",
-      "meaning": "Tom sold his motorcycle to Mary."
+      "meaning": "Tom menjual sepeda itu kepada Mary."
     }
   },
   {
@@ -1168,21 +1168,21 @@
     "example": {
       "ja": "あの子はなんてうるさい子だろう。",
       "reading": "あの{子|こ}はなんてうるさい{子|こ}だろう。",
-      "meaning": "What a nuisance that child is!"
+      "meaning": "Betapa berisiknya anak itu!"
     }
   },
   {
     "word": "上着",
     "reading": "うわぎ",
     "romaji": "uwagi",
-    "meaning_id": "Jacket",
+    "meaning_id": "Jaket / Baju atasan",
     "meaning_en": "jacket",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "ドアのそばのかぎに上着をかけなさい。",
       "reading": "ドアのそばのかぎに{上着|うわぎ}をかけなさい。",
-      "meaning": "Hang your jacket on the hook by the door."
+      "meaning": "Gantungkan mantel Anda pada kunci dekat pintu."
     }
   },
   {
@@ -1196,7 +1196,7 @@
     "example": {
       "ja": "絵がテーブルの上にかかっている。",
       "reading": "{絵|え}がテーブルの{上|うえ}にかかっている。",
-      "meaning": "The picture hangs over the table."
+      "meaning": "Gambar itu tergantung di atas meja."
     }
   },
   {
@@ -1210,42 +1210,42 @@
     "example": {
       "ja": "その映画をもう一度見たいな。",
       "reading": "その{映画|えいが}をもう{一度|いちど}{見|み}たいな。",
-      "meaning": "I want to see the movie again."
+      "meaning": "Saya ingin melihat film itu lagi."
     }
   },
   {
     "word": "映画館",
     "reading": "えいがかん",
     "romaji": "eigakan",
-    "meaning_id": "Cinema",
+    "meaning_id": "Bioskop",
     "meaning_en": "cinema",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "その映画館は人々でいっぱいだった。",
       "reading": "その{映画館|えいがかん}は{人々|ひとびと}でいっぱいだった。",
-      "meaning": "The cinema was filled with people."
+      "meaning": "Bioskop itu penuh dengan orang."
     }
   },
   {
     "word": "英語",
     "reading": "えいご",
     "romaji": "eigo",
-    "meaning_id": "English language",
+    "meaning_id": "Bahasa Inggris",
     "meaning_en": "English language",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "アメリカでは英語を話します。",
       "reading": "アメリカでは{英語|えいご}を{話|はな}します。",
-      "meaning": "They speak English in America."
+      "meaning": "Di Amerika kami berbicara bahasa Inggris."
     }
   },
   {
     "word": "ええ",
     "reading": "ええ",
     "romaji": "ee",
-    "meaning_id": "Yes",
+    "meaning_id": "Ya (percakapan santai)",
     "meaning_en": "yes",
     "level": "N5",
     "type": "Kata Seru (Interjeksi)",
@@ -1273,14 +1273,14 @@
     "word": "エレベーター",
     "reading": "エレベーター",
     "romaji": "erebeetaa",
-    "meaning_id": "Elevator",
+    "meaning_id": "Lift / Elevator",
     "meaning_en": "elevator",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "エレベーターはどこですか。",
       "reading": "",
-      "meaning": "Where is the elevator?"
+      "meaning": "Di mana Anda memiliki lift."
     }
   },
   {
@@ -1294,7 +1294,7 @@
     "example": {
       "ja": "えんぴつであなたの名前を書きなさい。",
       "reading": "えんぴつであなたの{名前|なまえ}を{書|か}きなさい。",
-      "meaning": "Write your name with the pencil."
+      "meaning": "Tulis nama Anda dengan pensil."
     }
   },
   {
@@ -1314,14 +1314,14 @@
     "word": "多い",
     "reading": "おおい",
     "romaji": "ooi",
-    "meaning_id": "Many",
+    "meaning_id": "Banyak",
     "meaning_en": "many",
     "level": "N5",
     "type": "Kata Sifat (-i)",
     "example": {
       "ja": "この学校は男子よりも女子が多い。",
       "reading": "この{学校|がっこう}は{男子|だんし}よりも{女子|じょし}が{多|おお}い。",
-      "meaning": "There are more girls than boys in this school."
+      "meaning": "Jumlah anak perempuan lebih banyak dibandingkan anak laki-laki di sekolah ini."
     }
   },
   {
@@ -1348,35 +1348,35 @@
     "example": {
       "ja": "それらはとても大きなりんごです。",
       "reading": "それらはとても{大|おお}きなりんごです。",
-      "meaning": "They are very big apples."
+      "meaning": "Itu adalah apel yang sangat besar."
     }
   },
   {
     "word": "大勢",
     "reading": "おおぜい",
     "romaji": "oozei",
-    "meaning_id": "Great number of people",
+    "meaning_id": "Banyak orang / Kerumunan orang",
     "meaning_en": "great number of people",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "大ぜいの人たちがいた。",
       "reading": "",
-      "meaning": "There were lots of people."
+      "meaning": "Ada banyak orang di sana."
     }
   },
   {
     "word": "お母さん",
     "reading": "おかあさん",
     "romaji": "okaasan",
-    "meaning_id": "(honorable) mother",
+    "meaning_id": "Ibu (orang lain / panggilan)",
     "meaning_en": "(honorable) mother",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "お母さんに口答えしてはいけませんよ。",
       "reading": "お{母|かあ}さんに{口答|くちごた}えしてはいけませんよ。",
-      "meaning": "Don't answer your mother back."
+      "meaning": "Kamu tidak seharusnya membalas perkataan ibumu."
     }
   },
   {
@@ -1390,7 +1390,7 @@
     "example": {
       "ja": "もうすこしお菓子を食べませんか。",
       "reading": "もうすこしお{菓子|かし}を{食|た}べませんか。",
-      "meaning": "Will you have some more cake?"
+      "meaning": "Apakah Anda ingin makan manisan lagi?"
     }
   },
   {
@@ -1404,7 +1404,7 @@
     "example": {
       "ja": "どうやってそのお金を手に入れたんですか。",
       "reading": "どうやってそのお{金|かね}を{手|て}に{入|い}れたんですか。",
-      "meaning": "How did you come by the money?"
+      "meaning": "Bagaimana Anda mendapatkan uang itu?"
     }
   },
   {
@@ -1424,28 +1424,28 @@
     "word": "置く",
     "reading": "おく",
     "romaji": "oku",
-    "meaning_id": "Me-put",
+    "meaning_id": "Menaruh / Meletakkan",
     "meaning_en": "to put",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "それをテーブルの上に置きなさい。",
       "reading": "それをテーブルの{上|うえ}に{置|お}きなさい。",
-      "meaning": "Lay it on the table."
+      "meaning": "Letakkan di atas meja."
     }
   },
   {
     "word": "奥さん",
     "reading": "おくさん",
     "romaji": "okusan",
-    "meaning_id": "(honorable) wife",
+    "meaning_id": "Istri (orang lain)",
     "meaning_en": "(honorable) wife",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "奥さんがどこかに出かけているらしいから。",
       "reading": "{奥|おく}さんがどこかに{出|で}かけているらしいから。",
-      "meaning": "I think his wife is going out of town."
+      "meaning": "Sepertinya istriku akan pergi ke suatu tempat."
     }
   },
   {
@@ -1459,7 +1459,7 @@
     "example": {
       "ja": "マイクはお酒をやめたの？",
       "reading": "マイクはお{酒|さけ}をやめたの？",
-      "meaning": "Is Mike off the bottle?"
+      "meaning": "Apakah Mike sudah berhenti minum?"
     }
   },
   {
@@ -1473,14 +1473,14 @@
     "example": {
       "ja": "スープを入れるくぼんだお皿がありますか。",
       "reading": "スープを{入|い}れるくぼんだお{皿|さら}がありますか。",
-      "meaning": "Do you have a bowl for soup?"
+      "meaning": "Apakah Anda memiliki piring tersembunyi untuk sup?"
     }
   },
   {
     "word": "お祖父さん",
     "reading": "おじいさん",
     "romaji": "ojiisan",
-    "meaning_id": "Grandfather / male senior citizen",
+    "meaning_id": "Kakek (orang lain / panggilan)",
     "meaning_en": "grandfather, male senior citizen",
     "level": "N5",
     "type": "Kata Benda",
@@ -1494,28 +1494,28 @@
     "word": "教える",
     "reading": "おしえる",
     "romaji": "oshieru",
-    "meaning_id": "Me-teach / Me-tell",
+    "meaning_id": "Mengajar / Memberitahu",
     "meaning_en": "to teach, to tell",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "生年月日を教えてくださいますか？",
       "reading": "{生年月日|せいねんがっぴ}を{教|おし}えてくださいますか？",
-      "meaning": "May I have your birth date?"
+      "meaning": "Bisakah Anda memberi tahu saya tanggal lahir Anda?"
     }
   },
   {
     "word": "押す",
     "reading": "おす",
     "romaji": "osu",
-    "meaning_id": "Me-push / Me-stamp something",
+    "meaning_id": "Menekan / Mendorong / Menyetempel",
     "meaning_en": "to push, to stamp something",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "シャッターを押してくれますか。",
       "reading": "シャッターを{押|お}してくれますか。",
-      "meaning": "Could you press this button?"
+      "meaning": "Maukah Anda menekan tombol rana?"
     }
   },
   {
@@ -1543,7 +1543,7 @@
     "example": {
       "ja": "３時はお茶にしよう。",
       "reading": "３{時|じ}はお{茶|ちゃ}にしよう。",
-      "meaning": "Let's have tea at 3:00."
+      "meaning": "Ayo minum teh jam 3 sore."
     }
   },
   {
@@ -1557,21 +1557,21 @@
     "example": {
       "ja": "お手洗いはどこですか。",
       "reading": "お{手洗|てあら}いはどこですか。",
-      "meaning": "Where's the restroom?"
+      "meaning": "Di mana kamar kecil."
     }
   },
   {
     "word": "お父さん",
     "reading": "おとうさん",
     "romaji": "otousan",
-    "meaning_id": "(honorable) father",
+    "meaning_id": "Ayah (orang lain / panggilan)",
     "meaning_en": "(honorable) father",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "お父さんからことづけがあります。",
       "reading": "お{父|とう}さんからことづけがあります。",
-      "meaning": "I have a message for you from your father."
+      "meaning": "Aku mendapat pesan dari ayahku."
     }
   },
   {
@@ -1599,7 +1599,7 @@
     "example": {
       "ja": "その男とつきあってはいけないよ。",
       "reading": "その{男|おとこ}とつきあってはいけないよ。",
-      "meaning": "You must have nothing to do with the man."
+      "meaning": "Anda tidak boleh berkencan dengan pria itu."
     }
   },
   {
@@ -1613,35 +1613,35 @@
     "example": {
       "ja": "あのハンサムな男の子を見て。",
       "reading": "あのハンサムな{男|おとこ}の{子|こ}を{見|み}て。",
-      "meaning": "Look at that good-looking boy."
+      "meaning": "Lihatlah anak laki-laki tampan itu."
     }
   },
   {
     "word": "一昨日",
     "reading": "おととい",
     "romaji": "ototoi",
-    "meaning_id": "Day before yesterday",
+    "meaning_id": "Kemarin lusa",
     "meaning_en": "day before yesterday",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "一昨日、彼は学校を休んだかもしれない。",
       "reading": "{一昨日|おととい}、{彼|かれ}は{学校|がっこう}を{休|やす}んだかもしれない。",
-      "meaning": "He may have absented himself from school the day before yesterday."
+      "meaning": "Dia mungkin tidak masuk sekolah kemarin lusa."
     }
   },
   {
     "word": "一昨年",
     "reading": "おととし",
     "romaji": "ototoshi",
-    "meaning_id": "Year before last",
+    "meaning_id": "Dua tahun lalu",
     "meaning_en": "year before last",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "彼女は、一昨年よりもはるかに暮らし向きがよい。",
       "reading": "",
-      "meaning": "She's far better off than she was the year before last."
+      "meaning": "Keadaannya jauh lebih baik dibandingkan tahun sebelumnya."
     }
   },
   {
@@ -1655,7 +1655,7 @@
     "example": {
       "ja": "大人だけこの映画が見える。",
       "reading": "{大人|おとな}だけこの{映画|えいが}が{見|み}える。",
-      "meaning": "Only adults can see this film."
+      "meaning": "Hanya orang dewasa yang boleh menonton film ini."
     }
   },
   {
@@ -1669,63 +1669,63 @@
     "example": {
       "ja": "何かおなかに入れてから出かけなさい。",
       "reading": "",
-      "meaning": "You should put something in your stomach before you go."
+      "meaning": "Taruh sesuatu di perut Anda sebelum Anda keluar."
     }
   },
   {
     "word": "同じ",
     "reading": "おなじ",
     "romaji": "onaji",
-    "meaning_id": "Same",
+    "meaning_id": "Sama / Serupa",
     "meaning_en": "same",
     "level": "N5",
     "type": "Kata Sifat",
     "example": {
       "ja": "この木はあの木とほぼ同じ高さだ。",
       "reading": "この{木|き}はあの{木|き}とほぼ{同|おな}じ{高|たか}さだ。",
-      "meaning": "This tree is about as high as that one."
+      "meaning": "Tinggi pohon ini kira-kira sama dengan pohon itu."
     }
   },
   {
     "word": "お兄さん",
     "reading": "おにいさん",
     "romaji": "oniisan",
-    "meaning_id": "(honorable) older brother",
+    "meaning_id": "Kakak laki-laki (orang lain / panggilan)",
     "meaning_en": "(honorable) older brother",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "私はあなたのお兄さんより年上です。",
       "reading": "{私|わたし}はあなたのお{兄|にい}さんより{年上|としうえ}です。",
-      "meaning": "I'm older than your brother."
+      "meaning": "Aku lebih tua dari kakakmu."
     }
   },
   {
     "word": "お姉さん",
     "reading": "おねえさん",
     "romaji": "oneesan",
-    "meaning_id": "(honorable) older sister",
+    "meaning_id": "Kakak perempuan (orang lain / panggilan)",
     "meaning_en": "(honorable) older sister",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あなたのお姉さんは今何をしているの？",
       "reading": "あなたのお{姉|ねえ}さんは{今|いま}{何|なに}をしているの？",
-      "meaning": "What's your older sister doing now?"
+      "meaning": "Apa yang sedang dilakukan adikmu sekarang?"
     }
   },
   {
     "word": "お願いします",
     "reading": "おねがいします",
     "romaji": "onegaishimasu",
-    "meaning_id": "Please",
+    "meaning_id": "Tolong / Mohon bantuannya",
     "meaning_en": "please",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "ファーストクラスでお願いします。",
       "reading": "ファーストクラスでお{願|ねが}いします。",
-      "meaning": "I'd like to travel first-class."
+      "meaning": "Tolong, kelas satu."
     }
   },
   {
@@ -1753,21 +1753,21 @@
     "example": {
       "ja": "叔母さんを訪ねた時はすごいごちそうだったね。",
       "reading": "{叔母|おば}さんを{訪|たず}ねた{時|とき}はすごいごちそうだったね。",
-      "meaning": "What a feast we had when we visited my aunt!"
+      "meaning": "Sungguh pesta yang luar biasa ketika saya mengunjungi bibi saya."
     }
   },
   {
     "word": "おはよう",
     "reading": "おはよう",
     "romaji": "ohayou",
-    "meaning_id": "(abbreviation) Good morning",
+    "meaning_id": "Selamat pagi (kasual)",
     "meaning_en": "(abbreviation) Good morning",
     "level": "N5",
     "type": "Kata Seru (Interjeksi)",
     "example": {
       "ja": "おはよう。ご飯をよそっても良いかしら？",
       "reading": "おはよう。ご{飯|はん}をよそっても{良|よ}いかしら？",
-      "meaning": "Morning. Shall I dish up?"
+      "meaning": "Selamat pagi. Bolehkah saya minta makanan?"
     }
   },
   {
@@ -1781,7 +1781,7 @@
     "example": {
       "ja": "私はほとんど毎日お風呂に入ります。",
       "reading": "{私|わたし}はほとんど{毎日|まいにち}お{風呂|ふろ}に{入|はい}ります。",
-      "meaning": "I take a bath almost every day."
+      "meaning": "Saya mandi hampir setiap hari."
     }
   },
   {
@@ -1795,7 +1795,7 @@
     "example": {
       "ja": "彼は今日、お弁当を持って来た。",
       "reading": "",
-      "meaning": "He brought his lunch today."
+      "meaning": "Dia membawa kotak makan siang hari ini."
     }
   },
   {
@@ -1809,21 +1809,21 @@
     "example": {
       "ja": "日本語は外人にとって覚えにくい。",
       "reading": "{日本語|にほんご}は{外人|がいじん}にとって{覚|おぼ}えにくい。",
-      "meaning": "It is hard for foreigners to learn Japanese."
+      "meaning": "Bahasa Jepang sulit diingat oleh orang asing."
     }
   },
   {
     "word": "おまわりさん",
     "reading": "おまわりさん",
     "romaji": "omawarisan",
-    "meaning_id": "Friendly term for policeman",
+    "meaning_id": "Pak Polisi (sebutan ramah)",
     "meaning_en": "friendly term for policeman",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "すみません、おまわりさん。ここはどこですか。",
       "reading": "",
-      "meaning": "Excuse me, officer, where are we now?"
+      "meaning": "Permisi, petugas. Dimana ini?"
     }
   },
   {
@@ -1837,7 +1837,7 @@
     "example": {
       "ja": "トムはジャックよりも１０ポンド重い。",
       "reading": "トムはジャックよりも１０ポンド{重|おも}い。",
-      "meaning": "Tom is heavier than Jack by ten pounds."
+      "meaning": "Tom 10 pon lebih berat dari Jack."
     }
   },
   {
@@ -1851,7 +1851,7 @@
     "example": {
       "ja": "スケートはとてもおもしろかった。",
       "reading": "",
-      "meaning": "We had a lot of fun skating."
+      "meaning": "Skating sangat menarik."
     }
   },
   {
@@ -1865,14 +1865,14 @@
     "example": {
       "ja": "トムはすぐに泳げるようになるよ。",
       "reading": "トムはすぐに{泳|およ}げるようになるよ。",
-      "meaning": "Tom will be able to swim soon."
+      "meaning": "Tom akan segera bisa berenang."
     }
   },
   {
     "word": "降りる",
     "reading": "おりる",
     "romaji": "oriru",
-    "meaning_id": "Me-get off / Me-descend",
+    "meaning_id": "Turun (dari kendaraan / tangga)",
     "meaning_en": "to get off, to descend",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
@@ -1893,7 +1893,7 @@
     "example": {
       "ja": "そのコンサートは十時に終わった。",
       "reading": "",
-      "meaning": "The concert came to an end at ten o'clock."
+      "meaning": "Konser berakhir pada pukul sepuluh."
     }
   },
   {
@@ -1907,7 +1907,7 @@
     "example": {
       "ja": "この音楽を聞いてくつろぎなさい。",
       "reading": "この{音楽|おんがく}を{聞|き}いてくつろぎなさい。",
-      "meaning": "Listen to this music and relax."
+      "meaning": "Dengarkan musik ini dan bersantai."
     }
   },
   {
@@ -1921,7 +1921,7 @@
     "example": {
       "ja": "人は男か女のどちらかである。",
       "reading": "{人|ひと}は{男|おとこ}か{女|おんな}のどちらかである。",
-      "meaning": "A person is either male or female."
+      "meaning": "Seseorang bisa laki-laki atau perempuan."
     }
   },
   {
@@ -1935,7 +1935,7 @@
     "example": {
       "ja": "女の子はほとんどみんなやさしい。",
       "reading": "{女|おんな}の{子|こ}はほとんどみんなやさしい。",
-      "meaning": "Almost all girls are kind."
+      "meaning": "Hampir semua gadis itu baik."
     }
   },
   {
@@ -1949,7 +1949,7 @@
     "example": {
       "ja": "あなたは外国の本を持っていますか。",
       "reading": "あなたは{外国|がいこく}の{本|ほん}を{持|も}っていますか。",
-      "meaning": "Do you have any foreign books?"
+      "meaning": "Apakah Anda punya buku asing?"
     }
   },
   {
@@ -1963,7 +1963,7 @@
     "example": {
       "ja": "その外国人はかなりうまく日本語を話す。",
       "reading": "その{外国人|がいこくじん}はかなりうまく{日本語|にほんご}を{話|はな}す。",
-      "meaning": "The foreigner speaks Japanese fairly well."
+      "meaning": "Orang asing itu berbicara bahasa Jepang dengan cukup baik."
     }
   },
   {
@@ -1977,7 +1977,7 @@
     "example": {
       "ja": "ビルは三年前にこの会社に入った。",
       "reading": "ビルは{三年|さんねん}{前|#1392580}にこの{会社|かいしゃ}に{入|はい}った。",
-      "meaning": "Bill joined our company three years ago."
+      "meaning": "Bill bergabung dengan perusahaan ini tiga tahun lalu."
     }
   },
   {
@@ -1991,7 +1991,7 @@
     "example": {
       "ja": "その階段を上ってはいけません。",
       "reading": "",
-      "meaning": "You must not go up the stairs."
+      "meaning": "Jangan naik tangga itu."
     }
   },
   {
@@ -2005,7 +2005,7 @@
     "example": {
       "ja": "１日おきに買い物に行く。",
       "reading": "",
-      "meaning": "I go shopping every other day."
+      "meaning": "Saya pergi berbelanja setiap hari."
     }
   },
   {
@@ -2025,14 +2025,14 @@
     "word": "返す",
     "reading": "かえす",
     "romaji": "kaesu",
-    "meaning_id": "Me-return something",
+    "meaning_id": "Mengembalikan (sesuatu)",
     "meaning_en": "to return something",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "車はいつ返したらいいでしょうか。",
       "reading": "{車|くるま}はいつ{返|かえ}したらいいでしょうか。",
-      "meaning": "When should I return the car?"
+      "meaning": "Kapan saya harus mengembalikan mobil?"
     }
   },
   {
@@ -2052,14 +2052,14 @@
     "word": "かかる",
     "reading": "かかる",
     "romaji": "kakaru",
-    "meaning_id": "Me-take time or money",
+    "meaning_id": "Memerlukan (waktu atau biaya) / Menghabiskan",
     "meaning_en": "to take time or money",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "どうしたらエンジンがかかりますか。",
       "reading": "",
-      "meaning": "How can I start the engine?"
+      "meaning": "Bagaimana cara menghidupkan mesin?"
     }
   },
   {
@@ -2073,7 +2073,7 @@
     "example": {
       "ja": "車のカギをなくしちゃった。",
       "reading": "{車|くるま}のカギをなくしちゃった。",
-      "meaning": "I've lost my car key."
+      "meaning": "Saya kehilangan kunci mobil saya."
     }
   },
   {
@@ -2100,21 +2100,21 @@
     "example": {
       "ja": "学生の半数が休んでいた。",
       "reading": "{学生|がくせい}の{半数|はんすう}が{休|やす}んでいた。",
-      "meaning": "Half the students were absent."
+      "meaning": "Setengah dari siswa tidak hadir."
     }
   },
   {
     "word": "かける",
     "reading": "かける",
     "romaji": "kakeru",
-    "meaning_id": "Me-call by phone",
+    "meaning_id": "Menelepon / Menggantungkan / Memakai (kacamata)",
     "meaning_en": "to call by phone",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "１０円で電話がかけられますか。",
       "reading": "１０{円|えん}で{電話|でんわ}がかけられますか。",
-      "meaning": "Can I make a phone call for ten yen?"
+      "meaning": "Bolehkah saya menelepon seharga 10 yen?"
     }
   },
   {
@@ -2128,21 +2128,21 @@
     "example": {
       "ja": "タクシーに傘を忘れてしまった。",
       "reading": "タクシーに{傘|かさ}を{忘|わす}れてしまった。",
-      "meaning": "I left my umbrella in the cab."
+      "meaning": "Saya lupa payung saya di taksi."
     }
   },
   {
     "word": "貸す",
     "reading": "かす",
     "romaji": "kasu",
-    "meaning_id": "Me-lend",
+    "meaning_id": "Meminjamkan",
     "meaning_en": "to lend",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ホッチキスを貸してくれませんか。",
       "reading": "ホッチキスを{貸|か}してくれませんか。",
-      "meaning": "Will you please lend me a stapler?"
+      "meaning": "Bisakah Anda meminjamkan saya stapler Anda?"
     }
   },
   {
@@ -2156,21 +2156,21 @@
     "example": {
       "ja": "カーテンが風になびいた。",
       "reading": "カーテンが{風|かぜ}になびいた。",
-      "meaning": "The curtains blew in the wind."
+      "meaning": "Tirai berkibar tertiup angin."
     }
   },
   {
     "word": "風邪",
     "reading": "かぜ",
     "romaji": "kaze",
-    "meaning_id": "A cold",
+    "meaning_id": "Masuk angin / Flu / Pilek",
     "meaning_en": "a cold",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "ただの風邪でしょう。",
       "reading": "ただの{風邪|かぜ}でしょう。",
-      "meaning": "You probably just have a cold."
+      "meaning": "Itu mungkin hanya flu."
     }
   },
   {
@@ -2184,21 +2184,21 @@
     "example": {
       "ja": "あなたの家族はきっと親切でしょう。",
       "reading": "あなたの{家族|かぞく}はきっと{親切|しんせつ}でしょう。",
-      "meaning": "Your family must be very nice."
+      "meaning": "Keluarga Anda mungkin baik."
     }
   },
   {
     "word": "方",
     "reading": "かた",
     "romaji": "kata",
-    "meaning_id": "Orang / way of doing",
+    "meaning_id": "Orang (sopan) / Cara melakukan",
     "meaning_en": "person, way of doing",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "こちらはあなたがお話しになるお方です。",
       "reading": "こちらはあなたがお{話|はな}しになるお{方|かた}です。",
-      "meaning": "This is the man for you to speak to."
+      "meaning": "Ini adalah orang yang akan Anda ajak bicara."
     }
   },
   {
@@ -2225,7 +2225,7 @@
     "example": {
       "ja": "テーブルの上にカップがある。",
       "reading": "テーブルの{上|うえ}にカップがある。",
-      "meaning": "There is a cup on the table."
+      "meaning": "Ada cangkir di atas meja."
     }
   },
   {
@@ -2239,21 +2239,21 @@
     "example": {
       "ja": "食事は家庭で食べますか、外食ですか。",
       "reading": "{食事|しょくじ}は{家庭|かてい}で{食|た}べますか、{外食|がいしょく}ですか。",
-      "meaning": "Do you eat at home or eat out?"
+      "meaning": "Apakah Anda makan di rumah atau makan di luar?"
     }
   },
   {
     "word": "角",
     "reading": "かど",
     "romaji": "kado",
-    "meaning_id": "A corner",
+    "meaning_id": "Sudut / Tikungan / Pojok",
     "meaning_en": "a corner",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "角のテーブルがいいのですが。",
       "reading": "{角|かど}のテーブルがいいのですが。",
-      "meaning": "Could we have a table in the corner?"
+      "meaning": "Saya ingin meja sudut."
     }
   },
   {
@@ -2267,21 +2267,21 @@
     "example": {
       "ja": "これはジェーンさんのかばんです。",
       "reading": "",
-      "meaning": "This is Jane's bag."
+      "meaning": "Ini tas Jane."
     }
   },
   {
     "word": "花瓶",
     "reading": "かびん",
     "romaji": "kabin",
-    "meaning_id": "A vase",
+    "meaning_id": "Vas bunga",
     "meaning_en": "a vase",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "花びんに水を入れなさい。",
       "reading": "",
-      "meaning": "Put some water into the vase."
+      "meaning": "Isi vas dengan air."
     }
   },
   {
@@ -2295,7 +2295,7 @@
     "example": {
       "ja": "紙は木から作られる。",
       "reading": "{紙|かみ}は{木|き}から{作|つく}られる。",
-      "meaning": "Paper is made from wood."
+      "meaning": "Kertas terbuat dari kayu."
     }
   },
   {
@@ -2309,21 +2309,21 @@
     "example": {
       "ja": "おじさんがぼくにカメラをくれました。",
       "reading": "",
-      "meaning": "My uncle gave me a camera."
+      "meaning": "Paman saya memberi saya kamera."
     }
   },
   {
     "word": "火曜日",
     "reading": "かようび",
     "romaji": "kayoubi",
-    "meaning_id": "Tuesday",
+    "meaning_id": "Selasa",
     "meaning_en": "Tuesday",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "火曜日に国会が開かれる。",
       "reading": "{火曜日|かようび}に{国会|こっかい}が{開|ひら}かれる。",
-      "meaning": "The Diet will meet on Tuesday."
+      "meaning": "Diet akan bertemu pada hari Selasa."
     }
   },
   {
@@ -2337,7 +2337,7 @@
     "example": {
       "ja": "このカレーは辛すぎて食べられない。",
       "reading": "このカレーは{辛|から}すぎて{食|た}べられない。",
-      "meaning": "This curry is too hot to eat."
+      "meaning": "Kari ini terlalu pedas untuk dimakan."
     }
   },
   {
@@ -2351,21 +2351,21 @@
     "example": {
       "ja": "とりわけ体に気をつけなさい。",
       "reading": "とりわけ{体|からだ}に{気|き}をつけなさい。",
-      "meaning": "Above all, take care of yourself."
+      "meaning": "Yang terpenting, jagalah tubuh Anda."
     }
   },
   {
     "word": "借りる",
     "reading": "かりる",
     "romaji": "kariru",
-    "meaning_id": "Me-borrow",
+    "meaning_id": "Meminjam",
     "meaning_en": "to borrow",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "この本をお借りしてもよろしいですか。",
       "reading": "この{本|ほん}をお{借|か}りしてもよろしいですか。",
-      "meaning": "May I borrow this book?"
+      "meaning": "Bolehkah saya meminjam buku ini?"
     }
   },
   {
@@ -2379,7 +2379,7 @@
     "example": {
       "ja": "軽く食べましょう。",
       "reading": "{軽|かる}く{食|た}べましょう。",
-      "meaning": "Let's catch a bite."
+      "meaning": "Ayo makan dengan ringan."
     }
   },
   {
@@ -2393,7 +2393,7 @@
     "example": {
       "ja": "このレストランのカレーはうまいよ。",
       "reading": "",
-      "meaning": "The curry at this restaurant is good."
+      "meaning": "Kari di restoran ini enak."
     }
   },
   {
@@ -2407,7 +2407,7 @@
     "example": {
       "ja": "このカレンダーはどこにかけましょうか。",
       "reading": "",
-      "meaning": "Where shall I hang this calendar?"
+      "meaning": "Di mana saya harus menggantung kalender ini?"
     }
   },
   {
@@ -2421,7 +2421,7 @@
     "example": {
       "ja": "その川はあまりきれいではなかった。",
       "reading": "その{川|かわ}はあまりきれいではなかった。",
-      "meaning": "The river was not so clean."
+      "meaning": "Sungai itu tidak terlalu bersih."
     }
   },
   {
@@ -2435,21 +2435,21 @@
     "example": {
       "ja": "ルーシーはかわいい女の子だ。",
       "reading": "ルーシーはかわいい{女|おんな}の{子|こ}だ。",
-      "meaning": "Lucy is a pretty little girl."
+      "meaning": "Lucy adalah gadis yang manis."
     }
   },
   {
     "word": "漢字",
     "reading": "かんじ",
     "romaji": "kanji",
-    "meaning_id": "Chinese character",
+    "meaning_id": "Huruf Kanji",
     "meaning_en": "Chinese character",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "この漢字はどういう意味ですか。",
       "reading": "この{漢字|かんじ}はどういう{意味|いみ}ですか。",
-      "meaning": "What does this kanji mean?"
+      "meaning": "Apa arti kanji ini?"
     }
   },
   {
@@ -2463,7 +2463,7 @@
     "example": {
       "ja": "その木には実がたわわになっていた。",
       "reading": "その{木|き}には{実|み}がたわわになっていた。",
-      "meaning": "The tree was heavy with fruit."
+      "meaning": "Pohon itu penuh dengan buah."
     }
   },
   {
@@ -2477,7 +2477,7 @@
     "example": {
       "ja": "木の葉は秋には黄色になる。",
       "reading": "{木|こ}の{葉|は}は{秋|あき}には{黄色|きいろ}になる。",
-      "meaning": "The leaves of the trees turn yellow in fall."
+      "meaning": "Daun pohon menguning di musim gugur."
     }
   },
   {
@@ -2491,21 +2491,21 @@
     "example": {
       "ja": "その黄色いのをいただきましょう。",
       "reading": "その{黄色|きいろ}いのをいただきましょう。",
-      "meaning": "I'll take the yellow one."
+      "meaning": "Mari kita ambil yang kuning itu."
     }
   },
   {
     "word": "消える",
     "reading": "きえる",
     "romaji": "kieru",
-    "meaning_id": "Me-disappear",
+    "meaning_id": "Padam / Mati (lampu) / Hilang",
     "meaning_en": "to disappear",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "火が消えないようにしてください。",
       "reading": "{火|ひ}が{消|き}えないようにしてください。",
-      "meaning": "Please keep the fire from going out."
+      "meaning": "Jangan biarkan apinya padam."
     }
   },
   {
@@ -2532,7 +2532,7 @@
     "example": {
       "ja": "その町はロンドンのすぐ北にある。",
       "reading": "その{町|まち}はロンドンのすぐ{北|きた}にある。",
-      "meaning": "The town lies just above London."
+      "meaning": "Kota ini terletak di utara London."
     }
   },
   {
@@ -2546,7 +2546,7 @@
     "example": {
       "ja": "どちらがあなたのギターですか。",
       "reading": "",
-      "meaning": "Which is your guitar?"
+      "meaning": "Gitarmu yang mana?"
     }
   },
   {
@@ -2560,7 +2560,7 @@
     "example": {
       "ja": "ジャックは私に汚いいたずらをした。",
       "reading": "ジャックは{私|わたし}に{汚|きたな}いいたずらをした。",
-      "meaning": "Jack played a dirty trick on me."
+      "meaning": "Jack mempermainkanku."
     }
   },
   {
@@ -2574,7 +2574,7 @@
     "example": {
       "ja": "私たちは喫茶店で昼食をとった。",
       "reading": "{私|わたし}たちは{喫茶店|きっさてん}で{昼食|ちゅうしょく}をとった。",
-      "meaning": "We ate lunch in a coffee lounge."
+      "meaning": "Kami makan siang di kedai kopi."
     }
   },
   {
@@ -2588,7 +2588,7 @@
     "example": {
       "ja": "切手の上からサインをしてください。",
       "reading": "{切手|きって}の{上|うえ}からサインをしてください。",
-      "meaning": "Sign across the stamp."
+      "meaning": "Silakan tanda tangan di stempel."
     }
   },
   {
@@ -2602,7 +2602,7 @@
     "example": {
       "ja": "この切符で二人入れるよ。",
       "reading": "この{切符|きっぷ}で{二人|ふたり}{入|い}れるよ。",
-      "meaning": "The ticket admits two persons."
+      "meaning": "Tiket ini akan memperbolehkan dua orang masuk."
     }
   },
   {
@@ -2616,7 +2616,7 @@
     "example": {
       "ja": "きのう先生は今日テストをすると言った。",
       "reading": "",
-      "meaning": "Yesterday the teacher told us that he would give us a test today."
+      "meaning": "Kemarin, guru mengatakan bahwa dia akan memberikan ulangan hari ini."
     }
   },
   {
@@ -2630,7 +2630,7 @@
     "example": {
       "ja": "彼は「九時だ」と言った。",
       "reading": "",
-      "meaning": "He said, \"It's nine o'clock.\""
+      "meaning": "Dia berkata, \"Ini jam sembilan.\""
     }
   },
   {
@@ -2644,7 +2644,7 @@
     "example": {
       "ja": "日本人はイギリス人より牛肉を食べる。",
       "reading": "{日本人|にほんじん}はイギリス{人|じん}より{牛肉|ぎゅうにく}を{食|た}べる。",
-      "meaning": "The Japanese eat more beef than the British do."
+      "meaning": "Orang Jepang makan lebih banyak daging sapi dibandingkan orang Inggris."
     }
   },
   {
@@ -2658,7 +2658,7 @@
     "example": {
       "ja": "牛乳はバターやチーズになります。",
       "reading": "{牛乳|ぎゅうにゅう}はバターやチーズになります。",
-      "meaning": "Milk is made into butter and cheese."
+      "meaning": "Susu diubah menjadi mentega dan keju."
     }
   },
   {
@@ -2672,7 +2672,7 @@
     "example": {
       "ja": "今日は何をしたいですか。",
       "reading": "{今日|きょう}は{何|なに}をしたいですか。",
-      "meaning": "What would you like to do today?"
+      "meaning": "Apa yang ingin kamu lakukan hari ini?"
     }
   },
   {
@@ -2686,35 +2686,35 @@
     "example": {
       "ja": "ＬＬ教室を使ってもよいですか。",
       "reading": "ＬＬ{教室|きょうしつ}を{使|つか}ってもよいですか。",
-      "meaning": "May we use the language lab?"
+      "meaning": "Bisakah saya menggunakan ruang kelas LL?"
     }
   },
   {
     "word": "兄弟",
     "reading": "きょうだい",
     "romaji": "kyoudai",
-    "meaning_id": "(humble) siblings",
+    "meaning_id": "Saudara kandung (sendiri)",
     "meaning_en": "(humble) siblings",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あなたは何人兄弟がいますか。",
       "reading": "",
-      "meaning": "How many siblings do you have?"
+      "meaning": "Berapa saudaramu?"
     }
   },
   {
     "word": "去年",
     "reading": "きょねん",
     "romaji": "kyonen",
-    "meaning_id": "Last year",
+    "meaning_id": "Tahun lalu",
     "meaning_en": "last year",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "ビルは去年の秋に私に会いに来た。",
       "reading": "ビルは{去年|きょねん}の{秋|あき}に{私|わたし}に{会|あ}いに{来|き}た。",
-      "meaning": "Bill came to see me last autumn."
+      "meaning": "Bill datang menemui saya musim gugur yang lalu."
     }
   },
   {
@@ -2728,35 +2728,35 @@
     "example": {
       "ja": "ジムくんは行き過ぎの嫌いがある。",
       "reading": "ジムくんは{行|い}き{過|す}ぎの{嫌|きら}いがある。",
-      "meaning": "Jim tends to go too far."
+      "meaning": "Jim-kun membenci hal-hal yang berlebihan."
     }
   },
   {
     "word": "切る",
     "reading": "きる",
     "romaji": "kiru",
-    "meaning_id": "Me-cut",
+    "meaning_id": "Memotong",
     "meaning_en": "to cut",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "トランプをよく切ってください。",
       "reading": "トランプをよく{切|き}ってください。",
-      "meaning": "Please shuffle the cards carefully."
+      "meaning": "Potong kartu remi dengan hati-hati."
     }
   },
   {
     "word": "着る",
     "reading": "きる",
     "romaji": "kiru",
-    "meaning_id": "Me-put on from the shoulders down",
+    "meaning_id": "Mengenakan (baju atasan / kemeja)",
     "meaning_en": "to put on from the shoulders down",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "このセーターを着てごらんなさい。",
       "reading": "このセーターを{着|き}てごらんなさい。",
-      "meaning": "Try on this sweater."
+      "meaning": "Coba pakai sweter ini."
     }
   },
   {
@@ -2783,7 +2783,7 @@
     "example": {
       "ja": "ヘレンはせいぜい４０キロだ。",
       "reading": "",
-      "meaning": "Helen weighs not more than 40 kilograms."
+      "meaning": "Helen memiliki berat tidak lebih dari 40 kilogram."
     }
   },
   {
@@ -2797,21 +2797,21 @@
     "example": {
       "ja": "銀行にどれだけお金がありますか。",
       "reading": "{銀行|ぎんこう}にどれだけお{金|かね}がありますか。",
-      "meaning": "How much money do you have in the bank?"
+      "meaning": "Berapa banyak uang yang Anda miliki di bank?"
     }
   },
   {
     "word": "金曜日",
     "reading": "きんようび",
     "romaji": "kin'youbi",
-    "meaning_id": "Friday",
+    "meaning_id": "Jumat",
     "meaning_en": "Friday",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あなたは金曜日に何をするつもりですか。",
       "reading": "あなたは{金曜日|きんようび}に{何|なに}をするつもりですか。",
-      "meaning": "What will you do on Friday?"
+      "meaning": "Apa yang akan kamu lakukan di hari jumat?"
     }
   },
   {
@@ -2825,21 +2825,21 @@
     "example": {
       "ja": "４時間おきにこの薬をのみなさい。",
       "reading": "４{時間|じかん}おきにこの{薬|くすり}をのみなさい。",
-      "meaning": "Take this medicine every four hours."
+      "meaning": "Minum obat ini setiap 4 jam."
     }
   },
   {
     "word": "ください",
     "reading": "ください",
     "romaji": "kudasai",
-    "meaning_id": "Please",
+    "meaning_id": "Tolong berikan / Silakan",
     "meaning_en": "please",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "ニューススタンドで聞いて下さい。",
       "reading": "ニューススタンドで{聞|き}いて{下|くだ}さい。",
-      "meaning": "You'll have to ask at the newsstand."
+      "meaning": "Dengarkan di kios koran."
     }
   },
   {
@@ -2853,7 +2853,7 @@
     "example": {
       "ja": "父はそんなに果物を食べないんです。",
       "reading": "{父|ちち}はそんなに{果物|くだもの}を{食|た}べないんです。",
-      "meaning": "My father doesn't eat all that much fruit."
+      "meaning": "Ayah saya tidak makan buah sebanyak itu."
     }
   },
   {
@@ -2867,7 +2867,7 @@
     "example": {
       "ja": "口にものをほおばってしゃべるな。",
       "reading": "{口|くち}にものをほおばってしゃべるな。",
-      "meaning": "Don't speak with your mouth full."
+      "meaning": "Jangan berbicara dengan apa pun di mulut Anda."
     }
   },
   {
@@ -2881,7 +2881,7 @@
     "example": {
       "ja": "靴のほこりをはけではらいなさい。",
       "reading": "{靴|くつ}のほこりをはけではらいなさい。",
-      "meaning": "Brush off the dust from your shoes."
+      "meaning": "Bersihkan debu dari sepatu Anda."
     }
   },
   {
@@ -2895,7 +2895,7 @@
     "example": {
       "ja": "この靴下はちぐはぐだ。",
       "reading": "この{靴下|くつした}はちぐはぐだ。",
-      "meaning": "These socks do not match."
+      "meaning": "Kaus kaki ini salah."
     }
   },
   {
@@ -2909,7 +2909,7 @@
     "example": {
       "ja": "あなたの国では何語を話しますか。",
       "reading": "あなたの{国|くに}では{何語|なにご}を{話|はな}しますか。",
-      "meaning": "What language do you speak in your country?"
+      "meaning": "Bahasa apa yang Anda gunakan di negara Anda?"
     }
   },
   {
@@ -2923,21 +2923,21 @@
     "example": {
       "ja": "曇りの日です。",
       "reading": "{曇|くも}りの{日|ひ}です。",
-      "meaning": "It's a cloudy day."
+      "meaning": "Ini hari yang mendung."
     }
   },
   {
     "word": "曇る",
     "reading": "くもる",
     "romaji": "kumoru",
-    "meaning_id": "Me-become cloudy / Me-become dim",
+    "meaning_id": "Mendung / Berawan",
     "meaning_en": "to become cloudy, to become dim",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "今日は曇っている。",
       "reading": "",
-      "meaning": "It is cloudy today."
+      "meaning": "Hari ini mendung."
     }
   },
   {
@@ -2951,7 +2951,7 @@
     "example": {
       "ja": "あたりがもう暗くなっていることに気がついた。",
       "reading": "あたりがもう{暗|くら}くなっていることに{気|き}がついた。",
-      "meaning": "I observed that it had already got dark."
+      "meaning": "Saya perhatikan hari sudah gelap."
     }
   },
   {
@@ -2965,7 +2965,7 @@
     "example": {
       "ja": "あいつはクラスでいちばんのまぬけだ。",
       "reading": "",
-      "meaning": "He is the dumbest kid in the class."
+      "meaning": "Dia cowok paling bodoh di kelas."
     }
   },
   {
@@ -2979,7 +2979,7 @@
     "example": {
       "ja": "プログラムをいただけますか。",
       "reading": "",
-      "meaning": "May I have a program?"
+      "meaning": "Bisakah Anda memberi saya programnya?"
     }
   },
   {
@@ -3019,7 +3019,7 @@
     "example": {
       "ja": "黒に黒をたしても白にはならぬ。",
       "reading": "{黒|くろ}に{黒|くろ}をたしても{白|しろ}にはならぬ。",
-      "meaning": "Two blacks do not make a white."
+      "meaning": "Menambahkan warna hitam ke hitam tidak menjadikan putih."
     }
   },
   {
@@ -3033,7 +3033,7 @@
     "example": {
       "ja": "ナンシーはヘレンよりもほんのすこし色が黒い。",
       "reading": "ナンシーはヘレンよりもほんのすこし{色|いろ}が{黒|くろ}い。",
-      "meaning": "Nancy is a shade darker than Helen."
+      "meaning": "Nancy sedikit lebih gelap dari Helen."
     }
   },
   {
@@ -3047,7 +3047,7 @@
     "example": {
       "ja": "二人の警官もへとへとになった。",
       "reading": "{二人|ふたり}の{警官|けいかん}もへとへとになった。",
-      "meaning": "The two policemen were exhausted, too."
+      "meaning": "Kedua petugas polisi itu juga kelelahan."
     }
   },
   {
@@ -3061,21 +3061,21 @@
     "example": {
       "ja": "今朝はとても寒かった。",
       "reading": "{今朝|けさ}はとても{寒|さむ}かった。",
-      "meaning": "It was very cold this morning."
+      "meaning": "Pagi ini sangat dingin."
     }
   },
   {
     "word": "消す",
     "reading": "けす",
     "romaji": "kesu",
-    "meaning_id": "Me-erase / Me-turn off power",
+    "meaning_id": "Mematikan (listrik/lampu) / Menghapus",
     "meaning_en": "to erase, to turn off power",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "寝る前に電気を消してください。",
       "reading": "{寝|ね}る{前|#1392580}に{電気|でんき}を{消|け}してください。",
-      "meaning": "Turn off the light before you go to bed."
+      "meaning": "Harap matikan lampu sebelum tidur."
     }
   },
   {
@@ -3089,7 +3089,7 @@
     "example": {
       "ja": "いや結構です。たくさんいただきました。",
       "reading": "いや{結構|けっこう}です。たくさんいただきました。",
-      "meaning": "No more, thank you. I'm full."
+      "meaning": "Tidak, tidak apa-apa. Saya menerima banyak hal."
     }
   },
   {
@@ -3103,21 +3103,21 @@
     "example": {
       "ja": "ジョンはジェーンと結婚していた。",
       "reading": "ジョンはジェーンと{結婚|けっこん}していた。",
-      "meaning": "John was married to Jane."
+      "meaning": "John menikah dengan Jane."
     }
   },
   {
     "word": "月曜日",
     "reading": "げつようび",
     "romaji": "getsuyoubi",
-    "meaning_id": "Monday",
+    "meaning_id": "Senin",
     "meaning_en": "Monday",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "月曜日までにここに来ています。",
       "reading": "{月曜日|げつようび}までにここに{来|き}ています。",
-      "meaning": "I'll be here by Monday."
+      "meaning": "Saya akan berada di sini pada hari Senin."
     }
   },
   {
@@ -3131,7 +3131,7 @@
     "example": {
       "ja": "玄関のカギはどうなっていますか。",
       "reading": "{玄関|げんかん}のカギはどうなっていますか。",
-      "meaning": "How does the front-door lock work?"
+      "meaning": "Bagaimana dengan kunci pintu depan?"
     }
   },
   {
@@ -3172,7 +3172,7 @@
     "example": {
       "ja": "この公園はすべての人に公開されている。",
       "reading": "この{公園|こうえん}はすべての{人|ひと}に{公開|こうかい}されている。",
-      "meaning": "The park is open to everybody."
+      "meaning": "Taman ini terbuka untuk semua orang."
     }
   },
   {
@@ -3186,7 +3186,7 @@
     "example": {
       "ja": "あの交差点で何が起こったのか。",
       "reading": "あの{交差点|こうさてん}で{何|なに}が{起|お}こったのか。",
-      "meaning": "What happened at that crossing?"
+      "meaning": "Apa yang terjadi di persimpangan itu?"
     }
   },
   {
@@ -3200,7 +3200,7 @@
     "example": {
       "ja": "紅茶かコーヒーはいかがですか。",
       "reading": "{紅茶|こうちゃ}かコーヒーはいかがですか。",
-      "meaning": "Care for tea or coffee?"
+      "meaning": "Apakah Anda ingin teh atau kopi?"
     }
   },
   {
@@ -3214,7 +3214,7 @@
     "example": {
       "ja": "向こうの交番で聞いてください。",
       "reading": "{向|む}こうの{交番|こうばん}で{聞|き}いてください。",
-      "meaning": "Ask at the police station over there."
+      "meaning": "Silakan bertanya di pos polisi di sana."
     }
   },
   {
@@ -3228,7 +3228,7 @@
     "example": {
       "ja": "あなたの声が聞けてうれしいわ。",
       "reading": "あなたの{声|こえ}が{聞|き}けてうれしいわ。",
-      "meaning": "I am happy to hear your voice."
+      "meaning": "Aku senang mendengar suaramu."
     }
   },
   {
@@ -3242,7 +3242,7 @@
     "example": {
       "ja": "このコートいいですね。試着してもいいですか。",
       "reading": "このコートいいですね。{試着|しちゃく}してもいいですか。",
-      "meaning": "I like this coat. May I try it on?"
+      "meaning": "Mantel ini bagus. Bolehkah saya mencobanya?"
     }
   },
   {
@@ -3256,7 +3256,7 @@
     "example": {
       "ja": "そのコーヒーはいいにおいがする。",
       "reading": "",
-      "meaning": "That coffee smells good."
+      "meaning": "Kopi itu wanginya enak."
     }
   },
   {
@@ -3284,21 +3284,21 @@
     "example": {
       "ja": "午後何時ごろうかがいましょうか。",
       "reading": "{午後|ごご}{何時|なんじ}ごろうかがいましょうか。",
-      "meaning": "When shall I call on you this afternoon?"
+      "meaning": "Jam berapa aku harus menemuimu di sore hari?"
     }
   },
   {
     "word": "九日",
     "reading": "ここのか",
     "romaji": "kokonoka",
-    "meaning_id": "Nine days / ninth day",
+    "meaning_id": "Sembilan hari / Tanggal 9",
     "meaning_en": "nine days, ninth day",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "スピーチコンテストは１１月９日に行われた。",
       "reading": "",
-      "meaning": "The speech contest took place on the ninth of November."
+      "meaning": "Lomba pidato diadakan pada tanggal 9 November."
     }
   },
   {
@@ -3312,7 +3312,7 @@
     "example": {
       "ja": "私たちの学校にはクラスが９つある。",
       "reading": "{私|わたし}たちの{学校|がっこう}にはクラスが９つある。",
-      "meaning": "Our school has nine classes."
+      "meaning": "Ada sembilan kelas di sekolah kami."
     }
   },
   {
@@ -3326,21 +3326,21 @@
     "example": {
       "ja": "その電車は午前９時にここを出発します。",
       "reading": "その{電車|でんしゃ}は{午前|ごぜん}９{時|じ}にここを{出発|しゅっぱつ}します。",
-      "meaning": "The train departs here at 9:00 a.m."
+      "meaning": "Kereta akan berangkat dari sini jam 9 pagi."
     }
   },
   {
     "word": "答える",
     "reading": "こたえる",
     "romaji": "kotaeru",
-    "meaning_id": "Me-answer",
+    "meaning_id": "Menjawab",
     "meaning_en": "to answer",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "「はい、ありません」とジョーダンさんは答えた。",
       "reading": "「はい、ありません」とジョーダンさんは{答|こた}えた。",
-      "meaning": "\"No, I don't,\" said Mr Jordan."
+      "meaning": "\"Tidak, aku tidak melakukannya,\" jawab Jordan."
     }
   },
   {
@@ -3354,42 +3354,42 @@
     "example": {
       "ja": "コーヒー、ごちそうさまでした。",
       "reading": "",
-      "meaning": "Thank you for the coffee."
+      "meaning": "Terima kasih untuk kopinya."
     }
   },
   {
     "word": "こちら",
     "reading": "こちら",
     "romaji": "kochira",
-    "meaning_id": "This person or way",
+    "meaning_id": "Sebelah sini / Arah ini / Orang ini (sopan)",
     "meaning_en": "this person or way",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "今のところこちらだけになります。",
       "reading": "{今|いま}のところこちらだけになります。",
-      "meaning": "The only one we have is this one here."
+      "meaning": "Ini akan menjadi satu-satunya untuk saat ini."
     }
   },
   {
     "word": "こっち",
     "reading": "こっち",
     "romaji": "kotchi",
-    "meaning_id": "This person or way",
+    "meaning_id": "Sebelah sini / Arah ini (kasual)",
     "meaning_en": "this person or way",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "こっちへ来い、ぐずぐずしないで。",
       "reading": "こっちへ{来|こ}い、ぐずぐずしないで。",
-      "meaning": "Get over here and be quick about it!"
+      "meaning": "Kemarilah, jangan tunda lagi."
     }
   },
   {
     "word": "コップ",
     "reading": "コップ",
     "romaji": "koppu",
-    "meaning_id": "A glass",
+    "meaning_id": "Gelas / Cangkir",
     "meaning_en": "a glass",
     "level": "N5",
     "type": "Kata Benda",
@@ -3403,14 +3403,14 @@
     "word": "今年",
     "reading": "ことし",
     "romaji": "kotoshi",
-    "meaning_id": "This year",
+    "meaning_id": "Tahun ini",
     "meaning_en": "this year",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "今年もよい年でありますように。",
       "reading": "{今年|ことし}もよい{年|とし}でありますように。",
-      "meaning": "May the new year bring you happiness!"
+      "meaning": "Saya harap tahun ini juga merupakan tahun yang baik."
     }
   },
   {
@@ -3438,21 +3438,21 @@
     "example": {
       "ja": "あなたには何人子供がいますか。",
       "reading": "",
-      "meaning": "How many children do you have?"
+      "meaning": "Berapa anakmu?"
     }
   },
   {
     "word": "この",
     "reading": "この",
     "romaji": "kono",
-    "meaning_id": "This",
+    "meaning_id": "Ini (di depan kata benda)",
     "meaning_en": "this",
     "level": "N5",
     "type": "Kata Sifat Pronominal",
     "example": {
       "ja": "このコップをミルクで満たした。",
       "reading": "このコップをミルクで{満|み}たした。",
-      "meaning": "I filled this glass with milk."
+      "meaning": "Saya mengisi cangkir ini dengan susu."
     }
   },
   {
@@ -3466,105 +3466,105 @@
     "example": {
       "ja": "ご飯とパンどちらがいいですか。",
       "reading": "ご{飯|はん}とパンどちらがいいですか。",
-      "meaning": "Which do you prefer, rice or bread?"
+      "meaning": "Mana yang lebih kamu suka, nasi atau roti?"
     }
   },
   {
     "word": "コピーする",
     "reading": "コピーする",
     "romaji": "kopiisuru",
-    "meaning_id": "Me-copy",
+    "meaning_id": "Memfotokopi / Menyalin",
     "meaning_en": "to copy",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "コピーするページに付箋をつけておいてください。",
       "reading": "コピーするページに{付箋|ふせん}をつけておいてください。",
-      "meaning": "Put a tag on the pages you want copied."
+      "meaning": "Harap lampirkan catatan tempel pada halaman yang Anda salin."
     }
   },
   {
     "word": "困る",
     "reading": "こまる",
     "romaji": "komaru",
-    "meaning_id": "Me-be worried",
+    "meaning_id": "Kesusahan / Bingung / Mengalami kesulitan",
     "meaning_en": "to be worried",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "時間がなくてたいへん困っている。",
       "reading": "{時間|じかん}がなくてたいへん{困|こま}っている。",
-      "meaning": "I am pressed for time."
+      "meaning": "Saya dalam banyak masalah karena saya tidak punya waktu."
     }
   },
   {
     "word": "ごめんなさい",
     "reading": "ごめんなさい",
     "romaji": "gomennasai",
-    "meaning_id": "I beg your pardon / excuse me",
+    "meaning_id": "Mohon maaf / Minta maaf",
     "meaning_en": "I beg your pardon, excuse me",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "お話し中、ごめんなさい。",
       "reading": "お{話|はな}し{中|ちゅう}、ごめんなさい。",
-      "meaning": "Excuse me for interrupting you."
+      "meaning": "Maaf mengganggu pembicaraan Anda."
     }
   },
   {
     "word": "これ",
     "reading": "これ",
     "romaji": "kore",
-    "meaning_id": "This",
+    "meaning_id": "Ini (benda dekat pembicara)",
     "meaning_en": "this",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "これは兄です。かっこいいですね。",
       "reading": "これは{兄|あに}です。かっこいいですね。",
-      "meaning": "This is my brother. Handsome, isn't he?"
+      "meaning": "Ini saudaraku. Itu keren."
     }
   },
   {
     "word": "今月",
     "reading": "こんげつ",
     "romaji": "kongetsu",
-    "meaning_id": "This month",
+    "meaning_id": "Bulan ini",
     "meaning_en": "this month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "今月の売り上げはよくない。",
       "reading": "{今月|こんげつ}の{売|う}り{上|あ}げはよくない。",
-      "meaning": "Sales have been off this month."
+      "meaning": "Penjualan bulan ini kurang bagus."
     }
   },
   {
     "word": "今週",
     "reading": "こんしゅう",
     "romaji": "konshuu",
-    "meaning_id": "This week",
+    "meaning_id": "Minggu ini",
     "meaning_en": "this week",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "今週はどちらにいらしゃいましたか。",
       "reading": "{今週|こんしゅう}はどちらにいらしゃいましたか。",
-      "meaning": "Where have you been this week?"
+      "meaning": "Kemana saja kamu minggu ini?"
     }
   },
   {
     "word": "こんな",
     "reading": "こんな",
     "romaji": "konna",
-    "meaning_id": "Such",
+    "meaning_id": "Seperti ini",
     "meaning_en": "such",
     "level": "N5",
     "type": "Kata Sifat Pronominal",
     "example": {
       "ja": "こんな本を読んで何になるのか。",
       "reading": "こんな{本|ほん}を{読|よ}んで{何|なに}になるのか。",
-      "meaning": "What is the good of reading such books?"
+      "meaning": "Apa yang Anda dapatkan dari membaca buku seperti ini?"
     }
   },
   {
@@ -3584,14 +3584,14 @@
     "word": "今晩",
     "reading": "こんばん",
     "romaji": "konban",
-    "meaning_id": "This evening",
+    "meaning_id": "Malam ini",
     "meaning_en": "this evening",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "今晩はパーティーがあるのかなあ。",
       "reading": "{今晩|こんばん}はパーティーがあるのかなあ。",
-      "meaning": "Is there going to be a party tonight?"
+      "meaning": "Aku ingin tahu apakah ada pesta malam ini."
     }
   },
   {
@@ -3611,14 +3611,14 @@
     "word": "さあ",
     "reading": "さあ",
     "romaji": "saa",
-    "meaning_id": "Well…",
+    "meaning_id": "Ayo / Mari / Entahlah...",
     "meaning_en": "well…",
     "level": "N5",
     "type": "Kata Seru (Interjeksi)",
     "example": {
       "ja": "さあ、パーティーをおしまいにしよう。",
       "reading": "",
-      "meaning": "Let's break up the party."
+      "meaning": "Sekarang mari kita akhiri pestanya."
     }
   },
   {
@@ -3632,7 +3632,7 @@
     "example": {
       "ja": "サイフがないのにふと気がついた。",
       "reading": "サイフがないのにふと{気|き}がついた。",
-      "meaning": "He suddenly noticed his wallet was missing."
+      "meaning": "Tiba-tiba saya menyadari bahwa saya tidak membawa dompet."
     }
   },
   {
@@ -3646,35 +3646,35 @@
     "example": {
       "ja": "日本人は魚をたくさん食べますか。",
       "reading": "{日本人|にほんじん}は{魚|さかな}をたくさん{食|た}べますか。",
-      "meaning": "Do Japanese eat a lot of fish?"
+      "meaning": "Apakah orang Jepang banyak makan ikan?"
     }
   },
   {
     "word": "先",
     "reading": "さき",
     "romaji": "saki",
-    "meaning_id": "The future / previous",
+    "meaning_id": "Masa depan / Terlebih dahulu / Ujung",
     "meaning_en": "the future, previous",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "それから先の話を聞きたい。",
       "reading": "",
-      "meaning": "I'd like to know the rest of the story."
+      "meaning": "Saya ingin mendengar apa yang terjadi selanjutnya."
     }
   },
   {
     "word": "咲く",
     "reading": "さく",
     "romaji": "saku",
-    "meaning_id": "Me-bloom",
+    "meaning_id": "Bermekaran / Mekar",
     "meaning_en": "to bloom",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "チューリップがみごとに咲いた。",
       "reading": "チューリップがみごとに{咲|さ}いた。",
-      "meaning": "The tulips have come out beautifully."
+      "meaning": "Bunga tulip bermekaran dengan indahnya."
     }
   },
   {
@@ -3688,21 +3688,21 @@
     "example": {
       "ja": "作文は書いてしまいましたか。",
       "reading": "{作文|さくぶん}は{書|か}いてしまいましたか。",
-      "meaning": "Have you finished writing your composition?"
+      "meaning": "Apakah Anda sudah menulis esai Anda?"
     }
   },
   {
     "word": "差す",
     "reading": "さす",
     "romaji": "sasu",
-    "meaning_id": "Me-stretch out hands / Me-raise an umbrella",
+    "meaning_id": "Membuka payung / Mengulurkan tangan",
     "meaning_en": "to stretch out hands, to raise an umbrella",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "彼は雨の中を傘もささずに歩きつづけた。",
       "reading": "{彼|かれ}は{雨|あめ}の{中|なか}を{傘|かさ}もささずに{歩|ある}きつづけた。",
-      "meaning": "He went on walking in the rain without an umbrella."
+      "meaning": "Dia terus berjalan di tengah hujan tanpa payung."
     }
   },
   {
@@ -3716,7 +3716,7 @@
     "example": {
       "ja": "その雑誌はどこで買えますか。",
       "reading": "その{雑誌|ざっし}はどこで{買|か}えますか。",
-      "meaning": "Where can I buy that magazine?"
+      "meaning": "Dimana saya bisa membeli majalah itu?"
     }
   },
   {
@@ -3730,7 +3730,7 @@
     "example": {
       "ja": "ポットにはあまり砂糖がなかった。",
       "reading": "ポットにはあまり{砂糖|さとう}がなかった。",
-      "meaning": "There wasn't much sugar in the pot."
+      "meaning": "Tidak banyak gula di dalam panci."
     }
   },
   {
@@ -3744,35 +3744,35 @@
     "example": {
       "ja": "寒いからコートを着るべきだ。",
       "reading": "{寒|さむ}いからコートを{着|き}るべきだ。",
-      "meaning": "It's cold so you should wear a coat."
+      "meaning": "Cuacanya dingin jadi sebaiknya pakai mantel."
     }
   },
   {
     "word": "さようなら",
     "reading": "さようなら",
     "romaji": "sayounara",
-    "meaning_id": "Good-bye",
+    "meaning_id": "Selamat tinggal / Sampai jumpa",
     "meaning_en": "good-bye",
     "level": "N5",
     "type": "Kata Seru (Interjeksi)",
     "example": {
       "ja": "では今晩またね、さようなら。",
       "reading": "では{今晩|こんばん}またね、さようなら。",
-      "meaning": "See you tonight, then. Cheers!"
+      "meaning": "Sampai jumpa malam ini, selamat tinggal."
     }
   },
   {
     "word": "再来年",
     "reading": "さらいねん",
     "romaji": "sarainen",
-    "meaning_id": "Year after next",
+    "meaning_id": "Dua tahun yang akan datang",
     "meaning_en": "year after next",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "祖父は、再来年引退する予定です。",
       "reading": "{祖父|そふ}は、{再来年|さらいねん}{引退|いんたい}する{予定|よてい}です。",
-      "meaning": "My grandfather is planning to retire the year after next."
+      "meaning": "Kakek saya berencana pensiun tahun depan."
     }
   },
   {
@@ -3786,21 +3786,21 @@
     "example": {
       "ja": "二、三デメリットがありますね。",
       "reading": "",
-      "meaning": "There are a few disadvantages to it."
+      "meaning": "Ada beberapa kelemahan."
     }
   },
   {
     "word": "散歩",
     "reading": "さんぽ",
     "romaji": "sanpo",
-    "meaning_id": "Me-stroll",
+    "meaning_id": "Jalan-jalan santai",
     "meaning_en": "to stroll",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "散歩に出かけてもよろしいですか。",
       "reading": "{散歩|さんぽ}に{出|で}かけてもよろしいですか。",
-      "meaning": "May I go out for a walk?"
+      "meaning": "Bolehkah saya jalan-jalan?"
     }
   },
   {
@@ -3814,7 +3814,7 @@
     "example": {
       "ja": "列車でならここからたった四分だ。",
       "reading": "",
-      "meaning": "It's only four minutes from here by train."
+      "meaning": "Hanya empat menit dari sini dengan kereta api."
     }
   },
   {
@@ -3828,7 +3828,7 @@
     "example": {
       "ja": "このスープは塩が少し足りない。",
       "reading": "このスープは{塩|しお}が{少|すこ}し{足|た}りない。",
-      "meaning": "This soup wants a bit of salt."
+      "meaning": "Sup ini tidak mengandung cukup garam."
     }
   },
   {
@@ -3842,7 +3842,7 @@
     "example": {
       "ja": "しかしこの本をしまっておきなさい。",
       "reading": "しかしこの{本|ほん}をしまっておきなさい。",
-      "meaning": "However, please put this book away first."
+      "meaning": "Tapi tolong simpan buku ini."
     }
   },
   {
@@ -3869,7 +3869,7 @@
     "example": {
       "ja": "仕事をサボったからクビになった。",
       "reading": "{仕事|しごと}をサボったからクビになった。",
-      "meaning": "He got the sack for slacking off at work."
+      "meaning": "Saya dipecat karena bolos kerja."
     }
   },
   {
@@ -3883,7 +3883,7 @@
     "example": {
       "ja": "それはどの辞書にもでています。",
       "reading": "それはどの{辞書|じしょ}にもでています。",
-      "meaning": "You find it in any dictionary."
+      "meaning": "Itu ada di setiap kamus."
     }
   },
   {
@@ -3910,7 +3910,7 @@
     "example": {
       "ja": "クッキーはテーブルの下にいる。",
       "reading": "クッキーはテーブルの{下|した}にいる。",
-      "meaning": "Cookie is under the table."
+      "meaning": "Cookie ada di bawah meja."
     }
   },
   {
@@ -3924,7 +3924,7 @@
     "example": {
       "ja": "どういっても七時までにいかないと。",
       "reading": "",
-      "meaning": "However we go, we must get there by seven."
+      "meaning": "Apa pun yang terjadi, saya harus tiba di sana jam tujuh."
     }
   },
   {
@@ -3938,7 +3938,7 @@
     "example": {
       "ja": "あの先生に質問してもいいですよ。",
       "reading": "あの{先生|せんせい}に{質問|しつもん}してもいいですよ。",
-      "meaning": "You may ask a question of that teacher."
+      "meaning": "Anda dapat mengajukan pertanyaan kepada guru itu."
     }
   },
   {
@@ -3952,7 +3952,7 @@
     "example": {
       "ja": "ぼくの自転車はパンクしている。",
       "reading": "ぼくの{自転車|じてんしゃ}はパンクしている。",
-      "meaning": "My bicycle has a flat tire."
+      "meaning": "Ban sepeda saya kempes."
     }
   },
   {
@@ -3966,21 +3966,21 @@
     "example": {
       "ja": "自動車にひかれたのではないですか。",
       "reading": "{自動車|じどうしゃ}にひかれたのではないですか。",
-      "meaning": "Wasn't he killed by a car?"
+      "meaning": "Bukankah dia tertabrak mobil?"
     }
   },
   {
     "word": "死ぬ",
     "reading": "しぬ",
     "romaji": "shinu",
-    "meaning_id": "Me-die",
+    "meaning_id": "Meninggal dunia / Mati",
     "meaning_en": "to die",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "その少年は死んだものとしてあきらめられた。",
       "reading": "その{少年|しょうねん}は{死|し}んだものとしてあきらめられた。",
-      "meaning": "The boy was given up for dead."
+      "meaning": "Anak laki-laki itu diserahkan karena mati."
     }
   },
   {
@@ -3994,7 +3994,7 @@
     "example": {
       "ja": "ジョンソンさんはまるで生き字引です。",
       "reading": "ジョンソンさんはまるで{生|い}き{字引|じびき}です。",
-      "meaning": "Mr Johnson is, as it were, a walking dictionary."
+      "meaning": "Tuan Johnson seperti kamus hidup."
     }
   },
   {
@@ -4008,63 +4008,63 @@
     "example": {
       "ja": "自分でそれをしなければならない。",
       "reading": "{自分|じぶん}でそれをしなければならない。",
-      "meaning": "You must do it for yourself."
+      "meaning": "Kamu harus melakukannya sendiri."
     }
   },
   {
     "word": "閉まる",
     "reading": "しまる",
     "romaji": "shimaru",
-    "meaning_id": "Me-close / Me-be closed",
+    "meaning_id": "Tertutup (intransitif)",
     "meaning_en": "to close, to be closed",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "あいにく店は閉まっていた。",
       "reading": "あいにく{店|みせ}は{閉|し}まっていた。",
-      "meaning": "Unfortunately, the store was closed."
+      "meaning": "Sayangnya toko itu tutup."
     }
   },
   {
     "word": "締める",
     "reading": "しめる",
     "romaji": "shimeru",
-    "meaning_id": "Me-tie",
+    "meaning_id": "Mengencangkan / Mengikat",
     "meaning_en": "to tie",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "いつもシートベルトを締めなさい。",
       "reading": "いつもシートベルトを{締|し}めなさい。",
-      "meaning": "Always fasten your seatbelt."
+      "meaning": "Selalu kencangkan sabuk pengaman Anda."
     }
   },
   {
     "word": "閉める",
     "reading": "しめる",
     "romaji": "shimeru",
-    "meaning_id": "Me-close something",
+    "meaning_id": "Menutup (transitif)",
     "meaning_en": "to close something",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "どうかドアを閉めてくれませんか。",
       "reading": "どうかドアを{閉|し}めてくれませんか。",
-      "meaning": "Will you please shut the door?"
+      "meaning": "Bisakah Anda menutup pintunya?"
     }
   },
   {
     "word": "じゃ",
     "reading": "じゃ",
     "romaji": "ja",
-    "meaning_id": "Well then…",
+    "meaning_id": "Kalau begitu...",
     "meaning_en": "well then…",
     "level": "N5",
     "type": "Kata Hubung (Konjungsi)",
     "example": {
       "ja": "じゃあ、キーをもらえますか。",
       "reading": "",
-      "meaning": "Can I have the key now, please?"
+      "meaning": "Jadi, bolehkah saya minta kuncinya?"
     }
   },
   {
@@ -4078,7 +4078,7 @@
     "example": {
       "ja": "なんてキレイな写真なんでしょう。",
       "reading": "なんてキレイな{写真|しゃしん}なんでしょう。",
-      "meaning": "What a beautiful picture!"
+      "meaning": "Foto yang sangat indah."
     }
   },
   {
@@ -4092,7 +4092,7 @@
     "example": {
       "ja": "シャツにアイロンをかけてください。",
       "reading": "",
-      "meaning": "Please iron the shirt."
+      "meaning": "Setrika baju Anda."
     }
   },
   {
@@ -4106,7 +4106,7 @@
     "example": {
       "ja": "シャワーの水が出ません。",
       "reading": "シャワーの{水|みず}が{出|で}ません。",
-      "meaning": "There's no water coming out of the shower."
+      "meaning": "Tidak ada air di kamar mandi."
     }
   },
   {
@@ -4120,21 +4120,21 @@
     "example": {
       "ja": "その会は十時に終わった。",
       "reading": "",
-      "meaning": "The party ended at ten o'clock."
+      "meaning": "Rapat berakhir pada pukul sepuluh."
     }
   },
   {
     "word": "授業",
     "reading": "じゅぎょう",
     "romaji": "jugyou",
-    "meaning_id": "Lesson / class work",
+    "meaning_id": "Pelajaran kelas / Jam kuliah",
     "meaning_en": "lesson, class work",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "それは授業の終わりだった。",
       "reading": "それは{授業|じゅぎょう}の{終|お}わりだった。",
-      "meaning": "That was the end of the class."
+      "meaning": "Itu adalah akhir kelas."
     }
   },
   {
@@ -4148,7 +4148,7 @@
     "example": {
       "ja": "宿題はもうやってしまいましたか。",
       "reading": "{宿題|しゅくだい}はもうやってしまいましたか。",
-      "meaning": "Have you done your assignment yet?"
+      "meaning": "Apakah Anda sudah menyelesaikan pekerjaan rumah Anda?"
     }
   },
   {
@@ -4162,7 +4162,7 @@
     "example": {
       "ja": "あなたは上手にバスケットボールができますか。",
       "reading": "",
-      "meaning": "Do you play basketball well?"
+      "meaning": "Bisakah kamu bermain basket dengan baik?"
     }
   },
   {
@@ -4176,7 +4176,7 @@
     "example": {
       "ja": "このロープはとてもじょうぶだ。",
       "reading": "",
-      "meaning": "This rope is very tough."
+      "meaning": "Tali ini sangat kokoh."
     }
   },
   {
@@ -4190,7 +4190,7 @@
     "example": {
       "ja": "同社は醤油その他の食品を生産する。",
       "reading": "{同社|どうしゃ}は{醤油|しょうゆ}その{他|ほか}の{食品|しょくひん}を{生産|せいさん}する。",
-      "meaning": "The company produces soy sauce and other food products."
+      "meaning": "Perusahaan memproduksi kecap dan produk makanan lainnya."
     }
   },
   {
@@ -4204,7 +4204,7 @@
     "example": {
       "ja": "食堂はセルフサービスでした。",
       "reading": "{食堂|しょくどう}はセルフサービスでした。",
-      "meaning": "The cafeteria was self-service."
+      "meaning": "Restoran itu swalayan."
     }
   },
   {
@@ -4218,7 +4218,7 @@
     "example": {
       "ja": "ぼくは知らないし、気にもしない。",
       "reading": "ぼくは{知|し}らないし、{気|き}にもしない。",
-      "meaning": "I don't know, nor do I care."
+      "meaning": "Saya tidak tahu dan saya tidak peduli."
     }
   },
   {
@@ -4232,7 +4232,7 @@
     "example": {
       "ja": "黒に黒をたしても白にはならぬ。",
       "reading": "{黒|くろ}に{黒|くろ}をたしても{白|しろ}にはならぬ。",
-      "meaning": "Two blacks do not make a white."
+      "meaning": "Menambahkan warna hitam ke hitam tidak menjadikan putih."
     }
   },
   {
@@ -4246,7 +4246,7 @@
     "example": {
       "ja": "白いベルトがついてるのがいいな。",
       "reading": "{白|しろ}いベルトがついてるのがいいな。",
-      "meaning": "I like the one with a white belt."
+      "meaning": "Saya suka karena dilengkapi dengan sabuk putih."
     }
   },
   {
@@ -4260,35 +4260,35 @@
     "example": {
       "ja": "ジョンのことが新聞に出ていた。",
       "reading": "ジョンのことが{新聞|しんぶん}に{出|で}ていた。",
-      "meaning": "John was mentioned in the paper."
+      "meaning": "John ada di koran."
     }
   },
   {
     "word": "水曜日",
     "reading": "すいようび",
     "romaji": "suiyoubi",
-    "meaning_id": "Wednesday",
+    "meaning_id": "Rabu",
     "meaning_en": "Wednesday",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "今度の水曜日ならいいですよ。",
       "reading": "{今度|こんど}の{水曜日|すいようび}ならいいですよ。",
-      "meaning": "Next Wednesday will be fine."
+      "meaning": "Alangkah baiknya jika itu terjadi Rabu depan."
     }
   },
   {
     "word": "吸う",
     "reading": "すう",
     "romaji": "suu",
-    "meaning_id": "Me-smoke / Me-suck",
+    "meaning_id": "Menghisap / Merokok",
     "meaning_en": "to smoke, to suck",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "この紙はインクを吸わない。",
       "reading": "この{紙|かみ}はインクを{吸|す}わない。",
-      "meaning": "This paper does not absorb ink."
+      "meaning": "Kertas ini tidak menyerap tinta."
     }
   },
   {
@@ -4302,7 +4302,7 @@
     "example": {
       "ja": "スカートを見せていただけませんか。",
       "reading": "スカートを{見|み}せていただけませんか。",
-      "meaning": "Would you please show me that skirt?"
+      "meaning": "Bisakah kamu tunjukkan padaku rokmu?"
     }
   },
   {
@@ -4316,7 +4316,7 @@
     "example": {
       "ja": "あなたのそんなところが好きです。",
       "reading": "あなたのそんなところが{好|す}きです。",
-      "meaning": "I like that about you."
+      "meaning": "Aku suka itu tentangmu."
     }
   },
   {
@@ -4330,21 +4330,21 @@
     "example": {
       "ja": "すぐわかるところにあるよ。",
       "reading": "",
-      "meaning": "It's in plain sight."
+      "meaning": "Itu tepat di mana Anda bisa melihatnya."
     }
   },
   {
     "word": "少ない",
     "reading": "すくない",
     "romaji": "sukunai",
-    "meaning_id": "A few",
+    "meaning_id": "Sedikit",
     "meaning_en": "a few",
     "level": "N5",
     "type": "Kata Sifat (-i)",
     "example": {
       "ja": "読書の時間がますます少なくなっている。",
       "reading": "{読書|どくしょ}の{時間|じかん}がますます{少|すく}なくなっている。",
-      "meaning": "I have less and less time for reading."
+      "meaning": "Waktu untuk membaca semakin berkurang."
     }
   },
   {
@@ -4358,21 +4358,21 @@
     "example": {
       "ja": "すぐに書かなければなりませんか。",
       "reading": "すぐに{書|か}かなければなりませんか。",
-      "meaning": "Should I fill it in now?"
+      "meaning": "Apakah Anda perlu segera menulisnya?"
     }
   },
   {
     "word": "少し",
     "reading": "すこし",
     "romaji": "sukoshi",
-    "meaning_id": "Few",
+    "meaning_id": "Sedikit / Sebentar",
     "meaning_en": "few",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "少しテレビを見てもいいですか。",
       "reading": "{少|すこ}しテレビを{見|み}てもいいですか。",
-      "meaning": "Do you mind if I watch TV for a while?"
+      "meaning": "Bolehkah saya menonton TV?"
     }
   },
   {
@@ -4386,7 +4386,7 @@
     "example": {
       "ja": "日増しに涼しくなっていく。",
       "reading": "{日増|ひま}しに{涼|すず}しくなっていく。",
-      "meaning": "It's getting cooler day by day."
+      "meaning": "Semakin hari semakin dingin."
     }
   },
   {
@@ -4400,7 +4400,7 @@
     "example": {
       "ja": "私は古いストーブに１０ドルの値をつけた。",
       "reading": "{私|わたし}は{古|ふる}いストーブに１０ドルの{値|あたい}をつけた。",
-      "meaning": "I bid ten dollars for the old stove."
+      "meaning": "Saya menawar $10 untuk kompor tua."
     }
   },
   {
@@ -4414,7 +4414,7 @@
     "example": {
       "ja": "スプーンをいただけますか。",
       "reading": "",
-      "meaning": "Could we have a spoon?"
+      "meaning": "Bisakah saya minta sendok?"
     }
   },
   {
@@ -4428,7 +4428,7 @@
     "example": {
       "ja": "ビリーはスポーツがうまいです。",
       "reading": "",
-      "meaning": "Billy is good at sports."
+      "meaning": "Billy pandai olahraga."
     }
   },
   {
@@ -4442,7 +4442,7 @@
     "example": {
       "ja": "ちょっとこのズボンにつめて。",
       "reading": "",
-      "meaning": "Please take the pants in a bit."
+      "meaning": "Taruh saja di celana ini."
     }
   },
   {
@@ -4462,14 +4462,14 @@
     "word": "住む",
     "reading": "すむ",
     "romaji": "sumu",
-    "meaning_id": "Me-live in",
+    "meaning_id": "Tinggal / Menetap",
     "meaning_en": "to live in",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "どうしてアメリカに住んでいたの？",
       "reading": "どうしてアメリカに{住|す}んでいたの？",
-      "meaning": "Why did he live in the United States?"
+      "meaning": "Mengapa Anda tinggal di Amerika?"
     }
   },
   {
@@ -4483,21 +4483,21 @@
     "example": {
       "ja": "スリッパをはいてください。",
       "reading": "",
-      "meaning": "Please put on your slippers."
+      "meaning": "Silakan pakai sandal."
     }
   },
   {
     "word": "する",
     "reading": "する",
     "romaji": "suru",
-    "meaning_id": "Me-do",
+    "meaning_id": "Melakukan / Mengerjakan",
     "meaning_en": "to do",
     "level": "N5",
     "type": "Kata Kerja (Suru)",
     "example": {
       "ja": "ログアウトするんじゃなかったよ。",
       "reading": "",
-      "meaning": "I shouldn't have logged off."
+      "meaning": "Seharusnya aku tidak logout."
     }
   },
   {
@@ -4511,7 +4511,7 @@
     "example": {
       "ja": "父と母は木の下に座っていました。",
       "reading": "{父|ちち}と{母|はは}は{木|き}の{下|した}に{座|すわ}っていました。",
-      "meaning": "My father and mother were sitting under a tree."
+      "meaning": "Ayah dan ibu sedang duduk di bawah pohon."
     }
   },
   {
@@ -4525,7 +4525,7 @@
     "example": {
       "ja": "トムはジャックと背が同じくらいだ。",
       "reading": "トムはジャックと{背|せ}が{同|おな}じくらいだ。",
-      "meaning": "Tom is as tall as Jack."
+      "meaning": "Tinggi Tom hampir sama dengan Jack."
     }
   },
   {
@@ -4539,7 +4539,7 @@
     "example": {
       "ja": "この学校はたくさんの生徒がいます。",
       "reading": "この{学校|がっこう}はたくさんの{生徒|せいと}がいます。",
-      "meaning": "This school has many students."
+      "meaning": "Sekolah ini mempunyai banyak siswa."
     }
   },
   {
@@ -4553,7 +4553,7 @@
     "example": {
       "ja": "このセーターは気に入らない。",
       "reading": "このセーターは{気|き}に{入|い}らない。",
-      "meaning": "I don't like this sweater."
+      "meaning": "Aku tidak suka sweter ini."
     }
   },
   {
@@ -4567,7 +4567,7 @@
     "example": {
       "ja": "せっけんだらけの手で私にさわらないで。",
       "reading": "せっけんだらけの{手|て}で{私|わたし}にさわらないで。",
-      "meaning": "Don't touch me with your soapy hands."
+      "meaning": "Jangan sentuh aku dengan tanganmu yang bersabun."
     }
   },
   {
@@ -4581,7 +4581,7 @@
     "example": {
       "ja": "私は新しい背広を買った。",
       "reading": "{私|わたし}は{新|あたら}しい{背広|せびろ}を{買|か}った。",
-      "meaning": "I bought a new suit of clothes."
+      "meaning": "Saya membeli jas baru."
     }
   },
   {
@@ -4595,7 +4595,7 @@
     "example": {
       "ja": "オランダは狭い国です。",
       "reading": "オランダは{狭|せま}い{国|くに}です。",
-      "meaning": "The Netherlands is a small country."
+      "meaning": "Belanda adalah negara kecil."
     }
   },
   {
@@ -4609,7 +4609,7 @@
     "example": {
       "ja": "私たちは商売をゼロから始めなければならなかった。",
       "reading": "{私|わたし}たちは{商売|しょうばい}をゼロから{始|はじ}めなければならなかった。",
-      "meaning": "We had to start our business from zero."
+      "meaning": "Kami harus memulai bisnis kami dari awal."
     }
   },
   {
@@ -4623,35 +4623,35 @@
     "example": {
       "ja": "このホールには人が二千人入れる。",
       "reading": "",
-      "meaning": "Two thousand people fit into this hall."
+      "meaning": "Aula ini mampu menampung 2.000 orang."
     }
   },
   {
     "word": "先月",
     "reading": "せんげつ",
     "romaji": "sengetsu",
-    "meaning_id": "Last month",
+    "meaning_id": "Bulan lalu",
     "meaning_en": "last month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "先月は、ほとんど雨が降らなかった。",
       "reading": "{先月|せんげつ}は、ほとんど{雨|あめ}が{降|ふ}らなかった。",
-      "meaning": "We had little rain last month."
+      "meaning": "Bulan lalu, hampir tidak ada hujan."
     }
   },
   {
     "word": "先週",
     "reading": "せんしゅう",
     "romaji": "senshuu",
-    "meaning_id": "Last week",
+    "meaning_id": "Minggu lalu",
     "meaning_en": "last week",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あの人は先週ここにいた人です。",
       "reading": "あの{人|ひと}は{先週|せんしゅう}ここにいた{人|ひと}です。",
-      "meaning": "He's the man that was here last week."
+      "meaning": "Orang itu ada di sini minggu lalu."
     }
   },
   {
@@ -4678,63 +4678,63 @@
     "example": {
       "ja": "洗濯はいつやってもいいですか。",
       "reading": "{洗濯|せんたく}はいつやってもいいですか。",
-      "meaning": "Can I use the laundry any time?"
+      "meaning": "Kapan saya bisa mencuci pakaian?"
     }
   },
   {
     "word": "全部",
     "reading": "ぜんぶ",
     "romaji": "zenbu",
-    "meaning_id": "All",
+    "meaning_id": "Semua / Seluruhnya",
     "meaning_en": "all",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "トッピングは全部のせて下さい。",
       "reading": "トッピングは{全部|ぜんぶ}のせて{下|くだ}さい。",
-      "meaning": "I want everything on it."
+      "meaning": "Silakan taruh semua topping di atasnya."
     }
   },
   {
     "word": "掃除",
     "reading": "そうじ",
     "romaji": "souji",
-    "meaning_id": "Me-clean / Me-sweep",
+    "meaning_id": "Membersihkan / Menyapu",
     "meaning_en": "to clean, to sweep",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "父はガレージを掃除している。",
       "reading": "{父|ちち}はガレージを{掃除|そうじ}している。",
-      "meaning": "My father is sweeping the garage."
+      "meaning": "Ayah saya sedang membersihkan garasi."
     }
   },
   {
     "word": "そうして",
     "reading": "そうして",
     "romaji": "soushite",
-    "meaning_id": "And",
+    "meaning_id": "Dan / Lalu / Kemudian",
     "meaning_en": "and",
     "level": "N5",
     "type": "Kata Hubung (Konjungsi)",
     "example": {
       "ja": "そうしてくださればとてもうれしい。",
       "reading": "",
-      "meaning": "I can't be sorry."
+      "meaning": "Saya akan sangat senang jika Anda bisa melakukan itu."
     }
   },
   {
     "word": "そこ",
     "reading": "そこ",
     "romaji": "soko",
-    "meaning_id": "That place",
+    "meaning_id": "Di situ (dekat lawan bicara)",
     "meaning_en": "that place",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "バスでそこまで２時間かかります。",
       "reading": "バスでそこまで２{時間|じかん}かかります。",
-      "meaning": "It takes two hours to go there by bus."
+      "meaning": "Dibutuhkan dua jam untuk sampai ke sana dengan bus."
     }
   },
   {
@@ -4748,7 +4748,7 @@
     "example": {
       "ja": "これとそちらとの違いは何だい。",
       "reading": "これとそちらとの{違|ちが}いは{何|なに}だい。",
-      "meaning": "What is the difference between this and that?"
+      "meaning": "Apa perbedaan antara ini dan itu?"
     }
   },
   {
@@ -4762,7 +4762,7 @@
     "example": {
       "ja": "そっちの天気は？",
       "reading": "そっちの{天気|てんき}は？",
-      "meaning": "How's the weather there?"
+      "meaning": "Bagaimana cuaca di sana?"
     }
   },
   {
@@ -4776,14 +4776,14 @@
     "example": {
       "ja": "外に出してやってくれませんか。",
       "reading": "{外|そと}に{出|だ}してやってくれませんか。",
-      "meaning": "Could you let him out?"
+      "meaning": "Bisakah kamu mengajakku keluar?"
     }
   },
   {
     "word": "その",
     "reading": "その",
     "romaji": "sono",
-    "meaning_id": "That",
+    "meaning_id": "Itu (di depan kata benda, dekat lawan bicara)",
     "meaning_en": "that",
     "level": "N5",
     "type": "Kata Sifat Pronominal",
@@ -4804,7 +4804,7 @@
     "example": {
       "ja": "ガレージは家のそばにあります。",
       "reading": "ガレージは{家|いえ}のそばにあります。",
-      "meaning": "The garage is at the side of the house."
+      "meaning": "Garasi terletak di sebelah rumah."
     }
   },
   {
@@ -4818,49 +4818,49 @@
     "example": {
       "ja": "空はすっかりもやがかかっていた。",
       "reading": "{空|そら}はすっかりもやがかかっていた。",
-      "meaning": "The sky misted over."
+      "meaning": "Langit benar-benar berkabut."
     }
   },
   {
     "word": "それ",
     "reading": "それ",
     "romaji": "sore",
-    "meaning_id": "That",
+    "meaning_id": "Itu (dekat lawan bicara)",
     "meaning_en": "that",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "わたしはそれを見てぎょっとした。",
       "reading": "わたしはそれを{見|み}てぎょっとした。",
-      "meaning": "I was appalled at the sight."
+      "meaning": "Saya terkejut ketika melihat itu."
     }
   },
   {
     "word": "それから",
     "reading": "それから",
     "romaji": "sorekara",
-    "meaning_id": "After that",
+    "meaning_id": "Setelah itu / Kemudian",
     "meaning_en": "after that",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "それからすっきりきれいにしてくれ。",
       "reading": "",
-      "meaning": "Then clean it really well."
+      "meaning": "Lalu bersihkan."
     }
   },
   {
     "word": "それでは",
     "reading": "それでは",
     "romaji": "soredewa",
-    "meaning_id": "In that situation",
+    "meaning_id": "Kalau begitu / Jika demikian",
     "meaning_en": "in that situation",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "それでは、あなたは来ないということですか。",
       "reading": "それでは、あなたは{来|こ}ないということですか。",
-      "meaning": "Does that mean you won't come?"
+      "meaning": "Apakah itu berarti kamu tidak akan datang?"
     }
   },
   {
@@ -4874,7 +4874,7 @@
     "example": {
       "ja": "大学で何をするつもりですか。",
       "reading": "{大学|だいがく}で{何|なに}をするつもりですか。",
-      "meaning": "What are you going to do in college?"
+      "meaning": "Apa yang ingin kamu lakukan di universitas?"
     }
   },
   {
@@ -4888,14 +4888,14 @@
     "example": {
       "ja": "日本大使館はどこにありますか。",
       "reading": "",
-      "meaning": "Where is the Japanese Embassy?"
+      "meaning": "Di manakah lokasi Kedutaan Besar Jepang?"
     }
   },
   {
     "word": "大丈夫",
     "reading": "だいじょうぶ",
     "romaji": "daijoubu",
-    "meaning_id": "All right",
+    "meaning_id": "Tidak apa-apa / Baik-baik saja / Aman",
     "meaning_en": "all right",
     "level": "N5",
     "type": "Kata Sifat (-na)",
@@ -4909,14 +4909,14 @@
     "word": "大好き",
     "reading": "だいすき",
     "romaji": "daisuki",
-    "meaning_id": "Me-be very likeable",
+    "meaning_id": "Sangat suka / Gemar sekali",
     "meaning_en": "to be very likeable",
     "level": "N5",
     "type": "Kata Sifat (-na)",
     "example": {
       "ja": "ロジャーはパーティーが大好きだ。",
       "reading": "ロジャーはパーティーが{大好|だいす}きだ。",
-      "meaning": "Roger is a party animal."
+      "meaning": "Roger menyukai pesta."
     }
   },
   {
@@ -4930,7 +4930,7 @@
     "example": {
       "ja": "本を読むことは大切です。",
       "reading": "{本|ほん}を{読|よ}むことは{大切|たいせつ}です。",
-      "meaning": "To read books is important."
+      "meaning": "Membaca buku itu penting."
     }
   },
   {
@@ -4944,21 +4944,21 @@
     "example": {
       "ja": "ルーシーは今台所にいるでしょう。",
       "reading": "ルーシーは{今|いま}{台所|だいどころ}にいるでしょう。",
-      "meaning": "Lucy should be in the kitchen now."
+      "meaning": "Lucy akan berada di dapur sekarang."
     }
   },
   {
     "word": "たいへん",
     "reading": "たいへん",
     "romaji": "taihen",
-    "meaning_id": "Very",
+    "meaning_id": "Sangat / Gawat / Berat",
     "meaning_en": "very",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "それはたいへんなショックでした。",
       "reading": "",
-      "meaning": "It was such a shock."
+      "meaning": "Itu merupakan kejutan besar."
     }
   },
   {
@@ -4978,14 +4978,14 @@
     "word": "たくさん",
     "reading": "たくさん",
     "romaji": "takusan",
-    "meaning_id": "Many",
+    "meaning_id": "Banyak",
     "meaning_en": "many",
     "level": "N5",
     "type": "Kata Benda Modifikator (-no)",
     "example": {
       "ja": "なすべきことがまだたくさんある。",
       "reading": "",
-      "meaning": "There still remains much to be done."
+      "meaning": "Masih banyak yang harus dilakukan."
     }
   },
   {
@@ -4999,21 +4999,21 @@
     "example": {
       "ja": "そのタクシーはいきなり左に曲がった。",
       "reading": "そのタクシーはいきなり{左|ひだり}に{曲|ま}がった。",
-      "meaning": "The taxi abruptly turned left."
+      "meaning": "Taksi tiba-tiba berbelok ke kiri."
     }
   },
   {
     "word": "出す",
     "reading": "だす",
     "romaji": "dasu",
-    "meaning_id": "Me-put out",
+    "meaning_id": "Mengeluarkan / Menyerahkan",
     "meaning_en": "to put out",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ここではおいしい食べ物が出されます。",
       "reading": "ここではおいしい{食|た}べ{物|もの}が{出|だ}されます。",
-      "meaning": "They serve excellent food here."
+      "meaning": "Makanan lezat disajikan di sini."
     }
   },
   {
@@ -5027,7 +5027,7 @@
     "example": {
       "ja": "立っているのは、みんな男だった。",
       "reading": "{立|た}っているのは、みんな{男|おとこ}だった。",
-      "meaning": "Those standing were all men."
+      "meaning": "Semua orang yang berdiri adalah laki-laki."
     }
   },
   {
@@ -5041,7 +5041,7 @@
     "example": {
       "ja": "テーブルを縦一列に並べなさい。",
       "reading": "テーブルを{縦|たて}{一列|いちれつ}に{並|なら}べなさい。",
-      "meaning": "Put the tables end to end."
+      "meaning": "Susunlah tabel-tabel tersebut secara berurutan."
     }
   },
   {
@@ -5055,7 +5055,7 @@
     "example": {
       "ja": "建物がとっても小さく見えるよ。",
       "reading": "{建物|たてもの}がとっても{小|ちい}さく{見|み}えるよ。",
-      "meaning": "The buildings look so tiny."
+      "meaning": "Bangunannya terlihat sangat kecil."
     }
   },
   {
@@ -5069,21 +5069,21 @@
     "example": {
       "ja": "あなたと一緒にいて楽しかった。",
       "reading": "あなたと{一緒|いっしょ}にいて{楽|たの}しかった。",
-      "meaning": "I really enjoyed your company."
+      "meaning": "Aku senang bersamamu."
     }
   },
   {
     "word": "頼む",
     "reading": "たのむ",
     "romaji": "tanomu",
-    "meaning_id": "Me-ask",
+    "meaning_id": "Meminta tolong / Memohon",
     "meaning_en": "to ask",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "あなたに頼んでもよろしいですか。",
       "reading": "あなたに{頼|たの}んでもよろしいですか。",
-      "meaning": "May I request a favour of you?"
+      "meaning": "Bolehkah saya meminta bantuan Anda?"
     }
   },
   {
@@ -5097,7 +5097,7 @@
     "example": {
       "ja": "男はライターでたばこに火をつけた。",
       "reading": "{男|おとこ}はライターでたばこに{火|ひ}をつけた。",
-      "meaning": "The man lit a cigarette with a lighter."
+      "meaning": "Pria itu menyalakan rokok dengan korek api."
     }
   },
   {
@@ -5111,7 +5111,7 @@
     "example": {
       "ja": "君にはたぶんみんなわかっていることでしょう。",
       "reading": "{君|きみ}にはたぶんみんなわかっていることでしょう。",
-      "meaning": "I expect you know all about it."
+      "meaning": "Anda mungkin mengenal semua orang."
     }
   },
   {
@@ -5125,7 +5125,7 @@
     "example": {
       "ja": "食べ物はすべてなくなってしまった。",
       "reading": "{食|た}べ{物|もの}はすべてなくなってしまった。",
-      "meaning": "All the food was gone."
+      "meaning": "Semua makanannya habis."
     }
   },
   {
@@ -5152,7 +5152,7 @@
     "example": {
       "ja": "卵を一ダースづつつめなさい。",
       "reading": "",
-      "meaning": "Pack eggs in dozens."
+      "meaning": "Kemas selusin telur sekaligus."
     }
   },
   {
@@ -5166,7 +5166,7 @@
     "example": {
       "ja": "誰がこれをしたのかはわからない。",
       "reading": "{誰|だれ}がこれをしたのかはわからない。",
-      "meaning": "There is no telling who did this."
+      "meaning": "Saya tidak tahu siapa yang melakukan ini."
     }
   },
   {
@@ -5180,7 +5180,7 @@
     "example": {
       "ja": "誕生日とは人が生まれた日のことだ。",
       "reading": "{誕生日|たんじょうび}とは{人|ひと}が{生|う}まれた{日|ひ}のことだ。",
-      "meaning": "The birthday is the day on which a person was born."
+      "meaning": "Ulang tahun adalah hari dimana seseorang dilahirkan."
     }
   },
   {
@@ -5194,7 +5194,7 @@
     "example": {
       "ja": "日がだんだん長くなってきています。",
       "reading": "{日|ひ}がだんだん{長|なが}くなってきています。",
-      "meaning": "The days are getting longer and longer."
+      "meaning": "Hari-hari semakin panjang."
     }
   },
   {
@@ -5214,14 +5214,14 @@
     "word": "小さな",
     "reading": "ちいさな",
     "romaji": "chiisana",
-    "meaning_id": "Little",
+    "meaning_id": "Kecil",
     "meaning_en": "little",
     "level": "N5",
     "type": "Kata Sifat Pronominal",
     "example": {
       "ja": "小さなことでくよくよするな。",
       "reading": "{小|ちい}さなことでくよくよするな。",
-      "meaning": "Don't trouble about small things."
+      "meaning": "Jangan memusingkan hal-hal kecil."
     }
   },
   {
@@ -5235,21 +5235,21 @@
     "example": {
       "ja": "クリスマスが近くなってきた。",
       "reading": "クリスマスが{近|ちか}くなってきた。",
-      "meaning": "Christmas is fast approaching."
+      "meaning": "Natal sudah dekat."
     }
   },
   {
     "word": "違う",
     "reading": "ちがう",
     "romaji": "chigau",
-    "meaning_id": "Me-differ",
+    "meaning_id": "Berbeda / Salah",
     "meaning_en": "to differ",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ライオンとヒョウの違いは何ですか。",
       "reading": "ライオンとヒョウの{違|ちが}いは{何|なに}ですか。",
-      "meaning": "What's the difference between lions and leopards?"
+      "meaning": "Apa perbedaan antara singa dan macan tutul?"
     }
   },
   {
@@ -5263,7 +5263,7 @@
     "example": {
       "ja": "７時近くだ。学校へ行かなくては。",
       "reading": "",
-      "meaning": "It is close to seven o'clock. We have to go to school."
+      "meaning": "Ini hampir jam 7. Saya harus pergi ke sekolah."
     }
   },
   {
@@ -5277,7 +5277,7 @@
     "example": {
       "ja": "地下鉄で行きたいのです。",
       "reading": "",
-      "meaning": "I want to get there by subway."
+      "meaning": "Saya ingin pergi dengan kereta bawah tanah."
     }
   },
   {
@@ -5291,7 +5291,7 @@
     "example": {
       "ja": "この大きなアメリカの地図を見て。",
       "reading": "この{大|おお}きなアメリカの{地図|ちず}を{見|み}て。",
-      "meaning": "Look at this large map of America."
+      "meaning": "Lihatlah peta besar Amerika ini."
     }
   },
   {
@@ -5305,7 +5305,7 @@
     "example": {
       "ja": "その犬は茶色で小さくて、やせています。",
       "reading": "その{犬|いぬ}は{茶色|ちゃいろ}で{小|ちい}さくて、やせています。",
-      "meaning": "The dog is brown, small and thin."
+      "meaning": "Anjing itu berwarna coklat, kecil, dan kurus."
     }
   },
   {
@@ -5319,7 +5319,7 @@
     "example": {
       "ja": "この茶わんはなんとすばらしいのでしょう。",
       "reading": "",
-      "meaning": "How nice this cup is!"
+      "meaning": "Betapa indahnya mangkuk ini!"
     }
   },
   {
@@ -5333,7 +5333,7 @@
     "example": {
       "ja": "ちょうど食べたかったものでした。",
       "reading": "ちょうど{食|た}べたかったものでした。",
-      "meaning": "That hit the spot."
+      "meaning": "Itu hanya apa yang ingin saya makan."
     }
   },
   {
@@ -5347,7 +5347,7 @@
     "example": {
       "ja": "ちょっと、そこのきみ！",
       "reading": "",
-      "meaning": "Hey, you there!"
+      "meaning": "Hei, kamu yang di sana!"
     }
   },
   {
@@ -5361,21 +5361,21 @@
     "example": {
       "ja": "フラッシュを使ってもいいですか。",
       "reading": "フラッシュを{使|つか}ってもいいですか。",
-      "meaning": "Is it all right to use a flash here?"
+      "meaning": "Bisakah saya menggunakan flash?"
     }
   },
   {
     "word": "疲れる",
     "reading": "つかれる",
     "romaji": "tsukareru",
-    "meaning_id": "Me-get tired",
+    "meaning_id": "Lelah / Capek",
     "meaning_en": "to get tired",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "とても疲れているように見えます。",
       "reading": "とても{疲|つか}れているように{見|み}えます。",
-      "meaning": "You look very tired."
+      "meaning": "Kamu terlihat sangat lelah."
     }
   },
   {
@@ -5389,21 +5389,21 @@
     "example": {
       "ja": "次はいつ来ればいいのでしょうか。",
       "reading": "{次|つぎ}はいつ{来|く}ればいいのでしょうか。",
-      "meaning": "When should I come again?"
+      "meaning": "Kapan saya harus datang selanjutnya?"
     }
   },
   {
     "word": "着く",
     "reading": "つく",
     "romaji": "tsuku",
-    "meaning_id": "Me-arrive at",
+    "meaning_id": "Tiba / Sampai di tujuan",
     "meaning_en": "to arrive at",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "シカゴに着いたらすぐ電話します。",
       "reading": "シカゴに{着|つ}いたらすぐ{電話|でんわ}します。",
-      "meaning": "I'll call you as soon as I get to Chicago."
+      "meaning": "Saya akan menelepon Anda segera setelah saya tiba di Chicago."
     }
   },
   {
@@ -5417,7 +5417,7 @@
     "example": {
       "ja": "机の上にペンが一本もありません。",
       "reading": "{机|つくえ}の{上|うえ}にペンが{一本|いっぽん}もありません。",
-      "meaning": "There are no pens on the desk."
+      "meaning": "Tidak ada satupun pena di atas meja."
     }
   },
   {
@@ -5431,35 +5431,35 @@
     "example": {
       "ja": "たまごを割らずにオムレツは作れない。",
       "reading": "たまごを{割|わ}らずにオムレツは{作|つく}れない。",
-      "meaning": "You can't make an omelet without breaking eggs."
+      "meaning": "Anda tidak bisa membuat telur dadar tanpa memecahkan telurnya."
     }
   },
   {
     "word": "つける",
     "reading": "つける",
     "romaji": "tsukeru",
-    "meaning_id": "Me-turn on",
+    "meaning_id": "Menyalakan (lampu/elektronik)",
     "meaning_en": "to turn on",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "テレビをつけて。",
       "reading": "",
-      "meaning": "Please turn on the television."
+      "meaning": "Nyalakan TV."
     }
   },
   {
     "word": "勤める",
     "reading": "つとめる",
     "romaji": "tsutomeru",
-    "meaning_id": "Me-work for someone",
+    "meaning_id": "Bekerja di (perusahaan/kantor)",
     "meaning_en": "to work for someone",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "父は銀行に勤めています。",
       "reading": "{父|ちち}は{銀行|ぎんこう}に{勤|つと}めています。",
-      "meaning": "My father works for a bank."
+      "meaning": "Ayah saya bekerja di bank."
     }
   },
   {
@@ -5473,21 +5473,21 @@
     "example": {
       "ja": "このビデオはつまらないよ。",
       "reading": "",
-      "meaning": "This video is boring."
+      "meaning": "Video ini membosankan."
     }
   },
   {
     "word": "冷たい",
     "reading": "つめたい",
     "romaji": "tsumetai",
-    "meaning_id": "Cold Me-the touch",
+    "meaning_id": "Dingin (saat disentuh / minuman)",
     "meaning_en": "cold to the touch",
     "level": "N5",
     "type": "Kata Sifat (-i)",
     "example": {
       "ja": "もう手が冷たくって。",
       "reading": "もう{手|て}が{冷|つめ}たくって。",
-      "meaning": "My hand's getting too cold."
+      "meaning": "Tanganku sudah dingin."
     }
   },
   {
@@ -5501,7 +5501,7 @@
     "example": {
       "ja": "トラとライオンとどちらが強いか。",
       "reading": "トラとライオンとどちらが{強|つよ}いか。",
-      "meaning": "Which is stronger, a tiger or a lion?"
+      "meaning": "Mana yang lebih kuat, harimau atau singa?"
     }
   },
   {
@@ -5515,7 +5515,7 @@
     "example": {
       "ja": "ここに手のないナベがある。",
       "reading": "ここに{手|て}のないナベがある。",
-      "meaning": "Here is a pan without handles."
+      "meaning": "Ada panci di sini tanpa tangan."
     }
   },
   {
@@ -5529,7 +5529,7 @@
     "example": {
       "ja": "君はそのコンサートをテープにとったか。",
       "reading": "{君|きみ}はそのコンサートをテープにとったか。",
-      "meaning": "Did you tape that concert?"
+      "meaning": "Apakah Anda merekam konsernya?"
     }
   },
   {
@@ -5543,7 +5543,7 @@
     "example": {
       "ja": "このテーブルを頼んだのではない。",
       "reading": "このテーブルを{頼|たの}んだのではない。",
-      "meaning": "I didn't ask for a table here."
+      "meaning": "Saya tidak meminta meja ini."
     }
   },
   {
@@ -5557,21 +5557,21 @@
     "example": {
       "ja": "このテープレコーダーは新しくない。",
       "reading": "このテープレコーダーは{新|あたら}しくない。",
-      "meaning": "This tape recorder is not new."
+      "meaning": "Alat perekam ini bukanlah hal baru."
     }
   },
   {
     "word": "出かける",
     "reading": "でかける",
     "romaji": "dekakeru",
-    "meaning_id": "Me-go out",
+    "meaning_id": "Pergi keluar / Berangkat keluar",
     "meaning_en": "to go out",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "出かけるよりもじっとしていたい。",
       "reading": "{出|で}かけるよりもじっとしていたい。",
-      "meaning": "I would sooner stay than go."
+      "meaning": "Aku lebih memilih diam daripada keluar."
     }
   },
   {
@@ -5585,21 +5585,21 @@
     "example": {
       "ja": "書かねばならない手紙があります。",
       "reading": "{書|か}かねばならない{手紙|てがみ}があります。",
-      "meaning": "I have to write a letter."
+      "meaning": "Saya punya surat untuk ditulis."
     }
   },
   {
     "word": "できる",
     "reading": "できる",
     "romaji": "dekiru",
-    "meaning_id": "Me-be able to",
+    "meaning_id": "Bisa / Mampu / Selesai",
     "meaning_en": "to be able to",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "あの二人はどうもできているらしい。",
       "reading": "あの{二人|ふたり}はどうもできているらしい。",
-      "meaning": "They seem to be in love with each other."
+      "meaning": "Keduanya tampaknya baik-baik saja."
     }
   },
   {
@@ -5613,7 +5613,7 @@
     "example": {
       "ja": "B2出口から地上に出てください。",
       "reading": "B2{出口|でぐち}から{地上|ちじょう}に{出|で}てください。",
-      "meaning": "Go up to ground level at exit B2."
+      "meaning": "Silakan menuju ke permukaan tanah dari Pintu Keluar B2."
     }
   },
   {
@@ -5627,21 +5627,21 @@
     "example": {
       "ja": "そのテストはむずかしかった。",
       "reading": "",
-      "meaning": "I found the test difficult."
+      "meaning": "Ujiannya sulit."
     }
   },
   {
     "word": "では",
     "reading": "では",
     "romaji": "dewa",
-    "meaning_id": "With that...",
+    "meaning_id": "Kalau begitu...",
     "meaning_en": "with that...",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "では今晩またね、さようなら。",
       "reading": "では{今晩|こんばん}またね、さようなら。",
-      "meaning": "See you tonight, then. Cheers!"
+      "meaning": "Sampai jumpa malam ini, selamat tinggal."
     }
   },
   {
@@ -5655,35 +5655,35 @@
     "example": {
       "ja": "あのデパートで新しいコートを買いたい。",
       "reading": "あのデパートで{新|あたら}しいコートを{買|か}いたい。",
-      "meaning": "I would like to buy a new coat at that department store."
+      "meaning": "Saya ingin membeli mantel baru di department store itu."
     }
   },
   {
     "word": "でも",
     "reading": "でも",
     "romaji": "demo",
-    "meaning_id": "But",
+    "meaning_id": "Tetapi / Namun",
     "meaning_en": "but",
     "level": "N5",
     "type": "Kata Hubung (Konjungsi)",
     "example": {
       "ja": "どんな人でもいないよりはましだ。",
       "reading": "どんな{人|ひと}でもいないよりはましだ。",
-      "meaning": "Anybody would be better than nobody."
+      "meaning": "Setiap orang lebih baik daripada tidak ada orang sama sekali."
     }
   },
   {
     "word": "出る",
     "reading": "でる",
     "romaji": "deru",
-    "meaning_id": "Me-appear / Keluar",
+    "meaning_id": "Keluar / Muncul",
     "meaning_en": "to appear, to leave",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "電話には出なかったからメールしておきました。",
       "reading": "{電話|でんわ}には{出|で}なかったからメールしておきました。",
-      "meaning": "He didn't answer the phone, so I left him an email."
+      "meaning": "Dia tidak menjawab telepon, jadi saya mengirim email kepadanya."
     }
   },
   {
@@ -5697,7 +5697,7 @@
     "example": {
       "ja": "あなたはどこでテレビを見ますか。",
       "reading": "あなたはどこでテレビを{見|み}ますか。",
-      "meaning": "Where do you watch television?"
+      "meaning": "Di mana Anda menonton TV?"
     }
   },
   {
@@ -5711,7 +5711,7 @@
     "example": {
       "ja": "今日が天気ならいいのに。",
       "reading": "",
-      "meaning": "I wish it were fine today."
+      "meaning": "Saya berharap cuacanya bagus hari ini."
     }
   },
   {
@@ -5725,7 +5725,7 @@
     "example": {
       "ja": "電気シェーバーから火が出ました。",
       "reading": "{電気|でんき}シェーバーから{火|ひ}が{出|で}ました。",
-      "meaning": "My electric razor is on fire."
+      "meaning": "Alat cukur listrik terbakar."
     }
   },
   {
@@ -5739,7 +5739,7 @@
     "example": {
       "ja": "電車の中ですりにやられちゃったんだ。",
       "reading": "{電車|でんしゃ}の{中|なか}ですりにやられちゃったんだ。",
-      "meaning": "I had my pocket picked on the train."
+      "meaning": "Saya dicopet di kereta."
     }
   },
   {
@@ -5753,35 +5753,35 @@
     "example": {
       "ja": "ブラウンさんから電話のようです。",
       "reading": "ブラウンさんから{電話|でんわ}のようです。",
-      "meaning": "It's a phone call from a Mr Brown."
+      "meaning": "Sepertinya Tuan Brown menelepon."
     }
   },
   {
     "word": "戸",
     "reading": "と",
     "romaji": "to",
-    "meaning_id": "Japanese style door",
+    "meaning_id": "Pintu geser tradisional Jepang",
     "meaning_en": "Japanese style door",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "誰かが戸をやかましくノックしている。",
       "reading": "{誰|だれ}かが{戸|と}をやかましくノックしている。",
-      "meaning": "Someone is knocking loudly at the door."
+      "meaning": "Seseorang mengetuk pintu dengan berisik."
     }
   },
   {
     "word": "ドア",
     "reading": "ドア",
     "romaji": "doa",
-    "meaning_id": "Western style door",
+    "meaning_id": "Pintu bergaya barat",
     "meaning_en": "Western style door",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "入る前にドアをノックして下さい。",
       "reading": "{入|はい}る{前|#1392580}にドアをノックして{下|くだ}さい。",
-      "meaning": "Please knock on the door before you enter."
+      "meaning": "Silakan ketuk pintu sebelum masuk."
     }
   },
   {
@@ -5795,14 +5795,14 @@
     "example": {
       "ja": "トイレの水が止まりません。",
       "reading": "トイレの{水|みず}が{止|と}まりません。",
-      "meaning": "The toilet won't stop running."
+      "meaning": "Air di toilet tidak mau berhenti."
     }
   },
   {
     "word": "どう",
     "reading": "どう",
     "romaji": "dou",
-    "meaning_id": "Bagaimana / in what way",
+    "meaning_id": "Bagaimana",
     "meaning_en": "how, in what way",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
@@ -5816,42 +5816,42 @@
     "word": "どうして",
     "reading": "どうして",
     "romaji": "doushite",
-    "meaning_id": "For what reason",
+    "meaning_id": "Mengapa / Kenapa",
     "meaning_en": "for what reason",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "どうしてあなたは一人になったの？",
       "reading": "どうしてあなたは{一人|ひとり}になったの？",
-      "meaning": "How did you end up on your own?"
+      "meaning": "Kenapa kamu sendirian?"
     }
   },
   {
     "word": "どうぞ",
     "reading": "どうぞ",
     "romaji": "douzo",
-    "meaning_id": "Please",
+    "meaning_id": "Silakan / Ayo",
     "meaning_en": "please",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "写真をどうぞ見せて下さい。",
       "reading": "{写真|しゃしん}をどうぞ{見|み}せて{下|くだ}さい。",
-      "meaning": "Please show me your picture."
+      "meaning": "Tolong tunjukkan padaku fotonya."
     }
   },
   {
     "word": "どうぞよろしく",
     "reading": "どうぞよろしく",
     "romaji": "douzoyoroshiku",
-    "meaning_id": "Pleased Me-meet you",
+    "meaning_id": "Senang berkenalan dengan Anda / Mohon bantuannya",
     "meaning_en": "pleased to meet you",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "どうぞよろしく。",
       "reading": "",
-      "meaning": "Nice to meet you."
+      "meaning": "Terima kasih banyak."
     }
   },
   {
@@ -5865,21 +5865,21 @@
     "example": {
       "ja": "私はその動物の名前を知っている。",
       "reading": "{私|わたし}はその{動物|どうぶつ}の{名前|なまえ}を{知|し}っている。",
-      "meaning": "I know the name of this animal."
+      "meaning": "Saya tahu nama binatang itu."
     }
   },
   {
     "word": "どうも",
     "reading": "どうも",
     "romaji": "doumo",
-    "meaning_id": "Thanks",
+    "meaning_id": "Terima kasih / Halo / Entah mengapa",
     "meaning_en": "thanks",
     "level": "N5",
     "type": "Kata Seru (Interjeksi)",
     "example": {
       "ja": "あの二人はどうもできているらしい。",
       "reading": "あの{二人|ふたり}はどうもできているらしい。",
-      "meaning": "They seem to be in love with each other."
+      "meaning": "Keduanya tampaknya baik-baik saja."
     }
   },
   {
@@ -5893,21 +5893,21 @@
     "example": {
       "ja": "それはホテルから遠くありません。",
       "reading": "それはホテルから{遠|とお}くありません。",
-      "meaning": "It is not far away from the hotel."
+      "meaning": "Letaknya tidak jauh dari hotel."
     }
   },
   {
     "word": "十日",
     "reading": "とおか",
     "romaji": "tooka",
-    "meaning_id": "Ten days / the tenth day",
+    "meaning_id": "Sepuluh hari / Tanggal 10",
     "meaning_en": "ten days, the tenth day",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "ジャックは８月１０日に生まれた。",
       "reading": "",
-      "meaning": "Jack was born on August the tenth."
+      "meaning": "Jack lahir pada 10 Agustus."
     }
   },
   {
@@ -5921,7 +5921,7 @@
     "example": {
       "ja": "ジェーンはときどき学校まで走っていく。",
       "reading": "ジェーンはときどき{学校|がっこう}まで{走|はし}っていく。",
-      "meaning": "Jane sometimes runs to school."
+      "meaning": "Jane terkadang berlari ke sekolah."
     }
   },
   {
@@ -5935,7 +5935,7 @@
     "example": {
       "ja": "あなたの時計では何時ですか。",
       "reading": "あなたの{時計|とけい}では{何時|なんじ}ですか。",
-      "meaning": "What time is it by your watch?"
+      "meaning": "Jam berapa yang ada di jam tanganmu?"
     }
   },
   {
@@ -5949,7 +5949,7 @@
     "example": {
       "ja": "あなたはどこでテレビを見ますか。",
       "reading": "あなたはどこでテレビを{見|み}ますか。",
-      "meaning": "Where do you watch television?"
+      "meaning": "Di mana Anda menonton TV?"
     }
   },
   {
@@ -5963,21 +5963,21 @@
     "example": {
       "ja": "どんな所でアルバイトできるの。",
       "reading": "どんな{所|ところ}でアルバイトできるの。",
-      "meaning": "Where can you get a part-time job?"
+      "meaning": "Di mana saya bisa bekerja paruh waktu?"
     }
   },
   {
     "word": "年",
     "reading": "とし",
     "romaji": "toshi",
-    "meaning_id": "Year",
+    "meaning_id": "Tahun / Usia",
     "meaning_en": "year",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "お年をお聞きしてよろしいでしょうか。",
       "reading": "",
-      "meaning": "Might I ask your age?"
+      "meaning": "Bolehkah saya menanyakan umur Anda?"
     }
   },
   {
@@ -5991,21 +5991,21 @@
     "example": {
       "ja": "図書館の中で話をしてはいけない。",
       "reading": "{図書館|としょかん}の{中|なか}で{話|はなし}をしてはいけない。",
-      "meaning": "We must not speak in the library."
+      "meaning": "Jangan bicara di perpustakaan."
     }
   },
   {
     "word": "どちら",
     "reading": "どちら",
     "romaji": "dochira",
-    "meaning_id": "Which of two",
+    "meaning_id": "Yang mana (dari dua pilihan)",
     "meaning_en": "which of two",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "二つのうちでどちらが高いですか。",
       "reading": "{二|ふた}つのうちでどちらが{高|たか}いですか。",
-      "meaning": "Which is the more expensive of the two?"
+      "meaning": "Manakah di antara keduanya yang lebih tinggi?"
     }
   },
   {
@@ -6019,21 +6019,21 @@
     "example": {
       "ja": "この本とあの本とどっちがやさしい？",
       "reading": "この{本|ほん}とあの{本|ほん}とどっちがやさしい？",
-      "meaning": "Which is easier to read, this book or that one?"
+      "meaning": "Mana yang lebih mudah, buku ini atau buku itu?"
     }
   },
   {
     "word": "とても",
     "reading": "とても",
     "romaji": "totemo",
-    "meaning_id": "Very",
+    "meaning_id": "Sangat / Amat",
     "meaning_en": "very",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "この雨の中を外出することはとてもできないことです。",
       "reading": "この{雨|あめ}の{中|なか}を{外出|がいしゅつ}することはとてもできないことです。",
-      "meaning": "Going out in this rain is out of the question."
+      "meaning": "Sangat sulit untuk keluar di tengah hujan seperti ini."
     }
   },
   {
@@ -6047,21 +6047,21 @@
     "example": {
       "ja": "「どなたですか」「お母さんよ」",
       "reading": "「どなたですか」「お{母|かあ}さんよ」",
-      "meaning": "\"Who is it?\" \"It's your mother.\""
+      "meaning": "\"Siapa kamu?\" \"Mama.\""
     }
   },
   {
     "word": "隣",
     "reading": "となり",
     "romaji": "tonari",
-    "meaning_id": "Next door to",
+    "meaning_id": "Sebelah / Bersebelahan",
     "meaning_en": "next door to",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あのビルのとなりです。",
       "reading": "",
-      "meaning": "It's next to that building."
+      "meaning": "Itu di sebelah gedung itu."
     }
   },
   {
@@ -6075,35 +6075,35 @@
     "example": {
       "ja": "これはほかのどの木よりも高い。",
       "reading": "これはほかのどの{木|き}よりも{高|たか}い。",
-      "meaning": "This is taller than any other tree."
+      "meaning": "Ini lebih tinggi dari pohon lainnya."
     }
   },
   {
     "word": "飛ぶ",
     "reading": "とぶ",
     "romaji": "tobu",
-    "meaning_id": "Me-fly / Me-hop",
+    "meaning_id": "Terbang / Melompat",
     "meaning_en": "to fly, to hop",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ヒューズが飛んだ。",
       "reading": "ヒューズが{飛|と}んだ。",
-      "meaning": "A fuse has blown."
+      "meaning": "Sebuah sekring putus."
     }
   },
   {
     "word": "止まる",
     "reading": "とまる",
     "romaji": "tomaru",
-    "meaning_id": "Me-come Me-a halt",
+    "meaning_id": "Berhenti (intransitif)",
     "meaning_en": "to come to a halt",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ちょうどその時バスが止まった。",
       "reading": "ちょうどその{時|とき}バスが{止|と}まった。",
-      "meaning": "Just then, the bus stopped."
+      "meaning": "Saat itu bus berhenti."
     }
   },
   {
@@ -6123,7 +6123,7 @@
     "word": "土曜日",
     "reading": "どようび",
     "romaji": "doyoubi",
-    "meaning_id": "Saturday",
+    "meaning_id": "Sabtu",
     "meaning_en": "Saturday",
     "level": "N5",
     "type": "Kata Benda",
@@ -6144,7 +6144,7 @@
     "example": {
       "ja": "なんてきれいな鳥なんだろう。",
       "reading": "なんてきれいな{鳥|とり}なんだろう。",
-      "meaning": "What a beautiful bird it is!"
+      "meaning": "Burung yang sangat cantik!"
     }
   },
   {
@@ -6158,42 +6158,42 @@
     "example": {
       "ja": "鶏肉を３ポンド分ください。",
       "reading": "{鶏肉|とりにく}を３ポンド{分|ぶん}ください。",
-      "meaning": "I'd like three pounds of chicken."
+      "meaning": "Tolong, tiga pon ayam."
     }
   },
   {
     "word": "撮る",
     "reading": "とる",
     "romaji": "toru",
-    "meaning_id": "Me-take a photo or record a film",
+    "meaning_id": "Mengambil foto / Merekam video",
     "meaning_en": "to take a photo or record a film",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "外からなら撮ってもかまいません。",
       "reading": "{外|そと}からなら{撮|と}ってもかまいません。",
-      "meaning": "It doesn't matter to us if you take a photo from the outside."
+      "meaning": "Anda dapat mengambil gambar dari luar."
     }
   },
   {
     "word": "取る",
     "reading": "とる",
     "romaji": "toru",
-    "meaning_id": "Me-take something",
+    "meaning_id": "Mengambil (sesuatu)",
     "meaning_en": "to take something",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "そのお金はいざというときのために取っておくよ。",
       "reading": "そのお{金|かね}はいざというときのために{取|と}っておくよ。",
-      "meaning": "I'm going to lay aside that money for emergencies."
+      "meaning": "Saya akan menyimpan uang itu untuk keadaan darurat."
     }
   },
   {
     "word": "どれ",
     "reading": "どれ",
     "romaji": "dore",
-    "meaning_id": "Which (of three or more)",
+    "meaning_id": "Yang mana (dari tiga pilihan atau lebih)",
     "meaning_en": "which (of three or more)",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
@@ -6214,7 +6214,7 @@
     "example": {
       "ja": "それはあなたのナイフではない。",
       "reading": "",
-      "meaning": "That is not your knife."
+      "meaning": "Itu bukan pisaumu."
     }
   },
   {
@@ -6228,49 +6228,49 @@
     "example": {
       "ja": "テントの中ではなくて外で食べよう。",
       "reading": "テントの{中|なか}ではなくて{外|そと}で{食|た}べよう。",
-      "meaning": "Let's eat outside instead of in our tents."
+      "meaning": "Makan di luar, bukan di dalam tenda."
     }
   },
   {
     "word": "長い",
     "reading": "ながい",
     "romaji": "nagai",
-    "meaning_id": "Long",
+    "meaning_id": "Panjang / Lama",
     "meaning_en": "long",
     "level": "N5",
     "type": "Kata Sifat (-i)",
     "example": {
       "ja": "だんだん日が長くなっています。",
       "reading": "だんだん{日|ひ}が{長|なが}くなっています。",
-      "meaning": "The days are getting longer and longer."
+      "meaning": "Hari-hari semakin panjang."
     }
   },
   {
     "word": "鳴く",
     "reading": "なく",
     "romaji": "naku",
-    "meaning_id": "Me-make a sound (of an animal) / Me-cry",
+    "meaning_id": "Bersuara / Berkicau (hewan/burung)",
     "meaning_en": "to make a sound (of an animal), to cry, to chirp",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "カエルが鳴いたら帰ろう。",
       "reading": "カエルが{鳴|な}いたら{帰|かえ}ろう。",
-      "meaning": "Let's return when the frog croaks."
+      "meaning": "Ayo pulang saat katak berkokok."
     }
   },
   {
     "word": "無くす",
     "reading": "なくす",
     "romaji": "nakusu",
-    "meaning_id": "Me-lose something",
+    "meaning_id": "Menghilangkan / Kehilangan (sesuatu)",
     "meaning_en": "to lose something",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "私は前日無くした本を見つけた。",
       "reading": "{私|わたし}は{前日|ぜんじつ}{無|な}くした{本|ほん}を{見|み}つけた。",
-      "meaning": "I found the book which I had lost the day before."
+      "meaning": "Saya menemukan buku yang hilang sehari sebelumnya."
     }
   },
   {
@@ -6312,7 +6312,7 @@
     "example": {
       "ja": "この夏休みはどこかへ行くのですか。",
       "reading": "",
-      "meaning": "Are you going away this summer?"
+      "meaning": "Kemana kamu akan pergi pada liburan musim panas ini?"
     }
   },
   {
@@ -6326,7 +6326,7 @@
     "example": {
       "ja": "ぬくもりなどどこにも見つからない。",
       "reading": "ぬくもりなどどこにも{見|み}つからない。",
-      "meaning": "I can't find anything like warmth anywhere."
+      "meaning": "Kehangatan tidak bisa ditemukan."
     }
   },
   {
@@ -6340,21 +6340,21 @@
     "example": {
       "ja": "７つの海って何ですか。",
       "reading": "７つの{海|うみ}って{何|なに}ですか。",
-      "meaning": "What are the seven seas?"
+      "meaning": "Apakah tujuh lautan itu?"
     }
   },
   {
     "word": "七日",
     "reading": "なのか",
     "romaji": "nanoka",
-    "meaning_id": "Seven days / the seventh day",
+    "meaning_id": "Tujuh hari / Tanggal 7",
     "meaning_en": "seven days, the seventh day",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "一週間は七日です。",
       "reading": "{一週間|いっしゅうかん}は{七日|なのか}です。",
-      "meaning": "There are seven days in a week."
+      "meaning": "Ada tujuh hari dalam seminggu."
     }
   },
   {
@@ -6368,63 +6368,63 @@
     "example": {
       "ja": "あなたの名前はリストからはずされた。",
       "reading": "あなたの{名前|なまえ}はリストからはずされた。",
-      "meaning": "Your name was dropped from the list."
+      "meaning": "Nama Anda telah dihapus dari daftar."
     }
   },
   {
     "word": "習う",
     "reading": "ならう",
     "romaji": "narau",
-    "meaning_id": "Me-learn",
+    "meaning_id": "Belajar (dari guru / orang lain)",
     "meaning_en": "to learn",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "車の運転を習っています。",
       "reading": "{車|くるま}の{運転|うんてん}を{習|なら}っています。",
-      "meaning": "I've been learning to drive."
+      "meaning": "Saya sedang belajar mengendarai mobil."
     }
   },
   {
     "word": "並ぶ",
     "reading": "ならぶ",
     "romaji": "narabu",
-    "meaning_id": "Me-line up / Me-stand in a line",
+    "meaning_id": "Berbaris / Mengantre",
     "meaning_en": "to line up, to stand in a line",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "あんた、なぜに並んでいるのだい。",
       "reading": "あんた、なぜに{並|なら}んでいるのだい。",
-      "meaning": "What are you lining up for?"
+      "meaning": "Mengapa Anda mengantri?"
     }
   },
   {
     "word": "並べる",
     "reading": "ならべる",
     "romaji": "naraberu",
-    "meaning_id": "Me-line up / Me-set up",
+    "meaning_id": "Menjajarkan / Menyusun rapi",
     "meaning_en": "to line up, to set up",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "メイドはテーブルにナイフとフォークを並べた。",
       "reading": "メイドはテーブルにナイフとフォークを{並|なら}べた。",
-      "meaning": "The maid arranged the knives and forks on the table."
+      "meaning": "Pelayan itu meletakkan pisau dan garpu di atas meja."
     }
   },
   {
     "word": "なる",
     "reading": "なる",
     "romaji": "naru",
-    "meaning_id": "Me-become",
+    "meaning_id": "Menjadi",
     "meaning_en": "to become",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ちまたではインターネットなるものがはやっています。",
       "reading": "",
-      "meaning": "People are talking about this Internet phenomenon."
+      "meaning": "Ada sesuatu yang disebut Internet di mana-mana."
     }
   },
   {
@@ -6438,7 +6438,7 @@
     "example": {
       "ja": "学校の前に何本か木が見えます。",
       "reading": "",
-      "meaning": "You see some trees in front of the school."
+      "meaning": "Saya dapat melihat beberapa pohon di depan sekolah."
     }
   },
   {
@@ -6452,7 +6452,7 @@
     "example": {
       "ja": "このホールには人が二千人入れる。",
       "reading": "",
-      "meaning": "Two thousand people fit into this hall."
+      "meaning": "Aula ini mampu menampung 2.000 orang."
     }
   },
   {
@@ -6466,7 +6466,7 @@
     "example": {
       "ja": "この通りは賑やかだ。",
       "reading": "この{通|とお}りは{賑|にぎ}やかだ。",
-      "meaning": "This street is lively."
+      "meaning": "Jalan ini ramai."
     }
   },
   {
@@ -6480,7 +6480,7 @@
     "example": {
       "ja": "肉にはウジがわいていた。",
       "reading": "{肉|にく}にはウジがわいていた。",
-      "meaning": "The meat was crawling with maggots."
+      "meaning": "Dagingnya dipenuhi belatung."
     }
   },
   {
@@ -6494,21 +6494,21 @@
     "example": {
       "ja": "列車は西へ走っていた。",
       "reading": "{列車|れっしゃ}は{西|にし}へ{走|はし}っていた。",
-      "meaning": "The train was hurrying west."
+      "meaning": "Kereta melaju ke arah barat."
     }
   },
   {
     "word": "日曜日",
     "reading": "にちようび",
     "romaji": "nichiyoubi",
-    "meaning_id": "Sunday",
+    "meaning_id": "Minggu / Ahad",
     "meaning_en": "Sunday",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "ちょうど日曜日にぶつかりますね。",
       "reading": "ちょうど{日曜日|にちようび}にぶつかりますね。",
-      "meaning": "It falls on Sunday."
+      "meaning": "Itu baru tiba pada hari Minggu."
     }
   },
   {
@@ -6522,7 +6522,7 @@
     "example": {
       "ja": "これ荷物を上にあげてもよろしい。",
       "reading": "これ{荷物|にもつ}を{上|うえ}にあげてもよろしい。",
-      "meaning": "Can I put this up for you?"
+      "meaning": "Anda dapat menaruh barang bawaan Anda di sini."
     }
   },
   {
@@ -6536,7 +6536,7 @@
     "example": {
       "ja": "そのニュースはラジオで聞いたよ。",
       "reading": "そのニュースはラジオで{聞|き}いたよ。",
-      "meaning": "I heard the news on the radio."
+      "meaning": "Saya mendengar beritanya di radio."
     }
   },
   {
@@ -6550,21 +6550,21 @@
     "example": {
       "ja": "その庭にはバラがまったくなかった。",
       "reading": "その{庭|にわ}にはバラがまったくなかった。",
-      "meaning": "There weren't any roses in the garden."
+      "meaning": "Tidak ada mawar di taman."
     }
   },
   {
     "word": "脱ぐ",
     "reading": "ぬぐ",
     "romaji": "nugu",
-    "meaning_id": "Me-take off clothes",
+    "meaning_id": "Melepas pakaian / sepatu",
     "meaning_en": "to take off clothes",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ここで靴を脱がなければなりませんか。",
       "reading": "ここで{靴|くつ}を{脱|ぬ}がなければなりませんか。",
-      "meaning": "Do I have to take off my shoes here?"
+      "meaning": "Apakah saya harus melepas sepatu saya di sini?"
     }
   },
   {
@@ -6578,7 +6578,7 @@
     "example": {
       "ja": "このコーヒーはぬるいです。",
       "reading": "",
-      "meaning": "This coffee is not hot enough."
+      "meaning": "Kopi ini suam-suam kuku."
     }
   },
   {
@@ -6592,7 +6592,7 @@
     "example": {
       "ja": "このネクタイはいくらですか。",
       "reading": "",
-      "meaning": "How much is this tie?"
+      "meaning": "Berapa harga dasi ini?"
     }
   },
   {
@@ -6606,7 +6606,7 @@
     "example": {
       "ja": "猫はにゃーにゃーいいつづけた。",
       "reading": "{猫|ねこ}はにゃーにゃーいいつづけた。",
-      "meaning": "The cat continued to mew."
+      "meaning": "Kucing itu terus mengeong."
     }
   },
   {
@@ -6633,35 +6633,35 @@
     "example": {
       "ja": "これらの語をノートに書きなさい。",
       "reading": "これらの{語|ご}をノートに{書|か}きなさい。",
-      "meaning": "Write these words in your notebook."
+      "meaning": "Tuliskan kata-kata ini di buku catatan Anda."
     }
   },
   {
     "word": "登る",
     "reading": "のぼる",
     "romaji": "noboru",
-    "meaning_id": "Me-climb",
+    "meaning_id": "Mendaki / Memanjat",
     "meaning_en": "to climb",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "木は高ければ高いほど登りにくい。",
       "reading": "{木|き}は{高|たか}ければ{高|たか}いほど{登|のぼ}りにくい。",
-      "meaning": "The taller a tree is, the harder it is to climb."
+      "meaning": "Semakin tinggi pohonnya, semakin sulit untuk dipanjat."
     }
   },
   {
     "word": "飲み物",
     "reading": "のみもの",
     "romaji": "nomimono",
-    "meaning_id": "A drink",
+    "meaning_id": "Minuman",
     "meaning_en": "a drink",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "何か飲み物をいただけますか。",
       "reading": "",
-      "meaning": "May I have something to drink?"
+      "meaning": "Bisakah saya minum sesuatu?"
     }
   },
   {
@@ -6681,14 +6681,14 @@
     "word": "乗る",
     "reading": "のる",
     "romaji": "noru",
-    "meaning_id": "Me-get on / Me-ride",
+    "meaning_id": "Naik (kendaraan) / Menunggangi",
     "meaning_en": "to get on, to ride",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ほら、あなたの乗る電車が来たわ。",
       "reading": "ほら、あなたの{乗|の}る{電車|でんしゃ}が{来|き}たわ。",
-      "meaning": "Look, here comes your train."
+      "meaning": "Lihat, kereta yang kamu naiki telah tiba."
     }
   },
   {
@@ -6702,7 +6702,7 @@
     "example": {
       "ja": "その赤ちゃんは歯が生えはじめている。",
       "reading": "その{赤|あか}ちゃんは{歯|は}が{生|は}えはじめている。",
-      "meaning": "The baby is cutting his teeth."
+      "meaning": "Bayinya mulai tumbuh gigi."
     }
   },
   {
@@ -6716,21 +6716,21 @@
     "example": {
       "ja": "パーティーはたのしかったですか。",
       "reading": "",
-      "meaning": "Did you enjoy yourself at the party?"
+      "meaning": "Apakah Anda bersenang-senang di pesta itu?"
     }
   },
   {
     "word": "はい",
     "reading": "はい",
     "romaji": "hai",
-    "meaning_id": "Yes",
+    "meaning_id": "Ya / Baik",
     "meaning_en": "yes",
     "level": "N5",
     "type": "Kata Seru (Interjeksi)",
     "example": {
       "ja": "「もしもし、ブラウンさんですか」「はい、そうです」",
       "reading": "",
-      "meaning": "\"Hello, is this Mrs. Brown?\" \"Yes, this is Mrs. Brown.\""
+      "meaning": "Halo, apakah Anda Tuan Brown? “Ya, benar.”"
     }
   },
   {
@@ -6744,21 +6744,21 @@
     "example": {
       "ja": "灰皿を下さい。",
       "reading": "{灰皿|はいざら}を{下|くだ}さい。",
-      "meaning": "I need an ashtray."
+      "meaning": "Tolong beri saya asbak."
     }
   },
   {
     "word": "入る",
     "reading": "はいる",
     "romaji": "hairu",
-    "meaning_id": "Masuk / Me-contain",
+    "meaning_id": "Masuk / Muat / Berisi",
     "meaning_en": "to enter, to contain",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "入る前にドアをノックして下さい。",
       "reading": "{入|はい}る{前|#1392580}にドアをノックして{下|くだ}さい。",
-      "meaning": "Please knock on the door before you enter."
+      "meaning": "Silakan ketuk pintu sebelum masuk."
     }
   },
   {
@@ -6772,21 +6772,21 @@
     "example": {
       "ja": "この店に葉書がたくさんある。",
       "reading": "この{店|みせ}に{葉書|はがき}がたくさんある。",
-      "meaning": "There are many postcards in this store."
+      "meaning": "Toko ini memiliki banyak kartu pos."
     }
   },
   {
     "word": "はく",
     "reading": "はく",
     "romaji": "haku",
-    "meaning_id": "Me-wear / Me-put on trousers",
+    "meaning_id": "Mengenakan (celana / rok / sepatu)",
     "meaning_en": "to wear, to put on trousers",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "この靴はきつすぎてはけない。",
       "reading": "この{靴|くつ}はきつすぎてはけない。",
-      "meaning": "These shoes are too tight to get into."
+      "meaning": "Sepatu ini tidak boleh terlalu ketat."
     }
   },
   {
@@ -6800,7 +6800,7 @@
     "example": {
       "ja": "その箱はほとんどいっぱいでした。",
       "reading": "その{箱|はこ}はほとんどいっぱいでした。",
-      "meaning": "The box was almost full."
+      "meaning": "Kotak itu hampir penuh."
     }
   },
   {
@@ -6814,7 +6814,7 @@
     "example": {
       "ja": "パーカーさんは箸で食べてみました。",
       "reading": "パーカーさんは{箸|はし}で{食|た}べてみました。",
-      "meaning": "Mr Parker tried eating with chopsticks."
+      "meaning": "Parker mencoba memakannya dengan sumpit."
     }
   },
   {
@@ -6828,21 +6828,21 @@
     "example": {
       "ja": "その橋はどれくらいの長さですか。",
       "reading": "その{橋|はし}はどれくらいの{長|なが}さですか。",
-      "meaning": "How long is the bridge?"
+      "meaning": "Berapa panjang jembatan itu?"
     }
   },
   {
     "word": "始まる",
     "reading": "はじまる",
     "romaji": "hajimaru",
-    "meaning_id": "Me-begin",
+    "meaning_id": "Dimulai / Mulai (intransitif)",
     "meaning_en": "to begin",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "今コンサートが始まろうとしている。",
       "reading": "{今|いま}コンサートが{始|はじ}まろうとしている。",
-      "meaning": "The concert is beginning now."
+      "meaning": "Konser akan segera dimulai sekarang."
     }
   },
   {
@@ -6856,35 +6856,35 @@
     "example": {
       "ja": "旅行の初めの二日間は雨降りだった。",
       "reading": "{旅行|りょこう}の{初|はじ}めの{二日間|ふつかかん}は{雨降|あめふ}りだった。",
-      "meaning": "The first two days of my trip were rainy."
+      "meaning": "Hujan turun selama dua hari pertama perjalanan."
     }
   },
   {
     "word": "初めて",
     "reading": "はじめて",
     "romaji": "hajimete",
-    "meaning_id": "For the first time",
+    "meaning_id": "Untuk pertama kalinya",
     "meaning_en": "for the first time",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "初めてドリアンを食べました。",
       "reading": "{初|はじ}めてドリアンを{食|た}べました。",
-      "meaning": "I ate durian for the first time."
+      "meaning": "Saya makan durian untuk pertama kalinya."
     }
   },
   {
     "word": "はじめまして",
     "reading": "はじめまして",
     "romaji": "hajimemashite",
-    "meaning_id": "How do you do? / I am glad Me-meet you",
+    "meaning_id": "Senang berkenalan dengan Anda (salam awal)",
     "meaning_en": "How do you do?, I am glad to meet you",
     "level": "N5",
     "type": "Ungkapan / Frasa",
     "example": {
       "ja": "初めましてケン。",
       "reading": "{初|はじ}めましてケン。",
-      "meaning": "Nice to meet you, Ken."
+      "meaning": "Senang bertemu denganmu Ken."
     }
   },
   {
@@ -6898,7 +6898,7 @@
     "example": {
       "ja": "あの走ってる少年をごらんなさい。",
       "reading": "あの{走|はし}ってる{少年|しょうねん}をごらんなさい。",
-      "meaning": "Look at that boy running."
+      "meaning": "Lihatlah anak laki-laki itu berlari."
     }
   },
   {
@@ -6912,7 +6912,7 @@
     "example": {
       "ja": "バス通学と積極的差別是正措置などが論争の多い話題だった。",
       "reading": "",
-      "meaning": "School busing and taking a proactive stance against discrimination were hotly debated topics."
+      "meaning": "Keberangkatan ke sekolah dan tindakan afirmatif merupakan topik yang kontroversial."
     }
   },
   {
@@ -6926,35 +6926,35 @@
     "example": {
       "ja": "バターはミルクから出来る。",
       "reading": "バターはミルクから{出来|でき}る。",
-      "meaning": "Butter is made from milk."
+      "meaning": "Mentega terbuat dari susu."
     }
   },
   {
     "word": "二十歳",
     "reading": "はたち",
     "romaji": "hatachi",
-    "meaning_id": "20 years old / 20th year",
+    "meaning_id": "Usia 20 tahun",
     "meaning_en": "20 years old, 20th year",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "ムーリエルは２０歳になりました。",
       "reading": "",
-      "meaning": "Muiriel is 20 now."
+      "meaning": "Muriel kini berusia 20 tahun."
     }
   },
   {
     "word": "働く",
     "reading": "はたらく",
     "romaji": "hataraku",
-    "meaning_id": "Me-work",
+    "meaning_id": "Bekerja",
     "meaning_en": "to work",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "スイッチは時間通りに働かなかった。",
       "reading": "スイッチは{時間通|じかんどお}りに{働|はたら}かなかった。",
-      "meaning": "The switch didn't work on time."
+      "meaning": "Peralihan tidak berfungsi tepat waktu."
     }
   },
   {
@@ -6968,7 +6968,7 @@
     "example": {
       "ja": "そのハイキングは八時間もかかるでしょう。",
       "reading": "",
-      "meaning": "The hike will take no less than eight hours."
+      "meaning": "Pendakian akan memakan waktu delapan jam."
     }
   },
   {
@@ -6982,7 +6982,7 @@
     "example": {
       "ja": "私は二十日までに帰るつもりです。",
       "reading": "{私|わたし}は{二十日|はつか}までに{帰|かえ}るつもりです。",
-      "meaning": "I expect to be back by the 20th."
+      "meaning": "Saya berencana untuk kembali pada tanggal 20."
     }
   },
   {
@@ -6996,7 +6996,7 @@
     "example": {
       "ja": "テーブルの上に花が一本あります。",
       "reading": "テーブルの{上|うえ}に{花|はな}が{一本|いっぽん}あります。",
-      "meaning": "There is a flower on the table."
+      "meaning": "Ada bunga di atas meja."
     }
   },
   {
@@ -7010,7 +7010,7 @@
     "example": {
       "ja": "鼻が出ているよ。かみなさい。",
       "reading": "{鼻|はな}が{出|で}ているよ。かみなさい。",
-      "meaning": "Your nose is running. Blow it."
+      "meaning": "Hidungku mancung. Mengunyah."
     }
   },
   {
@@ -7024,7 +7024,7 @@
     "example": {
       "ja": "話を聞かせてくれ。",
       "reading": "{話|はなし}を{聞|き}かせてくれ。",
-      "meaning": "I want a full report though."
+      "meaning": "Tolong ceritakan padaku kisahmu."
     }
   },
   {
@@ -7065,7 +7065,7 @@
     "example": {
       "ja": "ショットはとても速いものもある。",
       "reading": "ショットはとても{速|はや}いものもある。",
-      "meaning": "Some people have very fast serves."
+      "meaning": "Beberapa tembakan sangat cepat."
     }
   },
   {
@@ -7079,21 +7079,21 @@
     "example": {
       "ja": "カッコウは春にここにやってくる。",
       "reading": "カッコウは{春|はる}にここにやってくる。",
-      "meaning": "Cuckoos visit here in spring."
+      "meaning": "Cuckoo datang ke sini di musim semi."
     }
   },
   {
     "word": "貼る",
     "reading": "はる",
     "romaji": "haru",
-    "meaning_id": "Me-stick",
+    "meaning_id": "Menempelkan (stiker / perangko)",
     "meaning_en": "to stick",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "その写真はアルバムに貼ったほうがよい。",
       "reading": "その{写真|しゃしん}はアルバムに{貼|は}ったほうがよい。",
-      "meaning": "You should stick those pictures in your album."
+      "meaning": "Akan lebih baik jika foto tersebut dimasukkan ke dalam album."
     }
   },
   {
@@ -7107,21 +7107,21 @@
     "example": {
       "ja": "ロンドンの天気は晴れです。",
       "reading": "ロンドンの{天気|てんき}は{晴|は}れです。",
-      "meaning": "The weather is fine in London."
+      "meaning": "Cuaca di London cerah."
     }
   },
   {
     "word": "晴れる",
     "reading": "はれる",
     "romaji": "hareru",
-    "meaning_id": "Me-be sunny",
+    "meaning_id": "Cerah / Cuaca terang",
     "meaning_en": "to be sunny",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "あした晴れてくれるといいなあ。",
       "reading": "あした{晴|は}れてくれるといいなあ。",
-      "meaning": "I hope the weather will clear up tomorrow."
+      "meaning": "Kuharap besok cerah."
     }
   },
   {
@@ -7135,7 +7135,7 @@
     "example": {
       "ja": "半時間したら彼はここに来るでしょう。",
       "reading": "{半|はん}{時間|じかん}したら{彼|かれ}はここに{来|く}るでしょう。",
-      "meaning": "He will be here in half an hour."
+      "meaning": "Dia akan tiba di sini dalam waktu setengah jam."
     }
   },
   {
@@ -7149,7 +7149,7 @@
     "example": {
       "ja": "晩までにはおそらく雨になるだろう。",
       "reading": "{晩|ばん}までにはおそらく{雨|あめ}になるだろう。",
-      "meaning": "It may well rain before tonight."
+      "meaning": "Mungkin akan turun hujan pada malam hari."
     }
   },
   {
@@ -7177,7 +7177,7 @@
     "example": {
       "ja": "このハンカチはいくらですか。",
       "reading": "",
-      "meaning": "How much is this handkerchief?"
+      "meaning": "Berapa harga saputangan ini?"
     }
   },
   {
@@ -7191,7 +7191,7 @@
     "example": {
       "ja": "番号をまちがえじゃありませんか。",
       "reading": "{番号|ばんごう}をまちがえじゃありませんか。",
-      "meaning": "I'm afraid you have got the wrong number."
+      "meaning": "Apakah Anda yakin Anda memasukkan nomor yang salah?"
     }
   },
   {
@@ -7205,7 +7205,7 @@
     "example": {
       "ja": "晩ご飯ですよ、お父さん。",
       "reading": "",
-      "meaning": "Dinner is ready, Father."
+      "meaning": "Ini makan malam, Ayah."
     }
   },
   {
@@ -7219,7 +7219,7 @@
     "example": {
       "ja": "ケーキのどちらの半分でもとりなさい。",
       "reading": "ケーキのどちらの{半分|はんぶん}でもとりなさい。",
-      "meaning": "You may take either half of the cake."
+      "meaning": "Ambil separuh kuenya."
     }
   },
   {
@@ -7233,35 +7233,35 @@
     "example": {
       "ja": "その市はロンドンの東にある。",
       "reading": "その{市|し}はロンドンの{東|ひがし}にある。",
-      "meaning": "The city lies east of London."
+      "meaning": "Kota ini terletak di sebelah timur London."
     }
   },
   {
     "word": "引く",
     "reading": "ひく",
     "romaji": "hiku",
-    "meaning_id": "Me-pull",
+    "meaning_id": "Menarik",
     "meaning_en": "to pull",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "カーテンがゆっくり引かれた。",
       "reading": "カーテンがゆっくり{引|ひ}かれた。",
-      "meaning": "The curtains were drawn slowly."
+      "meaning": "Tirai dibuka perlahan."
     }
   },
   {
     "word": "弾く",
     "reading": "ひく",
     "romaji": "hiku",
-    "meaning_id": "Me-play an instrument with strings / including piano",
+    "meaning_id": "Memetik / Memainkan (alat musik petik/piano)",
     "meaning_en": "to play an instrument with strings, including piano",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ギターをひくのはおもしろい。",
       "reading": "",
-      "meaning": "Playing the guitar is fun."
+      "meaning": "Bermain gitar itu menyenangkan."
     }
   },
   {
@@ -7275,7 +7275,7 @@
     "example": {
       "ja": "ラジオの音を低くして下さい。",
       "reading": "ラジオの{音|おと}を{低|ひく}くして{下|くだ}さい。",
-      "meaning": "Please turn down the radio."
+      "meaning": "Tolong matikan radionya."
     }
   },
   {
@@ -7289,7 +7289,7 @@
     "example": {
       "ja": "あなたは飛行機で旅行したことがありますか。",
       "reading": "あなたは{飛行機|ひこうき}で{旅行|りょこう}したことがありますか。",
-      "meaning": "Have you ever traveled by air?"
+      "meaning": "Pernahkah Anda bepergian dengan pesawat?"
     }
   },
   {
@@ -7303,7 +7303,7 @@
     "example": {
       "ja": "アラビア語は右から左へ書きます。",
       "reading": "アラビア{語|ご}は{右|みぎ}から{左|ひだり}へ{書|か}きます。",
-      "meaning": "Arabic is written from right to left."
+      "meaning": "Bahasa Arab ditulis dari kanan ke kiri."
     }
   },
   {
@@ -7317,7 +7317,7 @@
     "example": {
       "ja": "どんな人でもいないよりはましだ。",
       "reading": "どんな{人|ひと}でもいないよりはましだ。",
-      "meaning": "Anybody would be better than nobody."
+      "meaning": "Setiap orang lebih baik daripada tidak ada orang sama sekali."
     }
   },
   {
@@ -7331,35 +7331,35 @@
     "example": {
       "ja": "車にはハンドルが一つある。",
       "reading": "{車|くるま}にはハンドルが{一|ひと}つある。",
-      "meaning": "A car has one steering wheel."
+      "meaning": "Mobil itu memiliki satu roda kemudi."
     }
   },
   {
     "word": "一月",
     "reading": "ひとつき",
     "romaji": "hitotsuki",
-    "meaning_id": "One month",
+    "meaning_id": "Satu bulan",
     "meaning_en": "one month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "金がなくなる頃にはもうひと月ある。",
       "reading": "{金|かね}がなくなる{頃|ころ}にはもうひと{月|つき}ある。",
-      "meaning": "When the money runs out, there'll still be one month left."
+      "meaning": "Masih ada satu bulan lagi sebelum uangnya habis."
     }
   },
   {
     "word": "一人",
     "reading": "ひとり",
     "romaji": "hitori",
-    "meaning_id": "One person",
+    "meaning_id": "Satu orang / Sendirian",
     "meaning_en": "one person",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "どうしてあなたは一人になったの？",
       "reading": "どうしてあなたは{一人|ひとり}になったの？",
-      "meaning": "How did you end up on your own?"
+      "meaning": "Kenapa kamu sendirian?"
     }
   },
   {
@@ -7386,7 +7386,7 @@
     "example": {
       "ja": "百年後にはみな同じになる。",
       "reading": "",
-      "meaning": "It will be all the same a hundred years hence."
+      "meaning": "Dalam seratus tahun, kita semua akan sama."
     }
   },
   {
@@ -7400,7 +7400,7 @@
     "example": {
       "ja": "この近くに病院はありますか。",
       "reading": "この{近|ちか}くに{病院|びょういん}はありますか。",
-      "meaning": "Is there a hospital near here?"
+      "meaning": "Apakah ada rumah sakit di dekat sini?"
     }
   },
   {
@@ -7414,7 +7414,7 @@
     "example": {
       "ja": "ボブはいったい病気なのだろうか。",
       "reading": "ボブはいったい{病気|びょうき}なのだろうか。",
-      "meaning": "Can Bob be sick?"
+      "meaning": "Apakah Bob benar-benar sakit?"
     }
   },
   {
@@ -7428,7 +7428,7 @@
     "example": {
       "ja": "昼はホットドッグを食べたんだ。",
       "reading": "{昼|ひる}はホットドッグを{食|た}べたんだ。",
-      "meaning": "I ate a hot dog for lunch."
+      "meaning": "Saya makan hot dog untuk makan siang."
     }
   },
   {
@@ -7442,7 +7442,7 @@
     "example": {
       "ja": "昼ご飯を食べに外に出ませんか。",
       "reading": "{昼|ひる}ご{飯|はん}を{食|た}べに{外|そと}に{出|で}ませんか。",
-      "meaning": "How about going out for lunch?"
+      "meaning": "Apakah Anda ingin keluar untuk makan siang?"
     }
   },
   {
@@ -7456,21 +7456,21 @@
     "example": {
       "ja": "この通りは広いが、あまり長くない。",
       "reading": "この{通|とお}りは{広|ひろ}いが、あまり{長|なが}くない。",
-      "meaning": "This avenue is wide but not very long."
+      "meaning": "Jalan ini lebar, tapi tidak terlalu panjang."
     }
   },
   {
     "word": "フィルム",
     "reading": "フィルム",
     "romaji": "firumu",
-    "meaning_id": "Roll of film",
+    "meaning_id": "Rol film (kamera)",
     "meaning_en": "roll of film",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "カラーフィルムを一本ください。",
       "reading": "カラーフィルムを{一本|いっぽん}ください。",
-      "meaning": "I want a roll of color film for prints."
+      "meaning": "Tolong beri saya gulungan film berwarna."
     }
   },
   {
@@ -7484,7 +7484,7 @@
     "example": {
       "ja": "だれがこの封筒を破って開けたのか。",
       "reading": "だれがこの{封筒|ふうとう}を{破|やぶ}って{開|あ}けたのか。",
-      "meaning": "Who has torn the envelope open?"
+      "meaning": "Siapa yang merobek amplop ini?"
     }
   },
   {
@@ -7498,7 +7498,7 @@
     "example": {
       "ja": "サウナとプールがあります。",
       "reading": "",
-      "meaning": "There's a sauna and a pool."
+      "meaning": "Ada sauna dan kolam renang."
     }
   },
   {
@@ -7519,14 +7519,14 @@
     "word": "吹く",
     "reading": "ふく",
     "romaji": "fuku",
-    "meaning_id": "Me-blow",
+    "meaning_id": "Bertiup / Meniup",
     "meaning_en": "to blow",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "あの日は強い風が吹いていました。",
       "reading": "あの{日|ひ}は{強|つよ}い{風|かぜ}が{吹|ふ}いていました。",
-      "meaning": "There was a strong wind that day."
+      "meaning": "Ada angin kencang yang bertiup hari itu."
     }
   },
   {
@@ -7540,7 +7540,7 @@
     "example": {
       "ja": "この服はわたしにはもったいない。",
       "reading": "この{服|ふく}はわたしにはもったいない。",
-      "meaning": "This suit is too good for me."
+      "meaning": "Pakaian ini sia-sia bagiku."
     }
   },
   {
@@ -7554,7 +7554,7 @@
     "example": {
       "ja": "二つのうちでどちらが高いですか。",
       "reading": "{二|ふた}つのうちでどちらが{高|たか}いですか。",
-      "meaning": "Which is the more expensive of the two?"
+      "meaning": "Manakah di antara keduanya yang lebih tinggi?"
     }
   },
   {
@@ -7568,35 +7568,35 @@
     "example": {
       "ja": "この豚肉は１キロいくらですか。",
       "reading": "この{豚肉|ぶたにく}は１キロいくらですか。",
-      "meaning": "How much is this pork a kilo?"
+      "meaning": "Berapa harga 1 kg daging babi ini?"
     }
   },
   {
     "word": "二人",
     "reading": "ふたり",
     "romaji": "futari",
-    "meaning_id": "Two people",
+    "meaning_id": "Dua orang / Berdua",
     "meaning_en": "two people",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "二人は何をしているところですか。",
       "reading": "{二人|ふたり}は{何|なに}をしているところですか。",
-      "meaning": "What are you two doing?"
+      "meaning": "Apa yang kalian berdua lakukan?"
     }
   },
   {
     "word": "二日",
     "reading": "ふつか",
     "romaji": "futsuka",
-    "meaning_id": "Two days / second day of the month",
+    "meaning_id": "Dua hari / Tanggal 2",
     "meaning_en": "two days, second day of the month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "それは１週間前、すなわち４月２日に行われた。",
       "reading": "",
-      "meaning": "It was due a week ago, namely on April second."
+      "meaning": "Itu terjadi seminggu yang lalu, pada tanggal 2 April."
     }
   },
   {
@@ -7610,7 +7610,7 @@
     "example": {
       "ja": "彼は太い首をしている。",
       "reading": "{彼|かれ}は{太|ふと}い{首|くび}をしている。",
-      "meaning": "He has a thick neck."
+      "meaning": "Dia memiliki leher yang tebal."
     }
   },
   {
@@ -7624,21 +7624,21 @@
     "example": {
       "ja": "まもなく冬だ。",
       "reading": "まもなく{冬|ふゆ}だ。",
-      "meaning": "It will be winter before long."
+      "meaning": "Musim dingin akan segera tiba."
     }
   },
   {
     "word": "降る",
     "reading": "ふる",
     "romaji": "furu",
-    "meaning_id": "Me-fall (e.g. rain or snow)",
+    "meaning_id": "Turun (hujan / salju)",
     "meaning_en": "to fall (e.g. rain or snow)",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "シカゴのあたりでは雨が降っていました。",
       "reading": "シカゴのあたりでは{雨|あめ}が{降|ふ}っていました。",
-      "meaning": "It was raining around Chicago."
+      "meaning": "Hujan turun di sekitar Chicago."
     }
   },
   {
@@ -7665,7 +7665,7 @@
     "example": {
       "ja": "私は一日おきにふろに入ります。",
       "reading": "{私|わたし}は{一日|いちにち}おきにふろに{入|はい}ります。",
-      "meaning": "I have a bath every other day."
+      "meaning": "Saya mandi setiap hari."
     }
   },
   {
@@ -7679,7 +7679,7 @@
     "example": {
       "ja": "ヘミングウェイの文章は悪文だった。",
       "reading": "ヘミングウェイの{文章|ぶんしょう}は{悪文|あくぶん}だった。",
-      "meaning": "Hemingway had a poor writing style."
+      "meaning": "Tulisan Hemingway buruk."
     }
   },
   {
@@ -7693,7 +7693,7 @@
     "example": {
       "ja": "もう３ページ残っている。",
       "reading": "もう３ページ{残|のこ}っている。",
-      "meaning": "I have three more pages to go."
+      "meaning": "Masih ada tiga halaman lagi."
     }
   },
   {
@@ -7707,7 +7707,7 @@
     "example": {
       "ja": "いいわけをするのがとても下手。",
       "reading": "いいわけをするのがとても{下手|へた}。",
-      "meaning": "He is very bad at inventing excuses."
+      "meaning": "Aku sangat buruk dalam membuat alasan."
     }
   },
   {
@@ -7721,7 +7721,7 @@
     "example": {
       "ja": "どんなベッドでもないよりはよい。",
       "reading": "",
-      "meaning": "Any bed is better than no bed."
+      "meaning": "Tempat tidur apa pun lebih baik daripada tidak ada tempat tidur sama sekali."
     }
   },
   {
@@ -7735,7 +7735,7 @@
     "example": {
       "ja": "あなたはペットの世話ができない。",
       "reading": "あなたはペットの{世話|せわ}ができない。",
-      "meaning": "You can't care for pets."
+      "meaning": "Anda tidak bisa merawat hewan peliharaan Anda."
     }
   },
   {
@@ -7749,7 +7749,7 @@
     "example": {
       "ja": "マユコは部屋に入った。",
       "reading": "マユコは{部屋|へや}に{入|はい}った。",
-      "meaning": "Mayuko entered the room."
+      "meaning": "Mayuko memasuki ruangan."
     }
   },
   {
@@ -7763,7 +7763,7 @@
     "example": {
       "ja": "この辺にホテルはありますか。",
       "reading": "この{辺|へん}にホテルはありますか。",
-      "meaning": "Is there a hotel around here?"
+      "meaning": "Apakah ada hotel di sekitar sini?"
     }
   },
   {
@@ -7777,21 +7777,21 @@
     "example": {
       "ja": "リンゴと本の間にペンがあります。",
       "reading": "リンゴと{本|ほん}の{間|あいだ}にペンがあります。",
-      "meaning": "There is a pen between the apple and the book."
+      "meaning": "Ada pena di antara apel dan buku."
     }
   },
   {
     "word": "勉強",
     "reading": "べんきょう",
     "romaji": "benkyou",
-    "meaning_id": "Me-study",
+    "meaning_id": "Belajar",
     "meaning_en": "to study",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あなたは何時間勉強していますか。",
       "reading": "あなたは{何時間|なんじかん}{勉強|べんきょう}していますか。",
-      "meaning": "How many hours have you been studying?"
+      "meaning": "Berapa jam kamu belajar?"
     }
   },
   {
@@ -7805,7 +7805,7 @@
     "example": {
       "ja": "電話は便利なものである。",
       "reading": "",
-      "meaning": "The telephone is a convenience."
+      "meaning": "Telepon itu nyaman."
     }
   },
   {
@@ -7819,7 +7819,7 @@
     "example": {
       "ja": "この帽子は１０００円なら安い。",
       "reading": "この{帽子|ぼうし}は１０００{円|えん}なら{安|やす}い。",
-      "meaning": "This hat is cheap at 1000 yen."
+      "meaning": "Topi ini murah dengan harga 1000 yen."
     }
   },
   {
@@ -7833,21 +7833,21 @@
     "example": {
       "ja": "ボールペンのインクがなくなった。",
       "reading": "",
-      "meaning": "My ballpoint pen just ran out of ink."
+      "meaning": "Pulpen sudah kehabisan tinta."
     }
   },
   {
     "word": "ほか",
     "reading": "ほか",
     "romaji": "hoka",
-    "meaning_id": "Other / the rest",
+    "meaning_id": "Lain / Yang lain",
     "meaning_en": "other, the rest",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "ほかの女の子たちはどこにいるの。",
       "reading": "ほかの{女|おんな}の{子|こ}たちはどこにいるの。",
-      "meaning": "Where are the other girls?"
+      "meaning": "Dimana gadis-gadis lainnya?"
     }
   },
   {
@@ -7861,7 +7861,7 @@
     "example": {
       "ja": "ポケットに何を持っていますか。",
       "reading": "ポケットに{何|なに}を{持|も}っていますか。",
-      "meaning": "What do you have in your pocket?"
+      "meaning": "Apa yang ada di sakumu?"
     }
   },
   {
@@ -7875,7 +7875,7 @@
     "example": {
       "ja": "友人はマイカーを欲しがっている。",
       "reading": "{友人|ゆうじん}はマイカーを{欲|ほ}しがっている。",
-      "meaning": "My friend wants a car of his own."
+      "meaning": "Teman saya ingin mobilnya sendiri."
     }
   },
   {
@@ -7889,21 +7889,21 @@
     "example": {
       "ja": "ポストはどこにありますか。",
       "reading": "",
-      "meaning": "Where is the mailbox?"
+      "meaning": "Dimana postingannya?"
     }
   },
   {
     "word": "細い",
     "reading": "ほそい",
     "romaji": "hosoi",
-    "meaning_id": "Thin",
+    "meaning_id": "Ramping / Tipis / Halus",
     "meaning_en": "thin",
     "level": "N5",
     "type": "Kata Sifat (-i)",
     "example": {
       "ja": "彼は太っているくせに声は細い。",
       "reading": "{彼|かれ}は{太|ふと}っているくせに{声|こえ}は{細|ほそ}い。",
-      "meaning": "His voice is thin even though he is fat."
+      "meaning": "Meski gemuk, suaranya tipis."
     }
   },
   {
@@ -7917,7 +7917,7 @@
     "example": {
       "ja": "レーンコートのボタンがとれた。",
       "reading": "",
-      "meaning": "A button has come off my raincoat."
+      "meaning": "Kancing pada jas jalurku terlepas."
     }
   },
   {
@@ -7931,7 +7931,7 @@
     "example": {
       "ja": "あなたはこのホテルのお客ですか。",
       "reading": "あなたはこのホテルのお{客|きゃく}ですか。",
-      "meaning": "Are you staying at this hotel?"
+      "meaning": "Apakah Anda seorang tamu di hotel ini?"
     }
   },
   {
@@ -7945,7 +7945,7 @@
     "example": {
       "ja": "ウイスキーを１本持っています。",
       "reading": "",
-      "meaning": "I have a bottle of whiskey."
+      "meaning": "Saya punya sebotol wiski."
     }
   },
   {
@@ -7959,7 +7959,7 @@
     "example": {
       "ja": "私は本棚の本をすべて読んだわけではない。",
       "reading": "{私|わたし}は{本棚|ほんだな}の{本|ほん}をすべて{読|よ}んだわけではない。",
-      "meaning": "I haven't read all the books on the shelves."
+      "meaning": "Saya belum membaca semua buku di rak buku."
     }
   },
   {
@@ -7973,7 +7973,7 @@
     "example": {
       "ja": "本当のマンションではありません。",
       "reading": "{本当|ほんとう}のマンションではありません。",
-      "meaning": "It isn't a real apartment."
+      "meaning": "Ini bukan apartemen sungguhan."
     }
   },
   {
@@ -7987,7 +7987,7 @@
     "example": {
       "ja": "毎朝ジョギングすることにした。",
       "reading": "{毎朝|まいあさ}ジョギングすることにした。",
-      "meaning": "I've decided to jog every morning."
+      "meaning": "Saya memutuskan untuk jogging setiap pagi."
     }
   },
   {
@@ -8001,7 +8001,7 @@
     "example": {
       "ja": "毎月のガス代はいくらですか。",
       "reading": "",
-      "meaning": "How much is your monthly gas bill?"
+      "meaning": "Berapa tagihan bahan bakar bulanan Anda?"
     }
   },
   {
@@ -8015,35 +8015,35 @@
     "example": {
       "ja": "父は毎週日曜日にゴルフをします。",
       "reading": "{父|ちち}は{毎週|まいしゅう}{日曜日|にちようび}にゴルフをします。",
-      "meaning": "My father plays golf every Sunday."
+      "meaning": "Ayah saya bermain golf setiap hari Minggu."
     }
   },
   {
     "word": "毎日",
     "reading": "まいにち",
     "romaji": "mainichi",
-    "meaning_id": "Every day",
+    "meaning_id": "Setiap hari",
     "meaning_en": "every day",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "毎日うっとうしくていやですね。",
       "reading": "{毎日|まいにち}うっとうしくていやですね。",
-      "meaning": "Don't you just hate this weather?"
+      "meaning": "Itu menjengkelkan dan menjengkelkan setiap hari."
     }
   },
   {
     "word": "毎年",
     "reading": "まいねん",
     "romaji": "mainen",
-    "meaning_id": "Every year",
+    "meaning_id": "Setiap tahun",
     "meaning_en": "every year",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "毎年ここに来なきゃ。",
       "reading": "",
-      "meaning": "I'll have to come here every year."
+      "meaning": "Saya harus datang ke sini setiap tahun."
     }
   },
   {
@@ -8057,28 +8057,28 @@
     "example": {
       "ja": "私は毎晩家にいます。",
       "reading": "{私|わたし}は{毎晩|まいばん}{家|いえ}にいます。",
-      "meaning": "I am at home every evening."
+      "meaning": "Aku di rumah setiap malam."
     }
   },
   {
     "word": "前",
     "reading": "まえ",
     "romaji": "mae",
-    "meaning_id": "Before",
+    "meaning_id": "Depan / Sebelum",
     "meaning_en": "before",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "外へ出る前に靴を磨きなさい。",
       "reading": "",
-      "meaning": "Shine your shoes before going out."
+      "meaning": "Semirkan sepatu Anda sebelum pergi keluar."
     }
   },
   {
     "word": "曲る",
     "reading": "まがる",
     "romaji": "magaru",
-    "meaning_id": "Me-turn / Me-bend",
+    "meaning_id": "Berbelok / Membengkok",
     "meaning_en": "to turn, to bend",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
@@ -8092,42 +8092,42 @@
     "word": "まずい",
     "reading": "まずい",
     "romaji": "mazui",
-    "meaning_id": "Unpleasant",
+    "meaning_id": "Tidak enak (makanan) / Buruk / Gawat",
     "meaning_en": "unpleasant",
     "level": "N5",
     "type": "Kata Sifat (-i)",
     "example": {
       "ja": "あ！まずい！ガソリンが切れてきた。",
       "reading": "あ！まずい！ガソリンが{切|き}れてきた。",
-      "meaning": "Oh, no! We're running out of gas."
+      "meaning": "Ah, gawat! Bensin kita mau habis."
     }
   },
   {
     "word": "また",
     "reading": "また",
     "romaji": "mata",
-    "meaning_id": "Again / and",
+    "meaning_id": "Lagi / Dan lagi",
     "meaning_en": "again, and",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "ジムもまたパーティーに来ます。",
       "reading": "ジムもまたパーティーに{来|き}ます。",
-      "meaning": "Jim is coming to the party, too."
+      "meaning": "Jim juga datang ke pesta itu."
     }
   },
   {
     "word": "まだ",
     "reading": "まだ",
     "romaji": "mada",
-    "meaning_id": "Yet / still",
+    "meaning_id": "Masih / Belum",
     "meaning_en": "yet, still",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "なすべきことがまだたくさんある。",
       "reading": "",
-      "meaning": "There still remains much to be done."
+      "meaning": "Masih banyak yang harus dilakukan."
     }
   },
   {
@@ -8141,7 +8141,7 @@
     "example": {
       "ja": "その町はロンドンのすぐ北にある。",
       "reading": "その{町|まち}はロンドンのすぐ{北|きた}にある。",
-      "meaning": "The town lies just above London."
+      "meaning": "Kota ini terletak di utara London."
     }
   },
   {
@@ -8155,7 +8155,7 @@
     "example": {
       "ja": "ちょっと待っていてもらえますか。",
       "reading": "ちょっと{待|ま}っていてもらえますか。",
-      "meaning": "Would you mind waiting a few minutes?"
+      "meaning": "Bisakah Anda menunggu sebentar?"
     }
   },
   {
@@ -8183,7 +8183,7 @@
     "example": {
       "ja": "マッチありますか。",
       "reading": "",
-      "meaning": "Do you have a match?"
+      "meaning": "Apakah kamu punya kecocokan?"
     }
   },
   {
@@ -8197,7 +8197,7 @@
     "example": {
       "ja": "窓を開けっぱなしにしておいたの？",
       "reading": "",
-      "meaning": "Did you leave the window open?"
+      "meaning": "Apakah Anda membiarkan jendela terbuka?"
     }
   },
   {
@@ -8211,7 +8211,7 @@
     "example": {
       "ja": "ボールは丸い。",
       "reading": "ボールは{丸|まる}い。",
-      "meaning": "Balls are round."
+      "meaning": "Bola itu bulat."
     }
   },
   {
@@ -8225,7 +8225,7 @@
     "example": {
       "ja": "このテープレコーダーは４万円しました。",
       "reading": "",
-      "meaning": "I paid 40,000 yen for this tape recorder."
+      "meaning": "Alat perekam ini berharga 40.000 yen."
     }
   },
   {
@@ -8239,35 +8239,35 @@
     "example": {
       "ja": "新しい万年筆をなくしてしまった。",
       "reading": "{新|あたら}しい{万年筆|まんねんひつ}をなくしてしまった。",
-      "meaning": "I have lost my new fountain pen."
+      "meaning": "Saya kehilangan pulpen baru saya."
     }
   },
   {
     "word": "磨く",
     "reading": "みがく",
     "romaji": "migaku",
-    "meaning_id": "Me-brush teeth / Me-polish",
+    "meaning_id": "Menggosok (gigi) / Memoles",
     "meaning_en": "to brush teeth, to polish",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "そのなべを磨いていただけませんか。",
       "reading": "そのなべを{磨|みが}いていただけませんか。",
-      "meaning": "Would you scrape that rusty pan?"
+      "meaning": "Bisakah Anda memoles pot itu?"
     }
   },
   {
     "word": "右",
     "reading": "みぎ",
     "romaji": "migi",
-    "meaning_id": "Right side",
+    "meaning_id": "Kanan / Sebelah kanan",
     "meaning_en": "right side",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "アラビア語は右から左へ書きます。",
       "reading": "アラビア{語|ご}は{右|みぎ}から{左|ひだり}へ{書|か}きます。",
-      "meaning": "Arabic is written from right to left."
+      "meaning": "Bahasa Arab ditulis dari kanan ke kiri."
     }
   },
   {
@@ -8281,7 +8281,7 @@
     "example": {
       "ja": "日がだんだん短くなっている。",
       "reading": "{日|ひ}がだんだん{短|みじか}くなっている。",
-      "meaning": "The days are becoming shorter."
+      "meaning": "Hari-hari semakin singkat."
     }
   },
   {
@@ -8308,21 +8308,21 @@
     "example": {
       "ja": "店はたたまれ、それっきりだった。",
       "reading": "{店|みせ}はたたまれ、それっきりだった。",
-      "meaning": "The store closed down for good."
+      "meaning": "Toko tutup dan hanya itu."
     }
   },
   {
     "word": "見せる",
     "reading": "みせる",
     "romaji": "miseru",
-    "meaning_id": "Me-show",
+    "meaning_id": "Memperlihatkan / Menunjukkan",
     "meaning_en": "to show",
     "level": "N5",
     "type": "Kata Kerja (Gol. II)",
     "example": {
       "ja": "パスポートを見せてくれませんか。",
       "reading": "パスポートを{見|み}せてくれませんか。",
-      "meaning": "Will you show me your passport, please?"
+      "meaning": "Bisakah Anda menunjukkan paspor Anda?"
     }
   },
   {
@@ -8336,21 +8336,21 @@
     "example": {
       "ja": "二本の道はそこでクロスしている。",
       "reading": "{二本|にほん}の{道|みち}はそこでクロスしている。",
-      "meaning": "The two roads cross there."
+      "meaning": "Dua jalan berpotongan di sana."
     }
   },
   {
     "word": "三日",
     "reading": "みっか",
     "romaji": "mikka",
-    "meaning_id": "Three days / third day of the month",
+    "meaning_id": "Tiga hari / Tanggal 3",
     "meaning_en": "three days, third day of the month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "１０月３日です。",
       "reading": "",
-      "meaning": "It's the third of October."
+      "meaning": "Ini tanggal 3 Oktober."
     }
   },
   {
@@ -8378,7 +8378,7 @@
     "example": {
       "ja": "東京ミッドタウンは緑がいっぱい！",
       "reading": "{東京|とうきょう}ミッドタウンは{緑|みどり}がいっぱい！",
-      "meaning": "There's a lot of greenery in Tokyo Midtown!"
+      "meaning": "Tokyo Midtown penuh dengan tanaman hijau!"
     }
   },
   {
@@ -8392,7 +8392,7 @@
     "example": {
       "ja": "皆さんじっとしていてください。",
       "reading": "{皆|みな}さんじっとしていてください。",
-      "meaning": "Could you keep still, everyone?"
+      "meaning": "Semuanya harap diam."
     }
   },
   {
@@ -8406,7 +8406,7 @@
     "example": {
       "ja": "フランスは英国の南にある。",
       "reading": "フランスは{英国|えいこく}の{南|みなみ}にある。",
-      "meaning": "France is to the south of England."
+      "meaning": "Perancis berada di sebelah selatan Inggris."
     }
   },
   {
@@ -8420,7 +8420,7 @@
     "example": {
       "ja": "なぜ、あなたの耳はそんなに大きいの？",
       "reading": "なぜ、あなたの{耳|みみ}はそんなに{大|おお}きいの？",
-      "meaning": "Why are your ears so big?"
+      "meaning": "Kenapa telingamu besar sekali?"
     }
   },
   {
@@ -8447,21 +8447,21 @@
     "example": {
       "ja": "女の子はほとんどみんなやさしい。",
       "reading": "{女|おんな}の{子|こ}はほとんどみんなやさしい。",
-      "meaning": "Almost all girls are kind."
+      "meaning": "Hampir semua gadis itu baik."
     }
   },
   {
     "word": "六日",
     "reading": "むいか",
     "romaji": "muika",
-    "meaning_id": "Six days / sixth day of the month",
+    "meaning_id": "Enam hari / Tanggal 6",
     "meaning_en": "six days, sixth day of the month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "４月５日か６日に会っていただけませんか。",
       "reading": "",
-      "meaning": "Would it be possible to set up a meeting with us on April 5 or 6?"
+      "meaning": "Bisakah Anda menemui saya pada tanggal 5 atau 6 April?"
     }
   },
   {
@@ -8475,7 +8475,7 @@
     "example": {
       "ja": "その男の子は向こうにいます。",
       "reading": "その{男|おとこ}の{子|こ}は{向|む}こうにいます。",
-      "meaning": "The boy is over there."
+      "meaning": "Anak laki-laki itu ada di sana."
     }
   },
   {
@@ -8489,7 +8489,7 @@
     "example": {
       "ja": "外国人が日本語を学ぶのは難しい。",
       "reading": "{外国人|がいこくじん}が{日本語|にほんご}を{学|まな}ぶのは{難|むずか}しい。",
-      "meaning": "It is difficult for a foreigner to study Japanese."
+      "meaning": "Sulit bagi orang asing untuk belajar bahasa Jepang."
     }
   },
   {
@@ -8503,7 +8503,7 @@
     "example": {
       "ja": "彼は６行のうちに６つまちがいをした。",
       "reading": "{彼|かれ}は６{行|ぎょう}のうちに６つまちがいをした。",
-      "meaning": "He made six mistakes in as many lines."
+      "meaning": "Dia membuat enam kesalahan dalam enam baris."
     }
   },
   {
@@ -8517,7 +8517,7 @@
     "example": {
       "ja": "町は村よりも大きい。",
       "reading": "{町|まち}は{村|むら}よりも{大|おお}きい。",
-      "meaning": "Towns are larger than villages."
+      "meaning": "Sebuah kota lebih besar dari sebuah desa."
     }
   },
   {
@@ -8531,7 +8531,7 @@
     "example": {
       "ja": "彼女はきれいな目をしている。",
       "reading": "{彼女|かのじょ}はきれいな{目|め}をしている。",
-      "meaning": "She has beautiful eyes."
+      "meaning": "Dia memiliki mata yang indah."
     }
   },
   {
@@ -8545,7 +8545,7 @@
     "example": {
       "ja": "前の人から1メートル離れて並んでください。",
       "reading": "",
-      "meaning": "Form a line, keeping one meter away from the person in front of you."
+      "meaning": "Harap berbaris dengan jarak 1 meter dari orang di depan Anda."
     }
   },
   {
@@ -8559,7 +8559,7 @@
     "example": {
       "ja": "私はメガネがなくては読めない。",
       "reading": "{私|わたし}はメガネがなくては{読|よ}めない。",
-      "meaning": "I cannot read without glasses."
+      "meaning": "Saya tidak bisa membaca tanpa kacamata."
     }
   },
   {
@@ -8573,7 +8573,7 @@
     "example": {
       "ja": "もう～、なにやってんだよ。",
       "reading": "",
-      "meaning": "Jeez, what're you up to?"
+      "meaning": "Apa yang sudah kamu lakukan?"
     }
   },
   {
@@ -8587,21 +8587,21 @@
     "example": {
       "ja": "もう一度ゆっくりお話しください。",
       "reading": "もう{一度|いちど}ゆっくりお{話|はな}しください。",
-      "meaning": "Could you please repeat it slowly?"
+      "meaning": "Tolong bicara lagi perlahan."
     }
   },
   {
     "word": "木曜日",
     "reading": "もくようび",
     "romaji": "mokuyoubi",
-    "meaning_id": "Thursday",
+    "meaning_id": "Kamis",
     "meaning_en": "Thursday",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "やあ、フレッド。木曜日にバドミントンはどう。",
       "reading": "やあ、フレッド。{木曜日|もくようび}にバドミントンはどう。",
-      "meaning": "Hi, Fred, how about badminton on Thursday?"
+      "meaning": "Hai Fred. Bagaimana dengan bulu tangkis pada hari Kamis?"
     }
   },
   {
@@ -8615,21 +8615,21 @@
     "example": {
       "ja": "コートを持ちましょうか。",
       "reading": "コートを{持|も}ちましょうか。",
-      "meaning": "Shall I carry your coat?"
+      "meaning": "Bolehkah aku membawa mantelku?"
     }
   },
   {
     "word": "もっと",
     "reading": "もっと",
     "romaji": "motto",
-    "meaning_id": "More",
+    "meaning_id": "Lebih / Tambah",
     "meaning_en": "more",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "父がもっと長生きしていたらなあ。",
       "reading": "{父|ちち}がもっと{長生|ながい}きしていたらなあ。",
-      "meaning": "I wish my father had lived longer."
+      "meaning": "Saya berharap ayah saya hidup lebih lama."
     }
   },
   {
@@ -8643,7 +8643,7 @@
     "example": {
       "ja": "どちらのかばんがあなたの物ですか。",
       "reading": "どちらのかばんがあなたの{物|もの}ですか。",
-      "meaning": "Which bag is yours?"
+      "meaning": "Tas yang mana milikmu?"
     }
   },
   {
@@ -8657,7 +8657,7 @@
     "example": {
       "ja": "ジョンは門のところまで出てきた。",
       "reading": "ジョンは{門|もん}のところまで{出|で}てきた。",
-      "meaning": "John moved forward to the gate."
+      "meaning": "John keluar ke gerbang."
     }
   },
   {
@@ -8671,7 +8671,7 @@
     "example": {
       "ja": "問題はお金がないということです。",
       "reading": "{問題|もんだい}はお{金|かね}がないということです。",
-      "meaning": "The trouble is that we have no money."
+      "meaning": "Masalahnya adalah tidak ada uang."
     }
   },
   {
@@ -8685,7 +8685,7 @@
     "example": {
       "ja": "その八百屋は客にとても親切だ。",
       "reading": "その{八百屋|やおや}は{客|きゃく}にとても{親切|しんせつ}だ。",
-      "meaning": "The greengrocer is very kind to his customers."
+      "meaning": "Penjual sayur itu sangat baik terhadap pelanggannya."
     }
   },
   {
@@ -8699,7 +8699,7 @@
     "example": {
       "ja": "その店は野菜を売っている。",
       "reading": "その{店|みせ}は{野菜|やさい}を{売|う}っている。",
-      "meaning": "The store deals in vegetables."
+      "meaning": "Toko itu menjual sayuran."
     }
   },
   {
@@ -8740,21 +8740,21 @@
     "example": {
       "ja": "学校はクリスマスで休みになった。",
       "reading": "{学校|がっこう}はクリスマスで{休|やす}みになった。",
-      "meaning": "School has closed for the Christmas holidays."
+      "meaning": "Sekolah ditutup untuk Natal."
     }
   },
   {
     "word": "休む",
     "reading": "やすむ",
     "romaji": "yasumu",
-    "meaning_id": "Me-rest",
+    "meaning_id": "Beristirahat / Libur",
     "meaning_en": "to rest",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "父はまだ休んでいる。",
       "reading": "{父|ちち}はまだ{休|やす}んでいる。",
-      "meaning": "Father is still in bed."
+      "meaning": "Ayah masih istirahat."
     }
   },
   {
@@ -8768,7 +8768,7 @@
     "example": {
       "ja": "そこに八つの小石があった。",
       "reading": "そこに{八|やっ}つの{小石|こいし}があった。",
-      "meaning": "There were eight pebbles there."
+      "meaning": "Ada delapan kerikil di sana."
     }
   },
   {
@@ -8782,14 +8782,14 @@
     "example": {
       "ja": "その山はどれくらいの高さですか。",
       "reading": "その{山|やま}はどれくらいの{高|たか}さですか。",
-      "meaning": "How high is the mountain?"
+      "meaning": "Seberapa tinggi gunung itu?"
     }
   },
   {
     "word": "やる",
     "reading": "やる",
     "romaji": "yaru",
-    "meaning_id": "Me-do",
+    "meaning_id": "Melakukan / Mengerjakan (kasual)",
     "meaning_en": "to do",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
@@ -8810,7 +8810,7 @@
     "example": {
       "ja": "ひょっとすると夕方前に雨になるかもしれない。",
       "reading": "ひょっとすると{夕方|ゆうがた}{前|#1392580}に{雨|あめ}になるかもしれない。",
-      "meaning": "It might rain before evening."
+      "meaning": "Mungkin akan turun hujan sebelum malam hari."
     }
   },
   {
@@ -8824,7 +8824,7 @@
     "example": {
       "ja": "夕飯はもう食べましたか。",
       "reading": "",
-      "meaning": "Have you had dinner?"
+      "meaning": "Apakah kamu sudah makan malam?"
     }
   },
   {
@@ -8838,21 +8838,21 @@
     "example": {
       "ja": "あの～郵便局はどちらでしょうか。",
       "reading": "あの～{郵便局|ゆうびんきょく}はどちらでしょうか。",
-      "meaning": "Uh..., where's the post office?"
+      "meaning": "Umm, kantor pos mana ini?"
     }
   },
   {
     "word": "昨夜",
     "reading": "ゆうべ",
     "romaji": "yuube",
-    "meaning_id": "Last night",
+    "meaning_id": "Tadi malam / Semalam",
     "meaning_en": "last night",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "昨夜はよく眠れましたか。",
       "reading": "{昨夜|ゆうべ}はよく{眠|ねむ}れましたか。",
-      "meaning": "Did you have a good sleep last night?"
+      "meaning": "Apakah kamu tidur nyenyak tadi malam?"
     }
   },
   {
@@ -8866,7 +8866,7 @@
     "example": {
       "ja": "そのホテルは食事で有名である。",
       "reading": "そのホテルは{食事|しょくじ}で{有名|ゆうめい}である。",
-      "meaning": "The hotel is noted for its food."
+      "meaning": "Hotel ini terkenal dengan makanannya."
     }
   },
   {
@@ -8880,7 +8880,7 @@
     "example": {
       "ja": "ひどい雪のため外出できなかった。",
       "reading": "ひどい{雪|ゆき}のため{外出|がいしゅつ}できなかった。",
-      "meaning": "The heavy snow kept us from going out."
+      "meaning": "Saya tidak bisa keluar karena salju lebat."
     }
   },
   {
@@ -8901,14 +8901,14 @@
     "word": "八日",
     "reading": "ようか",
     "romaji": "youka",
-    "meaning_id": "Eight days / eighth day of the month",
+    "meaning_id": "Delapan hari / Tanggal 8",
     "meaning_en": "eight days, eighth day of the month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "学校は４月８日から始まります。",
       "reading": "",
-      "meaning": "School begins on April 8."
+      "meaning": "Sekolah dimulai pada 8 April."
     }
   },
   {
@@ -8922,21 +8922,21 @@
     "example": {
       "ja": "お前に新しい洋服を作ってあげよう。",
       "reading": "お{前|まえ}に{新|あたら}しい{洋服|ようふく}を{作|つく}ってあげよう。",
-      "meaning": "I will make a new suit for you."
+      "meaning": "Aku akan membuatkanmu baju baru."
     }
   },
   {
     "word": "よく",
     "reading": "よく",
     "romaji": "yoku",
-    "meaning_id": "Sering / well",
+    "meaning_id": "Sering / Dengan baik",
     "meaning_en": "often, well",
     "level": "N5",
     "type": "Kata Keterangan (Adverbia)",
     "example": {
       "ja": "ジャック、よく来てくれたね。",
       "reading": "ジャック、よく{来|き}てくれたね。",
-      "meaning": "You are welcome, Jack!"
+      "meaning": "Jack, senang sekali kamu datang."
     }
   },
   {
@@ -8950,21 +8950,21 @@
     "example": {
       "ja": "母親は赤ん坊をベッドに横にした。",
       "reading": "{母親|ははおや}は{赤|あか}ん{坊|ぼう}をベッドに{横|よこ}にした。",
-      "meaning": "The mother laid her baby on the bed."
+      "meaning": "Sang ibu membaringkan bayinya di tempat tidur."
     }
   },
   {
     "word": "四日",
     "reading": "よっか",
     "romaji": "yokka",
-    "meaning_id": "Four days / fouth day of the month",
+    "meaning_id": "Empat hari / Tanggal 4",
     "meaning_en": "four days, fouth day of the month",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "長くても４日しか待てませんよ。",
       "reading": "",
-      "meaning": "I can wait four days at the longest."
+      "meaning": "Saya hanya bisa menunggu paling lama 4 hari."
     }
   },
   {
@@ -8978,21 +8978,21 @@
     "example": {
       "ja": "その紙を四つ折りにしなさい。",
       "reading": "その{紙|かみ}を{四|よっ}つ{折|お}りにしなさい。",
-      "meaning": "Fold the paper in four."
+      "meaning": "Lipat kertas menjadi empat bagian."
     }
   },
   {
     "word": "呼ぶ",
     "reading": "よぶ",
     "romaji": "yobu",
-    "meaning_id": "Me-call out / Me-invite",
+    "meaning_id": "Memanggil / Mengundang",
     "meaning_en": "to call out, to invite",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "あなたをケパと呼ぶことにします。",
       "reading": "あなたをケパと{呼|よ}ぶことにします。",
-      "meaning": "You will be called Cephas."
+      "meaning": "Aku akan memanggilmu Kepa."
     }
   },
   {
@@ -9012,14 +9012,14 @@
     "word": "より",
     "reading": "より",
     "romaji": "yori",
-    "meaning_id": "Than / (used for comparison)",
+    "meaning_id": "Daripada (perbandingan)",
     "meaning_en": "than, (used for comparison)",
     "level": "N5",
     "type": "Partikel Tata Bahasa",
     "example": {
       "ja": "もうこれよりほかに手はない。",
       "reading": "もうこれよりほかに{手|て}はない。",
-      "meaning": "There's no other way than this now."
+      "meaning": "Tidak ada pilihan lain selain ini."
     }
   },
   {
@@ -9033,7 +9033,7 @@
     "example": {
       "ja": "あなたは夜よく寝れませんか。",
       "reading": "あなたは{夜|よる}よく{寝|ね}れませんか。",
-      "meaning": "Don't you sleep well at night?"
+      "meaning": "Apakah Anda kesulitan tidur nyenyak di malam hari?"
     }
   },
   {
@@ -9047,7 +9047,7 @@
     "example": {
       "ja": "それを言われると弱いなあ。",
       "reading": "",
-      "meaning": "That sure puts me on the spot."
+      "meaning": "Aku merasa lemah saat kamu mengatakan itu."
     }
   },
   {
@@ -9061,7 +9061,7 @@
     "example": {
       "ja": "来月タクシー料金があがります。",
       "reading": "{来月|らいげつ}タクシー{料金|りょうきん}があがります。",
-      "meaning": "Taxi fares will go up next month."
+      "meaning": "Tarif taksi akan naik bulan depan."
     }
   },
   {
@@ -9075,21 +9075,21 @@
     "example": {
       "ja": "来週ヨーロッパへ行くつもりなんです。",
       "reading": "",
-      "meaning": "I'm going to Europe next week."
+      "meaning": "Saya berencana pergi ke Eropa minggu depan."
     }
   },
   {
     "word": "来年",
     "reading": "らいねん",
     "romaji": "rainen",
-    "meaning_id": "Next year",
+    "meaning_id": "Tahun depan",
     "meaning_en": "next year",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あなたは来年この本を読むことが出来るでしょう。",
       "reading": "あなたは{来年|らいねん}この{本|ほん}を{読|よ}むことが{出来|でき}るでしょう。",
-      "meaning": "You will be able to read this book next year."
+      "meaning": "Anda akan dapat membaca buku ini tahun depan."
     }
   },
   {
@@ -9103,7 +9103,7 @@
     "example": {
       "ja": "そのニュースはラジオで聞いたよ。",
       "reading": "そのニュースはラジオで{聞|き}いたよ。",
-      "meaning": "I heard the news on the radio."
+      "meaning": "Saya mendengar beritanya di radio."
     }
   },
   {
@@ -9117,7 +9117,7 @@
     "example": {
       "ja": "確かに今の日本では、「ラジカセ」はもう古い言葉なのかもしれない。",
       "reading": "",
-      "meaning": "The word \"raji-kase\", meaning radio cassette in Japan, is probably more of an antiquated term by now."
+      "meaning": "Memang benar, di Jepang saat ini, \"pemutar kaset radio\" mungkin sudah menjadi sebuah kata kuno."
     }
   },
   {
@@ -9131,7 +9131,7 @@
     "example": {
       "ja": "どうもごりっぱな言いわけだよ。",
       "reading": "",
-      "meaning": "That is a fine excuse."
+      "meaning": "Itu adalah hal yang sangat bodoh untuk dikatakan."
     }
   },
   {
@@ -9145,21 +9145,21 @@
     "example": {
       "ja": "留学生も入れるのかしら。",
       "reading": "{留学生|りゅうがくせい}も{入|い}れるのかしら。",
-      "meaning": "Can foreign students be in the club?"
+      "meaning": "Saya ingin tahu apakah mereka akan menerima siswa internasional juga."
     }
   },
   {
     "word": "両親",
     "reading": "りょうしん",
     "romaji": "ryoushin",
-    "meaning_id": "Both parents",
+    "meaning_id": "Kedua orang tua",
     "meaning_en": "both parents",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "両親は二人ともまだ生きています。",
       "reading": "{両親|りょうしん}は{二人|ふたり}ともまだ{生|い}きています。",
-      "meaning": "Both the parents are still living."
+      "meaning": "Kedua orang tuanya masih hidup."
     }
   },
   {
@@ -9173,7 +9173,7 @@
     "example": {
       "ja": "これらのりんごは料理用にもってこいだ。",
       "reading": "これらのりんごは{料理|りょうり}{用|よう}にもってこいだ。",
-      "meaning": "These apples are good cookers."
+      "meaning": "Apel ini sangat cocok untuk dimasak."
     }
   },
   {
@@ -9187,7 +9187,7 @@
     "example": {
       "ja": "いつ旅行においでになりますか。",
       "reading": "いつ{旅行|りょこう}においでになりますか。",
-      "meaning": "When will you go on a journey?"
+      "meaning": "Kapan Anda akan bepergian?"
     }
   },
   {
@@ -9215,7 +9215,7 @@
     "example": {
       "ja": "冷蔵庫の中にバターが２ポンドある。",
       "reading": "{冷蔵庫|れいぞうこ}の{中|なか}にバターが２ポンドある。",
-      "meaning": "There are two pounds of butter in the icebox."
+      "meaning": "Ada dua pon mentega di lemari es."
     }
   },
   {
@@ -9229,7 +9229,7 @@
     "example": {
       "ja": "ステレオにレコードをかけてください。",
       "reading": "",
-      "meaning": "Put a record on the stereo."
+      "meaning": "Silakan putar rekaman di stereo."
     }
   },
   {
@@ -9243,21 +9243,21 @@
     "example": {
       "ja": "あのレストランはサービスがよい。",
       "reading": "",
-      "meaning": "They give good service at that restaurant."
+      "meaning": "Restoran itu memiliki pelayanan yang baik."
     }
   },
   {
     "word": "練習",
     "reading": "れんしゅう",
     "romaji": "renshuu",
-    "meaning_id": "Me-practice",
+    "meaning_id": "Berlatih / Latihan",
     "meaning_en": "to practice",
     "level": "N5",
     "type": "Kata Benda",
     "example": {
       "ja": "あなたはいつピアノの練習をしますか。",
       "reading": "あなたはいつピアノの{練習|れんしゅう}をしますか。",
-      "meaning": "When do you practice the piano?"
+      "meaning": "Kapan kamu berlatih piano?"
     }
   },
   {
@@ -9271,7 +9271,7 @@
     "example": {
       "ja": "廊下の突き当たりで火事が起きました。",
       "reading": "{廊下|ろうか}の{突|つ}き{当|あ}たりで{火事|かじ}が{起|お}きました。",
-      "meaning": "There's a fire down the hall."
+      "meaning": "Kebakaran terjadi di ujung lorong."
     }
   },
   {
@@ -9285,7 +9285,7 @@
     "example": {
       "ja": "私は毎朝六時に起きます。",
       "reading": "",
-      "meaning": "I get up at six every morning."
+      "meaning": "Saya bangun jam enam setiap pagi."
     }
   },
   {
@@ -9299,7 +9299,7 @@
     "example": {
       "ja": "ワイシャツにボタンをつけて。",
       "reading": "",
-      "meaning": "Would you sew a button on my shirt?"
+      "meaning": "Lampirkan kancing ke baju Anda."
     }
   },
   {
@@ -9313,21 +9313,21 @@
     "example": {
       "ja": "「彼女は若いですか」「はい」",
       "reading": "「{彼女|かのじょ}は{若|わか}いですか」「はい」",
-      "meaning": "\"Is she young?\" \"Yes, she is.\""
+      "meaning": "\"Apakah dia masih muda?\" \"Ya.\""
     }
   },
   {
     "word": "分かる",
     "reading": "わかる",
     "romaji": "wakaru",
-    "meaning_id": "Me-be understood",
+    "meaning_id": "Mengerti / Paham",
     "meaning_en": "to be understood",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "ボブがいつ来日したか分からない。",
       "reading": "ボブがいつ{来日|らいにち}したか{分|わ}からない。",
-      "meaning": "I don't know when Bob came to Japan."
+      "meaning": "Saya tidak tahu kapan Bob datang ke Jepang."
     }
   },
   {
@@ -9341,49 +9341,49 @@
     "example": {
       "ja": "電話するのを忘れてごめんなさい。",
       "reading": "{電話|でんわ}するのを{忘|わす}れてごめんなさい。",
-      "meaning": "Please forgive me for forgetting to call you."
+      "meaning": "Maaf aku lupa meneleponmu."
     }
   },
   {
     "word": "私",
     "reading": "わたくし",
     "romaji": "watakushi",
-    "meaning_id": "(humble) I / myself",
+    "meaning_id": "Saya / Aku",
     "meaning_en": "(humble) I, myself",
     "level": "N5",
     "type": "Kata Ganti (Pronomina)",
     "example": {
       "ja": "私は泳げません。",
       "reading": "{私|わたくし}は{泳|およ}げません。",
-      "meaning": "I don't know how to swim."
+      "meaning": "Saya tidak bisa berenang."
     }
   },
   {
     "word": "渡す",
     "reading": "わたす",
     "romaji": "watasu",
-    "meaning_id": "Me-hand over",
+    "meaning_id": "Menyerahkan / Mengoper",
     "meaning_en": "to hand over",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "わたしを川のむこうに渡してください。",
       "reading": "わたしを{川|かわ}のむこうに{渡|わた}してください。",
-      "meaning": "Please take me across the river."
+      "meaning": "Tolong bawa aku menyeberangi sungai."
     }
   },
   {
     "word": "渡る",
     "reading": "わたる",
     "romaji": "wataru",
-    "meaning_id": "Me-go across",
+    "meaning_id": "Menyeberang (jalan / jembatan)",
     "meaning_en": "to go across",
     "level": "N5",
     "type": "Kata Kerja (Gol. I)",
     "example": {
       "ja": "一行はアメリカへ渡った。",
       "reading": "{一行|いっこう}はアメリカへ{渡|わた}った。",
-      "meaning": "The party crossed over to America."
+      "meaning": "Rombongan pergi ke Amerika."
     }
   },
   {
