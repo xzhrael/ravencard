@@ -263,9 +263,9 @@ function renderCurrentCard() {
   if (frontChar) {
     frontChar.textContent = card.character;
     if (card.character.length > 5) {
-      frontChar.style.fontSize = 'clamp(2.1rem, 7vw, 3.2rem)';
+      frontChar.style.fontSize = 'clamp(2.6rem, 9vw, 3.8rem)';
     } else if (card.character.length > 2) {
-      frontChar.style.fontSize = 'clamp(2.8rem, 9.5vw, 4.2rem)';
+      frontChar.style.fontSize = 'clamp(3.6rem, 13vw, 5.0rem)';
     } else {
       frontChar.style.fontSize = '';
     }
@@ -290,7 +290,7 @@ function renderCurrentCard() {
   if (backBadge) backBadge.textContent = card.badge || '';
   if (backChar) {
     backChar.textContent = card.character;
-    backChar.style.fontSize = card.character.length > 6 ? 'clamp(1.6rem, 5vw, 1.9rem)' : '';
+    backChar.style.fontSize = card.character.length > 6 ? 'clamp(2.0rem, 6.5vw, 2.5rem)' : '';
   }
   if (backRomaji) backRomaji.textContent = card.romaji || card.reading || '';
   if (backMeaningId) backMeaningId.textContent = card.meaning_id || '';
