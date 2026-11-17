@@ -1,5 +1,3 @@
-import { speakJapanese } from './audio.js';
-
 let quizDeck = [];
 let currentIndex = 0;
 let correctCount = 0;
@@ -56,7 +54,6 @@ function renderCurrentQuestion() {
   const badge = document.getElementById('quiz-badge');
   const counter = document.getElementById('quiz-question-counter');
   const targetChar = document.getElementById('quiz-target-char');
-  const audioBtn = document.getElementById('quiz-audio-btn');
   const optionsContainer = document.getElementById('quiz-options-container');
 
   if (badge) badge.textContent = target.badge || 'Kuis Bahasa Jepang';
@@ -69,13 +66,6 @@ function renderCurrentQuestion() {
     } else {
       targetChar.style.fontSize = '';
     }
-  }
-
-  if (audioBtn) {
-    audioBtn.onclick = () => {
-      const text = (target.category === 'kanji' && target.reading) ? target.reading : (target.reading || target.character);
-      speakJapanese(text, audioBtn);
-    };
   }
 
   if (optionsContainer) {

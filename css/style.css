@@ -817,8 +817,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 20px 14px;
+  padding: 26px 14px;
   background: var(--md-sys-color-surface-container);
   border-radius: var(--radius-lg);
   border: none;
@@ -1881,41 +1880,6 @@ body {
   transition: width 0.25s ease;
 }
 
-.writing-eval-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  font-size: 0.75rem;
-}
-
-.writing-eval-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: var(--radius-full);
-  font-size: 0.74rem;
-  transition: all var(--motion-fast);
-}
-
-.writing-eval-badge.pass {
-  background: var(--md-sys-color-success-container);
-  color: var(--md-sys-color-on-success-container);
-}
-
-.writing-eval-badge.retry {
-  background: var(--md-sys-color-error-container);
-  color: var(--md-sys-color-on-error-container);
-}
-
-.writing-eval-target-hint {
-  font-size: 0.74rem;
-  color: var(--md-sys-color-on-surface-variant);
-  margin-left: auto;
-}
-
 /* Stroke order markers on canvas */
 .canvas-stroke-markers {
   position: absolute;
@@ -1923,10 +1887,6 @@ body {
   pointer-events: none;
   z-index: 4;
   transition: opacity 0.3s ease;
-}
-
-.canvas-stroke-markers.hidden-markers {
-  opacity: 0;
 }
 
 .stroke-marker-badge {
@@ -1950,52 +1910,6 @@ body {
   font-size: 0.65rem;
   margin-left: 1px;
   opacity: 0.9;
-}
-
-/* Stroke step sequence strip below canvas */
-.stroke-steps-strip {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  overflow-x: auto;
-  padding: 4px 2px;
-  margin-bottom: 12px;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-
-.stroke-steps-strip::-webkit-scrollbar {
-  display: none;
-}
-
-.stroke-step-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 9px;
-  border-radius: var(--radius-full);
-  background: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
-  color: var(--md-sys-color-on-surface);
-  font-size: 0.74rem;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.stroke-step-pill .step-pill-num {
-  font-weight: 800;
-  color: var(--md-sys-color-primary);
-}
-
-.stroke-step-pill .step-pill-dir {
-  color: var(--md-sys-color-on-surface-variant);
-}
-
-.stroke-num-icon {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  color: var(--md-sys-color-primary);
 }
 
 /* Canvas stage and cross-grid */
@@ -2095,6 +2009,13 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: var(--motion-fast);
+}
+
+.btn-canvas-tool.btn-tool-icon {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  flex-shrink: 0;
 }
 
 .btn-canvas-tool:hover:not(:disabled) {

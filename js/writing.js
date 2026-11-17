@@ -1,7 +1,7 @@
 import { getDeckData } from './data-service.js';
 import { speakJapanese } from './audio.js';
 import { showToast } from './pwa.js';
-import { getStrokeOrder, evaluateStrokeAccuracy } from './stroke-data.js';
+import { getStrokeOrder } from './stroke-data.js';
 
 const writingState = {
   category: 'hiragana',
@@ -15,8 +15,7 @@ const writingState = {
   strokeHistory: [],
   currentStroke: [],
   isPeeking: false,
-  peekTimeout: null,
-  showStrokeMarkers: true
+  peekTimeout: null
 };
 
 let canvas = null;
@@ -228,7 +227,7 @@ function updateGhostGuideUI() {
   // Stroke order markers fade gradually with the guide
   if (markersEl) {
     const markerOpacity = writingState.isPeeking ? 1 : (opacity > 0 ? Math.min(1, 0.25 + opacity * 0.75) : 0);
-    markersEl.style.opacity = writingState.showStrokeMarkers ? markerOpacity.toString() : '0';
+    markersEl.style.opacity = markerOpacity.toString();
   }
 
   const percent = Math.min(100, Math.round((writingState.currentRep / writingState.totalReps) * 100));
@@ -243,17 +242,14 @@ function updateGhostGuideUI() {
 
 function renderStrokeGuides(card) {
   const markersContainer = document.getElementById('canvas-stroke-markers');
-  const stepsContainer = document.getElementById('stroke-steps-strip');
-  if (!markersContainer || !stepsContainer) return;
+  if (!markersContainer) return;
 
   markersContainer.innerHTML = '';
-  stepsContainer.innerHTML = '';
 
   const strokes = getStrokeOrder(card.character, card.strokes || 1);
   if (!strokes || strokes.length === 0) return;
 
   strokes.forEach(stroke => {
-    // 1. Interactive marker on canvas
     const badge = document.createElement('span');
     badge.className = 'stroke-marker-badge';
     badge.style.left = `${stroke.x}%`;
@@ -261,12 +257,6 @@ function renderStrokeGuides(card) {
     badge.innerHTML = `${stroke.n}<span class="stroke-dir-arrow">${stroke.dir || ''}</span>`;
     badge.title = stroke.tip || `Goresan ke-${stroke.n}`;
     markersContainer.appendChild(badge);
-
-    // 2. Sequential step pill below canvas
-    const pill = document.createElement('div');
-    pill.className = 'stroke-step-pill';
-    pill.innerHTML = `<span class="step-pill-num">${stroke.n}</span><span class="step-pill-dir">${stroke.dir || '→'}</span><span>${stroke.tip || ''}</span>`;
-    stepsContainer.appendChild(pill);
   });
 }
 
@@ -278,13 +268,11 @@ function renderWritingCard() {
   const badgeEl = document.getElementById('writing-char-badge');
   const romajiEl = document.getElementById('writing-char-romaji');
   const deckPosEl = document.getElementById('writing-deck-pos');
-  const evalBadge = document.getElementById('writing-eval-badge');
 
   if (ghostEl) ghostEl.textContent = card.character;
   if (badgeEl) badgeEl.textContent = card.badge || card.category;
   if (romajiEl) romajiEl.textContent = card.romaji || card.reading || '';
   if (deckPosEl) deckPosEl.textContent = `${writingState.charIndex + 1} / ${writingState.deck.length}`;
-  if (evalBadge) evalBadge.classList.add('hidden');
 
   renderStrokeGuides(card);
   updateGhostGuideUI();
@@ -300,31 +288,12 @@ function nextRepetition() {
     return;
   }
 
-  // Evaluate neatness / accuracy vs reference glyph
-  const evalResult = evaluateStrokeAccuracy(canvas, card.character);
-  const evalBadge = document.getElementById('writing-eval-badge');
-
-  if (evalBadge) {
-    evalBadge.textContent = `Kerapihan: ${evalResult.score}%`;
-    evalBadge.className = evalResult.passed ? 'writing-eval-badge pass' : 'writing-eval-badge retry';
-    evalBadge.classList.remove('hidden');
-  }
-
-  // If neatness < 80%: User must repeat this repetition!
-  if (!evalResult.passed) {
-    showToast(`Kerapihan: ${evalResult.score}% (<80%). Bentuk belum rapi, silakan ulangi repetisi ini.`);
-    clearWritingCanvas();
-    return;
-  }
-
-  // If neatness >= 80%: Successful repetition
   if (writingState.currentRep < writingState.totalReps) {
-    showToast(`Bagus! Kerapihan: ${evalResult.score}% (≥80%). Repetisi berhasil.`);
     writingState.currentRep++;
     clearWritingCanvas();
     updateGhostGuideUI();
   } else {
-    showToast(`Hebat! Kamu telah menuntaskan ${writingState.totalReps}x penulisan huruf ini.`);
+    showToast(`Bagus! Kamu telah menyelesaikan ${writingState.totalReps}x penulisan.`);
     if (writingState.charIndex < writingState.deck.length - 1) {
       nextCharacter();
     } else {
@@ -499,7 +468,6 @@ function setupStageEvents() {
   const nextRepBtn = document.getElementById('canvas-next-rep-btn');
   const prevCharBtn = document.getElementById('writing-prev-char-btn');
   const nextCharBtn = document.getElementById('writing-next-char-btn');
-  const strokeToggleBtn = document.getElementById('canvas-stroke-toggle-btn');
 
   if (exitBtn) exitBtn.addEventListener('click', exitToConfig);
 
@@ -516,16 +484,6 @@ function setupStageEvents() {
   if (undoBtn) undoBtn.addEventListener('click', undoLastStroke);
   if (peekBtn) peekBtn.addEventListener('click', peekGuide);
   if (nextRepBtn) nextRepBtn.addEventListener('click', nextRepetition);
-
-  if (strokeToggleBtn) {
-    strokeToggleBtn.addEventListener('click', () => {
-      writingState.showStrokeMarkers = !writingState.showStrokeMarkers;
-      strokeToggleBtn.classList.toggle('active', writingState.showStrokeMarkers);
-      const markersEl = document.getElementById('canvas-stroke-markers');
-      if (markersEl) markersEl.classList.toggle('hidden-markers', !writingState.showStrokeMarkers);
-      showToast(writingState.showStrokeMarkers ? 'Nomor goresan ditampilkan.' : 'Nomor goresan disembunyikan.');
-    });
-  }
 
   if (prevCharBtn) prevCharBtn.addEventListener('click', prevCharacter);
   if (nextCharBtn) nextCharBtn.addEventListener('click', nextCharacter);
