@@ -1878,8 +1878,6 @@ body {
 /* Writing practice page */
 #page-writing {
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
 }
 
 .writing-setup-card,
@@ -2446,14 +2444,6 @@ body {
     font-size: 2.75rem;
   }
 
-  #page-writing {
-    max-width: 640px;
-  }
-
-  .settings-page-wrapper {
-    max-width: 620px;
-  }
-
   .canvas-grid-box {
     max-width: 440px;
   }
@@ -2570,8 +2560,6 @@ body {
   flex-direction: column;
   gap: 16px;
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
   padding-bottom: 16px;
 }
 
@@ -2587,7 +2575,7 @@ body {
 }
 
 .settings-subtitle {
-  font-size: 0.80rem;
+  font-size: 0.82rem;
   color: var(--md-sys-color-on-surface-variant);
   margin-top: 4px;
 }
@@ -2601,6 +2589,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: 100%;
 }
 
 .settings-card-header {
@@ -2622,14 +2611,14 @@ body {
 }
 
 .settings-card-title {
-  font-size: 0.94rem;
+  font-size: 0.98rem;
   font-weight: 600;
   color: var(--md-sys-color-on-surface);
   margin: 0;
 }
 
 .settings-card-desc {
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   color: var(--md-sys-color-on-surface-variant);
   margin: 2px 0 0 0;
 }
@@ -2767,7 +2756,7 @@ body {
 }
 
 .color-name {
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 600;
   color: var(--md-sys-color-on-surface);
 }
@@ -2789,13 +2778,13 @@ body {
 }
 
 .backup-status-title {
-  font-size: 0.84rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--md-sys-color-on-surface);
 }
 
 .backup-status-detail {
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   color: var(--md-sys-color-on-surface-variant);
   margin-top: 2px;
 }
