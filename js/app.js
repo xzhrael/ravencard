@@ -2,6 +2,7 @@ import { initPWA, showToast } from './pwa.js';
 import { getDeckData } from './data-service.js';
 import { speakJapanese } from './audio.js';
 import { initQuiz } from './quiz.js';
+import { initWriting } from './writing.js';
 import {
   getCardRating,
   setCardRating,
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initPWA();
   initTheme();
   setupEventListeners();
+  initWriting();
   await loadDeck();
 });
 
@@ -117,10 +119,12 @@ export function switchPage(pageName) {
   const pageCards = document.getElementById('page-cards');
   const pageQuiz = document.getElementById('page-quiz');
   const pageList = document.getElementById('page-list');
+  const pageWriting = document.getElementById('page-writing');
 
   pageCards?.classList.toggle('active', pageName === 'cards');
   pageQuiz?.classList.toggle('active', pageName === 'quiz');
   pageList?.classList.toggle('active', pageName === 'list');
+  pageWriting?.classList.toggle('active', pageName === 'writing');
 
   if (pageName === 'cards') {
     renderCurrentCard();

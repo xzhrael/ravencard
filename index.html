@@ -20,7 +20,7 @@
 
   <title>RavenCard - Nihongo Flashcard N5-N3</title>
   
-  <link rel="stylesheet" href="./css/style.css?v=20">
+  <link rel="stylesheet" href="./css/style.css?v=21">
 </head>
 <body>
   <div class="app-container">
@@ -264,6 +264,167 @@
       </div>
     </section>
 
+    <section class="page-view" id="page-writing">
+      <div class="writing-setup-card" id="writing-setup-card">
+        <div class="writing-setup-header">
+          <h2 class="writing-setup-title">Latihan Menulis</h2>
+          <p class="writing-setup-desc">Latih memori otot dan goresan huruf Jepang dengan panduan pudar bertahap.</p>
+        </div>
+
+        <div class="writing-config-group">
+          <label class="writing-config-label">Kategori Materi</label>
+          <div class="writing-category-grid" id="writing-category-selector">
+            <button class="writing-cat-btn active" data-cat="hiragana">
+              <span class="cat-kanji">あ</span>
+              <span class="cat-text">Hiragana</span>
+            </button>
+            <button class="writing-cat-btn" data-cat="katakana">
+              <span class="cat-kanji">ア</span>
+              <span class="cat-text">Katakana</span>
+            </button>
+            <button class="writing-cat-btn" data-cat="kanji">
+              <span class="cat-kanji">漢</span>
+              <span class="cat-text">Kanji</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="writing-config-group" id="writing-level-group" style="display: none;">
+          <label class="writing-config-label">Level Kanji</label>
+          <div class="writing-chips-row" id="writing-level-selector">
+            <button class="writing-chip-btn active" data-lvl="n5">N5</button>
+            <button class="writing-chip-btn" data-lvl="n4">N4</button>
+            <button class="writing-chip-btn" data-lvl="n3">N3</button>
+          </div>
+        </div>
+
+        <div class="writing-config-group">
+          <div class="writing-label-row">
+            <label class="writing-config-label">Jumlah Pengulangan per Huruf</label>
+            <span class="writing-rep-badge" id="writing-rep-display">20x</span>
+          </div>
+          <div class="writing-rep-options">
+            <button class="rep-preset-btn" data-rep="10">10x (Min)</button>
+            <button class="rep-preset-btn active" data-rep="20">20x (Ideal)</button>
+            <button class="rep-preset-btn" data-rep="30">30x (Master)</button>
+            <div class="rep-stepper">
+              <button class="rep-step-btn" id="rep-dec-btn" aria-label="Kurangi repetisi">-</button>
+              <input type="number" id="rep-number-input" class="rep-input" min="10" max="100" value="20" aria-label="Jumlah repetisi">
+              <button class="rep-step-btn" id="rep-inc-btn" aria-label="Tambah repetisi">+</button>
+            </div>
+          </div>
+          <span class="writing-config-hint">Panduan di latar belakang akan memudar bertahap dan hilang total pada pertengahan sesi agar terlatih mengingat mandiri.</span>
+        </div>
+
+        <div class="writing-config-group">
+          <label class="writing-config-label">Mulai Dari Huruf</label>
+          <div class="writing-char-select-wrap">
+            <select id="writing-char-select" class="writing-char-dropdown" aria-label="Pilih karakter pertama">
+            </select>
+          </div>
+        </div>
+
+        <button class="btn-control btn-flip-main writing-start-btn" id="writing-start-btn">
+          Mulai Latihan Menulis
+        </button>
+      </div>
+
+      <div class="writing-stage-card hidden" id="writing-stage-card">
+        <div class="writing-stage-header">
+          <button class="btn-icon" id="writing-exit-btn" title="Ganti Pengaturan" aria-label="Kembali ke Pengaturan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="writing-progress-info">
+            <div class="writing-char-info">
+              <span class="writing-char-badge" id="writing-char-badge">Hiragana</span>
+              <span class="writing-char-romaji" id="writing-char-romaji">a</span>
+            </div>
+            <div class="writing-rep-counter" id="writing-rep-counter">Repetisi 1 / 20</div>
+          </div>
+
+          <button class="card-audio-btn" id="writing-audio-btn" title="Dengarkan Suara" aria-label="Dengarkan Suara">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="writing-status-strip">
+          <div class="writing-rep-bar-wrap">
+            <div class="writing-rep-bar-fill" id="writing-rep-bar-fill" style="width: 5%;"></div>
+          </div>
+          <div class="writing-guide-status">
+            <span class="guide-status-dot" id="writing-guide-dot"></span>
+            <span id="writing-guide-label">Panduan: Jelas (Bantuan Awal)</span>
+          </div>
+        </div>
+
+        <div class="canvas-stage-wrapper">
+          <div class="canvas-grid-box" id="canvas-grid-box">
+            <div class="canvas-ghost-glyph" id="canvas-ghost-glyph">あ</div>
+            <div class="canvas-grid-cross vertical"></div>
+            <div class="canvas-grid-cross horizontal"></div>
+            <canvas id="writing-canvas" width="300" height="300"></canvas>
+          </div>
+        </div>
+
+        <div class="canvas-controls-row">
+          <button class="btn-canvas-tool" id="canvas-clear-btn" title="Hapus coretan" aria-label="Hapus coretan">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 6h18"></path>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+            <span>Hapus</span>
+          </button>
+
+          <button class="btn-canvas-tool" id="canvas-undo-btn" title="Batalkan goresan terakhir" aria-label="Undo">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 7v6h6"></path>
+              <path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path>
+            </svg>
+            <span>Undo</span>
+          </button>
+
+          <button class="btn-canvas-tool btn-peek-guide" id="canvas-peek-btn" title="Intip panduan sebentar" aria-label="Intip Panduan">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span>Intip</span>
+          </button>
+
+          <button class="btn-canvas-primary" id="canvas-next-rep-btn">
+            <span>Lanjut</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="writing-deck-nav">
+          <button class="btn-quiet-action" id="writing-prev-char-btn" title="Huruf Sebelumnya">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>Huruf Lalu</span>
+          </button>
+
+          <span class="writing-deck-pos" id="writing-deck-pos">1 / 46</span>
+
+          <button class="btn-quiet-action" id="writing-next-char-btn" title="Huruf Berikutnya">
+            <span>Huruf Lanjut</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <nav class="floating-botnav" id="floating-botnav" aria-label="Navigasi Halaman Utama">
@@ -286,6 +447,15 @@
         </svg>
       </div>
       <span class="botnav-label">Kuis</span>
+    </button>
+
+    <button class="botnav-item" data-page="writing" aria-label="Latihan Menulis Huruf">
+      <div class="botnav-indicator">
+        <svg class="botnav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+        </svg>
+      </div>
+      <span class="botnav-label">Menulis</span>
     </button>
 
     <button class="botnav-item" data-page="list" aria-label="Daftar dan Kamus Referensi">
@@ -416,6 +586,6 @@
 
   <div id="app-toast" class="toast-notification"></div>
 
-  <script type="module" src="./js/app.js?v=20"></script>
+  <script type="module" src="./js/app.js?v=21"></script>
 </body>
 </html>
