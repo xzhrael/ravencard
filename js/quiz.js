@@ -1,7 +1,11 @@
+import { speakJapanese } from './audio.js';
+
 let quizDeck = [];
 let currentIndex = 0;
 let correctCount = 0;
 let isAnswerLocked = false;
+let isListeningMode = false;
+let isModeToggleInitialized = false;
 
 export function initQuiz(deck) {
   if (!deck || deck.length < 4) {
@@ -28,8 +32,70 @@ export function initQuiz(deck) {
   correctCount = 0;
   isAnswerLocked = false;
 
+  setupQuizModeToggle();
   renderQuizStage();
   return true;
+}
+
+function setupQuizModeToggle() {
+  if (isModeToggleInitialized) return;
+  isModeToggleInitialized = true;
+
+  const modeBtn = document.getElementById('quiz-mode-toggle');
+  const visualizer = document.getElementById('quiz-audio-visualizer');
+
+  if (modeBtn) {
+    modeBtn.addEventListener('click', () => {
+      isListeningMode = !isListeningMode;
+      updateModeButtonUI();
+      renderCurrentQuestion();
+    });
+  }
+
+  if (visualizer) {
+    visualizer.addEventListener('click', () => {
+      playCurrentQuestionAudio();
+    });
+    visualizer.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        playCurrentQuestionAudio();
+      }
+    });
+  }
+}
+
+function updateModeButtonUI() {
+  const modeBtn = document.getElementById('quiz-mode-toggle');
+  const modeLabel = document.getElementById('quiz-mode-label');
+  if (!modeBtn) return;
+
+  if (isListeningMode) {
+    modeBtn.classList.add('active');
+    modeBtn.setAttribute('aria-pressed', 'true');
+    if (modeLabel) modeLabel.textContent = 'Menyimak (Choukai)';
+  } else {
+    modeBtn.classList.remove('active');
+    modeBtn.setAttribute('aria-pressed', 'false');
+    if (modeLabel) modeLabel.textContent = 'Mode Teks';
+  }
+}
+
+function playCurrentQuestionAudio() {
+  if (currentIndex >= quizDeck.length) return;
+  const currentQ = quizDeck[currentIndex];
+  const target = currentQ.target;
+  const targetText = (target.category === 'kanji' && target.reading) ? target.reading : (target.reading || target.character);
+  const visualizer = document.getElementById('quiz-audio-visualizer');
+
+  if (visualizer) {
+    visualizer.classList.add('playing');
+    setTimeout(() => {
+      visualizer.classList.remove('playing');
+    }, 1200);
+  }
+
+  speakJapanese(targetText);
 }
 
 function renderQuizStage() {
@@ -54,17 +120,43 @@ function renderCurrentQuestion() {
   const badge = document.getElementById('quiz-badge');
   const counter = document.getElementById('quiz-question-counter');
   const targetChar = document.getElementById('quiz-target-char');
+  const visualizer = document.getElementById('quiz-audio-visualizer');
+  const promptEl = document.getElementById('quiz-prompt');
   const optionsContainer = document.getElementById('quiz-options-container');
 
-  if (badge) badge.textContent = target.badge || 'Kuis Bahasa Jepang';
+  if (badge) badge.textContent = isListeningMode ? 'Choukai 聴解' : (target.badge || 'Kuis Bahasa Jepang');
   if (counter) counter.textContent = `Soal ${currentIndex + 1} / ${quizDeck.length}`;
 
-  if (targetChar) {
-    targetChar.textContent = target.character;
-    if (target.character.length > 5) {
-      targetChar.style.fontSize = 'clamp(2rem, 7vw, 3rem)';
-    } else {
-      targetChar.style.fontSize = '';
+  updateModeButtonUI();
+
+  if (isListeningMode) {
+    if (targetChar) {
+      targetChar.classList.add('hidden');
+      targetChar.textContent = target.character;
+    }
+    if (visualizer) {
+      visualizer.classList.remove('hidden');
+    }
+    if (promptEl) {
+      promptEl.textContent = 'Dengarkan audio, pilih jawaban yang tepat:';
+    }
+    // Auto-play audio on question load in listening mode
+    playCurrentQuestionAudio();
+  } else {
+    if (targetChar) {
+      targetChar.classList.remove('hidden');
+      targetChar.textContent = target.character;
+      if (target.character.length > 5) {
+        targetChar.style.fontSize = 'clamp(2rem, 7vw, 3rem)';
+      } else {
+        targetChar.style.fontSize = '';
+      }
+    }
+    if (visualizer) {
+      visualizer.classList.add('hidden');
+    }
+    if (promptEl) {
+      promptEl.textContent = 'Pilih arti atau cara baca yang benar:';
     }
   }
 
@@ -96,6 +188,14 @@ function handleOptionSelection(selectedBtn, selectedOption, target) {
   const isCorrect = selectedOption.id === target.id;
   const optionsContainer = document.getElementById('quiz-options-container');
   const allButtons = optionsContainer?.querySelectorAll('.quiz-option-btn') || [];
+  const targetChar = document.getElementById('quiz-target-char');
+  const visualizer = document.getElementById('quiz-audio-visualizer');
+
+  // In listening mode, reveal target character upon answering for visual reinforcement
+  if (isListeningMode && targetChar) {
+    targetChar.classList.remove('hidden');
+    if (visualizer) visualizer.classList.add('hidden');
+  }
 
   const targetText = (target.category === 'kanji' && target.reading) ? target.reading : (target.reading || target.character);
   speakJapanese(targetText);
@@ -119,7 +219,7 @@ function handleOptionSelection(selectedBtn, selectedOption, target) {
   setTimeout(() => {
     currentIndex++;
     renderCurrentQuestion();
-  }, 1000);
+  }, 1200);
 }
 
 function showQuizResults() {

@@ -8,6 +8,10 @@ import {
   setCardRating,
   getMasteryStats,
   resetDeckMastery,
+  resetAllMastery,
+  getOverallMasteryCount,
+  exportMasteryDataJSON,
+  importMasteryDataJSON,
   getSavedTheme,
   saveTheme
 } from './storage.js';
@@ -630,19 +634,16 @@ function setupEventListeners() {
   }
 
   if (cardElement) {
-    cardElement.addEventListener('click', (e) => {
-      if (e.target.closest('.card-audio-btn')) return;
-      toggleCardFlip();
-    });
-
     let touchStartX = 0;
     let touchStartY = 0;
     let touchStartTime = 0;
+    let isSwiped = false;
 
     cardElement.addEventListener('touchstart', (e) => {
       touchStartX = e.changedTouches[0].screenX;
       touchStartY = e.changedTouches[0].screenY;
       touchStartTime = Date.now();
+      isSwiped = false;
     }, { passive: true });
 
     cardElement.addEventListener('touchend', (e) => {
@@ -650,7 +651,8 @@ function setupEventListeners() {
       const diffY = e.changedTouches[0].screenY - touchStartY;
       const elapsed = Date.now() - touchStartTime;
 
-      if (elapsed < 500 && Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY) * 1.4) {
+      if (elapsed < 600 && Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY) * 1.3) {
+        isSwiped = true;
         if (diffX < 0) {
           nextCard();
         } else {
@@ -658,6 +660,15 @@ function setupEventListeners() {
         }
       }
     }, { passive: true });
+
+    cardElement.addEventListener('click', (e) => {
+      if (e.target.closest('.card-audio-btn')) return;
+      if (isSwiped) {
+        isSwiped = false;
+        return;
+      }
+      toggleCardFlip();
+    });
   }
 
   if (prevBtn) prevBtn.addEventListener('click', prevCard);
@@ -778,5 +789,121 @@ function setupEventListeners() {
     }
   }, { passive: true });
 
+  setupBackupModal();
   updateDeckLabel();
+}
+
+function setupBackupModal() {
+  const backupModalBtn = document.getElementById('backup-modal-btn');
+  const closeBackupModalBtn = document.getElementById('close-backup-modal-btn');
+  const backupModal = document.getElementById('backup-modal');
+  const backupStatusDetail = document.getElementById('backup-status-detail');
+  const exportBtn = document.getElementById('export-progress-btn');
+  const importBtn = document.getElementById('import-progress-btn');
+  const importInput = document.getElementById('import-backup-file-input');
+  const resetAllBtn = document.getElementById('reset-all-progress-btn');
+
+  function updateBackupStatusUI() {
+    if (!backupStatusDetail) return;
+    const stats = getOverallMasteryCount();
+    backupStatusDetail.textContent = `${stats.total} kartu dinilai (${stats.mastered} paham, ${stats.doubt} ragu, ${stats.learning} lagi)`;
+  }
+
+  function openBackupModal() {
+    if (!backupModal) return;
+    updateBackupStatusUI();
+    backupModal.classList.add('active');
+  }
+
+  function closeBackupModal() {
+    if (!backupModal) return;
+    backupModal.classList.remove('active');
+  }
+
+  if (backupModalBtn) {
+    backupModalBtn.addEventListener('click', openBackupModal);
+  }
+
+  if (closeBackupModalBtn) {
+    closeBackupModalBtn.addEventListener('click', closeBackupModal);
+  }
+
+  if (backupModal) {
+    backupModal.addEventListener('click', (e) => {
+      if (e.target === backupModal) closeBackupModal();
+    });
+  }
+
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      try {
+        const jsonContent = exportMasteryDataJSON();
+        const dateStr = new Date().toISOString().slice(0, 10);
+        const fileName = `ravencard-cadangan-${dateStr}.json`;
+        const blob = new Blob([jsonContent], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('Berkas cadangan berhasil diunduh!');
+      } catch (err) {
+        showToast('Gagal mengekspor data: ' + err.message);
+      }
+    });
+  }
+
+  if (importBtn && importInput) {
+    importBtn.addEventListener('click', () => {
+      importInput.value = '';
+      importInput.click();
+    });
+
+    importInput.addEventListener('change', (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (readEvent) => {
+        const content = readEvent.target?.result;
+        if (typeof content !== 'string') return;
+
+        const result = importMasteryDataJSON(content);
+        if (result.success) {
+          updateProgressUI();
+          const currentCard = state.activeDeck[state.currentIndex];
+          if (currentCard) {
+            updateRatingButtonsUI(currentCard.id);
+          }
+          updateBackupStatusUI();
+          showToast(`Berhasil memulihkan ${result.count} data kartu!`);
+        } else {
+          showToast(result.error || 'Gagal memulihkan berkas.');
+        }
+      };
+      reader.onerror = () => {
+        showToast('Gagal membaca berkas cadangan.');
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  if (resetAllBtn) {
+    resetAllBtn.addEventListener('click', () => {
+      const confirmed = window.confirm('Apakah kamu yakin ingin mereset seluruh penilaian kartu? Tindakan ini tidak dapat dibatalkan.');
+      if (confirmed) {
+        resetAllMastery();
+        updateProgressUI();
+        const currentCard = state.activeDeck[state.currentIndex];
+        if (currentCard) {
+          updateRatingButtonsUI(currentCard.id);
+        }
+        updateBackupStatusUI();
+        showToast('Semua riwayat penilaian telah direset.');
+      }
+    });
+  }
 }
