@@ -20,7 +20,7 @@
 
   <title>RavenCard - Nihongo Flashcard N5-N3</title>
   
-  <link rel="stylesheet" href="./css/style.css?v=28">
+  <link rel="stylesheet" href="./css/style.css?v=29">
 </head>
 <body>
   <div class="app-container">
@@ -55,28 +55,6 @@
             <line x1="12" y1="15" x2="12" y2="3"></line>
           </svg>
           <span>Instal</span>
-        </button>
-
-        <button id="backup-modal-btn" class="btn-icon" title="Cadangan Data (Offline)" aria-label="Cadangan dan Pengaturan Data">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
-            <polyline points="17 21 17 13 7 13 7 21"></polyline>
-            <polyline points="7 3 7 8 15 8"></polyline>
-          </svg>
-        </button>
-
-        <button id="install-help-btn" class="btn-icon" title="Panduan Pasang di Android" aria-label="Panduan Pasang">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-            <line x1="12" y1="17" x2="12.01" y2="17"></line>
-          </svg>
-        </button>
-
-        <button id="theme-toggle-btn" class="btn-icon" title="Ganti Tema" aria-label="Ganti Tema">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
         </button>
       </div>
     </header>
@@ -447,12 +425,203 @@
       </div>
     </section>
 
+    <section class="page-view" id="page-settings">
+      <div class="settings-page-wrapper">
+        <div class="settings-header">
+          <h2 class="settings-title">Pengaturan</h2>
+          <p class="settings-subtitle">Personalisasi tampilan, tema warna pastel, dan kelola cadangan data</p>
+        </div>
+
+        <!-- Mode Tampilan -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon theme-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Mode Tampilan</h3>
+              <p class="settings-card-desc">Pilih antara tema gelap atau terang</p>
+            </div>
+          </div>
+
+          <div class="theme-switch-grid">
+            <button class="theme-switch-btn active" id="theme-btn-dark" data-theme-val="dark" type="button">
+              <div class="theme-preview dark-preview">
+                <div class="preview-bar"></div>
+                <div class="preview-content">
+                  <div class="preview-chip"></div>
+                </div>
+              </div>
+              <span class="theme-btn-label">Mode Gelap</span>
+            </button>
+
+            <button class="theme-switch-btn" id="theme-btn-light" data-theme-val="light" type="button">
+              <div class="theme-preview light-preview">
+                <div class="preview-bar"></div>
+                <div class="preview-content">
+                  <div class="preview-chip"></div>
+                </div>
+              </div>
+              <span class="theme-btn-label">Mode Terang</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Warna Aksen Pastel -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon color-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Warna Aksen Pastel</h3>
+              <p class="settings-card-desc">Pilih nuansa warna kartu, tombol, dan navigasi</p>
+            </div>
+          </div>
+
+          <div class="accent-palette-grid" id="accent-palette-grid">
+            <button class="accent-palette-btn active" data-accent="blue" type="button" title="Biru Pastel">
+              <span class="color-dot" style="background: #9ec5fe;"></span>
+              <span class="color-name">Biru</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="pink" type="button" title="Pink Sakura">
+              <span class="color-dot" style="background: #f78da7;"></span>
+              <span class="color-name">Pink</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="green" type="button" title="Hijau Matcha">
+              <span class="color-dot" style="background: #70d694;"></span>
+              <span class="color-name">Hijau</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="red" type="button" title="Merah Koral">
+              <span class="color-dot" style="background: #ff857d;"></span>
+              <span class="color-name">Merah</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="orange" type="button" title="Oranye Peach">
+              <span class="color-dot" style="background: #ffaa5a;"></span>
+              <span class="color-name">Oranye</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="purple" type="button" title="Lavender Ungu">
+              <span class="color-dot" style="background: #bfa6f5;"></span>
+              <span class="color-name">Ungu</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="grayscale" type="button" title="Grayscale Minimalis">
+              <span class="color-dot" style="background: #cbd5e1;"></span>
+              <span class="color-name">Grayscale</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cadangan & Pemulihan (100% Offline) -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon backup-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                <polyline points="7 3 7 8 15 8"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Cadangan & Pemulihan (Offline)</h3>
+              <p class="settings-card-desc">Simpan atau pindahkan riwayat penilaian kartu antar perangkat</p>
+            </div>
+          </div>
+
+          <div class="backup-status-card" id="settings-backup-status">
+            <div class="backup-status-info">
+              <div class="backup-status-title">Status Memori Perangkat</div>
+              <div class="backup-status-detail" id="settings-storage-count">0 kartu dinilai dalam memori lokal</div>
+            </div>
+          </div>
+
+          <div class="settings-action-row">
+            <button id="settings-export-btn" class="backup-action-btn primary-action" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Ekspor Data (.json)</span>
+            </button>
+
+            <input type="file" id="settings-import-file-input" accept=".json,application/json" class="hidden">
+            <button id="settings-import-btn" class="backup-action-btn secondary-action" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span>Impor Berkas JSON</span>
+            </button>
+          </div>
+
+          <div class="settings-danger-box">
+            <div class="danger-box-info">
+              <div class="danger-box-title">Reset Total Progres</div>
+              <div class="danger-box-desc">Hapus seluruh riwayat penilaian kartu pada perangkat ini.</div>
+            </div>
+            <button id="settings-reset-btn" class="backup-action-btn danger-action" type="button">
+              Reset Semua
+            </button>
+          </div>
+        </div>
+
+        <!-- Pintasan Keyboard -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon keyboard-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                <line x1="6" y1="8" x2="6" y2="8"></line>
+                <line x1="10" y1="8" x2="10" y2="8"></line>
+                <line x1="14" y1="8" x2="14" y2="8"></line>
+                <line x1="18" y1="8" x2="18" y2="8"></line>
+                <line x1="6" y1="12" x2="6" y2="12"></line>
+                <line x1="18" y1="12" x2="18" y2="12"></line>
+                <line x1="10" y1="16" x2="14" y2="16"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Pintasan Keyboard Fisik</h3>
+              <p class="settings-card-desc">Bila belajar menggunakan tablet dengan keyboard atau laptop</p>
+            </div>
+          </div>
+
+          <div class="keyboard-shortcuts-grid">
+            <div class="shortcut-item"><kbd>Spasi</kbd><span>Balik Kartu Flashcard</span></div>
+            <div class="shortcut-item"><kbd>→</kbd> / <kbd>←</kbd><span>Kartu Berikutnya / Sebelumnya</span></div>
+            <div class="shortcut-item"><kbd>1</kbd><span>Tandai Lagi (Merah)</span></div>
+            <div class="shortcut-item"><kbd>2</kbd><span>Tandai Ragu (Kuning)</span></div>
+            <div class="shortcut-item"><kbd>3</kbd><span>Tandai Paham (Hijau)</span></div>
+            <div class="shortcut-item"><kbd>A</kbd><span>Putar Audio Pengucapan</span></div>
+            <div class="shortcut-item"><kbd>S</kbd><span>Acak Urutan Kartu (Shuffle)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <nav class="floating-botnav" id="floating-botnav" aria-label="Navigasi Halaman Utama">
     <button class="botnav-item active" data-page="cards" aria-label="Belajar Flashcard">
       <div class="botnav-indicator">
-        <svg class="botnav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
           <line x1="9" y1="9" x2="15" y2="9"></line>
           <line x1="9" y1="13" x2="15" y2="13"></line>
@@ -463,7 +632,7 @@
 
     <button class="botnav-item" data-page="quiz" aria-label="Kuis Uji Ingatan">
       <div class="botnav-indicator">
-        <svg class="botnav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"></circle>
           <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
         </svg>
@@ -473,7 +642,7 @@
 
     <button class="botnav-item" data-page="writing" aria-label="Latihan Menulis Huruf">
       <div class="botnav-indicator">
-        <svg class="botnav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
         </svg>
       </div>
@@ -482,7 +651,7 @@
 
     <button class="botnav-item" data-page="list" aria-label="Daftar dan Kamus Referensi">
       <div class="botnav-indicator">
-        <svg class="botnav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="8" y1="6" x2="21" y2="6"></line>
           <line x1="8" y1="12" x2="21" y2="12"></line>
           <line x1="8" y1="18" x2="21" y2="18"></line>
@@ -492,6 +661,16 @@
         </svg>
       </div>
       <span class="botnav-label">Kamus</span>
+    </button>
+
+    <button class="botnav-item" data-page="settings" aria-label="Pengaturan dan Tema">
+      <div class="botnav-indicator">
+        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </div>
+      <span class="botnav-label">Setelan</span>
     </button>
   </nav>
 
@@ -740,6 +919,6 @@
 
   <div id="app-toast" class="toast-notification"></div>
 
-  <script type="module" src="./js/app.js?v=28"></script>
+  <script type="module" src="./js/app.js?v=29"></script>
 </body>
 </html>

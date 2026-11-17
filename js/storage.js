@@ -1,5 +1,6 @@
 const STORAGE_KEY_MASTERY = 'ravencard_mastery';
 const STORAGE_KEY_THEME = 'ravencard_theme';
+const STORAGE_KEY_ACCENT = 'ravencard_accent';
 
 // In-memory cache to prevent repetitive synchronous localStorage.getItem & JSON.parse overhead
 let memoryStore = null;
@@ -94,11 +95,13 @@ export function getOverallMasteryCount() {
 export function exportMasteryDataJSON() {
   const store = getMasteryStore();
   const theme = getSavedTheme();
+  const accent = getSavedAccent();
   const payload = {
     app: 'RavenCard',
     version: 1,
     exportedAt: new Date().toISOString(),
     theme,
+    accent,
     mastery: store,
     stats: getOverallMasteryCount()
   };
@@ -127,6 +130,9 @@ export function importMasteryDataJSON(jsonString, { mode = 'merge' } = {}) {
     if (data.theme && ['dark', 'light'].includes(data.theme)) {
       saveTheme(data.theme);
     }
+    if (data.accent && typeof data.accent === 'string') {
+      saveAccent(data.accent);
+    }
     return { success: true, count: validCount };
   } catch (err) {
     return { success: false, error: 'Gagal mengurai JSON: ' + (err.message || 'Format salah') };
@@ -139,4 +145,12 @@ export function getSavedTheme() {
 
 export function saveTheme(theme) {
   localStorage.setItem(STORAGE_KEY_THEME, theme);
+}
+
+export function getSavedAccent() {
+  return localStorage.getItem(STORAGE_KEY_ACCENT) || 'blue';
+}
+
+export function saveAccent(accent) {
+  localStorage.setItem(STORAGE_KEY_ACCENT, accent);
 }

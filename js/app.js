@@ -13,7 +13,9 @@ import {
   exportMasteryDataJSON,
   importMasteryDataJSON,
   getSavedTheme,
-  saveTheme
+  saveTheme,
+  getSavedAccent,
+  saveAccent
 } from './storage.js';
 import { getTransitivityInfo } from './transitivity-data.js';
 
@@ -60,12 +62,15 @@ const state = {
   isFlipped: false,
   onlyUnmastered: false,
   dictSearchQuery: '',
-  theme: getSavedTheme()
+  theme: getSavedTheme(),
+  accent: getSavedAccent()
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
   initPWA();
   initTheme();
+  initAccent();
+  initSettingsPage();
   setupEventListeners();
   initWriting();
   switchPage(state.activePage);
@@ -86,9 +91,29 @@ function initTheme() {
   }
 }
 
+function initAccent() {
+  applyAccent(state.accent);
+}
+
+function applyAccent(accent) {
+  document.documentElement.setAttribute('data-accent', accent);
+  const buttons = document.querySelectorAll('.accent-palette-btn');
+  buttons.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.accent === accent);
+  });
+}
+
 function applyTheme(theme) {
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
   const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  const darkBtn = document.getElementById('theme-btn-dark');
+  const lightBtn = document.getElementById('theme-btn-light');
+
+  if (darkBtn && lightBtn) {
+    darkBtn.classList.toggle('active', theme === 'dark');
+    lightBtn.classList.toggle('active', theme === 'light');
+  }
+
   if (theme === 'light') {
     document.documentElement.setAttribute('data-theme', 'light');
     if (themeColorMeta) themeColorMeta.setAttribute('content', '#fdfcff');
@@ -132,18 +157,22 @@ export function switchPage(pageName) {
   const pageQuiz = document.getElementById('page-quiz');
   const pageList = document.getElementById('page-list');
   const pageWriting = document.getElementById('page-writing');
+  const pageSettings = document.getElementById('page-settings');
 
   pageCards?.classList.toggle('active', pageName === 'cards');
   pageQuiz?.classList.toggle('active', pageName === 'quiz');
   pageList?.classList.toggle('active', pageName === 'list');
   pageWriting?.classList.toggle('active', pageName === 'writing');
+  pageSettings?.classList.toggle('active', pageName === 'settings');
 
-  // Restrict category dropdown and deck counter to cards (Belajar) and quiz (Kuis) only
+  // Allow category dropdown on cards, quiz, and list (kamus)
   const deckSelectorBar = document.getElementById('deck-selector-bar');
   if (deckSelectorBar) {
-    const isDeckBarAllowed = pageName === 'cards' || pageName === 'quiz';
+    const isDeckBarAllowed = pageName === 'cards' || pageName === 'quiz' || pageName === 'list';
     deckSelectorBar.classList.toggle('hidden', !isDeckBarAllowed);
   }
+
+  updateDeckCounterUI();
 
   if (pageName === 'cards') {
     renderCurrentCard();
@@ -151,6 +180,29 @@ export function switchPage(pageName) {
     initQuiz(state.rawDeck);
   } else if (pageName === 'list') {
     renderDictionaryList();
+  } else if (pageName === 'settings') {
+    renderSettingsPage();
+  }
+}
+
+function updateDeckCounterUI() {
+  const countIndicator = document.getElementById('deck-counter');
+  if (!countIndicator) return;
+
+  // Badge huruf/total huruf di page kuis dihilangkan sesuai permintaan user
+  if (state.activePage === 'quiz') {
+    countIndicator.classList.add('hidden');
+    return;
+  }
+
+  // Tampilkan di page belajar dan kamus
+  if (state.activePage === 'cards' || state.activePage === 'list') {
+    countIndicator.classList.remove('hidden');
+    const stats = getMasteryStats(state.rawDeck);
+    countIndicator.textContent = `${stats.mastered} / ${stats.total}`;
+    countIndicator.title = `${stats.mastered} dari ${stats.total} huruf/kotoba sudah dihafal`;
+  } else {
+    countIndicator.classList.add('hidden');
   }
 }
 
@@ -197,7 +249,7 @@ function renderCurrentCard() {
   }
 
   if (!state.activeDeck.length) {
-    if (countIndicator) countIndicator.textContent = '0 / 0';
+    updateDeckCounterUI();
     return;
   }
 
@@ -295,9 +347,7 @@ function renderCurrentCard() {
     exampleBox.style.display = 'none';
   }
 
-  if (countIndicator) {
-    countIndicator.textContent = `${state.currentIndex + 1} / ${state.activeDeck.length}`;
-  }
+  updateDeckCounterUI();
 
   updateRatingButtonsUI(card.id);
 }
@@ -324,6 +374,8 @@ function updateProgressUI() {
   if (fill) fill.style.width = `${stats.percent}%`;
   if (percentText) percentText.textContent = `${stats.percent}% Dikuasai`;
   if (detailText) detailText.textContent = `${stats.mastered}/${stats.total}`;
+
+  updateDeckCounterUI();
 }
 
 function toggleCardFlip() {
@@ -906,4 +958,141 @@ function setupBackupModal() {
       }
     });
   }
+}
+
+function initSettingsPage() {
+  const darkBtn = document.getElementById('theme-btn-dark');
+  const lightBtn = document.getElementById('theme-btn-light');
+  const accentGrid = document.getElementById('accent-palette-grid');
+  const exportBtn = document.getElementById('settings-export-btn');
+  const importBtn = document.getElementById('settings-import-btn');
+  const importInput = document.getElementById('settings-import-file-input');
+  const resetBtn = document.getElementById('settings-reset-btn');
+
+  if (darkBtn) {
+    darkBtn.addEventListener('click', () => {
+      if (state.theme === 'dark') return;
+      state.theme = 'dark';
+      saveTheme('dark');
+      applyTheme('dark');
+      showToast('Mode Gelap Aktif');
+    });
+  }
+
+  if (lightBtn) {
+    lightBtn.addEventListener('click', () => {
+      if (state.theme === 'light') return;
+      state.theme = 'light';
+      saveTheme('light');
+      applyTheme('light');
+      showToast('Mode Terang Aktif');
+    });
+  }
+
+  if (accentGrid) {
+    accentGrid.addEventListener('click', (e) => {
+      const btn = e.target.closest('.accent-palette-btn');
+      if (!btn || !btn.dataset.accent) return;
+
+      const chosen = btn.dataset.accent;
+      state.accent = chosen;
+      saveAccent(chosen);
+      applyAccent(chosen);
+
+      const colorNames = {
+        blue: 'Biru Pastel',
+        pink: 'Pink Sakura',
+        green: 'Hijau Matcha',
+        red: 'Merah Koral',
+        orange: 'Oranye Peach',
+        purple: 'Lavender Ungu',
+        grayscale: 'Grayscale'
+      };
+      showToast(`Tema Warna: ${colorNames[chosen] || chosen}`);
+    });
+  }
+
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      try {
+        const jsonContent = exportMasteryDataJSON();
+        const dateStr = new Date().toISOString().slice(0, 10);
+        const fileName = `ravencard-cadangan-${dateStr}.json`;
+        const blob = new Blob([jsonContent], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('Berkas cadangan berhasil diekspor!');
+      } catch (err) {
+        showToast('Gagal mengekspor data: ' + err.message);
+      }
+    });
+  }
+
+  if (importBtn && importInput) {
+    importBtn.addEventListener('click', () => {
+      importInput.value = '';
+      importInput.click();
+    });
+
+    importInput.addEventListener('change', (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (readEvent) => {
+        const content = readEvent.target?.result;
+        if (typeof content !== 'string') return;
+
+        const result = importMasteryDataJSON(content);
+        if (result.success) {
+          state.theme = getSavedTheme();
+          applyTheme(state.theme);
+          state.accent = getSavedAccent();
+          applyAccent(state.accent);
+          updateProgressUI();
+          updateSettingsBackupStatus();
+          showToast(`Berhasil memulihkan ${result.count} data kartu!`);
+        } else {
+          showToast(result.error || 'Gagal memulihkan berkas.');
+        }
+      };
+      reader.onerror = () => {
+        showToast('Gagal membaca berkas cadangan.');
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      const confirmed = window.confirm('Apakah kamu yakin ingin mereset seluruh penilaian kartu? Tindakan ini tidak dapat dibatalkan.');
+      if (confirmed) {
+        resetAllMastery();
+        updateProgressUI();
+        updateSettingsBackupStatus();
+        showToast('Semua riwayat penilaian telah direset.');
+      }
+    });
+  }
+
+  updateSettingsBackupStatus();
+}
+
+function updateSettingsBackupStatus() {
+  const detailEl = document.getElementById('settings-storage-count');
+  if (!detailEl) return;
+  const stats = getOverallMasteryCount();
+  detailEl.textContent = `${stats.total} kartu dinilai (${stats.mastered} paham, ${stats.doubt} ragu, ${stats.learning} lagi)`;
+}
+
+function renderSettingsPage() {
+  updateSettingsBackupStatus();
+  applyAccent(state.accent);
+  applyTheme(state.theme);
 }
