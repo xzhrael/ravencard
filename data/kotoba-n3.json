@@ -23353,5 +23353,499 @@
       "ja": "非常に重要な問題です。",
       "meaning": "Ini adalah masalah yang sangat krusial."
     }
+  },
+  {
+    "word": "ドキドキ",
+    "reading": "どきどき",
+    "romaji": "dokidoki",
+    "meaning_id": "Berdebar-debar / Gugup berdebar",
+    "meaning_en": "Heart pounding / nervously",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "面接の前で胸がドキドキしています。",
+      "meaning": "Sebelum wawancara dada saya berdebar-debar."
+    }
+  },
+  {
+    "word": "ワクワク",
+    "reading": "わくわく",
+    "romaji": "wakuwaku",
+    "meaning_id": "Bersemangat / Antusias gembira",
+    "meaning_en": "Excited / thrilled",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "明日の旅行のことを考えるとワクワクします。",
+      "meaning": "Memikirkan perjalanan besok membuat saya bersemangat."
+    }
+  },
+  {
+    "word": "ペラペラ",
+    "reading": "ぺらぺら",
+    "romaji": "perapera",
+    "meaning_id": "Fasih / Lancar berbicara (bahasa asing)",
+    "meaning_en": "Fluently (speaking a language)",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "彼は日本語がペラペラです。",
+      "meaning": "Dia sangat fasih berbahasa Jepang."
+    }
+  },
+  {
+    "word": "ギリギリ",
+    "reading": "ぎりぎり",
+    "romaji": "girigiri",
+    "meaning_id": "Pas-pasan / Tepat di batas akhir",
+    "meaning_en": "Just barely / at the last moment",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "電車の発車時間にギリギリ間に合いました。",
+      "meaning": "Saya tepat pas-pasan sebelum waktu keberangkatan kereta."
+    }
+  },
+  {
+    "word": "バラバラ",
+    "reading": "ばらばら",
+    "romaji": "barabara",
+    "meaning_id": "Berserakan / Cerai-berai / Terpisah-pisah",
+    "meaning_en": "Scattered / dispersed / in pieces",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "書類が風でバラバラに散らばりました。",
+      "meaning": "Dokumen berserakan karena tertiup angin."
+    }
+  },
+  {
+    "word": "すっきり",
+    "reading": "すっきり",
+    "romaji": "sukkiri",
+    "meaning_id": "Lega / Segar / Rapi tuntas",
+    "meaning_en": "Refreshed / relieved / tidy",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "シャワーを浴びてすっきりしました。",
+      "meaning": "Setelah mandi tubuh terasa segar dan lega."
+    }
+  },
+  {
+    "word": "うっかり",
+    "reading": "うっかり",
+    "romaji": "ukkari",
+    "meaning_id": "Teledor / Lalai tanpa sengaja",
+    "meaning_en": "Carelessly / inadvertently",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "うっかり傘を電車に忘れました。",
+      "meaning": "Tanpa sengaja saya kelupaan payung di dalam kereta."
+    }
+  },
+  {
+    "word": "めっきり",
+    "reading": "めっきり",
+    "romaji": "mekkiri",
+    "meaning_id": "Sangat terasa perubahannya / Terlihat mencolok",
+    "meaning_en": "Noticeably / remarkably",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "最近めっきり寒くなってきました。",
+      "meaning": "Akhir-akhir ini cuaca sudah terasa jauh lebih dingin."
+    }
+  },
+  {
+    "word": "ぎっしり",
+    "reading": "ぎっしり",
+    "romaji": "gisshiri",
+    "meaning_id": "Penuh sesak / Padat berjejal",
+    "meaning_en": "Tightly packed / crammed",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "箱の中に本がぎっしり詰まっています。",
+      "meaning": "Di dalam kotak terisi penuh sesak oleh buku."
+    }
+  },
+  {
+    "word": "あっさり",
+    "reading": "あっさり",
+    "romaji": "assari",
+    "meaning_id": "Hambar sederhana / Ringan polos / Tanpa bertele-tele",
+    "meaning_en": "Light / plain / simply",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "日本料理はあっさりした味付けが多いです。",
+      "meaning": "Masakan Jepang banyak yang berbumbu ringan dan sederhana."
+    }
+  },
+  {
+    "word": "じっくり",
+    "reading": "じっくり",
+    "romaji": "jikkuri",
+    "meaning_id": "Matang-matang / Perlahan dan mendalam",
+    "meaning_en": "Deliberately / carefully / thoroughly",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "将来の進路についてじっくり考えます。",
+      "meaning": "Memikirkan arah masa depan secara matang dan mendalam."
+    }
+  },
+  {
+    "word": "うんざり",
+    "reading": "うんざり",
+    "romaji": "unzari",
+    "meaning_id": "Muak / Bosan jenuh",
+    "meaning_en": "Fed up / sick of",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "毎日の残業にはもううんざりです。",
+      "meaning": "Saya sudah muak dengan lembur setiap hari."
+    }
+  },
+  {
+    "word": "うろうろ",
+    "reading": "うろうろ",
+    "romaji": "urouro",
+    "meaning_id": "Mondar-mandir / Berkeliaran tanpa arah",
+    "meaning_en": "Wandering aimlessly / loitering",
+    "level": "N3",
+    "type": "Kata Keterangan (Onomatope)",
+    "example": {
+      "ja": "道に迷って同じ所をうろうろ歩きました。",
+      "meaning": "Karena tersesat, saya mondar-mandir di tempat yang sama."
+    }
+  },
+  {
+    "word": "呼び出す",
+    "reading": "よびだす",
+    "romaji": "yobidasu",
+    "meaning_id": "Memanggil keluar / Memanggil hadir",
+    "meaning_en": "To call out / summon",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "先生に職員室へ呼び出されました。",
+      "meaning": "Saya dipanggil oleh guru ke ruang staf."
+    }
+  },
+  {
+    "word": "取り出す",
+    "reading": "とりだす",
+    "romaji": "toridasu",
+    "meaning_id": "Mengeluarkan / Mengambil keluar",
+    "meaning_en": "To take out / produce",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "かばんから財布を取り出しました。",
+      "meaning": "Mengambil dompet keluar dari tas."
+    }
+  },
+  {
+    "word": "泣き出す",
+    "reading": "なきだす",
+    "romaji": "nakidasu",
+    "meaning_id": "Tiba-tiba mulai menangis",
+    "meaning_en": "To burst into tears",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "赤ちゃんが急に泣き出しました。",
+      "meaning": "Bayi itu tiba-tiba mulai menangis."
+    }
+  },
+  {
+    "word": "売り切れる",
+    "reading": "うりきれる",
+    "romaji": "urikireru",
+    "meaning_id": "Habis terjual / Sold out",
+    "meaning_en": "To be sold out",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "コンサートのチケットは全て売り切れました。",
+      "meaning": "Tiket konsernya sudah habis terjual semua."
+    }
+  },
+  {
+    "word": "締め切る",
+    "reading": "しめきる",
+    "romaji": "shimekiru",
+    "meaning_id": "Menutup pendaftaran / Batas akhir (deadline)",
+    "meaning_en": "To close (applications) / set a deadline",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "願書の提出は明日で締め切ります。",
+      "meaning": "Pengumpulan berkas lamaran ditutup besok."
+    }
+  },
+  {
+    "word": "使い切る",
+    "reading": "つかいきる",
+    "romaji": "tsukaikiru",
+    "meaning_id": "Menghabiskan / Memakai sampai habis",
+    "meaning_en": "To use up / exhaust",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "今月の生活費を使い切ってしまいました。",
+      "meaning": "Biaya hidup bulan ini sudah terpakai sampai habis."
+    }
+  },
+  {
+    "word": "見直す",
+    "reading": "みなおす",
+    "romaji": "minaosu",
+    "meaning_id": "Memeriksa kembali / Meninjau ulang",
+    "meaning_en": "To review / look over again",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "提出する前にもう一度見直してください。",
+      "meaning": "Tolong tinjau kembali sekali lagi sebelum mengumpulkannya."
+    }
+  },
+  {
+    "word": "やり直す",
+    "reading": "やりなおす",
+    "romaji": "yarinaosu",
+    "meaning_id": "Mengulang kembali dari awal",
+    "meaning_en": "To redo / do over",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "失敗したので最初からやり直します。",
+      "meaning": "Karena gagal, saya mengulanginya kembali dari awal."
+    }
+  },
+  {
+    "word": "引き受ける",
+    "reading": "ひきうける",
+    "romaji": "hikiukeru",
+    "meaning_id": "Menyanggupi / Mengambil tanggung jawab tugas",
+    "meaning_en": "To undertake / take on (a task)",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "新しいプロジェクトのリーダーを引き受けました。",
+      "meaning": "Saya menyanggupi menjadi ketua proyek baru."
+    }
+  },
+  {
+    "word": "受け入れる",
+    "reading": "うけいれる",
+    "romaji": "ukeireru",
+    "meaning_id": "Menerima (kenyataan / masukan / orang lain)",
+    "meaning_en": "To accept / embrace / accommodate",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "留学生を積極的に受け入れています。",
+      "meaning": "Menerima mahasiswa asing secara aktif."
+    }
+  },
+  {
+    "word": "問い合わせる",
+    "reading": "といあわせる",
+    "romaji": "toiawaseru",
+    "meaning_id": "Menanyakan informasi / Mengajukan konfirmasi",
+    "meaning_en": "To inquire / check with",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "詳しい日程について会社に問い合わせました。",
+      "meaning": "Menanyakan jadwal terperinci ke pihak perusahaan."
+    }
+  },
+  {
+    "word": "待ち合わせる",
+    "reading": "まちあわせる",
+    "romaji": "machiawaseru",
+    "meaning_id": "Berjanji temu di lokasi tertentu",
+    "meaning_en": "To rendezvous / meet up",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "駅の改札口で友達と待ち合わせました。",
+      "meaning": "Saya janjian bertemu dengan teman di gerbang tiket stasiun."
+    }
+  },
+  {
+    "word": "追いつく",
+    "reading": "おいつく",
+    "romaji": "oitsuku",
+    "meaning_id": "Menyusul / Mengejar ketertinggalan",
+    "meaning_en": "To catch up with",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "走って前の人に追いつきました。",
+      "meaning": "Berlari dan berhasil menyusul orang di depan."
+    }
+  },
+  {
+    "word": "思いつく",
+    "reading": "おもいつく",
+    "romaji": "omoitsuku",
+    "meaning_id": "Terpikirkan ide / Teringat gagasan",
+    "meaning_en": "To come up with an idea / think of",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "素晴らしい解決策を思いつきました。",
+      "meaning": "Saya memikirkan ide solusi yang luar biasa."
+    }
+  },
+  {
+    "word": "立ち止まる",
+    "reading": "たちどまる",
+    "romaji": "tachidomaru",
+    "meaning_id": "Berhenti melangkah / Berdiri diam sejenak",
+    "meaning_en": "To stop in one's tracks / halt",
+    "level": "N3",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "美しい景色を見て思わず立ち止まりました。",
+      "meaning": "Melihat pemandangan indah membuat saya spontan berhenti melangkah."
+    }
+  },
+  {
+    "word": "その結果",
+    "reading": "そのけっか",
+    "romaji": "sono kekka",
+    "meaning_id": "Sebagai hasilnya / Akibatnya",
+    "meaning_en": "As a result / consequently",
+    "level": "N3",
+    "type": "Kata Sambung",
+    "example": {
+      "ja": "毎日練習しました。その結果、試合に勝ちました。",
+      "meaning": "Berlatih setiap hari. Sebagai hasilnya, menang dalam pertandingan."
+    }
+  },
+  {
+    "word": "それに対して",
+    "reading": "それにたいして",
+    "romaji": "sore ni taishite",
+    "meaning_id": "Sebaliknya / Berlawanan dengan itu",
+    "meaning_en": "In contrast to that / on the contrary",
+    "level": "N3",
+    "type": "Kata Sambung",
+    "example": {
+      "ja": "兄は外交的です。それに対して弟は内向的です。",
+      "meaning": "Sang kakak ekstrover. Sebaliknya, sang adik introver."
+    }
+  },
+  {
+    "word": "一方で",
+    "reading": "いっぽうで",
+    "romaji": "ippou de",
+    "meaning_id": "Di satu sisi lain / Sementara itu",
+    "meaning_en": "On the other hand / meanwhile",
+    "level": "N3",
+    "type": "Kata Sambung",
+    "example": {
+      "ja": "物価が上がる一方で、給料はなかなか上がりません。",
+      "meaning": "Di satu sisi harga barang naik, sementara di sisi lain gaji tak kunjung naik."
+    }
+  },
+  {
+    "word": "ただし",
+    "reading": "ただし",
+    "romaji": "tadashi",
+    "meaning_id": "Namun / Hanya saja (dengan syarat/catatan khusus)",
+    "meaning_en": "However / provided that",
+    "level": "N3",
+    "type": "Kata Sambung",
+    "example": {
+      "ja": "入場は無料です。ただし、予約が必要です。",
+      "meaning": "Masuk gratis. Namun demikian, reservasi tetap diperlukan."
+    }
+  },
+  {
+    "word": "むしろ",
+    "reading": "むしろ",
+    "romaji": "mushiro",
+    "meaning_id": "Malahan / Justru sebaliknya",
+    "meaning_en": "Rather / instead",
+    "level": "N3",
+    "type": "Kata Sambung",
+    "example": {
+      "ja": "失敗を恐れるより、むしろ挑戦するべきです。",
+      "meaning": "Daripada takut gagal, justru kita seharusnya berani mencoba."
+    }
+  },
+  {
+    "word": "せっかく",
+    "reading": "せっかく",
+    "romaji": "sekkaku",
+    "meaning_id": "Sudah susah payah / Sayang sekali jika disia-siakan",
+    "meaning_en": "With much effort / at great pains",
+    "level": "N3",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "せっかく作った料理を冷まさないでください。",
+      "meaning": "Jangan biarkan masakan yang sudah susah payah dibuat menjadi dingin."
+    }
+  },
+  {
+    "word": "わざわざ",
+    "reading": "わざわざ",
+    "romaji": "wazawaza",
+    "meaning_id": "Sengaja repot-repot / Menyempatkan diri khusus",
+    "meaning_en": "Going out of one's way / specially",
+    "level": "N3",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "わざわざ駅まで迎えに来てくれてありがとう。",
+      "meaning": "Terima kasih sudah sengaja repot-repot datang menjemput ke stasiun."
+    }
+  },
+  {
+    "word": "思い切って",
+    "reading": "おもいきって",
+    "romaji": "omoikitte",
+    "meaning_id": "Memberanikan diri / Nekat mengambil keputusan besar",
+    "meaning_en": "Boldly / decisively / taking the plunge",
+    "level": "N3",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "思い切って新しい事業に挑戦しました。",
+      "meaning": "Saya memberanikan diri mencoba usaha baru."
+    }
+  },
+  {
+    "word": "おまけに",
+    "reading": "おまけに",
+    "romaji": "omake ni",
+    "meaning_id": "Ditambah lagi / Terlebih lagi (bonus masalah/keuntungan)",
+    "meaning_en": "What is more / in addition / to top it off",
+    "level": "N3",
+    "type": "Kata Sambung",
+    "example": {
+      "ja": "雨が降り出し、おまけに風も強くなってきました。",
+      "meaning": "Hujan mulai turun, ditambah lagi angin juga semakin kencang."
+    }
+  },
+  {
+    "word": "にもかかわらず",
+    "reading": "にもかかわらず",
+    "romaji": "ni mo kakawarazu",
+    "meaning_id": "Kendatipun / Terlepas dari kenyataan bahwa",
+    "meaning_en": "In spite of / despite",
+    "level": "N3",
+    "type": "Kata Sambung",
+    "example": {
+      "ja": "悪天候にもかかわらず、多くの観客が集まりました。",
+      "meaning": "Kendatipun cuaca buruk, banyak penonton yang tetap hadir berkumpul."
+    }
   }
 ]

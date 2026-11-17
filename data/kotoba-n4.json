@@ -8874,5 +8874,200 @@
       "ja": "実は、来月帰国します。",
       "meaning": "Sebenarnya, bulan depan saya pulang ke tanah air."
     }
+  },
+  {
+    "word": "ご覧になる",
+    "reading": "ごらんになる",
+    "romaji": "goran ni naru",
+    "meaning_id": "Melihat / Menonton (Bentuk Sonkeigo / Hormat untuk 見る)",
+    "meaning_en": "To see / watch (honorific for 見る)",
+    "level": "N4",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "社長、この資料をご覧になりましたか。",
+      "meaning": "Pak Direktur, apakah Anda sudah melihat dokumen ini?"
+    }
+  },
+  {
+    "word": "伺う",
+    "reading": "うかがう",
+    "romaji": "ukagau",
+    "meaning_id": "Bertanya / Berkunjung / Mendengar (Bentuk Kenjougo / Rendah Hati)",
+    "meaning_en": "To visit / ask / hear (humble for 聞く・尋ねる・訪問する)",
+    "level": "N4",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "明日の十時にオフィスへ伺います。",
+      "meaning": "Saya akan berkunjung ke kantor Anda besok pukul 10."
+    }
+  },
+  {
+    "word": "拝見する",
+    "reading": "はいけんする",
+    "romaji": "haiken suru",
+    "meaning_id": "Melihat / Membaca (Bentuk Kenjougo / Rendah Hati untuk 見る)",
+    "meaning_en": "To see / read (humble for 見る)",
+    "level": "N4",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "いただいたメールを拝見しました。",
+      "meaning": "Saya telah membaca email yang Anda kirimkan."
+    }
+  },
+  {
+    "word": "存じる",
+    "reading": "ぞんじる",
+    "romaji": "zonjiru",
+    "meaning_id": "Tahu / Mengetahui / Berpikir (Bentuk Kenjougo untuk 知る・思う)",
+    "meaning_en": "To know / think (humble for 知る・思う)",
+    "level": "N4",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "その件につきましては存じております。",
+      "meaning": "Mengenai hal tersebut, saya telah mengetahuinya."
+    }
+  },
+  {
+    "word": "存じ上げる",
+    "reading": "ぞんじあげる",
+    "romaji": "zonjiageru",
+    "meaning_id": "Mengenal / Mengetahui (seseorang - Kenjougo untuk 知っている)",
+    "meaning_en": "To know someone (humble for 知っている)",
+    "level": "N4",
+    "type": "Kata Kerja",
+    "example": {
+      "ja": "あちらの先生をよく存じ上げております。",
+      "meaning": "Saya mengenal baik guru yang di sebelah sana."
+    }
+  },
+  {
+    "word": "なかなか",
+    "reading": "なかなか",
+    "romaji": "nakanaka",
+    "meaning_id": "Cukup / Lumayan / Tidak mudah (dengan bentuk negatif)",
+    "meaning_en": "Quite / fairly / not easily (with negative)",
+    "level": "N4",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "この試験はなかなか難しいです。",
+      "meaning": "Ujian ini lumayan sulit."
+    }
+  },
+  {
+    "word": "絶対に",
+    "reading": "ぜったいに",
+    "romaji": "zettai ni",
+    "meaning_id": "Pasti / Mutlak / Sama sekali",
+    "meaning_en": "Definitely / absolutely",
+    "level": "N4",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "この約束は絶対に守ります。",
+      "meaning": "Janji ini pasti akan saya tepati."
+    }
+  },
+  {
+    "word": "確かに",
+    "reading": "たしかに",
+    "romaji": "tashika ni",
+    "meaning_id": "Memang benar / Pasti / Tentu saja",
+    "meaning_en": "Certainly / surely",
+    "level": "N4",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "確かにその通りですね。",
+      "meaning": "Memang benar persis seperti itu ya."
+    }
+  },
+  {
+    "word": "だいたい",
+    "reading": "だいたい",
+    "romaji": "daitai",
+    "meaning_id": "Sebagian besar / Kira-kira / Garis besarnya",
+    "meaning_en": "Mostly / roughly / approximately",
+    "level": "N4",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "宿題はだいたい終わりました。",
+      "meaning": "PR saya kira-kira sudah hampir selesai."
+    }
+  },
+  {
+    "word": "お世話になります",
+    "reading": "おせわになります",
+    "romaji": "osewa ni narimasu",
+    "meaning_id": "Terima kasih atas bantuan dan kerja samanya",
+    "meaning_en": "Thank you for your support and assistance",
+    "level": "N4",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "いつも大変お世話になっております。",
+      "meaning": "Terima kasih banyak selalu atas bantuan dan kerja samanya."
+    }
+  },
+  {
+    "word": "おかげさまで",
+    "reading": "おかげさまで",
+    "romaji": "okagesama de",
+    "meaning_id": "Berkat doa/dukungan Anda (syukurlah)",
+    "meaning_en": "Thanks to your support / Fortunately",
+    "level": "N4",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "おかげさまで元気になりました。",
+      "meaning": "Berkat doa Anda, saya sudah sehat kembali."
+    }
+  },
+  {
+    "word": "お先に失礼します",
+    "reading": "おさきにしつれいします",
+    "romaji": "osaki ni shitsurei shimasu",
+    "meaning_id": "Saya permisi pamit/pulang lebih dulu",
+    "meaning_en": "Excuse me for leaving before you",
+    "level": "N4",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "お先に失礼します、また明日。",
+      "meaning": "Saya permisi pulang duluan ya, sampai jumpa besok."
+    }
+  },
+  {
+    "word": "お疲れ様でした",
+    "reading": "おつかれさまでした",
+    "romaji": "otsukaresama deshita",
+    "meaning_id": "Terima kasih atas kerja kerasnya",
+    "meaning_en": "Thank you for your hard work",
+    "level": "N4",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "今日の仕事はお疲れ様でした。",
+      "meaning": "Terima kasih atas kerja kerasnya pada pekerjaan hari ini."
+    }
+  },
+  {
+    "word": "かしこまりました",
+    "reading": "かしこまりました",
+    "romaji": "kashikomarimashita",
+    "meaning_id": "Baik, saya mengerti / Dimengerti (resmi/bisnis)",
+    "meaning_en": "Certainly / Understood (formal/business)",
+    "level": "N4",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "はい、かしこまりました。すぐ準備いたします。",
+      "meaning": "Baik, saya mengerti. Segera akan saya persiapkan."
+    }
+  },
+  {
+    "word": "少々お待ちください",
+    "reading": "しょうしょうおまちください",
+    "romaji": "shoushou omachi kudasai",
+    "meaning_id": "Mohon tunggu sebentar (sopan resmi)",
+    "meaning_en": "Please wait a moment (polite)",
+    "level": "N4",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "確認いたしますので、少々お待ちください。",
+      "meaning": "Karena akan saya konfirmasikan, mohon tunggu sebentar."
+    }
   }
 ]

@@ -868,5 +868,515 @@
       "reading": "しごとがおわったら、さぎょうだいのせいりせいとんをしましょう。",
       "meaning": "Bila pekerjaan selesai, mari menata dan merapikan meja kerja."
     }
+  },
+  {
+    "word": "取扱注意",
+    "reading": "とりあつかいちゅうい",
+    "romaji": "toriatsukai chuui",
+    "meaning_id": "Perhatian Penanganan / Handle with Care",
+    "meaning_en": "Handle with Care",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Stiker label pada paket barang pecah belah atau dokumen penting.",
+    "example": {
+      "ja": "この荷物は取扱注意ですから、静かに運んでください。",
+      "reading": "このにもつはとりあつかいちゅういですから、しずかにはこんでください。",
+      "meaning": "Karena barang kiriman ini perlu ditangani hati-hati, tolong bawa dengan tenang."
+    }
+  },
+  {
+    "word": "天地無用",
+    "reading": "てんちむよう",
+    "romaji": "tenchi muyou",
+    "meaning_id": "Jangan Dibalik / Posisi Atas Jangan Menghadap Bawah",
+    "meaning_en": "Do Not Turn Upside Down / This Side Up",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Stiker penting pada paket logistik berisi barang elektronik, kue, atau cairan.",
+    "example": {
+      "ja": "箱に「天地無用」と書いてあるので、倒さないでください。",
+      "reading": "はこにてんちむようとかいてあるので、たおさないでください。",
+      "meaning": "Karena pada kardus tertulis \"Jangan Dibalik\", tolong jangan sampai terguling."
+    }
+  },
+  {
+    "word": "撮影禁止",
+    "reading": "さつえいきんし",
+    "romaji": "satsuei kinshi",
+    "meaning_id": "Dilarang Mengambil Foto / Video",
+    "meaning_en": "No Photography / Filming Prohibited",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Rambu di dalam museum, pabrik rahasia, ruang ujian, atau gedung konser musik.",
+    "example": {
+      "ja": "館内は撮影禁止ですので、カメラはご遠慮ください。",
+      "reading": "かんないはさつえいきんしですので、カメラはごえんりょください。",
+      "meaning": "Karena di dalam gedung dilarang berfoto, harap tidak menggunakan kamera."
+    }
+  },
+  {
+    "word": "飲食禁止",
+    "reading": "いんしょくきんし",
+    "romaji": "inshoku kinshi",
+    "meaning_id": "Dilarang Makan dan Minum",
+    "meaning_en": "No Eating or Drinking",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Rambu peringatan di perpustakaan, toko busana, atau bus kota di Jepang.",
+    "example": {
+      "ja": "この部屋は飲食禁止ですから、ロビーで食べてください。",
+      "reading": "このへやはいんしょくきんしですから、ロビーでたべてください。",
+      "meaning": "Karena ruangan ini dilarang makan dan minum, silakan makan di lobi."
+    }
+  },
+  {
+    "word": "駐車禁止",
+    "reading": "ちゅうしゃきんし",
+    "romaji": "chuusha kinshi",
+    "meaning_id": "Dilarang Parkir",
+    "meaning_en": "No Parking",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Rambu lalu lintas jalan raya di Jepang dengan lingkaran merah dan garis silang.",
+    "example": {
+      "ja": "ここは駐車禁止エリアなので、車を停めてはいけません。",
+      "reading": "ここはちゅうしゃきんしエリアなので、くるまをとめてはいけません。",
+      "meaning": "Karena area ini dilarang parkir, Anda tidak boleh memarkir mobil di sini."
+    }
+  },
+  {
+    "word": "防犯カメラ作動中",
+    "reading": "ぼうはんカメラさどうちゅう",
+    "romaji": "bouhan kamera sadouchuu",
+    "meaning_id": "Kamera Pengawas CCTV Sedang Beroperasi",
+    "meaning_en": "Security Cameras in Operation",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Stiker kuning di minimarket, stasiun, apartemen, atau parkiran sepeda di Jepang.",
+    "example": {
+      "ja": "店舗の周りには防犯カメラ作動中の看板があります。",
+      "reading": "てんぽのまわりにはぼうはんカメラさどうちゅうのかんばんがあります。",
+      "meaning": "Di sekitar area toko terdapat papan tanda CCTV Sedang Beroperasi."
+    }
+  },
+  {
+    "word": "自動ドア",
+    "reading": "じどうドア",
+    "romaji": "jidou doa",
+    "meaning_id": "Pintu Otomatis",
+    "meaning_en": "Automatic Door",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Tulisan dan sensor pada pintu geser masuk toko, rumah sakit, maupun kantor di Jepang.",
+    "example": {
+      "ja": "自動ドアの前に立つと、自然にドアが開きます。",
+      "reading": "じどうドアのまえにたつと、しぜんにドアがあきます。",
+      "meaning": "Saat berdiri di depan pintu otomatis, pintu akan terbuka dengan sendirinya."
+    }
+  },
+  {
+    "word": "故障中",
+    "reading": "こしょうちゅう",
+    "romaji": "koshouchuu",
+    "meaning_id": "Sedang Rusak / Tidak Berfungsi",
+    "meaning_en": "Out of Order / Under Repair",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Tempelan kertas pada mesin ATM, lift, atau mesin penjual otomatis yang bermasalah.",
+    "example": {
+      "ja": "この券売機は故障中ですので、隣の機械を使ってください。",
+      "reading": "このけんばいきはこしょうちゅうですので、となりのきかいをつかってください。",
+      "meaning": "Karena mesin tiket ini sedang rusak, silakan gunakan mesin di sebelahnya."
+    }
+  },
+  {
+    "word": "点検中",
+    "reading": "てんけんちゅう",
+    "romaji": "tenkenchuu",
+    "meaning_id": "Sedang Dalam Pemeriksaan / Perawatan",
+    "meaning_en": "Under Inspection / Maintenance",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Papan barikade di depan eskalator, elevator, atau sistem listrik saat ada perawatan teknisi.",
+    "example": {
+      "ja": "エレベーターは点検中のため、階段をご利用ください。",
+      "reading": "エレベーターはてんけんちゅうのため、かいだんをごりようください。",
+      "meaning": "Karena lift sedang dalam pemeriksaan, silakan gunakan tangga."
+    }
+  },
+  {
+    "word": "清掃中",
+    "reading": "せいそうちゅう",
+    "romaji": "seisouchuu",
+    "meaning_id": "Sedang Dalam Pembersihan",
+    "meaning_en": "Cleaning in Progress",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Papan peringatan kuning di toilet umum stasiun atau lorong lantai yang sedang dipel.",
+    "example": {
+      "ja": "トイレは清掃中ですので、少しお待ちください。",
+      "reading": "トイレはせいそうちゅうですので、すこしおまちください。",
+      "meaning": "Karena toilet sedang dibersihkan, mohon tunggu sebentar."
+    }
+  },
+  {
+    "word": "避難誘導灯",
+    "reading": "ひなんゆうどうとう",
+    "romaji": "hinan yuudoutou",
+    "meaning_id": "Lampu Penunjuk Arah Evakuasi Darurat",
+    "meaning_en": "Emergency Exit Direction Light",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Lampu hijau di lorong atau langit-langit penunjuk arah keluar saat gempa atau mati listrik.",
+    "example": {
+      "ja": "停電の時は、緑色の避難誘導灯に従って進んでください。",
+      "reading": "ていでんのときは、みどりいろのひなんゆうどうとうにしたがってすすんでください。",
+      "meaning": "Saat mati lampu, silakan melangkah mengikuti lampu hijau penunjuk arah evakuasi."
+    }
+  },
+  {
+    "word": "在留カード",
+    "reading": "ざいりゅうカード",
+    "romaji": "zairyuu kaado",
+    "meaning_id": "Kartu Izin Tinggal WNA (Residence Card)",
+    "meaning_en": "Residence Card",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kartu identitas wajib yang harus selalu dibawa ke mana-mana oleh warga negara asing di Jepang.",
+    "example": {
+      "ja": "外出する時は、必ず在留カードを携帯してください。",
+      "reading": "がいしゅつするときは、かならずざいりゅうカードをけいたいしてください。",
+      "meaning": "Saat bepergian keluar, pastikan untuk selalu membawa Kartu Izin Tinggal."
+    }
+  },
+  {
+    "word": "市役所",
+    "reading": "しやくしょ",
+    "romaji": "shiyakusho",
+    "meaning_id": "Kantor Balai Kota / Kantor Pemerintah Kota",
+    "meaning_en": "City Hall / Municipal Office",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Tempat mendaftarkan domisili, asuransi, dan administrasi sipil saat tinggal di Jepang.",
+    "example": {
+      "ja": "引っ越しをしたら、14日以内に市役所へ届け出ます。",
+      "reading": "ひっこしをしたら、じゅうよっかいっぱいにしやくしょへとどけでます。",
+      "meaning": "Jika pindah rumah, laporkan ke balai kota dalam waktu 14 hari."
+    }
+  },
+  {
+    "word": "住民票",
+    "reading": "じゅうみんひょう",
+    "romaji": "juuminhyou",
+    "meaning_id": "Surat Keterangan Kependudukan / Bukti Domisili",
+    "meaning_en": "Certificate of Residence",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Dokumen resmi balai kota untuk membuka rekening bank dan kontrak sewa apartemen.",
+    "example": {
+      "ja": "銀行口座を開設するために、住民票が一通必要です。",
+      "reading": "ぎんこうこうざをかいせつするために、じゅうみんひょうがいっつうひつようです。",
+      "meaning": "Untuk membuka rekening bank, diperlukan satu lembar surat keterangan domisili."
+    }
+  },
+  {
+    "word": "マイナンバーカード",
+    "reading": "マイナンバーカード",
+    "romaji": "mai nambaa kaado",
+    "meaning_id": "Kartu Identitas Nomor Induk Kependudukan Jepang",
+    "meaning_en": "My Number Card (Individual Number Card)",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kartu chip beridentitas 12 angka untuk verifikasi digital dan administrasi pajak di Jepang.",
+    "example": {
+      "ja": "マイナンバーカードがあれば、コンビニで証明書が取れます。",
+      "reading": "マイナンバーカードがあれば、コンビニでしょうめいしょがとれます。",
+      "meaning": "Jika memiliki My Number Card, Anda bisa mencetak dokumen kependudukan di minimarket."
+    }
+  },
+  {
+    "word": "粗大ゴミ",
+    "reading": "そだいゴミ",
+    "romaji": "sodai gomi",
+    "meaning_id": "Sampah Berukuran Besar (Furnitur / Kasur / Sepeda)",
+    "meaning_en": "Oversized / Bulky Garbage",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Sampah berukuran lebih dari 30 cm yang pembuangannya harus memesan stiker khusus di konbini.",
+    "example": {
+      "ja": "古い机を捨てる時は、粗大ゴミのシールを買います。",
+      "reading": "ふるいつくえをすてるときは、そだいゴミのシールをかいます。",
+      "meaning": "Saat membuang meja bekas, belilah stiker pembuangan sampah berukuran besar."
+    }
+  },
+  {
+    "word": "年金",
+    "reading": "ねんきん",
+    "romaji": "nenkin",
+    "meaning_id": "Iuran / Dana Pensiun Nasional Jepang",
+    "meaning_en": "Pension",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Sistem jaminan hari tua wajib bagi semua orang yang berusia 20 tahun ke atas di Jepang.",
+    "example": {
+      "ja": "毎月の給料から年金の保険料が引かれます。",
+      "reading": "まいつきのきゅうりょうからねんきんのほけんりょうがひかれます。",
+      "meaning": "Setiap bulan iuran pensiun dipotong langsung dari gaji."
+    }
+  },
+  {
+    "word": "口座振替",
+    "reading": "こうざふりかえ",
+    "romaji": "kouza furikae",
+    "meaning_id": "Debit Otomatis Rekening Bank",
+    "meaning_en": "Automatic Bank Transfer / Direct Debit",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Metode pembayaran tagihan bulanan utilitas yang otomatis terpotong dari tabungan bank.",
+    "example": {
+      "ja": "電気代の支払いは、便利な口座振替にしました。",
+      "reading": "でんきだいのしはらいは、べんりなこうざふりかえにしました。",
+      "meaning": "Untuk pembayaran tagihan listrik, saya memilih debit otomatis yang praktis."
+    }
+  },
+  {
+    "word": "暗証番号",
+    "reading": "あんしょうばんごう",
+    "romaji": "anshou bangou",
+    "meaning_id": "Nomor PIN Rahasia / Kode Sandi ATM",
+    "meaning_en": "PIN / Security Code",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "4 digit angka rahasia untuk kartu debit ATM bank atau kartu kredit di Jepang.",
+    "example": {
+      "ja": "ATMで暗証番号を入力して、お金を引き出します。",
+      "reading": "ATMであんしょうばんごうをにゅうりょくして、おかねをひきだします。",
+      "meaning": "Masukkan kode PIN pada ATM untuk menarik uang tunai."
+    }
+  },
+  {
+    "word": "指定席",
+    "reading": "していせき",
+    "romaji": "shiteiseki",
+    "meaning_id": "Kursi Bernomor / Pesanan (Reserved Seat)",
+    "meaning_en": "Reserved Seat",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kursi gerbong Shinkansen atau bioskop yang sudah dipesan nomor bangkunya saat beli tiket.",
+    "example": {
+      "ja": "混雑を避けるため、新幹線の指定席を予約しました。",
+      "reading": "こんざつをさけるため、しんかんせんのしていせきをよやくしました。",
+      "meaning": "Untuk menghindari kepenuhan, saya memesan kursi bernomor di Shinkansen."
+    }
+  },
+  {
+    "word": "自由席",
+    "reading": "じゆうせき",
+    "romaji": "jiyuuseki",
+    "meaning_id": "Kursi Bebas (Non-reserved Seat)",
+    "meaning_en": "Non-reserved Seat",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Gerbong Shinkansen (gerbong 1-3) di mana penumpang bebas memilih bangku yang masih kosong.",
+    "example": {
+      "ja": "自由席の特急券を買ったので、早めにホームに並びます。",
+      "reading": "じゆうせきのとっきゅうけんをかったので、はやめにホームにならびます。",
+      "meaning": "Karena membeli tiket kursi bebas, saya mengantre lebih awal di peron."
+    }
+  },
+  {
+    "word": "運休",
+    "reading": "うんきゅう",
+    "romaji": "unkyuu",
+    "meaning_id": "Pembatalan Operasional Kereta / Transportasi",
+    "meaning_en": "Suspension of Service",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kereta atau bus yang berhenti beroperasi sementara waktu akibat taifun atau gempa.",
+    "example": {
+      "ja": "台風の影響で、午後から電車が全線運休になりました。",
+      "reading": "たいふうのえいきょうで、ごごからでんしゃがぜんせんうんきゅうになりました。",
+      "meaning": "Karena dampak taifun, operasional seluruh jalur kereta dibatalkan sejak siang."
+    }
+  },
+  {
+    "word": "遅延証明書",
+    "reading": "ちえんしょうめいしょ",
+    "romaji": "chien shoumeisho",
+    "meaning_id": "Surat Keterangan Keterlambatan Kereta",
+    "meaning_en": "Certificate of Train Delay",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kertas bukti resmi dari petugas stasiun saat kereta telat agar tidak dianggap absen oleh kantor.",
+    "example": {
+      "ja": "電車が20分遅れたので、改札で遅延証明書をもらいました。",
+      "reading": "でんしゃがにじゅっぷんおくれたので、かいさつでちえんしょうめいしょをもらいました。",
+      "meaning": "Karena kereta terlambat 20 menit, saya meminta surat bukti keterlambatan di gerbang stasiun."
+    }
+  },
+  {
+    "word": "給与明細",
+    "reading": "きゅうよめいさい",
+    "romaji": "kyuuyo meisai",
+    "meaning_id": "Slip Gaji Karyawan",
+    "meaning_en": "Payslip / Salary Statement",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Rincian bulanan berisi rincian jam kerja, gaji pokok, uang lembur, serta potongan pajak.",
+    "example": {
+      "ja": "給料日に会社から給与明細を受け取りました。",
+      "reading": "きゅうりょうびにかいしゃからきゅうよめいさいをうけとりました。",
+      "meaning": "Pada hari gajian, saya menerima slip gaji dari perusahaan."
+    }
+  },
+  {
+    "word": "源泉徴収票",
+    "reading": "げんせんちょうしゅうひょう",
+    "romaji": "gensen choushuuhyou",
+    "meaning_id": "Bukti Potong Pajak Penghasilan Tahunan",
+    "meaning_en": "Withholding Tax Certificate",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Lembar resmi kantor akhir tahun yang merangkum penghasilan setahun untuk perpanjangan visa.",
+    "example": {
+      "ja": "ビザの更新手続きに源泉徴収票のコピーが必要です。",
+      "reading": "ビザのこうしんてつづきにげんせんちょうしゅうひょうのコピーがひつようです。",
+      "meaning": "Salinan bukti potong pajak tahunan diperlukan untuk prosedur perpanjangan visa."
+    }
+  },
+  {
+    "word": "年末調整",
+    "reading": "ねんまつちょうせい",
+    "romaji": "nenmatsu chousei",
+    "meaning_id": "Penyesuaian Pajak Akhir Tahun",
+    "meaning_en": "Year-end Tax Adjustment",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Prosedur tahunan kantor untuk menghitung kembali kelebihan potongan pajak karyawan.",
+    "example": {
+      "ja": "11月中に年末調整の書類を会社に提出してください。",
+      "reading": "じゅういちがつくちゅうにねんまつちょうせいのしょるいをかいしゃにていしゅつしてください。",
+      "meaning": "Kumpulkan berkas penyesuaian pajak akhir tahun ke kantor selama bulan November."
+    }
+  },
+  {
+    "word": "交通費支給",
+    "reading": "こうつうひしきゅう",
+    "romaji": "koutsuuhi shikyuu",
+    "meaning_id": "Tunjangan Penggantian Ongkos Transportasi",
+    "meaning_en": "Commuting Allowance Provided",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Hak fasilitas perusahaan Jepang yang menanggung biaya perjalanan dari rumah ke tempat kerja.",
+    "example": {
+      "ja": "このアルバイトは通勤の交通費が全額支給されます。",
+      "reading": "このアルバイトはつうきんのこうつうひがぜんがくしきゅうされます。",
+      "meaning": "Pekerjaan paruh waktu ini menanggung seluruh ongkos transportasi pulang pergi."
+    }
+  },
+  {
+    "word": "試用期間",
+    "reading": "しようきかん",
+    "romaji": "shiyou kikan",
+    "meaning_id": "Masa Percobaan Kerja (Probation Period)",
+    "meaning_en": "Probationary Period",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Masa adaptasi kerja (biasanya 1 hingga 3 bulan) bagi pekerja baru.",
+    "example": {
+      "ja": "入社後の3ヶ月間は試用期間として働きます。",
+      "reading": "にゅうしゃごのさんかげつかんはしようきかんとしてはたらきます。",
+      "meaning": "Tiga bulan pertama setelah masuk perusahaan dijalani sebagai masa percobaan kerja."
+    }
+  },
+  {
+    "word": "保護メガネ",
+    "reading": "ほごメガネ",
+    "romaji": "hogo megane",
+    "meaning_id": "Kacamata Pengaman / Safety Glasses",
+    "meaning_en": "Protective Goggles / Safety Glasses",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "APD wajib di pabrik manufaktur untuk melindungi mata dari serbuk debu atau percikan cairan.",
+    "example": {
+      "ja": "研磨作業をする時は、必ず保護メガネをかけてください。",
+      "reading": "けんまさぎょうをするときは、かならずほごメガネをかけてください。",
+      "meaning": "Saat melakukan pekerjaan mengamplas, pastikan wajib memakai kacamata pelindung."
+    }
+  },
+  {
+    "word": "安全靴",
+    "reading": "あんぜんぐつ",
+    "romaji": "anzengutsu",
+    "meaning_id": "Sepatu Keselamatan Kerja (Safety Shoes)",
+    "meaning_en": "Safety Shoes / Steel-toe Boots",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Sepatu berujung baja yang melindungi jemari kaki dari bahaya kejatuhan benda berat.",
+    "example": {
+      "ja": "工場内では足を怪我しないように、安全靴を履きます。",
+      "reading": "こうじょうないではあしをけがしないように、あんぜんぐつをはきます。",
+      "meaning": "Di dalam pabrik kenakan sepatu keselamatan kerja agar kaki tidak terluka."
+    }
+  },
+  {
+    "word": "指差呼称",
+    "reading": "しさこしょう",
+    "romaji": "shisa koshou",
+    "meaning_id": "Prosedur Menunjuk dan Menyebut (K3 Jepang)",
+    "meaning_en": "Pointing and Calling Safety Procedure",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Budaya K3 Jepang dengan menunjuk saklar/alat dan menyebut kondisinya dengan lantang.",
+    "example": {
+      "ja": "スイッチを入れる前に、指差呼称で安全を確認します。",
+      "reading": "スイッチをいれるまえに、しさこしょうであんぜんをかくにんします。",
+      "meaning": "Sebelum menyalakan saklar, lakukan prosedur menunjuk dan menyebut untuk memastikan keselamatan."
+    }
+  },
+  {
+    "word": "引き継ぎ",
+    "reading": "ひきつぎ",
+    "romaji": "hikitsugi",
+    "meaning_id": "Serah Terima Tugas / Handover Shift",
+    "meaning_en": "Handover / Shift Transfer",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Menjelaskan poin operasional dan tugas tertunda kepada pekerja pada giliran kerja berikutnya.",
+    "example": {
+      "ja": "次のシフトの人に重要な連絡事項を引き継ぎます。",
+      "reading": "つぎのシフトのひとにじゅうようなれんらくじこうをひきつぎます。",
+      "meaning": "Menyerahterimakan poin informasi penting kepada pekerja shift berikutnya."
+    }
+  },
+  {
+    "word": "始業",
+    "reading": "しぎょう",
+    "romaji": "shigyou",
+    "meaning_id": "Waktu Mulai Bekerja",
+    "meaning_en": "Starting Work / Beginning of Workday",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Jam resmi dimulainya aktivitas kerja atau bel tanda operasional pabrik dibuka.",
+    "example": {
+      "ja": "始業の10分前には作業服に着替えてスタンバイしてください。",
+      "reading": "しぎょうのじゅっぷんまえにはさぎょうふくに着替えてスタンバイしてください。",
+      "meaning": "Tolong berganti pakaian kerja dan bersiap siaga 10 menit sebelum jam kerja dimulai."
+    }
+  },
+  {
+    "word": "終業",
+    "reading": "しゅうぎょう",
+    "romaji": "shuugyou",
+    "meaning_id": "Waktu Selesai Bekerja",
+    "meaning_en": "End of Work / Closing of Workday",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Jam resmi berakhirnya jam operasional kerja harian.",
+    "example": {
+      "ja": "今日の終業時間は18時です。片付けをして帰りましょう。",
+      "reading": "きょうのしゅうぎょうじかんはじゅうはちじです。かたづけをしてかえりましょう。",
+      "meaning": "Waktu selesai kerja hari ini adalah pukul 18.00. Mari beres-beres dan pulang."
+    }
   }
 ]

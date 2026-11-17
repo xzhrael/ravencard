@@ -9450,5 +9450,473 @@
       "ja": "ご飯を食べましょう。",
       "meaning": "Ayo makan nasi."
     }
+  },
+  {
+    "word": "一枚",
+    "reading": "いちまい",
+    "romaji": "ichimai",
+    "meaning_id": "1 Lembar (Kertas / Tiket / Baju Tipis)",
+    "meaning_en": "One sheet / flat object",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "切符を一枚買いました。",
+      "meaning": "Saya membeli satu lembar tiket."
+    }
+  },
+  {
+    "word": "一本",
+    "reading": "いっぽん",
+    "romaji": "ippon",
+    "meaning_id": "1 Batang / Botol (Benda Panjang & Silindris)",
+    "meaning_en": "One long cylindrical object (pen, bottle)",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "ペンを一本貸してください。",
+      "meaning": "Tolong pinjamkan saya sebatang pulpen."
+    }
+  },
+  {
+    "word": "一台",
+    "reading": "いちだい",
+    "romaji": "ichidai",
+    "meaning_id": "1 Unit (Mesin / Kendaraan / Komputer)",
+    "meaning_en": "One machine or vehicle",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "車を一台買いました。",
+      "meaning": "Saya telah membeli satu unit mobil."
+    }
+  },
+  {
+    "word": "一匹",
+    "reading": "いっぴき",
+    "romaji": "ippiki",
+    "meaning_id": "1 Ekor (Hewan Kecil / Ikan / Kucing)",
+    "meaning_en": "One small animal / fish / insect",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "猫が一匹います。",
+      "meaning": "Ada seekor kucing."
+    }
+  },
+  {
+    "word": "一杯",
+    "reading": "いっぱい",
+    "romaji": "ippai",
+    "meaning_id": "1 Cangkir / Gelas / Mangkuk",
+    "meaning_en": "One cup / glass / bowlful",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "コーヒーを一杯飲みました。",
+      "meaning": "Saya minum secangkir kopi."
+    }
+  },
+  {
+    "word": "一階",
+    "reading": "いっかい",
+    "romaji": "ikkai",
+    "meaning_id": "Lantai 1 / Lantai Dasar",
+    "meaning_en": "First floor / ground floor",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "受付は一階にあります。",
+      "meaning": "Bagian resepsionis ada di lantai 1."
+    }
+  },
+  {
+    "word": "一冊",
+    "reading": "いっさつ",
+    "romaji": "issatsu",
+    "meaning_id": "1 Jilid / Buku / Majalah",
+    "meaning_en": "One book / volume",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "本を一冊読みました。",
+      "meaning": "Saya membaca satu buah buku."
+    }
+  },
+  {
+    "word": "一足",
+    "reading": "いっそく",
+    "romaji": "issoku",
+    "meaning_id": "1 Pasang (Sepatu / Kaos Kaki)",
+    "meaning_en": "One pair (shoes, socks)",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "靴を一足買いました。",
+      "meaning": "Saya membeli sepasang sepatu."
+    }
+  },
+  {
+    "word": "一個",
+    "reading": "いっこ",
+    "romaji": "ikko",
+    "meaning_id": "1 Buah / Butir (Benda Kecil / Telur / Apel)",
+    "meaning_en": "One piece / small item",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "りんごを一個食べました。",
+      "meaning": "Saya memakan satu buah apel."
+    }
+  },
+  {
+    "word": "一回",
+    "reading": "いっかい",
+    "romaji": "ikkai",
+    "meaning_id": "1 Kali / Satu Ronde",
+    "meaning_en": "Once / one time",
+    "level": "N5",
+    "type": "Satuan Hitung",
+    "example": {
+      "ja": "もう一回言ってください。",
+      "meaning": "Tolong katakan sekali lagi."
+    }
+  },
+  {
+    "word": "何人",
+    "reading": "なんにん",
+    "romaji": "nannin",
+    "meaning_id": "Berapa orang",
+    "meaning_en": "How many people",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "ここに何人いますか。",
+      "meaning": "Ada berapa orang di sini?"
+    }
+  },
+  {
+    "word": "何枚",
+    "reading": "なんまい",
+    "romaji": "nanmai",
+    "meaning_id": "Berapa lembar",
+    "meaning_en": "How many sheets / flat objects",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "切符は何枚必要ですか。",
+      "meaning": "Berapa lembar tiket yang dibutuhkan?"
+    }
+  },
+  {
+    "word": "何本",
+    "reading": "なんぼん",
+    "romaji": "nanbon",
+    "meaning_id": "Berapa batang / botol",
+    "meaning_en": "How many cylindrical objects / bottles",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "ビールを何本飲みましたか。",
+      "meaning": "Minum berapa botol bir?"
+    }
+  },
+  {
+    "word": "何台",
+    "reading": "なんだい",
+    "romaji": "nandai",
+    "meaning_id": "Berapa unit (mesin/kendaraan)",
+    "meaning_en": "How many machines / vehicles",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "車は何台ありますか。",
+      "meaning": "Ada berapa unit mobil?"
+    }
+  },
+  {
+    "word": "何匹",
+    "reading": "なんびき",
+    "romaji": "nanbiki",
+    "meaning_id": "Berapa ekor (hewan kecil)",
+    "meaning_en": "How many small animals",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "犬は何匹飼っていますか。",
+      "meaning": "Berapa ekor anjing yang kamu pelihara?"
+    }
+  },
+  {
+    "word": "何杯",
+    "reading": "なんばい",
+    "romaji": "nanbai",
+    "meaning_id": "Berapa cangkir / gelas",
+    "meaning_en": "How many cups / glasses",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "コーヒーは何杯飲みますか。",
+      "meaning": "Mau minum berapa cangkir kopi?"
+    }
+  },
+  {
+    "word": "何階",
+    "reading": "なんかい",
+    "romaji": "nankai",
+    "meaning_id": "Lantai berapa",
+    "meaning_en": "Which floor",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "会議室は何階ですか。",
+      "meaning": "Ruang rapat di lantai berapa?"
+    }
+  },
+  {
+    "word": "何回",
+    "reading": "なんかい",
+    "romaji": "nankai",
+    "meaning_id": "Berapa kali",
+    "meaning_en": "How many times",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "日本へ何回行きましたか。",
+      "meaning": "Sudah berapa kali pergi ke Jepang?"
+    }
+  },
+  {
+    "word": "何個",
+    "reading": "なんこ",
+    "romaji": "nanko",
+    "meaning_id": "Berapa buah / butir",
+    "meaning_en": "How many small items / pieces",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "卵は何個買いましたか。",
+      "meaning": "Membeli telur berapa butir?"
+    }
+  },
+  {
+    "word": "何歳",
+    "reading": "なんさい",
+    "romaji": "nansai",
+    "meaning_id": "Berapa usia / umur",
+    "meaning_en": "How old",
+    "level": "N5",
+    "type": "Kata Tanya",
+    "example": {
+      "ja": "お子さんは何歳ですか。",
+      "meaning": "Anaknya berusia berapa tahun?"
+    }
+  },
+  {
+    "word": "どのくらい",
+    "reading": "どのくらい",
+    "romaji": "dono kurai",
+    "meaning_id": "Kira-kira berapa lama / berapa banyak",
+    "meaning_en": "About how long / how much",
+    "level": "N5",
+    "type": "Kata Keterangan",
+    "example": {
+      "ja": "駅までどのくらいかかりますか。",
+      "meaning": "Kira-kira butuh waktu berapa lama sampai ke stasiun?"
+    }
+  },
+  {
+    "word": "お腹が空く",
+    "reading": "おなかがすく",
+    "romaji": "onaka ga suku",
+    "meaning_id": "Lapar / Perut kosong",
+    "meaning_en": "To get hungry",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "お腹が空きましたね。",
+      "meaning": "Perut sudah lapar ya."
+    }
+  },
+  {
+    "word": "喉が渇く",
+    "reading": "のどがかわく",
+    "romaji": "nodo ga kawaku",
+    "meaning_id": "Haus / Tenggorokan kering",
+    "meaning_en": "To get thirsty",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "喉が渇いたので水を飲みます。",
+      "meaning": "Karena haus, saya minum air."
+    }
+  },
+  {
+    "word": "地下",
+    "reading": "ちか",
+    "romaji": "chika",
+    "meaning_id": "Bawah tanah / Basement",
+    "meaning_en": "Underground / basement",
+    "level": "N5",
+    "type": "Kata Benda",
+    "example": {
+      "ja": "地下にスーパーがあります。",
+      "meaning": "Di lantai bawah tanah ada supermarket."
+    }
+  },
+  {
+    "word": "薬局",
+    "reading": "やっきょく",
+    "romaji": "yakkyoku",
+    "meaning_id": "Apotek / Toko obat",
+    "meaning_en": "Pharmacy / drugstore",
+    "level": "N5",
+    "type": "Kata Benda",
+    "example": {
+      "ja": "薬局で薬を買いました。",
+      "meaning": "Saya membeli obat di apotek."
+    }
+  },
+  {
+    "word": "よろしくお願いします",
+    "reading": "よろしくおねがいします",
+    "romaji": "yoroshiku onegaishimasu",
+    "meaning_id": "Mohon bantuannya / Senang bekerja sama dengan Anda",
+    "meaning_en": "Please treat me favorably / Nice to work with you",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "これからよろしくお願いします。",
+      "meaning": "Mulai sekarang mohon bantuannya ya."
+    }
+  },
+  {
+    "word": "おめでとうございます",
+    "reading": "おめでとうございます",
+    "romaji": "omedetou gozaimasu",
+    "meaning_id": "Selamat (ucapan selamat)",
+    "meaning_en": "Congratulations",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "お誕生日おめでとうございます。",
+      "meaning": "Selamat ulang tahun."
+    }
+  },
+  {
+    "word": "いってきます",
+    "reading": "いってきます",
+    "romaji": "ittekimasu",
+    "meaning_id": "Saya berangkat (pamit pergi)",
+    "meaning_en": "I'm leaving (and coming back)",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "いってきます、また夕方に。",
+      "meaning": "Saya berangkat, sampai jumpa nanti sore."
+    }
+  },
+  {
+    "word": "いってらっしゃい",
+    "reading": "いってらっしゃい",
+    "romaji": "itterasshai",
+    "meaning_id": "Hati-hati di jalan / Selamat jalan",
+    "meaning_en": "Take care / see you later",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "いってらっしゃい、気をつけてね。",
+      "meaning": "Hati-hati di jalan ya."
+    }
+  },
+  {
+    "word": "ただいま",
+    "reading": "ただいま",
+    "romaji": "tadaima",
+    "meaning_id": "Saya pulang / Saya kembali",
+    "meaning_en": "I'm home / I'm back",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "ただいま戻りました。",
+      "meaning": "Saya sudah pulang kembali."
+    }
+  },
+  {
+    "word": "おかえりなさい",
+    "reading": "おかえりなさい",
+    "romaji": "okaerinasai",
+    "meaning_id": "Selamat datang kembali",
+    "meaning_en": "Welcome back home",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "おかえりなさい、お疲れ様。",
+      "meaning": "Selamat datang kembali, terima kasih atas kerja kerasmu."
+    }
+  },
+  {
+    "word": "ごちそうさまでした",
+    "reading": "ごちそうさまでした",
+    "romaji": "gochisousama deshita",
+    "meaning_id": "Terima kasih atas makanannya (sesudah makan)",
+    "meaning_en": "Thank you for the meal (after eating)",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "ごちそうさまでした、とても美味しかったです。",
+      "meaning": "Terima kasih atas hidangannya, sangat enak."
+    }
+  },
+  {
+    "word": "どういたしまして",
+    "reading": "どういたしまして",
+    "romaji": "douitashimashite",
+    "meaning_id": "Sama-sama / Kembali",
+    "meaning_en": "You are welcome",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "いいえ、どういたしまして。",
+      "meaning": "Tidak masalah, sama-sama."
+    }
+  },
+  {
+    "word": "お大事に",
+    "reading": "おだいじに",
+    "romaji": "odaiji ni",
+    "meaning_id": "Semoga lekas sembuh / Jaga kesehatan",
+    "meaning_en": "Take care of yourself / Get well soon",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "風邪ですか。どうぞお大事に。",
+      "meaning": "Masuk angin ya? Semoga lekas sembuh."
+    }
+  },
+  {
+    "word": "乾杯",
+    "reading": "かんぱい",
+    "romaji": "kanpai",
+    "meaning_id": "Bersulang / Cheers",
+    "meaning_en": "Cheers / toast",
+    "level": "N5",
+    "type": "Kata Benda",
+    "example": {
+      "ja": "皆で乾杯しましょう。",
+      "meaning": "Ayo kita semua bersulang."
+    }
+  },
+  {
+    "word": "じゃあ、また",
+    "reading": "じゃあ、また",
+    "romaji": "jaa, mata",
+    "meaning_id": "Sampai jumpa lagi",
+    "meaning_en": "See you later",
+    "level": "N5",
+    "type": "Ungkapan",
+    "example": {
+      "ja": "じゃあ、また明日。",
+      "meaning": "Sampai jumpa lagi besok."
+    }
   }
 ]
