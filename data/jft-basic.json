@@ -1,0 +1,872 @@
+[
+  {
+    "word": "非常口",
+    "reading": "ひじょうぐち",
+    "romaji": "hijouguchi",
+    "meaning_id": "Pintu Keluar Darurat",
+    "meaning_en": "Emergency Exit",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Rambu hijau bergambar orang berlari keluar, wajib diketahui saat terjadi bencana.",
+    "example": {
+      "ja": "地震の時は、非常口から外へ逃げてください。",
+      "reading": "じしんのときは、ひじょうぐちからそとへにげてください。",
+      "meaning": "Saat terjadi gempa, silakan lari keluar lewat pintu darurat."
+    }
+  },
+  {
+    "word": "危険",
+    "reading": "きけん",
+    "romaji": "kiken",
+    "meaning_id": "Bahaya",
+    "meaning_en": "Danger",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Rambu peringatan merah/kuning di area proyek, pabrik, atau mesin bervoltase tinggi.",
+    "example": {
+      "ja": "ここは危険ですから、入らないでください。",
+      "reading": "ここはきけんですから、はいらないでください。",
+      "meaning": "Karena di sini berbahaya, tolong jangan masuk."
+    }
+  },
+  {
+    "word": "注意",
+    "reading": "ちゅうい",
+    "romaji": "chuui",
+    "meaning_id": "Perhatian / Awas",
+    "meaning_en": "Caution / Attention",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Tanda kewaspadaan umum seperti lantai licin, pintu otomatis, atau tangga curam.",
+    "example": {
+      "ja": "足元に注意して階段を降りてください。",
+      "reading": "あしもとにちゅういしてかいだんをおりてください。",
+      "meaning": "Awas langkah kaki Anda saat menuruni tangga."
+    }
+  },
+  {
+    "word": "避難",
+    "reading": "ひなん",
+    "romaji": "hinan",
+    "meaning_id": "Evakuasi / Mengungsi",
+    "meaning_en": "Evacuation",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Instruksi penyelamatan diri saat bencana alam seperti gempa, banjir, atau kebakaran.",
+    "example": {
+      "ja": "サイレンが鳴ったら、すぐに高台へ避難してください。",
+      "reading": "さいれんがなったら、すぐにたかだいへひなんしてください。",
+      "meaning": "Bila sirine berbunyi, segera lakukan evakuasi ke tempat yang tinggi."
+    }
+  },
+  {
+    "word": "避難所",
+    "reading": "ひなんじょ",
+    "romaji": "hinanjo",
+    "meaning_id": "Tempat Evakuasi / Pengungsian",
+    "meaning_en": "Evacuation Shelter",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Gedung umum (sekolah, aula olahraga) yang ditetapkan sebagai pusat pengungsian warga.",
+    "example": {
+      "ja": "近くの小学校が町の避難所になっています。",
+      "reading": "ちかくのしょうがっこうがまちのひなんじょになっています。",
+      "meaning": "SD di dekat sini dijadikan tempat pengungsian warga kota."
+    }
+  },
+  {
+    "word": "禁煙",
+    "reading": "きんえん",
+    "romaji": "kin'en",
+    "meaning_id": "Dilarang Merokok",
+    "meaning_en": "No Smoking",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Tanda larangan merokok di dalam gedung, kendaraan umum, stasiun, atau restoran.",
+    "example": {
+      "ja": "このビルは全館禁煙です。",
+      "reading": "このびるはぜんかんきんえんです。",
+      "meaning": "Seluruh area di gedung ini dilarang merokok."
+    }
+  },
+  {
+    "word": "喫煙所",
+    "reading": "きつえんじょ",
+    "romaji": "kitsuenjo",
+    "meaning_id": "Area Khusus Merokok",
+    "meaning_en": "Smoking Area",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Ruangan atau zona tertutup khusus bagi orang yang merokok di Jepang.",
+    "example": {
+      "ja": "タバコは駅前の喫煙所で吸ってください。",
+      "reading": "たばこはえきまえのきつえんじょですってください。",
+      "meaning": "Silakan merokok di area merokok depan stasiun."
+    }
+  },
+  {
+    "word": "立入禁止",
+    "reading": "たちいりきんし",
+    "romaji": "tachiiri kinshi",
+    "meaning_id": "Dilarang Masuk",
+    "meaning_en": "Do Not Enter / Off-limits",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Tanda larangan masuk bagi pihak yang tidak berkepentingan pada area konstruksi atau fasilitas pribadi.",
+    "example": {
+      "ja": "関係者以外は立入禁止です。",
+      "reading": "かんけいしゃいがいはたちいりきんしです。",
+      "meaning": "Selain pihak yang berkepentingan dilarang masuk."
+    }
+  },
+  {
+    "word": "火気厳禁",
+    "reading": "かきげんきん",
+    "romaji": "kaki genkin",
+    "meaning_id": "Dilarang Menyalakan Api",
+    "meaning_en": "Flammable / Open Flames Prohibited",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Rambu mutlak di pom bensin, gudang bahan kimia, atau tempat penyimpanan gas.",
+    "example": {
+      "ja": "ガソリンスタンドの構内は火気厳禁です。",
+      "reading": "がそりんすたんどのこうないはかきげんきんです。",
+      "meaning": "Di dalam area SPBU dilarang keras menyalakan api."
+    }
+  },
+  {
+    "word": "使用禁止",
+    "reading": "しようきんし",
+    "romaji": "shiyou kinshi",
+    "meaning_id": "Dilarang Digunakan",
+    "meaning_en": "Out of Service / Do Not Use",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Ditempelkan pada alat, lift, toilet, atau mesin yang sedang bermasalah atau dalam perbaikan.",
+    "example": {
+      "ja": "このエレベーターは点検中のため、使用禁止です。",
+      "reading": "このえれべーたーはてんけんちゅうのため、しようきんしです。",
+      "meaning": "Lift ini dilarang digunakan karena sedang dalam inspeksi."
+    }
+  },
+  {
+    "word": "故障",
+    "reading": "こしょう",
+    "romaji": "koshou",
+    "meaning_id": "Rusak / Mengalami Gangguan",
+    "meaning_en": "Broken / Out of Order",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Kondisi mesin, kendaraan, atau perangkat elektronik yang tidak berfungsi normal.",
+    "example": {
+      "ja": "自動販売機が故障していて、おつりが出ません。",
+      "reading": "じどうはんばいきがこしょうしていて、おつりがでません。",
+      "meaning": "Mesin penjual otomatis rusak, uang kembaliannya tidak keluar."
+    }
+  },
+  {
+    "word": "工事中",
+    "reading": "こうじちゅう",
+    "romaji": "koujichuu",
+    "meaning_id": "Sedang Ada Pekerjaan Proyek / Perbaikan",
+    "meaning_en": "Under Construction",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Tanda di jalan raya atau trotoar yang sedang direnovasi atau digali.",
+    "example": {
+      "ja": "この道路は工事中のため、通行止めです。",
+      "reading": "このどうろはこうじちゅうのため、つうこうどめです。",
+      "meaning": "Jalan ini ditutup karena sedang ada pekerjaan konstruksi."
+    }
+  },
+  {
+    "word": "非常ボタン",
+    "reading": "ひじょうぼたん",
+    "romaji": "hijou botan",
+    "meaning_id": "Tombol Darurat",
+    "meaning_en": "Emergency Button",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Tombol merah di peron stasiun, kereta, dan mesin pabrik untuk menghentikan operasional saat darurat.",
+    "example": {
+      "ja": "線路に人が落ちたら、非常ボタンを押してください。",
+      "reading": "せんろにひとがおちたら、ひじょうぼたんをおしてください。",
+      "meaning": "Jika ada orang jatuh ke rel kereta, tolong tekan tombol darurat."
+    }
+  },
+  {
+    "word": "優先席",
+    "reading": "ゆうせんせき",
+    "romaji": "yuusenseki",
+    "meaning_id": "Kursi Prioritas",
+    "meaning_en": "Priority Seating",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Kursi di kereta dan bus yang dikhususkan bagi lansia, penyandang disabilitas, ibu hamil, dan orang sakit.",
+    "example": {
+      "ja": "お年寄りが乗ってきたので、優先席を譲りました。",
+      "reading": "おとしよりがのってきたので、ゆうせんせきをゆずりました。",
+      "meaning": "Karena ada orang lansia naik, saya memberikan kursi prioritas."
+    }
+  },
+  {
+    "word": "地震",
+    "reading": "じしん",
+    "romaji": "jishin",
+    "meaning_id": "Gempa Bumi",
+    "meaning_en": "Earthquake",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Bencana alam frekuensi tinggi di Jepang yang membutuhkan kesiapsiagaan cepat.",
+    "example": {
+      "ja": "大きな地震が起きたら、机の下に隠れてください。",
+      "reading": "おおきなじしんがおきたら、つくえのしたにかくれてください。",
+      "meaning": "Jika terjadi gempa besar, silakan berlindung di bawah meja."
+    }
+  },
+  {
+    "word": "火災",
+    "reading": "かさい",
+    "romaji": "kasai",
+    "meaning_id": "Kebakaran",
+    "meaning_en": "Fire Disaster",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Istilah resmi untuk bencana kebakaran pada alarm gedung atau pengumuman radio.",
+    "example": {
+      "ja": "火災報知器が鳴ったら、落ち着いて行動しましょう。",
+      "reading": "かさいほうちきがなったら、おちついてこうどうしましょう。",
+      "meaning": "Bila alarm kebakaran berbunyi, mari bertindak dengan tenang."
+    }
+  },
+  {
+    "word": "津波",
+    "reading": "つなみ",
+    "romaji": "tsunami",
+    "meaning_id": "Tsunami",
+    "meaning_en": "Tsunami",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Gelombang laut dahsyat pasca gempa bumi di pesisir Jepang.",
+    "example": {
+      "ja": "大津波警報が出たので、すぐに高台へ逃げます。",
+      "reading": "おおつなみけいほうがでたので、すぐにたかだいへにげます。",
+      "meaning": "Karena peringatan tsunami besar diumumkan, kami segera lari ke tempat tinggi."
+    }
+  },
+  {
+    "word": "救急車",
+    "reading": "きゅうきゅうしゃ",
+    "romaji": "kyuukyuusha",
+    "meaning_id": "Ambulans",
+    "meaning_en": "Ambulance",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Kendaraan medis gawat darurat di Jepang (nomor darurat telepon 119).",
+    "example": {
+      "ja": "同僚が倒れたので、急いで救急車を呼びました。",
+      "reading": "どうりょうがたおれたので、いそいできゅうきゅうしゃをよびました。",
+      "meaning": "Karena rekan kerja pingsan, saya segera memanggil ambulans."
+    }
+  },
+  {
+    "word": "足元注意",
+    "reading": "あしもとちゅうい",
+    "romaji": "ashimoto chuui",
+    "meaning_id": "Awas Langkah Kaki / Hati-hati Melangkah",
+    "meaning_en": "Watch Your Step",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Peringatan di lantai licin, eskalator, celah antara peron kereta dan gerbong.",
+    "example": {
+      "ja": "電車とホームの間が広いため、足元にご注意ください。",
+      "reading": "でんしゃとほーむのあいだがひろいため、あしもとにごちゅういください。",
+      "meaning": "Karena jarak antara kereta dan peron cukup lebar, harap perhatikan langkah kaki Anda."
+    }
+  },
+  {
+    "word": "頭上注意",
+    "reading": "ずじょうちゅうい",
+    "romaji": "zujou chuui",
+    "meaning_id": "Awas Kepala Terbentur",
+    "meaning_en": "Mind Your Head",
+    "category": "rambu",
+    "category_label": "Rambu & Keselamatan",
+    "context": "Peringatan di pintu masuk rendah, tangga bawah tanah, atau area mesin pabrik.",
+    "example": {
+      "ja": "天井が低いので、頭上注意のサインがあります。",
+      "reading": "てんじょうがひくいので、ずじょうちゅういのさいんがあります。",
+      "meaning": "Karena langit-langit rendah, ada tanda awas kepala."
+    }
+  },
+  {
+    "word": "割引",
+    "reading": "わりびき",
+    "romaji": "waribiki",
+    "meaning_id": "Diskon / Potongan Harga",
+    "meaning_en": "Discount",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Stiker potongan harga pada makanan supermarket malam hari (misal 20%割引).",
+    "example": {
+      "ja": "夜8時を過ぎると、お弁当が2割引になります。",
+      "reading": "よるはちじをすぎると、おべんとうがにわりびきになります。",
+      "meaning": "Lewat jam 8 malam, bento mendapat diskon 20 persen."
+    }
+  },
+  {
+    "word": "半額",
+    "reading": "はんがく",
+    "romaji": "hangaku",
+    "meaning_id": "Setengah Harga / Diskon 50%",
+    "meaning_en": "Half Price",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Stiker belanja paling dicari di supermarket Jepang menjelang toko tutup.",
+    "example": {
+      "ja": "この寿司パックは半額のシールが貼ってあります。",
+      "reading": "このすしぱっくははんがくのしーるがはってあります。",
+      "meaning": "Paket sushi ini ditempeli stiker setengah harga."
+    }
+  },
+  {
+    "word": "税抜",
+    "reading": "ぜいぬき",
+    "romaji": "zeinuki",
+    "meaning_id": "Harga Sebelum Pajak",
+    "meaning_en": "Price Excluding Tax",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Label harga asli sebelum ditambah pajak konsumsi Jepang (10% / 8%).",
+    "example": {
+      "ja": "値札に「税抜500円」と書いてあります。",
+      "reading": "ねふだに「ぜいぬきごひゃくえん」とかいてあります。",
+      "meaning": "Pada label harga tertulis 500 yen sebelum pajak."
+    }
+  },
+  {
+    "word": "税込",
+    "reading": "ぜいこみ",
+    "romaji": "zeikomi",
+    "meaning_id": "Harga Sudah Termasuk Pajak",
+    "meaning_en": "Price Including Tax",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Total nominal harga akhir yang harus dibayar di kasir.",
+    "example": {
+      "ja": "お会計は税込で1,100円になります。",
+      "reading": "おかいけいはぜいこみでせんひゃくえんになります。",
+      "meaning": "Total pembayarannya menjadi 1.100 yen termasuk pajak."
+    }
+  },
+  {
+    "word": "賞味期限",
+    "reading": "しょうみきげん",
+    "romaji": "shoumikigen",
+    "meaning_id": "Batas Kualitas Terbaik (Best Before)",
+    "meaning_en": "Best Before Date",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Tanggal batas kenikmatan rasa terbaik (masih aman dikonsumsi sebentar setelah lewat).",
+    "example": {
+      "ja": "牛乳の賞味期限は明日までです。",
+      "reading": "ぎゅうにゅうのしょうみきげんはあすまでです。",
+      "meaning": "Batas kualitas terbaik susu ini sampai besok."
+    }
+  },
+  {
+    "word": "消費期限",
+    "reading": "しょうひきげん",
+    "romaji": "shouhikigen",
+    "meaning_id": "Batas Kedaluwarsa Konsumsi (Expiration Date)",
+    "meaning_en": "Use-by Date / Expiration Date",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Batas waktu mutlak untuk makanan yang cepat rusak (daging, bento, roti segar).",
+    "example": {
+      "ja": "消費期限が切れたサンドイッチは食べないでください。",
+      "reading": "しょうひきげんがきれたさんどいっちはたべないでください。",
+      "meaning": "Jangan memakan roti lapis yang sudah lewat batas kedaluwarsanya."
+    }
+  },
+  {
+    "word": "領収書",
+    "reading": "りょうしゅうしょ",
+    "romaji": "ryoushuusho",
+    "meaning_id": "Kuitansi Resmi / Tanda Terima",
+    "meaning_en": "Official Receipt",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Tanda terima resmi berstempel toko untuk klaim biaya perusahaan.",
+    "example": {
+      "ja": "会社で精算したいので、領収書をいただけますか。",
+      "reading": "かいしゃでせいさんしたいので、りょうしゅうしょをいただけますか。",
+      "meaning": "Bisa tolong berikan kuitansi resmi? Saya ingin klaim di kantor."
+    }
+  },
+  {
+    "word": "定休日",
+    "reading": "ていきゅうび",
+    "romaji": "teikyuubi",
+    "meaning_id": "Hari Libur Rutin / Reguler",
+    "meaning_en": "Regular Day Off / Weekly Holiday",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Hari toko atau restoran tutup secara tetap setiap pekannya (misal setiap hari Rabu).",
+    "example": {
+      "ja": "あのラーメン屋は毎週火曜日が定休日です。",
+      "reading": "あのらーめんやはまいしゅうかようびがていきゅうびです。",
+      "meaning": "Warung ramen itu hari libur regulernya setiap hari Selasa."
+    }
+  },
+  {
+    "word": "営業中",
+    "reading": "えいぎょうちゅう",
+    "romaji": "eigyouchuu",
+    "meaning_id": "Buka / Sedang Beroperasi",
+    "meaning_en": "Open for Business",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Tanda papan di depan pintu toko atau restoran yang menandakan toko sedang melayani pelanggan.",
+    "example": {
+      "ja": "「営業中」の看板が出ているので、店に入りましょう。",
+      "reading": "「えいぎょうちゅう」のかんばんがでているので、みせにはいりましょう。",
+      "meaning": "Karena plang 'Buka' terpasang, mari kita masuk ke dalam toko."
+    }
+  },
+  {
+    "word": "準備中",
+    "reading": "じゅんびちゅう",
+    "romaji": "junbichuu",
+    "meaning_id": "Sedang Persiapan / Tutup Sementara",
+    "meaning_en": "In Preparation / Currently Closed",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Papan tanda restoran antara jam makan siang dan makan malam saat dapur bersiap.",
+    "example": {
+      "ja": "今は準備中ですから、午後5時までお待ちください。",
+      "reading": "いまはじゅんびちゅうですから、ごごごじまでおまちください。",
+      "meaning": "Karena sekarang sedang persiapan, tolong tunggu hingga pukul 5 sore."
+    }
+  },
+  {
+    "word": "満席",
+    "reading": "まんせき",
+    "romaji": "manseki",
+    "meaning_id": "Penuh / Kursi Terisi Penuh",
+    "meaning_en": "Full / No Vacancy",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Situasi di restoran atau bioskop saat semua bangku pelanggan sudah penuh.",
+    "example": {
+      "ja": "店内はただいま満席のため、順番にご案内します。",
+      "reading": "てんないはただいままんせきのため、じゅんばんにごあんないします。",
+      "meaning": "Karena di dalam toko saat ini penuh, kami akan panggil sesuai antrean."
+    }
+  },
+  {
+    "word": "空席",
+    "reading": "くうせき",
+    "romaji": "kuuseki",
+    "meaning_id": "Kursi Kosong / Tersedia Bangku",
+    "meaning_en": "Vacant Seat",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Tanda penunjuk adanya tempat duduk yang masih bisa ditempati.",
+    "example": {
+      "ja": "窓側のテーブルに空席がございます。",
+      "reading": "まどがわのてーぶるにくうせきがございます。",
+      "meaning": "Ada meja kosong di dekat jendela."
+    }
+  },
+  {
+    "word": "ゴミの分別",
+    "reading": "ごみのぶんべつ",
+    "romaji": "gomi no bunbetsu",
+    "meaning_id": "Pemilahan Sampah",
+    "meaning_en": "Garbage Sorting / Separation",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kewajiban dasar kehidupan di Jepang memilah sampah ke kategori yang benar.",
+    "example": {
+      "ja": "日本に住む時は、ゴミの分別ルールをよく守りましょう。",
+      "reading": "にほんにすむときは、ごみのぶんべつるーるをよくまもりましょう。",
+      "meaning": "Saat tinggal di Jepang, mari patuhi aturan pemilahan sampah dengan baik."
+    }
+  },
+  {
+    "word": "燃えるゴミ",
+    "reading": "もえるごみ",
+    "romaji": "moeru gomi",
+    "meaning_id": "Sampah Mudah Terbakar (Organik)",
+    "meaning_en": "Combustible / Burnable Waste",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Sisa makanan, kertas tisu, kemasan karton kotor yang dikumpulkan berkala (biasanya 2x seminggu).",
+    "example": {
+      "ja": "月曜日と木曜日は燃えるゴミの回収日です。",
+      "reading": "げつようびともくようびはもえるごみのかいしゅうびです。",
+      "meaning": "Hari Senin dan Kamis adalah jadwal pengangkutan sampah mudah terbakar."
+    }
+  },
+  {
+    "word": "燃えないゴミ",
+    "reading": "もえないごみ",
+    "romaji": "moenai gomi",
+    "meaning_id": "Sampah Tidak Mudah Terbakar (Anorganik)",
+    "meaning_en": "Incombustible / Non-burnable Waste",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kaca, keramik, wajan, bohlam lampu, dan logam kecil.",
+    "example": {
+      "ja": "割れたコップは新聞紙に包んで、燃えないゴミに出します。",
+      "reading": "われたこっぷはしんぶんしにつつんで、もえないごみにだします。",
+      "meaning": "Gelas yang pecah dibungkus koran, lalu dibuang ke sampah non-organik."
+    }
+  },
+  {
+    "word": "資源ゴミ",
+    "reading": "しげんごみ",
+    "romaji": "shigen gomi",
+    "meaning_id": "Sampah Daur Ulang",
+    "meaning_en": "Recyclable Waste",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Botol plastik PET, kaleng aluminium, botol kaca, kardus, dan koran bekas.",
+    "example": {
+      "ja": "ペットボトルは洗ってキャップを外し、資源ゴミにします。",
+      "reading": "ぺっとぼとるはあらってきゃっぷをはずし、しげんごみにします。",
+      "meaning": "Botol plastik dicuci dan tutupnya dilepas, lalu dibuang sebagai sampah daur ulang."
+    }
+  },
+  {
+    "word": "保険証",
+    "reading": "ほけんしょう",
+    "romaji": "hokenshou",
+    "meaning_id": "Kartu Asuransi Kesehatan",
+    "meaning_en": "Health Insurance Card",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Dokumen wajib yang ditunjukkan saat pertama kali berobat ke klinik atau rumah sakit di Jepang.",
+    "example": {
+      "ja": "病院の受付で健康保険証を提示してください。",
+      "reading": "びょういんのうけつけでけんこうほけんしょうをていじしてください。",
+      "meaning": "Harap tunjukkan kartu asuransi kesehatan di bagian resepsionis rumah sakit."
+    }
+  },
+  {
+    "word": "処方箋",
+    "reading": "しょほうせん",
+    "romaji": "shohousen",
+    "meaning_id": "Resep Obat Dokter",
+    "meaning_en": "Prescription",
+    "category": "seikatsu",
+    "category_label": "Kehidupan & Belanja",
+    "context": "Kertas resep dari dokter klinik untuk ditebus di apotek terdekat (薬局).",
+    "example": {
+      "ja": "この処方箋を調剤薬局に持って行ってください。",
+      "reading": "このしょほうせんをちょうざいやっきょくにもっていってください。",
+      "meaning": "Tolong bawa lembar resep ini ke apotek farmasi."
+    }
+  },
+  {
+    "word": "シフト",
+    "reading": "シフト",
+    "romaji": "shifuto",
+    "meaning_id": "Jadwal Giliran Kerja (Shift)",
+    "meaning_en": "Work Shift / Schedule",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Pembagian jam kerja mingguan/bulanan di pabrik, toko swalayan, atau restoran.",
+    "example": {
+      "ja": "来月のシフト表はもう出ましたか。",
+      "reading": "らいげつのしふとひょうはもうでましたか。",
+      "meaning": "Apakah tabel jadwal kerja shift untuk bulan depan sudah keluar?"
+    }
+  },
+  {
+    "word": "残業",
+    "reading": "ざんぎょう",
+    "romaji": "zangyou",
+    "meaning_id": "Kerja Lembur",
+    "meaning_en": "Overtime Work",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Bekerja melebihi jam kerja normal 8 jam sehari.",
+    "example": {
+      "ja": "今日は注文が多いため、1時間残業をお願いします。",
+      "reading": "きょうはちゅうもんがおおいため、いちじかんざんぎょうをおねがいします。",
+      "meaning": "Karena pesanan hari ini banyak, tolong lembur 1 jam ya."
+    }
+  },
+  {
+    "word": "休憩",
+    "reading": "きゅうけい",
+    "romaji": "kyuukei",
+    "meaning_id": "Istirahat Kerja",
+    "meaning_en": "Break / Rest Time",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Jeda istirahat singkat (10-15 menit) atau makan siang di tengah waktu kerja.",
+    "example": {
+      "ja": "12時から1時間お昼の休憩に入ります。",
+      "reading": "じゅうにじからいちじかんおひるのきゅうけいにはいります。",
+      "meaning": "Mulai pukul 12 kita masuk istirahat makan siang selama 1 jam."
+    }
+  },
+  {
+    "word": "体調",
+    "reading": "たいちょう",
+    "romaji": "taichou",
+    "meaning_id": "Kondisi Fisik / Kesehatan Tubuh",
+    "meaning_en": "Physical Condition / Health Status",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Pemeriksaan harian wajib sebelum pekerja memulai aktivitas di pabrik atau dapur.",
+    "example": {
+      "ja": "朝から体調が悪く、熱が38度あります。",
+      "reading": "あさからたいちょうがわるく、ねつがさんじゅうはちどあります。",
+      "meaning": "Kondisi fisik saya buruk sejak pagi, demam 38 derajat."
+    }
+  },
+  {
+    "word": "欠勤",
+    "reading": "けっきん",
+    "romaji": "kekkin",
+    "meaning_id": "Absen / Tidak Masuk Kerja",
+    "meaning_en": "Absence from Work",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Pemberitahuan resmi tidak masuk kerja karena sakit atau urusan mendesak.",
+    "example": {
+      "ja": "風邪をひいたので、本日は欠勤させていただきます。",
+      "reading": "かぜをひいたので、ほんじつはけっきんさせていただきます。",
+      "meaning": "Karena terserang flu, hari ini saya izin tidak masuk kerja."
+    }
+  },
+  {
+    "word": "遅刻",
+    "reading": "ちこく",
+    "romaji": "chikoku",
+    "meaning_id": "Terlambat Hadir / Datang Terlambat",
+    "meaning_en": "Tardiness / Being Late",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Wajib dilaporkan ke atasan sebelum jam masuk kerja dimulai.",
+    "example": {
+      "ja": "電車が遅延したため、15分ほど遅刻します。",
+      "reading": "でんしゃがちえんしたため、じゅうごふんほどちこくします。",
+      "meaning": "Karena kereta terlambat, saya akan telat sekitar 15 menit."
+    }
+  },
+  {
+    "word": "早退",
+    "reading": "そうたい",
+    "romaji": "soutai",
+    "meaning_id": "Pulang Kerja Lebih Awal",
+    "meaning_en": "Leaving Early",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Izin meninggalkan tempat kerja sebelum jam kerja harian selesai.",
+    "example": {
+      "ja": "急にお腹が痛くなったので、早退してもよろしいですか。",
+      "reading": "きゅうにおなかがいたくなったので、そうたいしてもよろしいですか。",
+      "meaning": "Perut saya tiba-tiba sakit, bolehkah saya pulang lebih awal?"
+    }
+  },
+  {
+    "word": "有給休暇",
+    "reading": "ゆうきゅうきゅうか",
+    "romaji": "yuukyuu kyuuka",
+    "meaning_id": "Cuti Tahunan Berbayar (Yukyu)",
+    "meaning_en": "Paid Annual Leave",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Hak cuti karyawan yang tetap mendapatkan gaji normal.",
+    "example": {
+      "ja": "来週の金曜日に有給休暇を取りたいです。",
+      "reading": "らいしゅうのきんようびにゆうきゅうきゅうかをとりたいです。",
+      "meaning": "Saya ingin mengambil cuti berbayar pada hari Jumat pekan depan."
+    }
+  },
+  {
+    "word": "報告",
+    "reading": "ほうこく",
+    "romaji": "houkoku",
+    "meaning_id": "Laporan (Bagian dari Ho-Ren-So)",
+    "meaning_en": "Report",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Melaporkan perkembangan atau penyelesaian pekerjaan kepada pimpinan/senior.",
+    "example": {
+      "ja": "今日の作業結果をリーダーに報告しました。",
+      "reading": "きょうのさぎょうけっかをりーだーにほうこくしました。",
+      "meaning": "Saya telah melaporkan hasil pekerjaan hari ini kepada pemimpin regu."
+    }
+  },
+  {
+    "word": "連絡",
+    "reading": "れんらく",
+    "romaji": "renraku",
+    "meaning_id": "Kontak / Memberi Kabar",
+    "meaning_en": "Communication / Contact",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Menyampaikan informasi jadwal atau perubahan situasi kepada tim secepatnya.",
+    "example": {
+      "ja": "何か問題があれば、すぐに連絡してください。",
+      "reading": "なにかもんだいがあれば、すぐにれんらくしてください。",
+      "meaning": "Jika ada masalah apa pun, tolong segera hubungi kami."
+    }
+  },
+  {
+    "word": "相談",
+    "reading": "そうだん",
+    "romaji": "soudan",
+    "meaning_id": "Konsultasi / Berdiskusi",
+    "meaning_en": "Consultation",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Meminta saran dan arahan sebelum mengambil keputusan yang belum dipahami.",
+    "example": {
+      "ja": "やり方が分からない時は、先輩に相談しましょう。",
+      "reading": "やりかたがわからないときは、せんぱいにそうだんしましょう。",
+      "meaning": "Saat tidak paham caranya, mari berkonsultasi kepada senior."
+    }
+  },
+  {
+    "word": "安全第一",
+    "reading": "あんぜんだいいち",
+    "romaji": "anzen daiichi",
+    "meaning_id": "Utamakan Keselamatan (Safety First)",
+    "meaning_en": "Safety First",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Slogan nomor satu yang tertulis di setiap pabrik, gudang, dan proyek di Jepang.",
+    "example": {
+      "ja": "工場内では安全第一で作業を進めてください。",
+      "reading": "こうじょうないではあんぜんだいいちでさぎょうをすすめてください。",
+      "meaning": "Di dalam pabrik, silakan jalankan pekerjaan dengan mengutamakan keselamatan."
+    }
+  },
+  {
+    "word": "点検",
+    "reading": "てんけん",
+    "romaji": "tenken",
+    "meaning_id": "Pemeriksaan Rutin / Inspeksi Alat",
+    "meaning_en": "Inspection / Maintenance Check",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Memeriksa kesiapan mesin dan perkakas sebelum digunakan untuk mencegah kecelakaan.",
+    "example": {
+      "ja": "機械を使う前に、必ず安全点検を行ってください。",
+      "reading": "きかいをつかうまえに、かならずあんぜんてんけんをおこなってください。",
+      "meaning": "Sebelum menggunakan mesin, pastikan untuk melakukan inspeksi keselamatan."
+    }
+  },
+  {
+    "word": "手袋着用",
+    "reading": "てぶくろちゃくよう",
+    "romaji": "tebukuro chakuyou",
+    "meaning_id": "Wajib Memakai Sarung Tangan",
+    "meaning_en": "Wear Gloves Mandatory",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Instruksi keselamatan kerja menangani bahan panas, tajam, atau kimia.",
+    "example": {
+      "ja": "刃物を扱う作業時は、必ず保護手袋を着用してください。",
+      "reading": "はものをあつかうさぎょうじは、かならずほごてぶくろをちゃくようしてください。",
+      "meaning": "Saat bekerja menangani benda tajam, pastikan memakai sarung tangan pelindung."
+    }
+  },
+  {
+    "word": "ヘルメット着用",
+    "reading": "ヘルメットちゃくよう",
+    "romaji": "herumetto chakuyou",
+    "meaning_id": "Wajib Memakai Helm Proyek",
+    "meaning_en": "Hard Hat / Helmet Mandatory",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Instruksi keselamatan mutlak saat memasuki area proyek konstruksi atau pergudangan tinggi.",
+    "example": {
+      "ja": "作業現場ではヘルメット着用が義務付けられています。",
+      "reading": "さぎょうげんばではへるめっとちゃくようがぎむづけられています。",
+      "meaning": "Di tempat proyek kerja, wajib memakai helm keselamatan."
+    }
+  },
+  {
+    "word": "不良品",
+    "reading": "ふりょうひん",
+    "romaji": "furyoohin",
+    "meaning_id": "Produk Cacat / Barang Rusak (Reject)",
+    "meaning_en": "Defective Product",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Barang hasil produksi pabrik yang tidak lolos standar kualitas mutu (*QC*).",
+    "example": {
+      "ja": "傷のある製品は不良品用の箱に分けてください。",
+      "reading": "きずのあるせいひんはふりょうひんようのはこにわけてください。",
+      "meaning": "Produk yang tergores tolong dipisahkan ke kotak barang cacat."
+    }
+  },
+  {
+    "word": "出勤",
+    "reading": "しゅっきん",
+    "romaji": "shukkin",
+    "meaning_id": "Masuk Kerja / Hadir Kerja",
+    "meaning_en": "Going to Work / Clocking In",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Tiba di tempat kerja dan melakukan presensi kehadiran.",
+    "example": {
+      "ja": "明日は朝8時半までに出勤してください。",
+      "reading": "あすはあさはちじはんまでにしゅっきんしてください。",
+      "meaning": "Besok tolong masuk kerja sebelum jam 8.30 pagi."
+    }
+  },
+  {
+    "word": "退勤",
+    "reading": "たいきん",
+    "romaji": "taikin",
+    "meaning_id": "Selesai Kerja / Pulang Kantor",
+    "meaning_en": "Leaving Work / Clocking Out",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Menyelesaikan jam kerja dan menempel kartu presensi keluar.",
+    "example": {
+      "ja": "タイムカードを押して退勤します。",
+      "reading": "たいむかーどをおしてたいきんします。",
+      "meaning": "Saya menempel kartu absensi dan selesai bekerja."
+    }
+  },
+  {
+    "word": "手順",
+    "reading": "てじゅん",
+    "romaji": "tejun",
+    "meaning_id": "Prosedur / Urutan Langkah Kerja",
+    "meaning_en": "Procedure / Protocol",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Urutan langkah standar yang tertulis dalam manual panduan operasional.",
+    "example": {
+      "ja": "マニュアルの手順通りに正しく作業してください。",
+      "reading": "まにゅあるのてじゅんどおりにただしくさぎょうしてください。",
+      "meaning": "Silakan bekerja dengan benar sesuai urutan prosedur di buku manual."
+    }
+  },
+  {
+    "word": "整理整頓",
+    "reading": "せいりせいとん",
+    "romaji": "seiri seiton",
+    "meaning_id": "Menata dan Merapikan (Budaya 5S)",
+    "meaning_en": "Sorting and Organizing (5S)",
+    "category": "shigoto",
+    "category_label": "Tempat Kerja & Operasional",
+    "context": "Membuang barang tak berguna dan mengembalikan alat pada tempat asalnya di bengkel/kantor.",
+    "example": {
+      "ja": "仕事が終わったら、作業台の整理整頓をしましょう。",
+      "reading": "しごとがおわったら、さぎょうだいのせいりせいとんをしましょう。",
+      "meaning": "Bila pekerjaan selesai, mari menata dan merapikan meja kerja."
+    }
+  }
+]

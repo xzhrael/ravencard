@@ -2532,5 +2532,89 @@
       "reading": "くろい",
       "meaning": "Hitam"
     }
+  },
+  {
+    "char": "禁",
+    "onyomi": "キン",
+    "kunyomi": "-",
+    "meaning_id": "Dilarang / Larangan",
+    "meaning_en": "Prohibition / Ban",
+    "level": "N4",
+    "strokes": 13,
+    "example": {
+      "ja": "禁煙",
+      "reading": "きんえん",
+      "meaning": "Dilarang merokok"
+    }
+  },
+  {
+    "char": "煙",
+    "onyomi": "エン",
+    "kunyomi": "けむり, けむ・い",
+    "meaning_id": "Asap / Rokok",
+    "meaning_en": "Smoke",
+    "level": "N4",
+    "strokes": 13,
+    "example": {
+      "ja": "煙突",
+      "reading": "えんとつ",
+      "meaning": "Cerobong asap"
+    }
+  },
+  {
+    "char": "危",
+    "onyomi": "キ",
+    "kunyomi": "あぶ・ない, あや・うい",
+    "meaning_id": "Bahaya",
+    "meaning_en": "Danger / Risky",
+    "level": "N4",
+    "strokes": 6,
+    "example": {
+      "ja": "危険",
+      "reading": "きけん",
+      "meaning": "Bahaya"
+    }
+  },
+  {
+    "char": "険",
+    "onyomi": "ケン",
+    "kunyomi": "けわ・しい",
+    "meaning_id": "Curam / Bahaya / Terjal",
+    "meaning_en": "Steep / Severity",
+    "level": "N4",
+    "strokes": 11,
+    "example": {
+      "ja": "険しい山",
+      "reading": "けわしいやま",
+      "meaning": "Gunung yang terjal dan curam"
+    }
+  },
+  {
+    "char": "割",
+    "onyomi": "カツ",
+    "kunyomi": "わ・る, わり, わ・れる",
+    "meaning_id": "Bagi / Pecah / Diskon",
+    "meaning_en": "Divide / Cut / Proportion",
+    "level": "N4",
+    "strokes": 12,
+    "example": {
+      "ja": "割引",
+      "reading": "わりびき",
+      "meaning": "Diskon / Potongan harga"
+    }
+  },
+  {
+    "char": "済",
+    "onyomi": "サイ",
+    "kunyomi": "す・む, す・ます",
+    "meaning_id": "Selesai / Lunas",
+    "meaning_en": "Finish / Settle / Relieve",
+    "level": "N4",
+    "strokes": 11,
+    "example": {
+      "ja": "返済",
+      "reading": "へんさい",
+      "meaning": "Pelunasan hutang"
+    }
   }
 ]

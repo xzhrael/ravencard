@@ -544,6 +544,63 @@ body {
   color: var(--md-sys-color-on-surface-variant);
 }
 
+.card-transitivity-box {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: var(--md-sys-color-surface-container-high);
+  font-size: 0.74rem;
+  color: var(--md-sys-color-on-surface);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.trans-tag {
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.trans-tag.transitive {
+  background: rgba(56, 189, 248, 0.20);
+  color: #38bdf8;
+}
+
+.trans-tag.intransitive {
+  background: rgba(52, 211, 153, 0.20);
+  color: #34d399;
+}
+
+[data-theme="light"] .trans-tag.transitive {
+  background: rgba(2, 132, 199, 0.14);
+  color: #0284c7;
+}
+
+[data-theme="light"] .trans-tag.intransitive {
+  background: rgba(5, 150, 105, 0.14);
+  color: #059669;
+}
+
+.trans-sep {
+  opacity: 0.55;
+  font-weight: 600;
+}
+
+.trans-pair {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.trans-pair strong {
+  color: var(--md-sys-color-on-surface);
+  font-weight: 700;
+}
+
 .yomi-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1373,6 +1430,10 @@ body {
   box-shadow: var(--shadow-subtle);
   transition: var(--motion-fast);
   min-width: 0;
+}
+
+.sheet-category-btn[data-category="jft"] {
+  grid-column: 1 / -1;
 }
 
 .sheet-category-btn:hover {

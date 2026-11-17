@@ -11,6 +11,7 @@ import {
   getSavedTheme,
   saveTheme
 } from './storage.js';
+import { getTransitivityInfo } from './transitivity-data.js';
 
 const FILTER_CONFIG = {
   hiragana: [
@@ -36,6 +37,12 @@ const FILTER_CONFIG = {
     { id: 'n5', label: 'JLPT N5' },
     { id: 'n4', label: 'JLPT N4' },
     { id: 'n3', label: 'JLPT N3' }
+  ],
+  jft: [
+    { id: 'all', label: 'Semua Rambu & Kosakata' },
+    { id: 'rambu', label: 'Rambu & Keselamatan' },
+    { id: 'seikatsu', label: 'Kehidupan & Belanja' },
+    { id: 'shigoto', label: 'Tempat Kerja' }
   ]
 };
 
@@ -209,7 +216,7 @@ function renderCurrentCard() {
   }
 
   if (frontHint) {
-    if (card.category === 'kotoba' && card.reading && card.reading !== card.character) {
+    if ((card.category === 'kotoba' || card.category === 'jft') && card.reading && card.reading !== card.character) {
       frontHint.textContent = `[ ${card.reading} ]`;
       frontHint.style.display = '';
     } else {
@@ -229,6 +236,22 @@ function renderCurrentCard() {
   if (backRomaji) backRomaji.textContent = card.romaji || card.reading || '';
   if (backMeaningId) backMeaningId.textContent = card.meaning_id || '';
   if (backMeaningEn) backMeaningEn.textContent = card.meaning_en || '';
+
+  const transitivityBox = document.getElementById('card-transitivity-box');
+  const transInfo = getTransitivityInfo(card.character);
+  if (transitivityBox) {
+    if (transInfo) {
+      transitivityBox.style.display = 'inline-flex';
+      transitivityBox.innerHTML = `
+        <span class="trans-tag ${transInfo.isTransitive ? 'transitive' : 'intransitive'}">${transInfo.type}</span>
+        <span class="trans-sep">↔</span>
+        <span class="trans-pair">Pasangan: <strong>${transInfo.pairWord}</strong> (${transInfo.pairType.split(' ')[0]})</span>
+      `;
+    } else {
+      transitivityBox.style.display = 'none';
+      transitivityBox.innerHTML = '';
+    }
+  }
 
   const yomiBox = document.getElementById('kanji-yomi-box');
   const onyomiEl = document.getElementById('kanji-onyomi');
@@ -376,7 +399,8 @@ function updateDeckLabel() {
     hiragana: 'Hiragana',
     katakana: 'Katakana',
     kanji: 'Kanji',
-    kotoba: 'Kotoba'
+    kotoba: 'Kotoba',
+    jft: 'JFT-Basic'
   };
 
   const catName = catNames[state.category] || state.category;

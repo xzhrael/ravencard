@@ -136,6 +136,30 @@ export async function getDeckData(category, level = 'all') {
         break;
       }
 
+      case 'jft': {
+        const res = await fetch('./data/jft-basic.json');
+        const list = await res.json();
+        rawItems = list.map((item, idx) => ({
+          id: `jft-${idx}`,
+          category: 'jft',
+          group: item.category,
+          character: item.word,
+          reading: item.reading,
+          romaji: item.romaji || kanaToRomaji(item.reading || ''),
+          meaning_id: item.meaning_id,
+          meaning_en: item.meaning_en,
+          badge: `JFT • ${item.category_label || 'Rambu & Kehidupan'}`,
+          example: item.example ? {
+            ...item.example,
+            romaji: kanaToRomaji(item.example.reading || '')
+          } : null
+        }));
+        if (level !== 'all') {
+          rawItems = rawItems.filter(item => item.group === level);
+        }
+        break;
+      }
+
       default:
         rawItems = [];
     }

@@ -1,21 +1,22 @@
-const CACHE_NAME = 'ravencard-cache-v26';
+const CACHE_NAME = 'ravencard-cache-v27';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
   './manifest.json?v=9',
   './css/style.css',
-  './css/style.css?v=26',
+  './css/style.css?v=27',
   './js/pwa.js',
   './js/kana-utils.js',
   './js/data-service.js',
+  './js/transitivity-data.js',
   './js/storage.js',
   './js/audio.js',
   './js/quiz.js',
   './js/stroke-data.js',
   './js/writing.js',
   './js/app.js',
-  './js/app.js?v=26',
+  './js/app.js?v=27',
   './assets/icons/logo.svg',
   './assets/icons/icon-192.png',
   './assets/icons/icon-192.png?v=9',
@@ -30,7 +31,8 @@ const ASSETS_TO_CACHE = [
   './data/kanji-n3.json',
   './data/kotoba-n5.json',
   './data/kotoba-n4.json',
-  './data/kotoba-n3.json'
+  './data/kotoba-n3.json',
+  './data/jft-basic.json'
 ];
 
 self.addEventListener('install', (event) => {
