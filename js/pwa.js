@@ -101,6 +101,29 @@ function setupInstallPrompt() {
     });
   }
 
+  // Handle dual-platform install guide tabs
+  const tabAndroid = document.getElementById('tab-btn-android');
+  const tabIos = document.getElementById('tab-btn-ios');
+  const stepsAndroid = document.getElementById('install-steps-android');
+  const stepsIos = document.getElementById('install-steps-ios');
+
+  function switchInstallTab(target) {
+    const isIos = target === 'ios';
+    if (tabIos && tabAndroid) {
+      tabIos.classList.toggle('active', isIos);
+      tabAndroid.classList.toggle('active', !isIos);
+      tabIos.setAttribute('aria-selected', isIos ? 'true' : 'false');
+      tabAndroid.setAttribute('aria-selected', !isIos ? 'true' : 'false');
+    }
+    if (stepsIos && stepsAndroid) {
+      stepsIos.classList.toggle('hidden', !isIos);
+      stepsAndroid.classList.toggle('hidden', isIos);
+    }
+  }
+
+  if (tabAndroid) tabAndroid.addEventListener('click', () => switchInstallTab('android'));
+  if (tabIos) tabIos.addEventListener('click', () => switchInstallTab('ios'));
+
   if (installModal) {
     installModal.addEventListener('click', (e) => {
       if (e.target === installModal) {
@@ -120,6 +143,20 @@ function setupInstallPrompt() {
 export function openInstallGuide() {
   const installModal = document.getElementById('install-modal');
   if (installModal) {
+    const isApple = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const tabAndroid = document.getElementById('tab-btn-android');
+    const tabIos = document.getElementById('tab-btn-ios');
+    const stepsAndroid = document.getElementById('install-steps-android');
+    const stepsIos = document.getElementById('install-steps-ios');
+
+    if (tabIos && tabAndroid && stepsIos && stepsAndroid) {
+      tabIos.classList.toggle('active', isApple);
+      tabAndroid.classList.toggle('active', !isApple);
+      stepsIos.classList.toggle('hidden', !isApple);
+      stepsAndroid.classList.toggle('hidden', isApple);
+    }
+
     installModal.classList.add('active');
   }
 }

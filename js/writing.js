@@ -1,6 +1,7 @@
 import { getDeckData } from './data-service.js';
 import { speakJapanese } from './audio.js';
 import { showToast } from './pwa.js';
+import { getStrokeOrder, evaluateStrokeAccuracy } from './stroke-data.js';
 
 const writingState = {
   category: 'hiragana',
@@ -14,12 +15,14 @@ const writingState = {
   strokeHistory: [],
   currentStroke: [],
   isPeeking: false,
-  peekTimeout: null
+  peekTimeout: null,
+  showStrokeMarkers: true
 };
 
 let canvas = null;
 let ctx = null;
 let dpr = 1;
+let canvasLogicalSize = 300;
 
 export async function initWriting() {
   canvas = document.getElementById('writing-canvas');
@@ -38,12 +41,24 @@ function setupCanvasDpi() {
   if (!canvas) return;
   dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
-  const size = Math.min(rect.width || 300, 320);
+  const newSize = Math.round(rect.width) || 300;
 
-  canvas.width = size * dpr;
-  canvas.height = size * dpr;
-  canvas.style.width = `${size}px`;
-  canvas.style.height = `${size}px`;
+  // Rescale existing stroke points when device orientation changes (e.g. tablet rotation)
+  if (canvasLogicalSize && canvasLogicalSize !== newSize && writingState.strokeHistory.length > 0) {
+    const scaleFactor = newSize / canvasLogicalSize;
+    writingState.strokeHistory.forEach(stroke => {
+      stroke.forEach(pt => {
+        pt.x *= scaleFactor;
+        pt.y *= scaleFactor;
+      });
+    });
+  }
+  canvasLogicalSize = newSize;
+
+  canvas.width = Math.round(newSize * dpr);
+  canvas.height = Math.round(newSize * dpr);
+  canvas.style.width = `${newSize}px`;
+  canvas.style.height = `${newSize}px`;
 
   if (ctx) {
     ctx.scale(dpr, dpr);
@@ -57,9 +72,13 @@ function setupCanvasEvents() {
 
   const getCanvasCoords = (e) => {
     const rect = canvas.getBoundingClientRect();
+    const pressure = typeof e.pressure === 'number' && e.pressure > 0 ? e.pressure : 0.5;
+    const isPen = e.pointerType === 'pen';
     return {
       x: e.clientX - rect.left,
-      y: e.clientY - rect.top
+      y: e.clientY - rect.top,
+      p: pressure,
+      isPen: isPen
     };
   };
 
@@ -71,7 +90,7 @@ function setupCanvasEvents() {
     const coords = getCanvasCoords(e);
     writingState.currentStroke = [coords];
 
-    drawDot(coords.x, coords.y);
+    drawDot(coords.x, coords.y, coords.p, coords.isPen);
   });
 
   canvas.addEventListener('pointermove', (e) => {
@@ -84,7 +103,7 @@ function setupCanvasEvents() {
     const pts = writingState.currentStroke;
     if (pts.length > 1) {
       const prev = pts[pts.length - 2];
-      drawLine(prev.x, prev.y, coords.x, coords.y);
+      drawLine(prev, coords);
     }
   });
 
@@ -113,54 +132,56 @@ function getInkColor() {
   return isDark ? '#f3f4f8' : '#181c24';
 }
 
-function drawDot(x, y) {
+function getStrokeWidth(pressure, isPen) {
+  if (isPen && pressure > 0) {
+    // Dynamic calligraphy brush weight for Huawei M-Pencil and Apple Pencil (3.5px to 11.5px)
+    return Math.max(3, Math.min(12, 3.5 + pressure * 8.5));
+  }
+  return 7;
+}
+
+function drawDot(x, y, pressure, isPen) {
   if (!ctx) return;
+  const radius = isPen && pressure > 0 ? Math.max(1.8, (3.5 + pressure * 8.5) / 2) : 3.5;
   ctx.fillStyle = getInkColor();
   ctx.beginPath();
-  ctx.arc(x, y, 4, 0, Math.PI * 2);
+  ctx.arc(x, y, radius, 0, Math.PI * 2);
   ctx.fill();
 }
 
-function drawLine(x1, y1, x2, y2) {
+function drawLine(p1, p2) {
   if (!ctx) return;
   ctx.strokeStyle = getInkColor();
-  ctx.lineWidth = 7;
+  ctx.lineWidth = getStrokeWidth(p2.p, p2.isPen);
   ctx.beginPath();
-  ctx.moveTo(x1, y1);
-  ctx.lineTo(x2, y2);
+  ctx.moveTo(p1.x, p1.y);
+  ctx.lineTo(p2.x, p2.y);
   ctx.stroke();
 }
 
 function redrawCanvas() {
   if (!ctx || !canvas) return;
-  const rect = canvas.getBoundingClientRect();
-  ctx.clearRect(0, 0, rect.width, rect.height);
+  ctx.clearRect(0, 0, canvasLogicalSize, canvasLogicalSize);
 
   ctx.strokeStyle = getInkColor();
-  ctx.lineWidth = 7;
   ctx.fillStyle = getInkColor();
 
   writingState.strokeHistory.forEach(stroke => {
     if (!stroke.length) return;
     if (stroke.length === 1) {
-      ctx.beginPath();
-      ctx.arc(stroke[0].x, stroke[0].y, 4, 0, Math.PI * 2);
-      ctx.fill();
+      const p = stroke[0];
+      drawDot(p.x, p.y, p.p, p.isPen);
       return;
     }
-    ctx.beginPath();
-    ctx.moveTo(stroke[0].x, stroke[0].y);
     for (let i = 1; i < stroke.length; i++) {
-      ctx.lineTo(stroke[i].x, stroke[i].y);
+      drawLine(stroke[i - 1], stroke[i]);
     }
-    ctx.stroke();
   });
 }
 
 export function clearWritingCanvas() {
   if (!ctx || !canvas) return;
-  const rect = canvas.getBoundingClientRect();
-  ctx.clearRect(0, 0, rect.width, rect.height);
+  ctx.clearRect(0, 0, canvasLogicalSize, canvasLogicalSize);
   writingState.strokeHistory = [];
   writingState.currentStroke = [];
   writingState.hasStrokes = false;
@@ -194,8 +215,7 @@ function calculateGhostOpacity(currentRep, totalReps) {
 
 function updateGhostGuideUI() {
   const ghostEl = document.getElementById('canvas-ghost-glyph');
-  const labelEl = document.getElementById('writing-guide-label');
-  const dotEl = document.getElementById('writing-guide-dot');
+  const markersEl = document.getElementById('canvas-stroke-markers');
   const barFillEl = document.getElementById('writing-rep-bar-fill');
   const repCounterEl = document.getElementById('writing-rep-counter');
 
@@ -203,6 +223,12 @@ function updateGhostGuideUI() {
 
   if (ghostEl) {
     ghostEl.style.opacity = writingState.isPeeking ? '0.55' : opacity.toString();
+  }
+
+  // Stroke order markers fade gradually with the guide
+  if (markersEl) {
+    const markerOpacity = writingState.isPeeking ? 1 : (opacity > 0 ? Math.min(1, 0.25 + opacity * 0.75) : 0);
+    markersEl.style.opacity = writingState.showStrokeMarkers ? markerOpacity.toString() : '0';
   }
 
   const percent = Math.min(100, Math.round((writingState.currentRep / writingState.totalReps) * 100));
@@ -213,26 +239,35 @@ function updateGhostGuideUI() {
   if (repCounterEl) {
     repCounterEl.textContent = `Repetisi ${writingState.currentRep} / ${writingState.totalReps}`;
   }
+}
 
-  if (labelEl && dotEl) {
-    dotEl.className = 'guide-status-dot';
-    if (writingState.isPeeking) {
-      labelEl.textContent = 'Panduan: Intip Sementara';
-      dotEl.classList.add('peeking');
-    } else if (opacity >= 0.40) {
-      labelEl.textContent = 'Panduan: Jelas (Bantuan Awal)';
-      dotEl.classList.add('strong');
-    } else if (opacity >= 0.18) {
-      labelEl.textContent = 'Panduan: Memudar (Latihan Mandiri)';
-      dotEl.classList.add('fading');
-    } else if (opacity > 0) {
-      labelEl.textContent = 'Panduan: Hampir Hilang';
-      dotEl.classList.add('faint');
-    } else {
-      labelEl.textContent = 'Mandiri: Ingatan Murni (Tanpa Panduan)';
-      dotEl.classList.add('hidden-guide');
-    }
-  }
+function renderStrokeGuides(card) {
+  const markersContainer = document.getElementById('canvas-stroke-markers');
+  const stepsContainer = document.getElementById('stroke-steps-strip');
+  if (!markersContainer || !stepsContainer) return;
+
+  markersContainer.innerHTML = '';
+  stepsContainer.innerHTML = '';
+
+  const strokes = getStrokeOrder(card.character, card.strokes || 1);
+  if (!strokes || strokes.length === 0) return;
+
+  strokes.forEach(stroke => {
+    // 1. Interactive marker on canvas
+    const badge = document.createElement('span');
+    badge.className = 'stroke-marker-badge';
+    badge.style.left = `${stroke.x}%`;
+    badge.style.top = `${stroke.y}%`;
+    badge.innerHTML = `${stroke.n}<span class="stroke-dir-arrow">${stroke.dir || ''}</span>`;
+    badge.title = stroke.tip || `Goresan ke-${stroke.n}`;
+    markersContainer.appendChild(badge);
+
+    // 2. Sequential step pill below canvas
+    const pill = document.createElement('div');
+    pill.className = 'stroke-step-pill';
+    pill.innerHTML = `<span class="step-pill-num">${stroke.n}</span><span class="step-pill-dir">${stroke.dir || '→'}</span><span>${stroke.tip || ''}</span>`;
+    stepsContainer.appendChild(pill);
+  });
 }
 
 function renderWritingCard() {
@@ -243,24 +278,53 @@ function renderWritingCard() {
   const badgeEl = document.getElementById('writing-char-badge');
   const romajiEl = document.getElementById('writing-char-romaji');
   const deckPosEl = document.getElementById('writing-deck-pos');
+  const evalBadge = document.getElementById('writing-eval-badge');
 
   if (ghostEl) ghostEl.textContent = card.character;
   if (badgeEl) badgeEl.textContent = card.badge || card.category;
   if (romajiEl) romajiEl.textContent = card.romaji || card.reading || '';
   if (deckPosEl) deckPosEl.textContent = `${writingState.charIndex + 1} / ${writingState.deck.length}`;
+  if (evalBadge) evalBadge.classList.add('hidden');
 
+  renderStrokeGuides(card);
   updateGhostGuideUI();
   clearWritingCanvas();
 }
 
 function nextRepetition() {
+  const card = writingState.deck[writingState.charIndex];
+  if (!card) return;
+
+  if (!writingState.hasStrokes) {
+    showToast('Tuliskan huruf pada kanvas terlebih dahulu.');
+    return;
+  }
+
+  // Evaluate neatness / accuracy vs reference glyph
+  const evalResult = evaluateStrokeAccuracy(canvas, card.character);
+  const evalBadge = document.getElementById('writing-eval-badge');
+
+  if (evalBadge) {
+    evalBadge.textContent = `Kerapihan: ${evalResult.score}%`;
+    evalBadge.className = evalResult.passed ? 'writing-eval-badge pass' : 'writing-eval-badge retry';
+    evalBadge.classList.remove('hidden');
+  }
+
+  // If neatness < 80%: User must repeat this repetition!
+  if (!evalResult.passed) {
+    showToast(`Kerapihan: ${evalResult.score}% (<80%). Bentuk belum rapi, silakan ulangi repetisi ini.`);
+    clearWritingCanvas();
+    return;
+  }
+
+  // If neatness >= 80%: Successful repetition
   if (writingState.currentRep < writingState.totalReps) {
+    showToast(`Bagus! Kerapihan: ${evalResult.score}% (≥80%). Repetisi berhasil.`);
     writingState.currentRep++;
     clearWritingCanvas();
     updateGhostGuideUI();
   } else {
-    // Finished all repetitions for current character
-    showToast(`Bagus! Kamu telah menyelesaikan ${writingState.totalReps}x penulisan.`);
+    showToast(`Hebat! Kamu telah menuntaskan ${writingState.totalReps}x penulisan huruf ini.`);
     if (writingState.charIndex < writingState.deck.length - 1) {
       nextCharacter();
     } else {
@@ -435,6 +499,7 @@ function setupStageEvents() {
   const nextRepBtn = document.getElementById('canvas-next-rep-btn');
   const prevCharBtn = document.getElementById('writing-prev-char-btn');
   const nextCharBtn = document.getElementById('writing-next-char-btn');
+  const strokeToggleBtn = document.getElementById('canvas-stroke-toggle-btn');
 
   if (exitBtn) exitBtn.addEventListener('click', exitToConfig);
 
@@ -451,6 +516,16 @@ function setupStageEvents() {
   if (undoBtn) undoBtn.addEventListener('click', undoLastStroke);
   if (peekBtn) peekBtn.addEventListener('click', peekGuide);
   if (nextRepBtn) nextRepBtn.addEventListener('click', nextRepetition);
+
+  if (strokeToggleBtn) {
+    strokeToggleBtn.addEventListener('click', () => {
+      writingState.showStrokeMarkers = !writingState.showStrokeMarkers;
+      strokeToggleBtn.classList.toggle('active', writingState.showStrokeMarkers);
+      const markersEl = document.getElementById('canvas-stroke-markers');
+      if (markersEl) markersEl.classList.toggle('hidden-markers', !writingState.showStrokeMarkers);
+      showToast(writingState.showStrokeMarkers ? 'Nomor goresan ditampilkan.' : 'Nomor goresan disembunyikan.');
+    });
+  }
 
   if (prevCharBtn) prevCharBtn.addEventListener('click', prevCharacter);
   if (nextCharBtn) nextCharBtn.addEventListener('click', nextCharacter);

@@ -1458,6 +1458,37 @@ body {
   font-weight: 600;
 }
 
+.install-os-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  background: var(--md-sys-color-surface-container);
+  padding: 3px;
+  border-radius: var(--radius-md);
+}
+
+.install-os-tab {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: none;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--motion-fast);
+}
+
+.install-os-tab.active {
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+}
+
 .install-steps-list {
   display: flex;
   flex-direction: column;
@@ -1850,48 +1881,121 @@ body {
   transition: width 0.25s ease;
 }
 
-.writing-guide-status {
+.writing-eval-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 6px;
+  justify-content: space-between;
+  gap: 8px;
   font-size: 0.75rem;
-  font-weight: 500;
+}
+
+.writing-eval-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.74rem;
+  transition: all var(--motion-fast);
+}
+
+.writing-eval-badge.pass {
+  background: var(--md-sys-color-success-container);
+  color: var(--md-sys-color-on-success-container);
+}
+
+.writing-eval-badge.retry {
+  background: var(--md-sys-color-error-container);
+  color: var(--md-sys-color-on-error-container);
+}
+
+.writing-eval-target-hint {
+  font-size: 0.74rem;
+  color: var(--md-sys-color-on-surface-variant);
+  margin-left: auto;
+}
+
+/* Stroke order markers on canvas */
+.canvas-stroke-markers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  transition: opacity 0.3s ease;
+}
+
+.canvas-stroke-markers.hidden-markers {
+  opacity: 0;
+}
+
+.stroke-marker-badge {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  user-select: none;
+}
+
+.stroke-marker-badge .stroke-dir-arrow {
+  font-size: 0.65rem;
+  margin-left: 1px;
+  opacity: 0.9;
+}
+
+/* Stroke step sequence strip below canvas */
+.stroke-steps-strip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 4px 2px;
+  margin-bottom: 12px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.stroke-steps-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.stroke-step-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  background: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  color: var(--md-sys-color-on-surface);
+  font-size: 0.74rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.stroke-step-pill .step-pill-num {
+  font-weight: 800;
+  color: var(--md-sys-color-primary);
+}
+
+.stroke-step-pill .step-pill-dir {
   color: var(--md-sys-color-on-surface-variant);
 }
 
-.guide-status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--md-sys-color-primary);
-  flex-shrink: 0;
-  transition: background 0.3s ease;
-}
-
-.guide-status-dot.strong {
-  background: #22c55e;
-  box-shadow: 0 0 6px rgba(34, 197, 94, 0.5);
-}
-
-.guide-status-dot.fading {
-  background: #eab308;
-  box-shadow: 0 0 6px rgba(234, 179, 8, 0.4);
-}
-
-.guide-status-dot.faint {
-  background: #f97316;
-  box-shadow: 0 0 6px rgba(249, 115, 22, 0.4);
-}
-
-.guide-status-dot.hidden-guide {
-  background: var(--md-sys-color-outline-variant);
-  box-shadow: none;
-}
-
-.guide-status-dot.peeking {
-  background: #38bdf8;
-  box-shadow: 0 0 8px rgba(56, 189, 248, 0.7);
+.stroke-num-icon {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: var(--md-sys-color-primary);
 }
 
 /* Canvas stage and cross-grid */
@@ -2078,4 +2182,133 @@ body {
     font-size: 0.76rem;
     padding: 0 4px;
   }
+}
+
+/* Tablet and large screen adaptation (Huawei MatePad, Apple iPad, Desktop) */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 740px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .flashcard-stage {
+    margin-bottom: 24px;
+  }
+
+  .flashcard-wrapper {
+    max-width: 580px;
+    min-height: 420px;
+  }
+
+  .card-character {
+    font-size: clamp(6.5rem, 13vw, 8.5rem);
+  }
+
+  #page-writing {
+    max-width: 640px;
+  }
+
+  .canvas-grid-box {
+    max-width: 440px;
+  }
+
+  .canvas-ghost-glyph {
+    font-size: 260px;
+  }
+
+  .writing-stage-card,
+  .writing-setup-card {
+    padding: 26px 24px;
+  }
+
+  .writing-category-grid {
+    gap: 12px;
+  }
+
+  .writing-cat-btn {
+    padding: 16px 12px;
+  }
+
+  .writing-cat-btn .cat-kanji {
+    font-size: 1.8rem;
+  }
+
+  .dict-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .dict-list-item {
+    margin-bottom: 0;
+  }
+
+  .quiz-stage-card {
+    max-width: 620px;
+    padding: 28px 24px;
+  }
+
+  .floating-botnav {
+    gap: 12px;
+    padding: 6px 18px;
+  }
+
+  .botnav-item {
+    min-width: 72px;
+    height: 50px;
+    padding: 2px 6px;
+  }
+
+  .botnav-indicator {
+    width: 54px;
+    height: 28px;
+  }
+
+  .botnav-label {
+    font-size: 0.74rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-container {
+    max-width: 840px;
+  }
+
+  .flashcard-wrapper {
+    max-width: 620px;
+    min-height: 440px;
+  }
+
+  #page-writing {
+    max-width: 700px;
+  }
+
+  .canvas-grid-box {
+    max-width: 480px;
+  }
+
+  .canvas-ghost-glyph {
+    font-size: 280px;
+  }
+}
+
+/* iOS Safari and WebKit touch refinements */
+.flashcard-wrapper,
+#writing-canvas,
+.btn-control,
+.btn-canvas-tool,
+.botnav-item {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.canvas-stage-wrapper,
+.canvas-grid-box {
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+.modal-overlay {
+  overscroll-behavior: contain;
 }
