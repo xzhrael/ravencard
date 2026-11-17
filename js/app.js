@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initTheme();
   setupEventListeners();
   initWriting();
+  switchPage(state.activePage);
   await loadDeck();
 });
 
@@ -125,6 +126,13 @@ export function switchPage(pageName) {
   pageQuiz?.classList.toggle('active', pageName === 'quiz');
   pageList?.classList.toggle('active', pageName === 'list');
   pageWriting?.classList.toggle('active', pageName === 'writing');
+
+  // Restrict category dropdown and deck counter to cards (Belajar) and quiz (Kuis) only
+  const deckSelectorBar = document.getElementById('deck-selector-bar');
+  if (deckSelectorBar) {
+    const isDeckBarAllowed = pageName === 'cards' || pageName === 'quiz';
+    deckSelectorBar.classList.toggle('hidden', !isDeckBarAllowed);
+  }
 
   if (pageName === 'cards') {
     renderCurrentCard();

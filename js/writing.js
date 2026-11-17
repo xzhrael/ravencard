@@ -254,7 +254,7 @@ function renderStrokeGuides(card) {
     badge.className = 'stroke-marker-badge';
     badge.style.left = `${stroke.x}%`;
     badge.style.top = `${stroke.y}%`;
-    badge.innerHTML = `${stroke.n}<span class="stroke-dir-arrow">${stroke.dir || ''}</span>`;
+    badge.innerHTML = `<span class="stroke-marker-num">${stroke.n}</span><span class="stroke-dir-arrow">${stroke.dir || ''}</span>`;
     badge.title = stroke.tip || `Goresan ke-${stroke.n}`;
     markersContainer.appendChild(badge);
   });

@@ -1,11 +1,11 @@
-const CACHE_NAME = 'ravencard-cache-v24';
+const CACHE_NAME = 'ravencard-cache-v26';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
   './manifest.json?v=9',
   './css/style.css',
-  './css/style.css?v=24',
+  './css/style.css?v=26',
   './js/pwa.js',
   './js/kana-utils.js',
   './js/data-service.js',
@@ -15,7 +15,7 @@ const ASSETS_TO_CACHE = [
   './js/stroke-data.js',
   './js/writing.js',
   './js/app.js',
-  './js/app.js?v=24',
+  './js/app.js?v=26',
   './assets/icons/logo.svg',
   './assets/icons/icon-192.png',
   './assets/icons/icon-192.png?v=9',
