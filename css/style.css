@@ -980,12 +980,6 @@ body {
   gap: 8px;
 }
 
-.quiz-badge-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .quiz-mode-pill {
   display: inline-flex;
   align-items: center;
@@ -2582,7 +2576,7 @@ body {
 
 .settings-card {
   background: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: 1px solid rgba(125, 125, 125, 0.05);
   border-radius: var(--radius-xl);
   padding: 18px 20px;
   box-shadow: var(--shadow-card);
@@ -2773,7 +2767,7 @@ body {
   gap: 12px;
   padding: 12px 14px;
   background: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: 1px solid rgba(125, 125, 125, 0.05);
   border-radius: var(--radius-lg);
 }
 
@@ -2834,7 +2828,7 @@ body {
 .backup-action-btn.secondary-action {
   background: var(--md-sys-color-surface-container-high);
   color: var(--md-sys-color-on-surface);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: 1px solid rgba(125, 125, 125, 0.06);
 }
 
 .backup-action-btn.secondary-action:hover {
@@ -2843,14 +2837,14 @@ body {
 }
 
 .backup-action-btn.danger-action {
-  background: rgba(248, 81, 73, 0.12);
+  background: rgba(248, 81, 73, 0.10);
   color: #ff7b72;
-  border: 1px solid rgba(248, 81, 73, 0.35);
+  border: 1px solid rgba(248, 81, 73, 0.12);
   white-space: nowrap;
 }
 
 .backup-action-btn.danger-action:hover {
-  background: rgba(248, 81, 73, 0.22);
+  background: rgba(248, 81, 73, 0.20);
 }
 
 .settings-danger-box {
@@ -2860,8 +2854,8 @@ body {
   gap: 12px;
   padding: 14px;
   border-radius: var(--radius-lg);
-  background: rgba(248, 81, 73, 0.08);
-  border: 1px solid rgba(248, 81, 73, 0.22);
+  background: rgba(248, 81, 73, 0.06);
+  border: 1px solid rgba(248, 81, 73, 0.08);
   margin-top: 4px;
 }
 
@@ -2907,7 +2901,7 @@ body {
   padding: 8px 12px;
   border-radius: var(--radius-md);
   background: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: 1px solid rgba(125, 125, 125, 0.04);
 }
 
 .shortcut-item kbd {
@@ -2918,8 +2912,8 @@ body {
   border-radius: var(--radius-sm);
   background: var(--md-sys-color-surface-container-high);
   color: var(--md-sys-color-on-surface);
-  border: 1px solid var(--md-sys-color-outline-variant);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(125, 125, 125, 0.06);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 @media (prefers-reduced-motion: reduce) {

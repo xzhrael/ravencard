@@ -117,14 +117,12 @@ function renderCurrentQuestion() {
   const currentQ = quizDeck[currentIndex];
   const target = currentQ.target;
 
-  const badge = document.getElementById('quiz-badge');
   const counter = document.getElementById('quiz-question-counter');
   const targetChar = document.getElementById('quiz-target-char');
   const visualizer = document.getElementById('quiz-audio-visualizer');
   const promptEl = document.getElementById('quiz-prompt');
   const optionsContainer = document.getElementById('quiz-options-container');
 
-  if (badge) badge.textContent = isListeningMode ? 'Choukai 聴解' : (target.badge || 'Kuis Bahasa Jepang');
   if (counter) counter.textContent = `Soal ${currentIndex + 1} / ${quizDeck.length}`;
 
   updateModeButtonUI();
