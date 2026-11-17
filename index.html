@@ -20,7 +20,7 @@
 
   <title>RavenCard - Nihongo Flashcard N5-N3</title>
   
-  <link rel="stylesheet" href="./css/style.css?v=29">
+  <link rel="stylesheet" href="./css/style.css?v=30">
 </head>
 <body>
   <div class="app-container">
@@ -501,7 +501,7 @@
               <span class="color-name">Biru</span>
             </button>
             <button class="accent-palette-btn" data-accent="pink" type="button" title="Pink Sakura">
-              <span class="color-dot" style="background: #f78da7;"></span>
+              <span class="color-dot" style="background: #f472b6;"></span>
               <span class="color-name">Pink</span>
             </button>
             <button class="accent-palette-btn" data-accent="green" type="button" title="Hijau Matcha">
@@ -557,7 +557,7 @@
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
               </svg>
-              <span>Ekspor Data (.json)</span>
+              <span>Ekspor Data JSON</span>
             </button>
 
             <input type="file" id="settings-import-file-input" accept=".json,application/json" class="hidden">
@@ -574,7 +574,7 @@
           <div class="settings-danger-box">
             <div class="danger-box-info">
               <div class="danger-box-title">Reset Total Progres</div>
-              <div class="danger-box-desc">Hapus seluruh riwayat penilaian kartu pada perangkat ini.</div>
+              <div class="danger-box-desc">Hapus seluruh riwayat penilaian kartu pada perangkat ini</div>
             </div>
             <button id="settings-reset-btn" class="backup-action-btn danger-action" type="button">
               Reset Semua
@@ -842,83 +842,8 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="backup-modal" role="dialog" aria-modal="true" aria-labelledby="backup-modal-title">
-    <div class="modal-box backup-modal-box">
-      <div class="modal-header">
-        <h3 class="modal-title" id="backup-modal-title">Cadangan & Pemulihan (Offline)</h3>
-        <button class="modal-close-btn" id="close-backup-modal-btn" aria-label="Tutup Dialog">✕</button>
-      </div>
-
-      <div class="backup-status-card" id="backup-status-card">
-        <div class="backup-status-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
-            <polyline points="17 21 17 13 7 13 7 21"></polyline>
-            <polyline points="7 3 7 8 15 8"></polyline>
-          </svg>
-        </div>
-        <div class="backup-status-info">
-          <div class="backup-status-title">Penyimpanan Offline Lokal</div>
-          <div class="backup-status-detail" id="backup-status-detail">Memuat status memori...</div>
-        </div>
-      </div>
-
-      <div class="backup-section">
-        <h4 class="backup-section-title">Ekspor Progres</h4>
-        <p class="backup-section-desc">Unduh berkas JSON berisi seluruh penilaian status kartu untuk disimpan atau dipindahkan ke perangkat lain.</p>
-        <button id="export-progress-btn" class="backup-action-btn primary-action">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-          <span>Unduh Berkas Cadangan (.json)</span>
-        </button>
-      </div>
-
-      <div class="backup-section">
-        <h4 class="backup-section-title">Impor & Pulihkan</h4>
-        <p class="backup-section-desc">Pilih berkas JSON cadangan yang tersimpan untuk memulihkan progres kartu.</p>
-        <input type="file" id="import-backup-file-input" accept=".json,application/json" class="hidden">
-        <button id="import-progress-btn" class="backup-action-btn secondary-action">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="17 8 12 3 7 8"></polyline>
-            <line x1="12" y1="3" x2="12" y2="15"></line>
-          </svg>
-          <span>Pilih Berkas Cadangan</span>
-        </button>
-      </div>
-
-      <div class="backup-section">
-        <h4 class="backup-section-title">Pintasan Tombol Keyboard</h4>
-        <div class="keyboard-shortcuts-grid">
-          <div class="shortcut-item"><kbd>Spasi</kbd><span>Balik Kartu</span></div>
-          <div class="shortcut-item"><kbd>→</kbd> / <kbd>←</kbd><span>Kartu Berikutnya / Sebelumnya</span></div>
-          <div class="shortcut-item"><kbd>1</kbd><span>Tandai Lagi (Merah)</span></div>
-          <div class="shortcut-item"><kbd>2</kbd><span>Tandai Ragu (Kuning)</span></div>
-          <div class="shortcut-item"><kbd>3</kbd><span>Tandai Paham (Hijau)</span></div>
-          <div class="shortcut-item"><kbd>A</kbd><span>Putar Audio Suara</span></div>
-          <div class="shortcut-item"><kbd>S</kbd><span>Acak Kartu (Shuffle)</span></div>
-        </div>
-      </div>
-
-      <div class="backup-section">
-        <h4 class="backup-section-title danger-title">Reset Total</h4>
-        <p class="backup-section-desc">Hapus seluruh riwayat penilaian kartu pada perangkat ini.</p>
-        <button id="reset-all-progress-btn" class="backup-action-btn danger-action">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="3 6 5 6 21 6"></polyline>
-            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-          </svg>
-          <span>Reset Semua Penilaian</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
   <div id="app-toast" class="toast-notification"></div>
 
-  <script type="module" src="./js/app.js?v=29"></script>
+  <script type="module" src="./js/app.js?v=30"></script>
 </body>
 </html>

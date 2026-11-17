@@ -263,9 +263,9 @@ function renderCurrentCard() {
   if (frontChar) {
     frontChar.textContent = card.character;
     if (card.character.length > 5) {
-      frontChar.style.fontSize = 'clamp(1.8rem, 6vw, 2.8rem)';
+      frontChar.style.fontSize = 'clamp(2.1rem, 7vw, 3.2rem)';
     } else if (card.character.length > 2) {
-      frontChar.style.fontSize = 'clamp(2.4rem, 8vw, 3.6rem)';
+      frontChar.style.fontSize = 'clamp(2.8rem, 9.5vw, 4.2rem)';
     } else {
       frontChar.style.fontSize = '';
     }
@@ -288,7 +288,10 @@ function renderCurrentCard() {
   const backMeaningEn = document.getElementById('card-meaning-en');
 
   if (backBadge) backBadge.textContent = card.badge || '';
-  if (backChar) backChar.textContent = card.character;
+  if (backChar) {
+    backChar.textContent = card.character;
+    backChar.style.fontSize = card.character.length > 6 ? 'clamp(1.6rem, 5vw, 1.9rem)' : '';
+  }
   if (backRomaji) backRomaji.textContent = card.romaji || card.reading || '';
   if (backMeaningId) backMeaningId.textContent = card.meaning_id || '';
   if (backMeaningEn) backMeaningEn.textContent = card.meaning_en || '';
@@ -841,123 +844,7 @@ function setupEventListeners() {
     }
   }, { passive: true });
 
-  setupBackupModal();
   updateDeckLabel();
-}
-
-function setupBackupModal() {
-  const backupModalBtn = document.getElementById('backup-modal-btn');
-  const closeBackupModalBtn = document.getElementById('close-backup-modal-btn');
-  const backupModal = document.getElementById('backup-modal');
-  const backupStatusDetail = document.getElementById('backup-status-detail');
-  const exportBtn = document.getElementById('export-progress-btn');
-  const importBtn = document.getElementById('import-progress-btn');
-  const importInput = document.getElementById('import-backup-file-input');
-  const resetAllBtn = document.getElementById('reset-all-progress-btn');
-
-  function updateBackupStatusUI() {
-    if (!backupStatusDetail) return;
-    const stats = getOverallMasteryCount();
-    backupStatusDetail.textContent = `${stats.total} kartu dinilai (${stats.mastered} paham, ${stats.doubt} ragu, ${stats.learning} lagi)`;
-  }
-
-  function openBackupModal() {
-    if (!backupModal) return;
-    updateBackupStatusUI();
-    backupModal.classList.add('active');
-  }
-
-  function closeBackupModal() {
-    if (!backupModal) return;
-    backupModal.classList.remove('active');
-  }
-
-  if (backupModalBtn) {
-    backupModalBtn.addEventListener('click', openBackupModal);
-  }
-
-  if (closeBackupModalBtn) {
-    closeBackupModalBtn.addEventListener('click', closeBackupModal);
-  }
-
-  if (backupModal) {
-    backupModal.addEventListener('click', (e) => {
-      if (e.target === backupModal) closeBackupModal();
-    });
-  }
-
-  if (exportBtn) {
-    exportBtn.addEventListener('click', () => {
-      try {
-        const jsonContent = exportMasteryDataJSON();
-        const dateStr = new Date().toISOString().slice(0, 10);
-        const fileName = `ravencard-cadangan-${dateStr}.json`;
-        const blob = new Blob([jsonContent], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = fileName;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-        showToast('Berkas cadangan berhasil diunduh!');
-      } catch (err) {
-        showToast('Gagal mengekspor data: ' + err.message);
-      }
-    });
-  }
-
-  if (importBtn && importInput) {
-    importBtn.addEventListener('click', () => {
-      importInput.value = '';
-      importInput.click();
-    });
-
-    importInput.addEventListener('change', (e) => {
-      const file = e.target.files?.[0];
-      if (!file) return;
-
-      const reader = new FileReader();
-      reader.onload = (readEvent) => {
-        const content = readEvent.target?.result;
-        if (typeof content !== 'string') return;
-
-        const result = importMasteryDataJSON(content);
-        if (result.success) {
-          updateProgressUI();
-          const currentCard = state.activeDeck[state.currentIndex];
-          if (currentCard) {
-            updateRatingButtonsUI(currentCard.id);
-          }
-          updateBackupStatusUI();
-          showToast(`Berhasil memulihkan ${result.count} data kartu!`);
-        } else {
-          showToast(result.error || 'Gagal memulihkan berkas.');
-        }
-      };
-      reader.onerror = () => {
-        showToast('Gagal membaca berkas cadangan.');
-      };
-      reader.readAsText(file);
-    });
-  }
-
-  if (resetAllBtn) {
-    resetAllBtn.addEventListener('click', () => {
-      const confirmed = window.confirm('Apakah kamu yakin ingin mereset seluruh penilaian kartu? Tindakan ini tidak dapat dibatalkan.');
-      if (confirmed) {
-        resetAllMastery();
-        updateProgressUI();
-        const currentCard = state.activeDeck[state.currentIndex];
-        if (currentCard) {
-          updateRatingButtonsUI(currentCard.id);
-        }
-        updateBackupStatusUI();
-        showToast('Semua riwayat penilaian telah direset.');
-      }
-    });
-  }
 }
 
 function initSettingsPage() {
