@@ -1,4 +1,5 @@
 import { speakJapanese } from './audio.js';
+import { getSavedQuizQuestionCount } from './storage.js';
 
 let quizDeck = [];
 let currentIndex = 0;
@@ -7,19 +8,25 @@ let isAnswerLocked = false;
 let isListeningMode = false;
 let isModeToggleInitialized = false;
 
-export function initQuiz(deck) {
+export function initQuiz(deck, targetCount = null) {
   if (!deck || deck.length < 4) {
     return false;
   }
 
-  // Shuffle and select up to 10 random questions
+  // Determine desired question count (constrained between 10 and 100)
+  const configured = (typeof targetCount === 'number' && !isNaN(targetCount))
+    ? targetCount
+    : getSavedQuizQuestionCount();
+  const clampedTarget = Math.max(10, Math.min(100, configured));
+
+  // Shuffle and select up to requested question count (clamped to deck capacity)
   const pool = [...deck];
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
 
-  const questionCount = Math.min(10, pool.length);
+  const questionCount = Math.min(clampedTarget, pool.length);
   quizDeck = pool.slice(0, questionCount).map(target => {
     // Pick 3 distractors from the rest of the pool
     const otherCandidates = pool.filter(item => item.id !== target.id);
@@ -35,6 +42,10 @@ export function initQuiz(deck) {
   setupQuizModeToggle();
   renderQuizStage();
   return true;
+}
+
+export function getCurrentQuizDeck() {
+  return quizDeck;
 }
 
 function setupQuizModeToggle() {

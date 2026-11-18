@@ -20,7 +20,7 @@
 
   <title>RavenCard - Nihongo Flashcard N5-N3</title>
   
-  <link rel="stylesheet" href="./css/style.css?v=36">
+  <link rel="stylesheet" href="./css/style.css?v=37">
 </head>
 <body>
   <div class="app-container">
@@ -208,13 +208,30 @@
     <section class="page-view" id="page-quiz">
       <div class="quiz-card">
         <div class="quiz-header">
-          <button id="quiz-mode-toggle" class="quiz-mode-pill" type="button" aria-pressed="false" title="Ganti Mode Kuis">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-            </svg>
-            <span id="quiz-mode-label">Mode Teks</span>
-          </button>
+          <div class="quiz-header-controls">
+            <button id="quiz-mode-toggle" class="quiz-mode-pill" type="button" aria-pressed="false" title="Ganti Mode Kuis">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              <span id="quiz-mode-label">Mode Teks</span>
+            </button>
+            <div class="quiz-count-pill" title="Ubah Jumlah Soal">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <select id="quiz-count-select" class="quiz-count-select" aria-label="Pilih Jumlah Soal Kuis">
+                <option value="10">10 Soal</option>
+                <option value="20">20 Soal</option>
+                <option value="30">30 Soal</option>
+                <option value="50">50 Soal</option>
+                <option value="100">100 Soal</option>
+              </select>
+            </div>
+          </div>
           <span class="quiz-counter" id="quiz-question-counter">Soal 1 / 10</span>
         </div>
 
@@ -521,6 +538,31 @@
               <span class="color-dot" style="background: #cbd5e1;"></span>
               <span class="color-name">Grayscale</span>
             </button>
+          </div>
+        </div>
+
+        <!-- Jumlah Soal Kuis (10–100) -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon quiz-settings-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Jumlah Soal Kuis</h3>
+              <p class="settings-card-desc">Tentukan jumlah soal dalam satu sesi kuis (10 hingga 100 soal)</p>
+            </div>
+          </div>
+
+          <div class="quiz-count-options-grid" id="settings-quiz-count-grid">
+            <button class="quiz-count-btn active" data-count="10" type="button">10 Soal</button>
+            <button class="quiz-count-btn" data-count="20" type="button">20 Soal</button>
+            <button class="quiz-count-btn" data-count="30" type="button">30 Soal</button>
+            <button class="quiz-count-btn" data-count="50" type="button">50 Soal</button>
+            <button class="quiz-count-btn" data-count="100" type="button">100 Soal</button>
           </div>
         </div>
 
@@ -841,6 +883,6 @@
 
   <div id="app-toast" class="toast-notification"></div>
 
-  <script type="module" src="./js/app.js?v=36"></script>
+  <script type="module" src="./js/app.js?v=37"></script>
 </body>
 </html>

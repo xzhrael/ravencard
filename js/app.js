@@ -15,7 +15,9 @@ import {
   getSavedTheme,
   saveTheme,
   getSavedAccent,
-  saveAccent
+  saveAccent,
+  getSavedQuizQuestionCount,
+  saveQuizQuestionCount
 } from './storage.js';
 import { getTransitivityInfo } from './transitivity-data.js';
 
@@ -63,7 +65,8 @@ const state = {
   onlyUnmastered: false,
   dictSearchQuery: '',
   theme: getSavedTheme(),
-  accent: getSavedAccent()
+  accent: getSavedAccent(),
+  quizQuestionCount: getSavedQuizQuestionCount()
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -177,7 +180,7 @@ export function switchPage(pageName) {
   if (pageName === 'cards') {
     renderCurrentCard();
   } else if (pageName === 'quiz') {
-    initQuiz(state.rawDeck);
+    initQuiz(state.rawDeck, state.quizQuestionCount);
   } else if (pageName === 'list') {
     renderDictionaryList();
   } else if (pageName === 'settings') {
@@ -213,7 +216,7 @@ async function loadDeck() {
   state.isFlipped = false;
 
   if (state.activePage === 'quiz') {
-    initQuiz(state.rawDeck);
+    initQuiz(state.rawDeck, state.quizQuestionCount);
   } else if (state.activePage === 'list') {
     renderDictionaryList();
   } else {
@@ -678,7 +681,7 @@ function setupEventListeners() {
   }
 
   if (quizRetryBtn) {
-    quizRetryBtn.addEventListener('click', () => initQuiz(state.rawDeck));
+    quizRetryBtn.addEventListener('click', () => initQuiz(state.rawDeck, state.quizQuestionCount));
   }
 
   if (dictSearchInput) {
@@ -844,7 +847,36 @@ function setupEventListeners() {
     }
   }, { passive: true });
 
+  initQuizHeaderControls();
   updateDeckLabel();
+}
+
+function initQuizHeaderControls() {
+  const countSelect = document.getElementById('quiz-count-select');
+  if (countSelect) {
+    countSelect.value = state.quizQuestionCount.toString();
+    countSelect.addEventListener('change', (e) => {
+      const val = parseInt(e.target.value, 10);
+      state.quizQuestionCount = saveQuizQuestionCount(val);
+      syncQuizCountUI();
+      if (state.activePage === 'quiz') {
+        initQuiz(state.rawDeck, state.quizQuestionCount);
+        showToast(`Jumlah soal diatur ke ${state.quizQuestionCount} soal`);
+      }
+    });
+  }
+}
+
+function syncQuizCountUI() {
+  const current = state.quizQuestionCount;
+  const countSelect = document.getElementById('quiz-count-select');
+  if (countSelect) {
+    countSelect.value = current.toString();
+  }
+  const countBtns = document.querySelectorAll('.quiz-count-btn');
+  countBtns.forEach(btn => {
+    btn.classList.toggle('active', parseInt(btn.dataset.count, 10) === current);
+  });
 }
 
 function initSettingsPage() {
@@ -899,6 +931,21 @@ function initSettingsPage() {
     });
   }
 
+  const quizCountGrid = document.getElementById('settings-quiz-count-grid');
+  if (quizCountGrid) {
+    quizCountGrid.addEventListener('click', (e) => {
+      const btn = e.target.closest('.quiz-count-btn');
+      if (!btn || !btn.dataset.count) return;
+      const count = parseInt(btn.dataset.count, 10);
+      state.quizQuestionCount = saveQuizQuestionCount(count);
+      syncQuizCountUI();
+      if (state.activePage === 'quiz') {
+        initQuiz(state.rawDeck, state.quizQuestionCount);
+      }
+      showToast(`Jumlah soal kuis disetel ke ${state.quizQuestionCount} soal`);
+    });
+  }
+
   if (exportBtn) {
     exportBtn.addEventListener('click', () => {
       try {
@@ -942,6 +989,8 @@ function initSettingsPage() {
           applyTheme(state.theme);
           state.accent = getSavedAccent();
           applyAccent(state.accent);
+          state.quizQuestionCount = getSavedQuizQuestionCount();
+          syncQuizCountUI();
           updateProgressUI();
           updateSettingsBackupStatus();
           showToast(`Berhasil memulihkan ${result.count} data kartu!`);
@@ -969,6 +1018,7 @@ function initSettingsPage() {
   }
 
   updateSettingsBackupStatus();
+  syncQuizCountUI();
 }
 
 function updateSettingsBackupStatus() {
@@ -982,4 +1032,5 @@ function renderSettingsPage() {
   updateSettingsBackupStatus();
   applyAccent(state.accent);
   applyTheme(state.theme);
+  syncQuizCountUI();
 }

@@ -1,6 +1,7 @@
 const STORAGE_KEY_MASTERY = 'ravencard_mastery';
 const STORAGE_KEY_THEME = 'ravencard_theme';
 const STORAGE_KEY_ACCENT = 'ravencard_accent';
+const STORAGE_KEY_QUIZ_COUNT = 'ravencard_quiz_count';
 
 // In-memory cache to prevent repetitive synchronous localStorage.getItem & JSON.parse overhead
 let memoryStore = null;
@@ -96,12 +97,14 @@ export function exportMasteryDataJSON() {
   const store = getMasteryStore();
   const theme = getSavedTheme();
   const accent = getSavedAccent();
+  const quizCount = getSavedQuizQuestionCount();
   const payload = {
     app: 'RavenCard',
     version: 1,
     exportedAt: new Date().toISOString(),
     theme,
     accent,
+    quizQuestionCount: quizCount,
     mastery: store,
     stats: getOverallMasteryCount()
   };
@@ -133,6 +136,9 @@ export function importMasteryDataJSON(jsonString, { mode = 'merge' } = {}) {
     if (data.accent && typeof data.accent === 'string') {
       saveAccent(data.accent);
     }
+    if (typeof data.quizQuestionCount === 'number') {
+      saveQuizQuestionCount(data.quizQuestionCount);
+    }
     return { success: true, count: validCount };
   } catch (err) {
     return { success: false, error: 'Gagal mengurai JSON: ' + (err.message || 'Format salah') };
@@ -153,4 +159,25 @@ export function getSavedAccent() {
 
 export function saveAccent(accent) {
   localStorage.setItem(STORAGE_KEY_ACCENT, accent);
+}
+
+export function getSavedQuizQuestionCount() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_QUIZ_COUNT);
+    const parsed = parseInt(raw, 10);
+    return (parsed >= 10 && parsed <= 100) ? parsed : 10;
+  } catch {
+    return 10;
+  }
+}
+
+export function saveQuizQuestionCount(count) {
+  const parsed = parseInt(count, 10);
+  const clamped = Math.max(10, Math.min(100, isNaN(parsed) ? 10 : parsed));
+  try {
+    localStorage.setItem(STORAGE_KEY_QUIZ_COUNT, clamped.toString());
+  } catch (err) {
+    console.warn('[Storage] Failed to save quiz question count:', err);
+  }
+  return clamped;
 }
