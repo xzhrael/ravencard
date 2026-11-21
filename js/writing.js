@@ -22,8 +22,15 @@ let canvas = null;
 let ctx = null;
 let dpr = 1;
 let canvasLogicalSize = 300;
+let isWritingInitialized = false;
 
 export async function initWriting() {
+  if (isWritingInitialized) {
+    setupCanvasDpi();
+    return;
+  }
+  isWritingInitialized = true;
+
   canvas = document.getElementById('writing-canvas');
   if (canvas) {
     ctx = canvas.getContext('2d');
@@ -232,7 +239,7 @@ function updateGhostGuideUI() {
 
   const percent = Math.min(100, Math.round((writingState.currentRep / writingState.totalReps) * 100));
   if (barFillEl) {
-    barFillEl.style.width = `${percent}%`;
+    barFillEl.style.transform = `scaleX(${percent / 100})`;
   }
 
   if (repCounterEl) {

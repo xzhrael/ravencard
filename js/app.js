@@ -1,8 +1,15 @@
 import { initPWA, showToast } from './pwa.js';
 import { getDeckData } from './data-service.js';
 import { speakJapanese } from './audio.js';
-import { initQuiz, getQuizListeningMode, setQuizListeningMode, updateModeBadgeUI } from './quiz.js?v=38';
-import { initWriting } from './writing.js?v=38';
+import { initQuiz, getQuizListeningMode, setQuizListeningMode, updateModeBadgeUI } from './quiz.js?v=39';
+
+let writingModulePromise = null;
+function getWritingModule() {
+  if (!writingModulePromise) {
+    writingModulePromise = import('./writing.js?v=39');
+  }
+  return writingModulePromise;
+}
 import {
   getCardRating,
   setCardRating,
@@ -75,7 +82,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   initAccent();
   initSettingsPage();
   setupEventListeners();
-  initWriting();
   switchPage(state.activePage);
   await loadDeck();
 });
@@ -202,9 +208,18 @@ export function switchPage(pageName) {
     initQuiz(state.rawDeck, state.quizQuestionCount);
   } else if (pageName === 'list') {
     renderDictionaryList();
+  } else if (pageName === 'writing') {
+    getWritingModule().then(mod => mod.initWriting());
   } else if (pageName === 'settings') {
     renderSettingsPage();
   }
+}
+
+async function yieldToMain() {
+  if (typeof window.scheduler !== 'undefined' && typeof window.scheduler.yield === 'function') {
+    return await window.scheduler.yield();
+  }
+  return new Promise(resolve => setTimeout(resolve, 0));
 }
 
 function updateDeckCounterUI() {
@@ -236,9 +251,13 @@ async function loadDeck() {
     initQuiz(state.rawDeck, state.quizQuestionCount);
   } else if (state.activePage === 'list') {
     renderDictionaryList();
+  } else if (state.activePage === 'writing') {
+    getWritingModule().then(mod => mod.initWriting());
   } else {
     renderCurrentCard();
   }
+
+  await yieldToMain();
 
   updateProgressUI();
   updateDeckLabel();
@@ -400,7 +419,10 @@ function updateProgressUI() {
   const percentText = document.getElementById('mastery-percent-text');
   const detailText = document.getElementById('mastery-detail-text');
 
-  if (fill) fill.style.width = `${stats.percent}%`;
+  if (fill) {
+    const ratio = Math.max(0, Math.min(1, stats.percent / 100));
+    fill.style.transform = `scaleX(${ratio})`;
+  }
   if (percentText) percentText.textContent = `${stats.percent}% Dikuasai`;
   if (detailText) detailText.textContent = `${stats.mastered}/${stats.total}`;
 
@@ -741,12 +763,22 @@ function setupEventListeners() {
   const quizRetryBtn = document.getElementById('quiz-retry-btn');
   const dictSearchInput = document.getElementById('dict-search-input');
 
-  document.querySelectorAll('.lg:not(.lg-tabbar):not(.lg-lens):not(.lg-sheet):not(.lg-knob):not(.lg-thumb)').forEach(el => LG.attach(el));
   if (botnav) {
     initTabbar(botnav, { blur: 6, aberration: 0 });
   }
-  document.querySelectorAll('.lg-switch').forEach(initSwitch);
-  document.querySelectorAll('.lg-slider').forEach(s => initSlider(s));
+
+  // Defer non-critical decorative glass attachments to idle time to minimize TBT
+  const deferDecorations = () => {
+    document.querySelectorAll('.lg:not(.lg-tabbar):not(.lg-lens):not(.lg-sheet):not(.lg-knob):not(.lg-thumb)').forEach(el => LG.attach(el));
+    document.querySelectorAll('.lg-switch').forEach(initSwitch);
+    document.querySelectorAll('.lg-slider').forEach(s => initSlider(s));
+  };
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(deferDecorations, { timeout: 800 });
+  } else {
+    setTimeout(deferDecorations, 80);
+  }
 
   const deckSheet = document.getElementById('deck-modal');
   const deckScrim = document.getElementById('deck-scrim');
@@ -1182,8 +1214,14 @@ const LG = (() => {
   const MAX_DEV = Math.tan(Math.PI / 2 - Math.asin(1 / N));
   let uid = 0;
 
+  const mapCache = new Map();
+
   // Peta displacement: tepi cembung (squircle), sudut bias dihitung dengan hukum Snell.
   function buildMap(w, h, radius, bezel) {
+    const key = `${w}|${h}|${radius}|${bezel}`;
+    if (mapCache.has(key)) {
+      return mapCache.get(key);
+    }
     const c = document.createElement('canvas'); c.width = w; c.height = h;
     const ctx = c.getContext('2d'), img = ctx.createImageData(w, h), px = img.data;
     const hw = w / 2, hh = h / 2, r = Math.min(radius, hw, hh);
@@ -1204,7 +1242,9 @@ const LG = (() => {
       px[i] = 128 - nx * g * 127; px[i + 1] = 128 - ny * g * 127; px[i + 2] = 128; px[i + 3] = 255;
     }
     ctx.putImageData(img, 0, 0);
-    return c.toDataURL();
+    const dataUrl = c.toDataURL();
+    mapCache.set(key, dataUrl);
+    return dataUrl;
   }
 
   function attach(el, opts = {}) {
@@ -1473,9 +1513,17 @@ function initSlider(s, onChange, opts = {}) {
 
 function initSheet(sheet, scrim) {
   if (!sheet || !scrim) return null;
-  LG.attach(sheet, { bezel: 18, strength: 0.7, blur: 16, aberration: 4 });
+  let attached = false;
+  const ensureAttached = () => {
+    if (!attached) {
+      attached = true;
+      LG.attach(sheet, { bezel: 18, strength: 0.7, blur: 16, aberration: 4 });
+    }
+  };
+
   const head = sheet.querySelector('.lg-sheet-head');
   const open = () => {
+    ensureAttached();
     sheet.classList.add('is-open', 'active');
     scrim.classList.add('is-open', 'active');
     sheet.querySelector('h3')?.focus({ preventScroll: true });

@@ -273,6 +273,27 @@ body {
   padding-right: max(16px, env(safe-area-inset-right));
 }
 
+/* Main landmark container */
+.app-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+
+/* Visually hidden but accessible for screen readers & Lighthouse audits */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* Top app bar */
 .top-bar {
   display: flex;
@@ -522,10 +543,13 @@ body {
 
 .progress-bar-fill {
   height: 100%;
-  width: 0%;
+  width: 100%;
+  transform-origin: left center;
+  transform: scaleX(0);
   border-radius: var(--radius-full);
   background: var(--md-sys-color-primary);
-  transition: width 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1);
+  will-change: transform;
 }
 
 /* Flashcard stage */
@@ -884,6 +908,7 @@ body {
 }
 
 .btn-rate {
+  position: relative;
   flex: 1;
   max-width: 82px;
   min-width: 58px;
@@ -896,7 +921,20 @@ body {
   border: none;
   cursor: pointer;
   box-shadow: var(--shadow-subtle);
-  transition: transform var(--motion-fast), box-shadow var(--motion-fast), filter var(--motion-fast);
+  transition: transform var(--motion-fast);
+  will-change: transform;
+}
+
+.btn-rate::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 999px;
+  border: 3px solid currentColor;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--motion-fast);
+  will-change: opacity;
 }
 
 .btn-rate svg {
@@ -944,8 +982,11 @@ body {
 }
 
 .btn-rate.active {
-  box-shadow: 0 0 0 3px currentColor, var(--shadow-card);
   transform: scale(1.05);
+}
+
+.btn-rate.active::after {
+  opacity: 1;
 }
 
 .quiet-tools-strip {
@@ -1717,10 +1758,12 @@ body {
   flex-shrink: 0;
 }
 
+.pwa-banner-text h2,
 .pwa-banner-text h4 {
   font-size: 0.84rem;
   font-weight: 600;
   color: var(--md-sys-color-on-surface);
+  margin: 0;
 }
 
 .pwa-banner-text p {
@@ -2292,6 +2335,7 @@ body {
   flex-shrink: 0;
 }
 
+.step-text h4,
 .step-text h5 {
   font-size: 0.86rem;
   font-weight: 600;
@@ -2634,9 +2678,13 @@ body {
 
 .writing-rep-bar-fill {
   height: 100%;
+  width: 100%;
+  transform-origin: left center;
+  transform: scaleX(0);
   background: var(--md-sys-color-primary);
   border-radius: var(--radius-full);
-  transition: width 0.25s ease;
+  transition: transform 0.25s ease;
+  will-change: transform;
 }
 
 /* Stroke order markers on canvas */
@@ -3191,7 +3239,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform var(--motion-fast), box-shadow var(--motion-fast);
+  transition: transform var(--motion-fast);
 }
 
 .accent-palette-btn.active .color-dot {
@@ -3302,7 +3350,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   border: none;
-  transition: background-color var(--motion-fast), border-color var(--motion-fast), transform var(--motion-fast), box-shadow var(--motion-fast);
+  transition: background-color var(--motion-fast), border-color var(--motion-fast), transform var(--motion-fast);
 }
 
 .backup-action-btn:active {
