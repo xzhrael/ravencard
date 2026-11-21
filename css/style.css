@@ -1814,19 +1814,17 @@ body {
   position: var(--lg-pos, fixed);
   inset: 0;
   z-index: 950;
-  background: rgba(8, 10, 20, 0.45);
+  background: rgba(10, 12, 18, 0.60);
   opacity: 0;
   visibility: hidden;
-  transition: opacity .32s ease, visibility 0s linear .32s;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  transition: opacity .25s ease, visibility 0s linear .25s;
 }
 
 .lg-scrim.is-open,
 .lg-scrim.active {
   opacity: 1;
   visibility: visible;
-  transition: opacity .32s ease;
+  transition: opacity .25s ease;
 }
 
 .lg-sheet {
@@ -1844,15 +1842,17 @@ body {
   font: 500 15px/1.35 var(--font-cjk), -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif;
   transform: translateY(calc(100% + 24px + var(--dy, 0px)));
   visibility: hidden;
-  transition: transform .5s cubic-bezier(.2, .9, .25, 1), visibility 0s linear .5s;
+  transition: transform .42s cubic-bezier(.2, .9, .25, 1), visibility 0s linear .42s;
   box-shadow: 0 20px 48px -8px var(--lg-shadow), 0 4px 16px rgba(0, 0, 0, .10), inset 0 0 0 .5px rgba(var(--lg-rim), .28);
+  will-change: transform;
+  contain: layout paint;
 }
 
 .lg-sheet.is-open,
 .lg-sheet.active {
   transform: translateY(var(--dy, 0px));
   visibility: visible;
-  transition: transform .5s cubic-bezier(.2, .9, .25, 1);
+  transition: transform .42s cubic-bezier(.2, .9, .25, 1);
 }
 
 .lg-sheet.is-drag {

@@ -1,12 +1,12 @@
 import { initPWA, showToast } from './pwa.js';
 import { getDeckData } from './data-service.js';
 import { speakJapanese } from './audio.js';
-import { initQuiz, getQuizListeningMode, setQuizListeningMode, updateModeBadgeUI } from './quiz.js?v=39';
+import { initQuiz, getQuizListeningMode, setQuizListeningMode, updateModeBadgeUI } from './quiz.js?v=40';
 
 let writingModulePromise = null;
 function getWritingModule() {
   if (!writingModulePromise) {
-    writingModulePromise = import('./writing.js?v=39');
+    writingModulePromise = import('./writing.js?v=40');
   }
   return writingModulePromise;
 }
@@ -1517,7 +1517,7 @@ function initSheet(sheet, scrim) {
   const ensureAttached = () => {
     if (!attached) {
       attached = true;
-      LG.attach(sheet, { bezel: 18, strength: 0.7, blur: 16, aberration: 4 });
+      LG.attach(sheet, { bezel: 16, strength: 0.8, blur: 10, aberration: 0 });
     }
   };
 
