@@ -6,20 +6,53 @@ let currentIndex = 0;
 let correctCount = 0;
 let isAnswerLocked = false;
 let isListeningMode = false;
-let isModeToggleInitialized = false;
+let isVisualizerInitialized = false;
+
+export function getQuizListeningMode() {
+  return isListeningMode;
+}
+
+export function setQuizListeningMode(val) {
+  isListeningMode = !!val;
+  updateModeBadgeUI();
+  if (quizDeck && quizDeck.length > 0 && currentIndex < quizDeck.length) {
+    renderCurrentQuestion();
+  }
+}
+
+export function updateModeBadgeUI() {
+  const badge = document.getElementById('quiz-mode-badge');
+  if (!badge) return;
+  if (isListeningMode) {
+    badge.classList.add('listening');
+    badge.innerHTML = `
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+      </svg>
+      <span id="quiz-mode-badge-text">Mode Suara (Choukai)</span>
+    `;
+  } else {
+    badge.classList.remove('listening');
+    badge.innerHTML = `
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 7V4h16v3M9 20h6M12 4v16"></path>
+      </svg>
+      <span id="quiz-mode-badge-text">Mode Teks</span>
+    `;
+  }
+}
 
 export function initQuiz(deck, targetCount = null) {
   if (!deck || deck.length < 4) {
     return false;
   }
 
-  // Determine desired question count (constrained between 10 and 100)
   const configured = (typeof targetCount === 'number' && !isNaN(targetCount))
     ? targetCount
     : getSavedQuizQuestionCount();
-  const clampedTarget = Math.max(10, Math.min(100, configured));
+  const clampedTarget = Math.max(4, Math.min(100, configured));
 
-  // Shuffle and select up to requested question count (clamped to deck capacity)
   const pool = [...deck];
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -28,7 +61,6 @@ export function initQuiz(deck, targetCount = null) {
 
   const questionCount = Math.min(clampedTarget, pool.length);
   quizDeck = pool.slice(0, questionCount).map(target => {
-    // Pick 3 distractors from the rest of the pool
     const otherCandidates = pool.filter(item => item.id !== target.id);
     const distractors = pickRandomItems(otherCandidates, 3);
     const options = shuffleArray([target, ...distractors]);
@@ -39,7 +71,8 @@ export function initQuiz(deck, targetCount = null) {
   correctCount = 0;
   isAnswerLocked = false;
 
-  setupQuizModeToggle();
+  setupVisualizerListener();
+  updateModeBadgeUI();
   renderQuizStage();
   return true;
 }
@@ -48,21 +81,11 @@ export function getCurrentQuizDeck() {
   return quizDeck;
 }
 
-function setupQuizModeToggle() {
-  if (isModeToggleInitialized) return;
-  isModeToggleInitialized = true;
+function setupVisualizerListener() {
+  if (isVisualizerInitialized) return;
+  isVisualizerInitialized = true;
 
-  const modeBtn = document.getElementById('quiz-mode-toggle');
   const visualizer = document.getElementById('quiz-audio-visualizer');
-
-  if (modeBtn) {
-    modeBtn.addEventListener('click', () => {
-      isListeningMode = !isListeningMode;
-      updateModeButtonUI();
-      renderCurrentQuestion();
-    });
-  }
-
   if (visualizer) {
     visualizer.addEventListener('click', () => {
       playCurrentQuestionAudio();
@@ -73,22 +96,6 @@ function setupQuizModeToggle() {
         playCurrentQuestionAudio();
       }
     });
-  }
-}
-
-function updateModeButtonUI() {
-  const modeBtn = document.getElementById('quiz-mode-toggle');
-  const modeLabel = document.getElementById('quiz-mode-label');
-  if (!modeBtn) return;
-
-  if (isListeningMode) {
-    modeBtn.classList.add('active');
-    modeBtn.setAttribute('aria-pressed', 'true');
-    if (modeLabel) modeLabel.textContent = 'Menyimak (Choukai)';
-  } else {
-    modeBtn.classList.remove('active');
-    modeBtn.setAttribute('aria-pressed', 'false');
-    if (modeLabel) modeLabel.textContent = 'Mode Teks';
   }
 }
 
@@ -136,7 +143,7 @@ function renderCurrentQuestion() {
 
   if (counter) counter.textContent = `Soal ${currentIndex + 1} / ${quizDeck.length}`;
 
-  updateModeButtonUI();
+  updateModeBadgeUI();
 
   if (isListeningMode) {
     if (targetChar) {
@@ -149,7 +156,6 @@ function renderCurrentQuestion() {
     if (promptEl) {
       promptEl.textContent = 'Dengarkan audio, pilih jawaban yang tepat:';
     }
-    // Auto-play audio on question load in listening mode
     playCurrentQuestionAudio();
   } else {
     if (targetChar) {
@@ -174,13 +180,15 @@ function renderCurrentQuestion() {
     currentQ.options.forEach((option) => {
       const btn = document.createElement('button');
       btn.className = 'quiz-option-btn';
+      btn.dataset.optionId = String(option.id);
 
-      // Determine clean label: Romaji for Kana, Indonesian meaning for Kanji/Kotoba
-      let label = option.meaning_id || option.romaji || option.character;
-      if (option.category === 'hiragana' || option.category === 'katakana') {
-        label = `${option.romaji} (${option.character})`;
-      } else if (option.romaji) {
-        label = `${option.meaning_id} [${option.romaji}]`;
+      // Text mode displays romanized reading; audio mode displays Japanese character
+      let label = '';
+      if (isListeningMode) {
+        label = option.character;
+      } else {
+        const raw = option.romaji || option.meaning_id || '';
+        label = raw.replace(/[\u3000-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/g, '').trim();
       }
 
       btn.textContent = label;
@@ -214,12 +222,8 @@ function handleOptionSelection(selectedBtn, selectedOption, target) {
     selectedBtn.classList.add('correct');
   } else {
     selectedBtn.classList.add('wrong');
-    // Reveal correct choice
     allButtons.forEach(btn => {
-      const matchTarget = (target.category === 'hiragana' || target.category === 'katakana')
-        ? btn.textContent.includes(target.character)
-        : btn.textContent.includes(target.meaning_id);
-      if (matchTarget) {
+      if (btn.dataset.optionId === String(target.id)) {
         btn.classList.add('correct');
       }
     });

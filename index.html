@@ -20,13 +20,13 @@
 
   <title>RavenCard - Nihongo Flashcard N5-N3</title>
   
-  <link rel="stylesheet" href="./css/style.css?v=37">
+  <link rel="stylesheet" href="./css/style.css?v=38">
 </head>
 <body>
   <div class="app-container">
     <div id="protocol-warning" class="hidden" style="background: #251212; border: 1px solid #f85149; color: #f0f6fc; padding: 14px 16px; border-radius: 8px; margin-bottom: 16px; font-size: 0.85rem; line-height: 1.5;">
-      <div style="font-weight: 700; color: #ff7b72; margin-bottom: 4px;">Peringatan Keamanan Browser (CORS file:// Protocol)</div>
-      <p>Aplikasi web modern berbasis <strong>ES Modules</strong>, <strong>Service Worker</strong>, dan <strong>PWA Manifest</strong> diblokir oleh kebijakan keamanan browser jika dibuka langsung melalui double-click berkas (protokol <code>file://</code>).</p>
+      <div style="font-weight: 700; color: #ff7b72; margin-bottom: 4px;">Buka Melalui Web Server Lokal</div>
+      <p>Browser memblokir modul JavaScript dan Service Worker jika file dibuka langsung via protokol <code>file://</code>.</p>
       <div style="margin-top: 8px;">Jalankan web server lokal melalui terminal:</div>
       <code style="display: block; background: #0d1117; padding: 8px 12px; border-radius: 4px; border: 1px solid #30363d; margin: 8px 0; font-family: monospace; color: #58a6ff;">python3 -m http.server 8080</code>
       <div>Lalu buka di browser: <a href="http://localhost:8080" style="color: #58a6ff; font-weight: 600; text-decoration: underline;">http://localhost:8080</a></div>
@@ -67,7 +67,18 @@
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
       </button>
-      <div class="deck-count-indicator" id="deck-counter">1 / 46</div>
+      <div class="toggle-unmastered-wrap" id="toggle-unmastered-wrap" title="Saring belum hafal">
+        <span class="toggle-unmastered-label">Belum Hafal Saja</span>
+        <button type="button" role="switch" class="switch-toggle" id="unmastered-only-toggle" aria-checked="false" aria-label="Belum Hafal Saja">
+          <span class="switch-track"><span class="switch-thumb"></span></span>
+        </button>
+      </div>
+      <button class="quiz-header-settings-btn hidden" id="quiz-settings-btn" type="button" aria-label="Pengaturan Kuis" title="Pengaturan Kuis">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+      </button>
     </div>
 
     <section class="page-view active" id="page-cards">
@@ -166,9 +177,24 @@
         </button>
 
         <div class="mastery-rating-group" aria-label="Tandai Status">
-          <button class="btn-rate btn-rate-again" id="rate-again-btn" title="Ulangi segera">Ulangi</button>
-          <button class="btn-rate btn-rate-hard" id="rate-hard-btn" title="Masih ragu">Ragu</button>
-          <button class="btn-rate btn-rate-easy" id="rate-easy-btn" title="Sudah hafal">Hafal</button>
+          <button class="btn-rate btn-rate-again" id="rate-again-btn" aria-label="Ulangi segera" title="Ulangi segera">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <button class="btn-rate btn-rate-hard" id="rate-hard-btn" aria-label="Masih ragu" title="Masih ragu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </button>
+          <button class="btn-rate btn-rate-easy" id="rate-easy-btn" aria-label="Sudah hafal" title="Sudah hafal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </button>
         </div>
 
         <button class="btn-nav-arrow" id="next-card-btn" aria-label="Kartu Selanjutnya" title="Berikutnya">
@@ -178,60 +204,17 @@
         </button>
       </div>
 
-      <div class="quiet-tools-strip">
-        <button class="btn-quiet-action" id="shuffle-deck-btn" title="Acak urutan">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="16 3 21 3 21 8"></polyline>
-            <line x1="4" y1="20" x2="21" y2="3"></line>
-            <polyline points="21 16 21 21 16 21"></polyline>
-            <line x1="15" y1="15" x2="21" y2="21"></line>
-            <line x1="4" y1="4" x2="9" y2="9"></line>
-          </svg>
-          <span>Acak</span>
-        </button>
-
-        <button class="btn-quiet-action" id="reset-deck-btn" title="Reset hafalan">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="23 4 23 10 17 10"></polyline>
-            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
-          </svg>
-          <span>Reset</span>
-        </button>
-
-        <label class="toggle-unmastered" title="Saring belum hafal">
-          <span>Belum Hafal Saja</span>
-          <input type="checkbox" id="unmastered-only-toggle" class="toggle-checkbox">
-        </label>
-      </div>
     </section>
 
     <section class="page-view" id="page-quiz">
       <div class="quiz-card">
         <div class="quiz-header">
-          <div class="quiz-header-controls">
-            <button id="quiz-mode-toggle" class="quiz-mode-pill" type="button" aria-pressed="false" title="Ganti Mode Kuis">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-              <span id="quiz-mode-label">Mode Teks</span>
-            </button>
-            <div class="quiz-count-pill" title="Ubah Jumlah Soal">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-              </svg>
-              <select id="quiz-count-select" class="quiz-count-select" aria-label="Pilih Jumlah Soal Kuis">
-                <option value="10">10 Soal</option>
-                <option value="20">20 Soal</option>
-                <option value="30">30 Soal</option>
-                <option value="50">50 Soal</option>
-                <option value="100">100 Soal</option>
-              </select>
-            </div>
-          </div>
+          <span class="quiz-mode-badge" id="quiz-mode-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 7V4h16v3M9 20h6M12 4v16"></path>
+            </svg>
+            <span id="quiz-mode-badge-text">Mode Teks</span>
+          </span>
           <span class="quiz-counter" id="quiz-question-counter">Soal 1 / 10</span>
         </div>
 
@@ -263,7 +246,7 @@
         <div class="quiz-result-badge" id="quiz-result-icon">Hasil Kuis</div>
         <h3 class="quiz-result-title" id="quiz-result-title">Kuis Selesai</h3>
         <p class="quiz-result-score" id="quiz-result-score">Skor: 0 / 10 (0%)</p>
-        <p class="quiz-result-desc" id="quiz-result-desc">Kerja bagus!</p>
+        <p class="quiz-result-desc" id="quiz-result-desc">Latihan selesai.</p>
         <div class="quiz-result-actions">
           <button class="btn-control btn-flip-main" id="quiz-retry-btn">Ulangi Kuis</button>
         </div>
@@ -288,7 +271,7 @@
       <div class="writing-setup-card" id="writing-setup-card">
         <div class="writing-setup-header">
           <h2 class="writing-setup-title">Latihan Menulis</h2>
-          <p class="writing-setup-desc">Latih memori otot dan goresan huruf Jepang dengan panduan pudar bertahap.</p>
+          <p class="writing-setup-desc">Latihan menulis goresan huruf Jepang dengan panduan bertahap.</p>
         </div>
 
         <div class="writing-config-group">
@@ -323,25 +306,31 @@
             <label class="writing-config-label">Jumlah Pengulangan per Huruf</label>
             <span class="writing-rep-badge" id="writing-rep-display">20x</span>
           </div>
-          <div class="writing-rep-options">
-            <button class="rep-preset-btn" data-rep="10">10x (Min)</button>
-            <button class="rep-preset-btn active" data-rep="20">20x (Ideal)</button>
-            <button class="rep-preset-btn" data-rep="30">30x (Master)</button>
-            <div class="rep-stepper">
-              <button class="rep-step-btn" id="rep-dec-btn" aria-label="Kurangi repetisi">-</button>
-              <input type="number" id="rep-number-input" class="rep-input" min="10" max="100" value="20" aria-label="Jumlah repetisi">
-              <button class="rep-step-btn" id="rep-inc-btn" aria-label="Tambah repetisi">+</button>
+          <div class="writing-slider-container">
+            <div class="lg-slider" id="writing-rep-slider" role="slider" tabindex="0" aria-label="Jumlah Pengulangan" aria-valuemin="10" aria-valuemax="30" data-min="10" data-max="30" data-step="1" data-value="20" data-unit="x">
+              <span class="lg-fill"></span>
+              <span class="lg lg-thumb"></span>
+            </div>
+            <div class="writing-slider-scale">
+              <span>10x (Min)</span>
+              <span>20x (Ideal)</span>
+              <span>30x (Master)</span>
             </div>
           </div>
-          <span class="writing-config-hint">Panduan di latar belakang akan memudar bertahap dan hilang total pada pertengahan sesi agar terlatih mengingat mandiri.</span>
+          <span class="writing-config-hint">Panduan goresan memudar perlahan seiring pengulangan agar terbiasa menulis mandiri.</span>
         </div>
 
         <div class="writing-config-group">
           <label class="writing-config-label">Mulai Dari Huruf</label>
-          <div class="writing-char-select-wrap">
-            <select id="writing-char-select" class="writing-char-dropdown" aria-label="Pilih karakter pertama">
-            </select>
-          </div>
+          <button type="button" class="writing-char-picker-trigger" id="writing-char-picker-btn" aria-haspopup="dialog" aria-label="Pilih Karakter Pertama">
+            <div class="writing-char-trigger-content">
+              <span class="writing-char-trigger-badge" id="writing-selected-char-badge">あ</span>
+              <span class="writing-char-trigger-label" id="writing-selected-char-label">1. あ (a)</span>
+            </div>
+            <svg class="writing-char-trigger-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
         </div>
 
         <button class="btn-control btn-flip-main writing-start-btn" id="writing-start-btn">
@@ -443,7 +432,7 @@
       <div class="settings-page-wrapper">
         <div class="settings-header">
           <h2 class="settings-title">Pengaturan</h2>
-          <p class="settings-subtitle">Personalisasi tampilan, tema warna pastel, dan kelola cadangan data</p>
+          <p class="settings-subtitle">Atur tema tampilan, warna aksen, dan cadangan data</p>
         </div>
 
         <!-- Mode Tampilan -->
@@ -504,8 +493,8 @@
               </svg>
             </div>
             <div>
-              <h3 class="settings-card-title">Warna Aksen Pastel</h3>
-              <p class="settings-card-desc">Pilih nuansa warna kartu, tombol, dan navigasi</p>
+              <h3 class="settings-card-title">Warna Aksen</h3>
+              <p class="settings-card-desc">Pilih tema warna kartu dan tombol</p>
             </div>
           </div>
 
@@ -526,10 +515,6 @@
               <span class="color-dot" style="background: #ff857d;"></span>
               <span class="color-name">Merah</span>
             </button>
-            <button class="accent-palette-btn" data-accent="orange" type="button" title="Oranye Peach">
-              <span class="color-dot" style="background: #ffaa5a;"></span>
-              <span class="color-name">Oranye</span>
-            </button>
             <button class="accent-palette-btn" data-accent="purple" type="button" title="Lavender Ungu">
               <span class="color-dot" style="background: #bfa6f5;"></span>
               <span class="color-name">Ungu</span>
@@ -541,32 +526,7 @@
           </div>
         </div>
 
-        <!-- Jumlah Soal Kuis (10–100) -->
-        <div class="settings-card">
-          <div class="settings-card-header">
-            <div class="settings-card-icon quiz-settings-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-              </svg>
-            </div>
-            <div>
-              <h3 class="settings-card-title">Jumlah Soal Kuis</h3>
-              <p class="settings-card-desc">Tentukan jumlah soal dalam satu sesi kuis (10 hingga 100 soal)</p>
-            </div>
-          </div>
-
-          <div class="quiz-count-options-grid" id="settings-quiz-count-grid">
-            <button class="quiz-count-btn active" data-count="10" type="button">10 Soal</button>
-            <button class="quiz-count-btn" data-count="20" type="button">20 Soal</button>
-            <button class="quiz-count-btn" data-count="30" type="button">30 Soal</button>
-            <button class="quiz-count-btn" data-count="50" type="button">50 Soal</button>
-            <button class="quiz-count-btn" data-count="100" type="button">100 Soal</button>
-          </div>
-        </div>
-
-        <!-- Cadangan & Pemulihan (100% Offline) -->
+        <!-- Cadangan Data -->
         <div class="settings-card">
           <div class="settings-card-header">
             <div class="settings-card-icon backup-icon">
@@ -577,15 +537,15 @@
               </svg>
             </div>
             <div>
-              <h3 class="settings-card-title">Cadangan & Pemulihan (Offline)</h3>
-              <p class="settings-card-desc">Simpan atau pindahkan riwayat penilaian kartu antar perangkat</p>
+              <h3 class="settings-card-title">Cadangan Data</h3>
+              <p class="settings-card-desc">Ekspor atau impor riwayat belajar antar perangkat</p>
             </div>
           </div>
 
           <div class="backup-status-card" id="settings-backup-status">
             <div class="backup-status-info">
-              <div class="backup-status-title">Status Memori Perangkat</div>
-              <div class="backup-status-detail" id="settings-storage-count">0 kartu dinilai dalam memori lokal</div>
+              <div class="backup-status-title">Data Tersimpan</div>
+              <div class="backup-status-detail" id="settings-storage-count">0 kartu tersimpan di perangkat</div>
             </div>
           </div>
 
@@ -612,44 +572,12 @@
 
           <div class="settings-danger-box">
             <div class="danger-box-info">
-              <div class="danger-box-title">Reset Total Progres</div>
-              <div class="danger-box-desc">Hapus seluruh riwayat penilaian kartu pada perangkat ini</div>
+              <div class="danger-box-title">Hapus Semua Data</div>
+              <div class="danger-box-desc">Hapus seluruh riwayat belajar di perangkat ini</div>
             </div>
             <button id="settings-reset-btn" class="backup-action-btn danger-action" type="button">
-              Reset Semua
+              Hapus Data
             </button>
-          </div>
-        </div>
-
-        <!-- Pintasan Keyboard -->
-        <div class="settings-card">
-          <div class="settings-card-header">
-            <div class="settings-card-icon keyboard-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
-                <line x1="6" y1="8" x2="6" y2="8"></line>
-                <line x1="10" y1="8" x2="10" y2="8"></line>
-                <line x1="14" y1="8" x2="14" y2="8"></line>
-                <line x1="18" y1="8" x2="18" y2="8"></line>
-                <line x1="6" y1="12" x2="6" y2="12"></line>
-                <line x1="18" y1="12" x2="18" y2="12"></line>
-                <line x1="10" y1="16" x2="14" y2="16"></line>
-              </svg>
-            </div>
-            <div>
-              <h3 class="settings-card-title">Pintasan Keyboard Fisik</h3>
-              <p class="settings-card-desc">Bila belajar menggunakan tablet dengan keyboard atau laptop</p>
-            </div>
-          </div>
-
-          <div class="keyboard-shortcuts-grid">
-            <div class="shortcut-item"><kbd>Spasi</kbd><span>Balik Kartu Flashcard</span></div>
-            <div class="shortcut-item"><kbd>→</kbd> / <kbd>←</kbd><span>Kartu Berikutnya / Sebelumnya</span></div>
-            <div class="shortcut-item"><kbd>1</kbd><span>Tandai Lagi (Merah)</span></div>
-            <div class="shortcut-item"><kbd>2</kbd><span>Tandai Ragu (Kuning)</span></div>
-            <div class="shortcut-item"><kbd>3</kbd><span>Tandai Paham (Hijau)</span></div>
-            <div class="shortcut-item"><kbd>A</kbd><span>Putar Audio Pengucapan</span></div>
-            <div class="shortcut-item"><kbd>S</kbd><span>Acak Urutan Kartu (Shuffle)</span></div>
           </div>
         </div>
       </div>
@@ -657,40 +585,35 @@
 
   </div>
 
-  <nav class="floating-botnav" id="floating-botnav" aria-label="Navigasi Halaman Utama">
-    <button class="botnav-item active" data-page="cards" aria-label="Belajar Flashcard">
-      <div class="botnav-indicator">
-        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <div class="lg-dock" id="floating-botnav">
+    <nav class="lg lg-tabbar" data-lg-ratio="0.45" data-lg-blur="6" data-lg-saturate="1.7" aria-label="Navigasi Halaman Utama">
+      <span class="lg-pill" aria-hidden="true"></span>
+      <button class="lg-tab botnav-item" type="button" data-page="cards" aria-current="page" aria-label="Belajar Flashcard">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
           <line x1="9" y1="9" x2="15" y2="9"></line>
           <line x1="9" y1="13" x2="15" y2="13"></line>
         </svg>
-      </div>
-      <span class="botnav-label">Belajar</span>
-    </button>
+        <span class="botnav-label">Belajar</span>
+      </button>
 
-    <button class="botnav-item" data-page="quiz" aria-label="Kuis Uji Ingatan">
-      <div class="botnav-indicator">
-        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button class="lg-tab botnav-item" type="button" data-page="quiz" aria-label="Kuis Uji Ingatan">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="10"></circle>
           <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
         </svg>
-      </div>
-      <span class="botnav-label">Kuis</span>
-    </button>
+        <span class="botnav-label">Kuis</span>
+      </button>
 
-    <button class="botnav-item" data-page="writing" aria-label="Latihan Menulis Huruf">
-      <div class="botnav-indicator">
-        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button class="lg-tab botnav-item" type="button" data-page="writing" aria-label="Latihan Menulis Huruf">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
         </svg>
-      </div>
-      <span class="botnav-label">Menulis</span>
-    </button>
+        <span class="botnav-label">Menulis</span>
+      </button>
 
-    <button class="botnav-item" data-page="list" aria-label="Daftar dan Kamus Referensi">
-      <div class="botnav-indicator">
-        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button class="lg-tab botnav-item" type="button" data-page="list" aria-label="Daftar dan Kamus Referensi">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <line x1="8" y1="6" x2="21" y2="6"></line>
           <line x1="8" y1="12" x2="21" y2="12"></line>
           <line x1="8" y1="18" x2="21" y2="18"></line>
@@ -698,20 +621,19 @@
           <line x1="3" y1="12" x2="3.01" y2="12"></line>
           <line x1="3" y1="18" x2="3.01" y2="18"></line>
         </svg>
-      </div>
-      <span class="botnav-label">Kamus</span>
-    </button>
+        <span class="botnav-label">Kamus</span>
+      </button>
 
-    <button class="botnav-item" data-page="settings" aria-label="Pengaturan dan Tema">
-      <div class="botnav-indicator">
-        <svg class="botnav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button class="lg-tab botnav-item" type="button" data-page="settings" aria-label="Pengaturan dan Tema">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="3"></circle>
           <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
         </svg>
-      </div>
-      <span class="botnav-label">Setelan</span>
-    </button>
-  </nav>
+        <span class="botnav-label">Setelan</span>
+      </button>
+    </nav>
+    <span class="lg lg-lens" aria-hidden="true"></span>
+  </div>
 
   <aside class="pwa-banner" id="pwa-install-banner" aria-label="Pasang Aplikasi">
     <div class="pwa-banner-content">
@@ -727,13 +649,16 @@
     </div>
   </aside>
 
-  <div class="modal-overlay" id="deck-modal" role="dialog" aria-modal="true" aria-labelledby="deck-modal-title">
-    <div class="modal-box deck-sheet-box">
-      <div class="modal-header">
-        <h3 class="modal-title" id="deck-modal-title">Pilih Materi Belajar</h3>
-        <button class="modal-close-btn" id="close-deck-modal-btn" aria-label="Tutup Dialog">✕</button>
-      </div>
+  <!-- Liquid Glass Sheet: Pilih Materi Belajar -->
+  <div class="lg-scrim" id="deck-scrim"></div>
+  <section class="lg lg-sheet" id="deck-modal" role="dialog" aria-modal="true" aria-labelledby="deck-modal-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="deck-modal-title" tabindex="-1">Pilih Materi Belajar</h3>
+      <button class="lg-done" type="button" id="close-deck-modal-btn" data-close="">Selesai</button>
+    </div>
 
+    <div class="lg-sheet-body deck-sheet-box">
       <div class="deck-picker-section">
         <div class="deck-picker-label">Kategori Aksara & Kosakata</div>
         <div class="deck-category-grid" id="sheet-category-grid">
@@ -777,20 +702,21 @@
 
       <div class="deck-picker-section">
         <div class="deck-picker-label">Tingkat / Golongan</div>
-        <div class="sheet-level-chips" id="sheet-level-chips">
-          <!-- Populated dynamically based on category -->
-        </div>
+        <div class="sheet-level-chips" id="sheet-level-chips"></div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="modal-overlay" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-box">
-      <div class="modal-header">
-        <h3 class="modal-title" id="modal-title">Pasang RavenCard</h3>
-        <button class="modal-close-btn" id="close-install-modal-btn" aria-label="Tutup Dialog">✕</button>
-      </div>
-      
+  <!-- Liquid Glass Sheet: Pasang RavenCard -->
+  <div class="lg-scrim" id="install-scrim"></div>
+  <section class="lg lg-sheet" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="modal-title" tabindex="-1">Pasang RavenCard</h3>
+      <button class="lg-done" type="button" id="close-install-modal-btn" data-close="">Selesai</button>
+    </div>
+
+    <div class="lg-sheet-body">
       <div class="install-os-tabs" id="install-os-tabs" role="tablist">
         <button class="install-os-tab active" data-tab="android" id="tab-btn-android" role="tab" aria-selected="true">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -836,7 +762,7 @@
           <div class="step-num">4</div>
           <div class="step-text">
             <h5>Siap Digunakan Offline</h5>
-            <p>Ikon RavenCard muncul di layar utama dan bisa dibuka langsung tanpa kuota.</p>
+            <p>RavenCard terpasang di layar utama dan siap digunakan tanpa koneksi internet.</p>
           </div>
         </div>
       </div>
@@ -846,7 +772,7 @@
           <div class="step-num">1</div>
           <div class="step-text">
             <h5>Buka di Safari</h5>
-            <p>Akses RavenCard melalui peramban resmi <strong>Safari</strong> di iPhone atau iPad.</p>
+            <p>Buka RavenCard di Safari pada iPhone atau iPad.</p>
           </div>
         </div>
 
@@ -875,14 +801,87 @@
         </div>
       </div>
 
-      <button class="btn-control btn-flip-main" style="width: 100%;" onclick="document.getElementById('install-modal').classList.remove('active')">
+      <button class="btn-control btn-flip-main" style="width: 100%; margin-top: 14px;" data-close="">
         Mengerti
       </button>
     </div>
-  </div>
+  </section>
+
+  <!-- Liquid Glass Sheet: Pengaturan Kuis -->
+  <div class="lg-scrim" id="quiz-settings-scrim"></div>
+  <section class="lg lg-sheet" id="quiz-settings-sheet" role="dialog" aria-modal="true" aria-labelledby="quiz-settings-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="quiz-settings-title" tabindex="-1">Pengaturan Kuis</h3>
+      <button class="lg-done" type="button" id="close-quiz-settings-btn" data-close="">Selesai</button>
+    </div>
+
+    <div class="lg-sheet-body quiz-settings-sheet-box">
+      <div class="quiz-settings-section">
+        <label class="quiz-settings-label">Mode Soal</label>
+        <div class="quiz-sheet-mode-grid">
+          <button type="button" class="quiz-sheet-mode-card active" id="quiz-sheet-mode-text" data-mode="text">
+            <div class="quiz-sheet-mode-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 7V4h16v3M9 20h6M12 4v16"></path>
+              </svg>
+            </div>
+            <div class="quiz-sheet-mode-text">
+              <span class="quiz-sheet-mode-title">Mode Teks</span>
+              <span class="quiz-sheet-mode-desc">Karakter Jepang &rarr; arti & cara baca</span>
+            </div>
+            <span class="quiz-sheet-check-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+          </button>
+          <button type="button" class="quiz-sheet-mode-card" id="quiz-sheet-mode-audio" data-mode="audio">
+            <div class="quiz-sheet-mode-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <div class="quiz-sheet-mode-text">
+              <span class="quiz-sheet-mode-title">Mode Suara (Choukai)</span>
+              <span class="quiz-sheet-mode-desc">Dengarkan audio &rarr; tebak karakter</span>
+            </div>
+            <span class="quiz-sheet-check-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="quiz-settings-section">
+        <label class="quiz-settings-label">Jumlah Soal</label>
+        <div class="quiz-sheet-count-chips" id="quiz-sheet-count-chips">
+          <button type="button" class="quiz-sheet-count-chip" data-count="5">5</button>
+          <button type="button" class="quiz-sheet-count-chip active" data-count="10">10</button>
+          <button type="button" class="quiz-sheet-count-chip" data-count="20">20</button>
+          <button type="button" class="quiz-sheet-count-chip" data-count="30">30</button>
+          <button type="button" class="quiz-sheet-count-chip" data-count="50">50</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liquid Glass Sheet: Pemilih Huruf Menulis -->
+  <div class="lg-scrim" id="writing-char-scrim"></div>
+  <section class="lg lg-sheet" id="writing-char-sheet" role="dialog" aria-modal="true" aria-labelledby="writing-char-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="writing-char-title" tabindex="-1">Pilih Huruf Pertama</h3>
+      <button class="lg-done" type="button" id="close-writing-char-btn" data-close="">Selesai</button>
+    </div>
+
+    <div class="lg-sheet-body writing-char-sheet-box">
+      <div class="writing-char-grid" id="writing-char-grid">
+      </div>
+    </div>
+  </section>
 
   <div id="app-toast" class="toast-notification"></div>
 
-  <script type="module" src="./js/app.js?v=37"></script>
+  <script type="module" src="./js/app.js?v=38"></script>
 </body>
 </html>

@@ -293,11 +293,11 @@ function nextRepetition() {
     clearWritingCanvas();
     updateGhostGuideUI();
   } else {
-    showToast(`Bagus! Kamu telah menyelesaikan ${writingState.totalReps}x penulisan.`);
+    showToast(`Selesai latihan ${writingState.totalReps}x penulisan.`);
     if (writingState.charIndex < writingState.deck.length - 1) {
       nextCharacter();
     } else {
-      showToast('Seluruh materi pada deck ini telah selesai ditulis!');
+      showToast('Semua huruf pada kategori ini telah selesai ditulis.');
       exitToConfig();
     }
   }
@@ -339,15 +339,10 @@ function exitToConfig() {
 }
 
 function startWritingSession() {
-  const charSelect = document.getElementById('writing-char-select');
-  if (charSelect && charSelect.value !== '') {
-    writingState.charIndex = parseInt(charSelect.value, 10) || 0;
-  }
-
-  const repInput = document.getElementById('rep-number-input');
-  if (repInput) {
-    const val = parseInt(repInput.value, 10);
-    writingState.totalReps = Math.max(10, isNaN(val) ? 20 : val);
+  const slider = document.getElementById('writing-rep-slider');
+  if (slider && slider.dataset.value) {
+    const val = parseInt(slider.dataset.value, 10);
+    writingState.totalReps = Math.max(10, Math.min(30, isNaN(val) ? 20 : val));
   }
 
   writingState.currentRep = 1;
@@ -364,33 +359,79 @@ function startWritingSession() {
 async function loadWritingDeck() {
   writingState.deck = await getDeckData(writingState.category, writingState.level);
   writingState.charIndex = 0;
-  populateCharDropdown();
+  populateCharGrid();
 }
 
-function populateCharDropdown() {
-  const select = document.getElementById('writing-char-select');
-  if (!select) return;
-  select.innerHTML = '';
+function populateCharGrid() {
+  const grid = document.getElementById('writing-char-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
 
   writingState.deck.forEach((card, idx) => {
-    const opt = document.createElement('option');
-    opt.value = idx.toString();
-    const romajiPart = card.romaji ? ` (${card.romaji})` : '';
-    opt.textContent = `${idx + 1}. ${card.character}${romajiPart}`;
-    select.appendChild(opt);
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `writing-char-grid-item ${idx === writingState.charIndex ? 'active' : ''}`;
+    btn.dataset.index = idx.toString();
+
+    const charSpan = document.createElement('span');
+    charSpan.className = 'char-main';
+    charSpan.textContent = card.character;
+
+    const subSpan = document.createElement('span');
+    subSpan.className = 'char-sub';
+    subSpan.textContent = card.romaji || card.reading || '';
+
+    btn.appendChild(charSpan);
+    btn.appendChild(subSpan);
+
+    btn.addEventListener('click', () => {
+      selectStartingChar(idx);
+      if (window.writingCharSheetController) {
+        window.writingCharSheetController.close();
+      }
+    });
+
+    grid.appendChild(btn);
   });
+
+  updateSelectedCharTriggerUI();
+}
+
+function selectStartingChar(idx) {
+  if (idx < 0 || idx >= writingState.deck.length) return;
+  writingState.charIndex = idx;
+
+  const grid = document.getElementById('writing-char-grid');
+  if (grid) {
+    grid.querySelectorAll('.writing-char-grid-item').forEach((item, i) => {
+      item.classList.toggle('active', i === idx);
+    });
+  }
+
+  updateSelectedCharTriggerUI();
+}
+
+function updateSelectedCharTriggerUI() {
+  const card = writingState.deck[writingState.charIndex];
+  if (!card) return;
+
+  const badge = document.getElementById('writing-selected-char-badge');
+  const label = document.getElementById('writing-selected-char-label');
+
+  if (badge) badge.textContent = card.character;
+  if (label) {
+    const romajiPart = card.romaji ? ` (${card.romaji})` : (card.reading ? ` (${card.reading})` : '');
+    label.textContent = `${writingState.charIndex + 1}. ${card.character}${romajiPart}`;
+  }
 }
 
 function setupConfigEvents() {
   const catButtons = document.querySelectorAll('#writing-category-selector .writing-cat-btn');
   const levelGroup = document.getElementById('writing-level-group');
   const levelButtons = document.querySelectorAll('#writing-level-selector .writing-chip-btn');
-  const presetButtons = document.querySelectorAll('.rep-preset-btn');
-  const repInput = document.getElementById('rep-number-input');
-  const repDisplay = document.getElementById('writing-rep-display');
-  const decBtn = document.getElementById('rep-dec-btn');
-  const incBtn = document.getElementById('rep-inc-btn');
   const startBtn = document.getElementById('writing-start-btn');
+  const pickerBtn = document.getElementById('writing-char-picker-btn');
+  const sliderEl = document.getElementById('writing-rep-slider');
 
   catButtons.forEach(btn => {
     btn.addEventListener('click', async () => {
@@ -419,38 +460,22 @@ function setupConfigEvents() {
     });
   });
 
-  const updateRepValue = (val) => {
-    const clamped = Math.max(10, Math.min(100, val));
-    writingState.totalReps = clamped;
-    if (repInput) repInput.value = clamped.toString();
-    if (repDisplay) repDisplay.textContent = `${clamped}x`;
-
-    presetButtons.forEach(b => {
-      b.classList.toggle('active', parseInt(b.dataset.rep, 10) === clamped);
-    });
-  };
-
-  presetButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      updateRepValue(parseInt(btn.dataset.rep, 10));
-    });
-  });
-
-  if (decBtn) {
-    decBtn.addEventListener('click', () => {
-      updateRepValue(writingState.totalReps - 5);
+  if (sliderEl) {
+    sliderEl.addEventListener('lgchange', (e) => {
+      const val = parseInt(e.detail, 10);
+      if (!isNaN(val)) {
+        writingState.totalReps = Math.max(10, Math.min(30, val));
+        const repDisplay = document.getElementById('writing-rep-display');
+        if (repDisplay) repDisplay.textContent = `${writingState.totalReps}x`;
+      }
     });
   }
 
-  if (incBtn) {
-    incBtn.addEventListener('click', () => {
-      updateRepValue(writingState.totalReps + 5);
-    });
-  }
-
-  if (repInput) {
-    repInput.addEventListener('change', () => {
-      updateRepValue(parseInt(repInput.value, 10) || 10);
+  if (pickerBtn) {
+    pickerBtn.addEventListener('click', () => {
+      if (window.writingCharSheetController) {
+        window.writingCharSheetController.open();
+      }
     });
   }
 

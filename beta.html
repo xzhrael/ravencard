@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="Aplikasi Flashcard Belajar Bahasa Jepang: Hiragana, Katakana, Kanji, dan Kotoba N5-N3 secara interaktif dan offline.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#111318">
+  
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="RavenCard">
+  <link rel="manifest" href="./manifest.json?v=9">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/logo.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/icon-192.png?v=9">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RavenCard">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png?v=9">
+
+  <title>RavenCard (Beta) - Nihongo Flashcard N5-N3</title>
+  
+  <link rel="stylesheet" href="./css/beta.css?v=6">
+</head>
+<body>
+  <div class="app-container">
+    <div id="protocol-warning" class="hidden" style="background: #251212; border: 1px solid #f85149; color: #f0f6fc; padding: 14px 16px; border-radius: 8px; margin-bottom: 16px; font-size: 0.85rem; line-height: 1.5;">
+      <div style="font-weight: 700; color: #ff7b72; margin-bottom: 4px;">Buka Melalui Web Server Lokal</div>
+      <p>Browser memblokir modul JavaScript dan Service Worker jika file dibuka langsung via protokol <code>file://</code>.</p>
+      <div style="margin-top: 8px;">Jalankan web server lokal melalui terminal:</div>
+      <code style="display: block; background: #0d1117; padding: 8px 12px; border-radius: 4px; border: 1px solid #30363d; margin: 8px 0; font-family: monospace; color: #58a6ff;">python3 -m http.server 8080</code>
+      <div>Lalu buka di browser: <a href="http://localhost:8080" style="color: #58a6ff; font-weight: 600; text-decoration: underline;">http://localhost:8080</a></div>
+    </div>
+    <script>
+      if (window.location.protocol === 'file:') {
+        var warnEl = document.getElementById('protocol-warning');
+        if (warnEl) warnEl.classList.remove('hidden');
+      }
+    </script>
+
+    <header class="top-bar">
+      <div class="brand-section">
+        <img src="./assets/icons/logo.svg" alt="RavenCard Logo" class="brand-icon">
+        <div class="brand-title-wrap">
+          <h1 class="brand-title">RavenCard</h1>
+          <span class="brand-subtitle">日本語フラッシュカード</span>
+        </div>
+      </div>
+      
+      <div class="top-actions">
+        <button id="install-app-btn" class="btn-install-header hidden" aria-label="Instal ke Android">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Instal</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="deck-selector-bar" id="deck-selector-bar">
+      <button id="deck-selector-btn" class="deck-selector-chip" aria-label="Ganti Kategori dan Level Materi" aria-haspopup="dialog">
+        <span class="deck-chip-dot" aria-hidden="true"></span>
+        <span id="deck-active-label" class="deck-active-label">Hiragana • Semua</span>
+        <svg class="deck-chip-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="toggle-unmastered-wrap" id="toggle-unmastered-wrap" title="Saring belum hafal">
+        <span class="toggle-unmastered-label">Belum Hafal Saja</span>
+        <button type="button" role="switch" class="switch-toggle" id="unmastered-only-toggle" aria-checked="false" aria-label="Belum Hafal Saja">
+          <span class="switch-track"><span class="switch-thumb"></span></span>
+        </button>
+      </div>
+      <button class="quiz-header-settings-btn hidden" id="quiz-settings-btn" type="button" aria-label="Pengaturan Kuis" title="Pengaturan Kuis">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+      </button>
+    </div>
+
+    <section class="page-view active" id="page-cards">
+      <div class="progress-bar-wrap">
+        <div class="progress-header">
+          <span id="mastery-percent-text">0% Dikuasai</span>
+          <span id="mastery-detail-text">0/46</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="flashcard-stage">
+        <div class="flashcard-wrapper" id="flashcard-card" role="button" tabindex="0" aria-label="Flashcard. Ketuk untuk membalik.">
+          
+          <div class="card-face card-front">
+            <div class="card-face-header">
+              <span class="card-badge" id="card-badge-front">Hiragana</span>
+              <button class="card-audio-btn" id="card-audio-btn" title="Dengarkan Suara" aria-label="Dengarkan Suara">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-face-body">
+              <div class="japanese-character" id="card-char-front">あ</div>
+              <div class="frequent-kanji-reading" id="card-hint-front" style="display: none;"></div>
+            </div>
+
+            <div class="card-face-footer">
+              <span>Ketuk untuk membalik</span>
+            </div>
+          </div>
+
+          <div class="card-face card-back">
+            <div class="card-face-header">
+              <span class="card-badge" id="card-badge-back">Arti</span>
+              <button class="card-audio-btn" id="card-audio-back-btn" title="Dengarkan Suara" aria-label="Dengarkan Suara">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-face-body">
+              <div class="back-reading-section">
+                <div class="back-character-small" id="card-char-back">あ</div>
+                <div class="back-romaji" id="card-romaji-back">a</div>
+              </div>
+
+              <div class="back-meaning-section">
+                <div class="meaning-id" id="card-meaning-id">Huruf Vokal A</div>
+                <div class="meaning-en" id="card-meaning-en">Vowel sound 'a'</div>
+                <div class="card-transitivity-box" id="card-transitivity-box" style="display: none;"></div>
+              </div>
+
+              <div class="yomi-grid" id="kanji-yomi-box" style="display: none;">
+                <div class="yomi-box">
+                  <div class="yomi-label">Onyomi</div>
+                  <div class="yomi-text" id="kanji-onyomi">-</div>
+                  <div class="yomi-romaji" id="kanji-onyomi-romaji">-</div>
+                </div>
+                <div class="yomi-box">
+                  <div class="yomi-label">Kunyomi</div>
+                  <div class="yomi-text" id="kanji-kunyomi">-</div>
+                  <div class="yomi-romaji" id="kanji-kunyomi-romaji">-</div>
+                </div>
+              </div>
+
+              <div class="example-section" id="card-example-box" style="display: none;">
+                <div class="example-header">
+                  <span class="example-ja" id="example-ja">おはようございます</span>
+                  <span class="example-reading" id="example-reading"></span>
+                </div>
+                <div class="example-meaning" id="example-meaning">Selamat pagi</div>
+              </div>
+            </div>
+
+            <div class="card-face-footer">
+              <span>Ketuk untuk kembali</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-actions-bar">
+        <button class="btn-nav-arrow" id="prev-card-btn" aria-label="Kartu Sebelumnya" title="Sebelumnya">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="mastery-rating-group" aria-label="Tandai Status">
+          <button class="btn-rate btn-rate-again" id="rate-again-btn" aria-label="Ulangi segera" title="Ulangi segera">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <button class="btn-rate btn-rate-hard" id="rate-hard-btn" aria-label="Masih ragu" title="Masih ragu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </button>
+          <button class="btn-rate btn-rate-easy" id="rate-easy-btn" aria-label="Sudah hafal" title="Sudah hafal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <button class="btn-nav-arrow" id="next-card-btn" aria-label="Kartu Selanjutnya" title="Berikutnya">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+    </section>
+
+    <section class="page-view" id="page-quiz">
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <span class="quiz-mode-badge" id="quiz-mode-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 7V4h16v3M9 20h6M12 4v16"></path>
+            </svg>
+            <span id="quiz-mode-badge-text">Mode Teks</span>
+          </span>
+          <span class="quiz-counter" id="quiz-question-counter">Soal 1 / 10</span>
+        </div>
+
+        <div class="quiz-target-wrap">
+          <div class="quiz-character" id="quiz-target-char">あ</div>
+          <div class="quiz-audio-visualizer hidden" id="quiz-audio-visualizer" role="button" tabindex="0" aria-label="Putar ulang suara">
+            <div class="audio-wave-wrap">
+              <span class="audio-bar bar-1"></span>
+              <span class="audio-bar bar-2"></span>
+              <span class="audio-bar bar-3"></span>
+              <span class="audio-bar bar-4"></span>
+              <span class="audio-bar bar-5"></span>
+            </div>
+            <span class="quiz-listening-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              Ketuk untuk dengarkan suara
+            </span>
+          </div>
+        </div>
+
+        <div class="quiz-prompt" id="quiz-prompt">Pilih arti atau cara baca yang benar:</div>
+        <div class="quiz-options-grid" id="quiz-options-container"></div>
+      </div>
+
+      <div class="quiz-result-card hidden" id="quiz-result-card">
+        <div class="quiz-result-badge" id="quiz-result-icon">Hasil Kuis</div>
+        <h3 class="quiz-result-title" id="quiz-result-title">Kuis Selesai</h3>
+        <p class="quiz-result-score" id="quiz-result-score">Skor: 0 / 10 (0%)</p>
+        <p class="quiz-result-desc" id="quiz-result-desc">Latihan selesai.</p>
+        <div class="quiz-result-actions">
+          <button class="btn-control btn-flip-main" id="quiz-retry-btn">Ulangi Kuis</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-view" id="page-list">
+      <div class="dict-search-wrap">
+        <span class="search-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" id="dict-search-input" class="dict-search-input" placeholder="Cari karakter, romaji, atau arti..." aria-label="Cari entri">
+      </div>
+      <div class="dict-list-container" id="dict-list-container">
+      </div>
+    </section>
+
+    <section class="page-view" id="page-writing">
+      <div class="writing-setup-card" id="writing-setup-card">
+        <div class="writing-setup-header">
+          <h2 class="writing-setup-title">Latihan Menulis</h2>
+          <p class="writing-setup-desc">Latihan menulis goresan huruf Jepang dengan panduan bertahap.</p>
+        </div>
+
+        <div class="writing-config-group">
+          <label class="writing-config-label">Kategori Materi</label>
+          <div class="writing-category-grid" id="writing-category-selector">
+            <button class="writing-cat-btn active" data-cat="hiragana">
+              <span class="cat-kanji">あ</span>
+              <span class="cat-text">Hiragana</span>
+            </button>
+            <button class="writing-cat-btn" data-cat="katakana">
+              <span class="cat-kanji">ア</span>
+              <span class="cat-text">Katakana</span>
+            </button>
+            <button class="writing-cat-btn" data-cat="kanji">
+              <span class="cat-kanji">漢</span>
+              <span class="cat-text">Kanji</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="writing-config-group" id="writing-level-group" style="display: none;">
+          <label class="writing-config-label">Level Kanji</label>
+          <div class="writing-chips-row" id="writing-level-selector">
+            <button class="writing-chip-btn active" data-lvl="n5">N5</button>
+            <button class="writing-chip-btn" data-lvl="n4">N4</button>
+            <button class="writing-chip-btn" data-lvl="n3">N3</button>
+          </div>
+        </div>
+
+        <div class="writing-config-group">
+          <div class="writing-label-row">
+            <label class="writing-config-label">Jumlah Pengulangan per Huruf</label>
+            <span class="writing-rep-badge" id="writing-rep-display">20x</span>
+          </div>
+          <div class="writing-slider-container">
+            <div class="lg-slider" id="writing-rep-slider" role="slider" tabindex="0" aria-label="Jumlah Pengulangan" aria-valuemin="10" aria-valuemax="30" data-min="10" data-max="30" data-step="1" data-value="20" data-unit="x">
+              <span class="lg-fill"></span>
+              <span class="lg lg-thumb"></span>
+            </div>
+            <div class="writing-slider-scale">
+              <span>10x (Min)</span>
+              <span>20x (Ideal)</span>
+              <span>30x (Master)</span>
+            </div>
+          </div>
+          <span class="writing-config-hint">Panduan goresan memudar perlahan seiring pengulangan agar terbiasa menulis mandiri.</span>
+        </div>
+
+        <div class="writing-config-group">
+          <label class="writing-config-label">Mulai Dari Huruf</label>
+          <button type="button" class="writing-char-picker-trigger" id="writing-char-picker-btn" aria-haspopup="dialog" aria-label="Pilih Karakter Pertama">
+            <div class="writing-char-trigger-content">
+              <span class="writing-char-trigger-badge" id="writing-selected-char-badge">あ</span>
+              <span class="writing-char-trigger-label" id="writing-selected-char-label">1. あ (a)</span>
+            </div>
+            <svg class="writing-char-trigger-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <button class="btn-control btn-flip-main writing-start-btn" id="writing-start-btn">
+          Mulai Latihan Menulis
+        </button>
+      </div>
+
+      <div class="writing-stage-card hidden" id="writing-stage-card">
+        <div class="writing-stage-header">
+          <button class="btn-icon" id="writing-exit-btn" title="Ganti Pengaturan" aria-label="Kembali ke Pengaturan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="writing-progress-info">
+            <div class="writing-char-info">
+              <span class="writing-char-badge" id="writing-char-badge">Hiragana</span>
+              <span class="writing-char-romaji" id="writing-char-romaji">a</span>
+            </div>
+            <div class="writing-rep-counter" id="writing-rep-counter">Repetisi 1 / 20</div>
+          </div>
+
+          <button class="card-audio-btn" id="writing-audio-btn" title="Dengarkan Suara" aria-label="Dengarkan Suara">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="writing-status-strip">
+          <div class="writing-rep-bar-wrap">
+            <div class="writing-rep-bar-fill" id="writing-rep-bar-fill" style="width: 5%;"></div>
+          </div>
+        </div>
+
+        <div class="canvas-stage-wrapper">
+          <div class="canvas-grid-box" id="canvas-grid-box">
+            <div class="canvas-ghost-glyph" id="canvas-ghost-glyph">あ</div>
+            <div class="canvas-stroke-markers" id="canvas-stroke-markers"></div>
+            <div class="canvas-grid-cross vertical"></div>
+            <div class="canvas-grid-cross horizontal"></div>
+            <canvas id="writing-canvas" width="300" height="300"></canvas>
+          </div>
+        </div>
+
+        <div class="canvas-controls-row">
+          <button class="btn-canvas-tool btn-tool-icon" id="canvas-clear-btn" title="Hapus coretan" aria-label="Hapus coretan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 6h18"></path>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+          </button>
+
+          <button class="btn-canvas-tool btn-tool-icon" id="canvas-undo-btn" title="Batalkan goresan terakhir" aria-label="Undo">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 7v6h6"></path>
+              <path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path>
+            </svg>
+          </button>
+
+          <button class="btn-canvas-tool btn-tool-icon btn-peek-guide" id="canvas-peek-btn" title="Intip panduan sebentar" aria-label="Intip Panduan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </button>
+
+          <button class="btn-canvas-primary" id="canvas-next-rep-btn">
+            <span>Lanjut</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="writing-deck-nav">
+          <button class="btn-quiet-action" id="writing-prev-char-btn" title="Huruf Sebelumnya">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>Huruf Lalu</span>
+          </button>
+
+          <span class="writing-deck-pos" id="writing-deck-pos">1 / 46</span>
+
+          <button class="btn-quiet-action" id="writing-next-char-btn" title="Huruf Berikutnya">
+            <span>Huruf Lanjut</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-view" id="page-settings">
+      <div class="settings-page-wrapper">
+        <div class="settings-header">
+          <h2 class="settings-title">Pengaturan</h2>
+          <p class="settings-subtitle">Atur tema tampilan, warna aksen, dan cadangan data</p>
+        </div>
+
+        <!-- Mode Tampilan -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon theme-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Mode Tampilan</h3>
+              <p class="settings-card-desc">Pilih antara tema gelap atau terang</p>
+            </div>
+          </div>
+
+          <div class="theme-switch-grid">
+            <button class="theme-switch-btn active" id="theme-btn-dark" data-theme-val="dark" type="button">
+              <div class="theme-preview dark-preview">
+                <div class="preview-bar"></div>
+                <div class="preview-content">
+                  <div class="preview-chip"></div>
+                </div>
+              </div>
+              <span class="theme-btn-label">Mode Gelap</span>
+            </button>
+
+            <button class="theme-switch-btn" id="theme-btn-light" data-theme-val="light" type="button">
+              <div class="theme-preview light-preview">
+                <div class="preview-bar"></div>
+                <div class="preview-content">
+                  <div class="preview-chip"></div>
+                </div>
+              </div>
+              <span class="theme-btn-label">Mode Terang</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Warna Aksen Pastel -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon color-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Warna Aksen</h3>
+              <p class="settings-card-desc">Pilih tema warna kartu dan tombol</p>
+            </div>
+          </div>
+
+          <div class="accent-palette-grid" id="accent-palette-grid">
+            <button class="accent-palette-btn active" data-accent="blue" type="button" title="Biru Pastel">
+              <span class="color-dot" style="background: #9ec5fe;"></span>
+              <span class="color-name">Biru</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="pink" type="button" title="Pink Sakura">
+              <span class="color-dot" style="background: #f472b6;"></span>
+              <span class="color-name">Pink</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="green" type="button" title="Hijau Matcha">
+              <span class="color-dot" style="background: #70d694;"></span>
+              <span class="color-name">Hijau</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="red" type="button" title="Merah Koral">
+              <span class="color-dot" style="background: #ff857d;"></span>
+              <span class="color-name">Merah</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="purple" type="button" title="Lavender Ungu">
+              <span class="color-dot" style="background: #bfa6f5;"></span>
+              <span class="color-name">Ungu</span>
+            </button>
+            <button class="accent-palette-btn" data-accent="grayscale" type="button" title="Grayscale Minimalis">
+              <span class="color-dot" style="background: #cbd5e1;"></span>
+              <span class="color-name">Grayscale</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cadangan Data -->
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <div class="settings-card-icon backup-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                <polyline points="7 3 7 8 15 8"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="settings-card-title">Cadangan Data</h3>
+              <p class="settings-card-desc">Ekspor atau impor riwayat belajar antar perangkat</p>
+            </div>
+          </div>
+
+          <div class="backup-status-card" id="settings-backup-status">
+            <div class="backup-status-info">
+              <div class="backup-status-title">Data Tersimpan</div>
+              <div class="backup-status-detail" id="settings-storage-count">0 kartu tersimpan di perangkat</div>
+            </div>
+          </div>
+
+          <div class="settings-action-row">
+            <button id="settings-export-btn" class="backup-action-btn primary-action" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Ekspor Data JSON</span>
+            </button>
+
+            <input type="file" id="settings-import-file-input" accept=".json,application/json" class="hidden">
+            <button id="settings-import-btn" class="backup-action-btn secondary-action" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span>Impor Berkas JSON</span>
+            </button>
+          </div>
+
+          <div class="settings-danger-box">
+            <div class="danger-box-info">
+              <div class="danger-box-title">Hapus Semua Data</div>
+              <div class="danger-box-desc">Hapus seluruh riwayat belajar di perangkat ini</div>
+            </div>
+            <button id="settings-reset-btn" class="backup-action-btn danger-action" type="button">
+              Hapus Data
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="lg-dock" id="floating-botnav">
+    <nav class="lg lg-tabbar" data-lg-ratio="0.45" data-lg-blur="6" data-lg-saturate="1.7" aria-label="Navigasi Halaman Utama">
+      <span class="lg-pill" aria-hidden="true"></span>
+      <button class="lg-tab botnav-item" type="button" data-page="cards" aria-current="page" aria-label="Belajar Flashcard">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="9" y1="9" x2="15" y2="9"></line>
+          <line x1="9" y1="13" x2="15" y2="13"></line>
+        </svg>
+        <span class="botnav-label">Belajar</span>
+      </button>
+
+      <button class="lg-tab botnav-item" type="button" data-page="quiz" aria-label="Kuis Uji Ingatan">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+        </svg>
+        <span class="botnav-label">Kuis</span>
+      </button>
+
+      <button class="lg-tab botnav-item" type="button" data-page="writing" aria-label="Latihan Menulis Huruf">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+        </svg>
+        <span class="botnav-label">Menulis</span>
+      </button>
+
+      <button class="lg-tab botnav-item" type="button" data-page="list" aria-label="Daftar dan Kamus Referensi">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+        <span class="botnav-label">Kamus</span>
+      </button>
+
+      <button class="lg-tab botnav-item" type="button" data-page="settings" aria-label="Pengaturan dan Tema">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+        <span class="botnav-label">Setelan</span>
+      </button>
+    </nav>
+    <span class="lg lg-lens" aria-hidden="true"></span>
+  </div>
+
+  <aside class="pwa-banner" id="pwa-install-banner" aria-label="Pasang Aplikasi">
+    <div class="pwa-banner-content">
+      <img src="./assets/icons/logo.svg" alt="RavenCard Icon" class="pwa-banner-icon">
+      <div class="pwa-banner-text">
+        <h4>Pasang di Layar Utama</h4>
+        <p>Buka langsung dari beranda ponsel dan gunakan tanpa koneksi internet.</p>
+      </div>
+    </div>
+    <div class="pwa-banner-actions">
+      <button class="btn-banner-install" id="banner-install-btn">Instal</button>
+      <button class="btn-banner-close" id="banner-dismiss-btn" aria-label="Tutup Banner">✕</button>
+    </div>
+  </aside>
+
+  <!-- Liquid Glass Sheet: Pilih Materi Belajar -->
+  <div class="lg-scrim" id="deck-scrim"></div>
+  <section class="lg lg-sheet" id="deck-modal" role="dialog" aria-modal="true" aria-labelledby="deck-modal-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="deck-modal-title" tabindex="-1">Pilih Materi Belajar</h3>
+      <button class="lg-done" type="button" id="close-deck-modal-btn" data-close="">Selesai</button>
+    </div>
+
+    <div class="lg-sheet-body deck-sheet-box">
+      <div class="deck-picker-section">
+        <div class="deck-picker-label">Kategori Aksara & Kosakata</div>
+        <div class="deck-category-grid" id="sheet-category-grid">
+          <button class="sheet-category-btn active" data-category="hiragana">
+            <span class="sheet-category-icon">あ</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Hiragana</span>
+              <span class="sheet-category-desc">Aksara fonetik dasar</span>
+            </div>
+          </button>
+          <button class="sheet-category-btn" data-category="katakana">
+            <span class="sheet-category-icon">ア</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Katakana</span>
+              <span class="sheet-category-desc">Kata serapan asing</span>
+            </div>
+          </button>
+          <button class="sheet-category-btn" data-category="kanji">
+            <span class="sheet-category-icon">漢</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Kanji</span>
+              <span class="sheet-category-desc">Ideogram N5-N3</span>
+            </div>
+          </button>
+          <button class="sheet-category-btn" data-category="kotoba">
+            <span class="sheet-category-icon">語</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">Kotoba</span>
+              <span class="sheet-category-desc">Kosakata esensial</span>
+            </div>
+          </button>
+          <button class="sheet-category-btn" data-category="jft">
+            <span class="sheet-category-icon">生</span>
+            <div class="sheet-category-info">
+              <span class="sheet-category-name">JFT-Basic</span>
+              <span class="sheet-category-desc">Rambu & Kehidupan A2</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="deck-picker-section">
+        <div class="deck-picker-label">Tingkat / Golongan</div>
+        <div class="sheet-level-chips" id="sheet-level-chips"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liquid Glass Sheet: Pasang RavenCard -->
+  <div class="lg-scrim" id="install-scrim"></div>
+  <section class="lg lg-sheet" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="modal-title" tabindex="-1">Pasang RavenCard</h3>
+      <button class="lg-done" type="button" id="close-install-modal-btn" data-close="">Selesai</button>
+    </div>
+
+    <div class="lg-sheet-body">
+      <div class="install-os-tabs" id="install-os-tabs" role="tablist">
+        <button class="install-os-tab active" data-tab="android" id="tab-btn-android" role="tab" aria-selected="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+          </svg>
+          <span>Android / Huawei</span>
+        </button>
+        <button class="install-os-tab" data-tab="ios" id="tab-btn-ios" role="tab" aria-selected="false">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-.5-4.5h-1V7h1z"></path>
+          </svg>
+          <span>Apple iOS / iPadOS</span>
+        </button>
+      </div>
+
+      <div class="install-steps-list" id="install-steps-android">
+        <div class="install-step-item">
+          <div class="step-num">1</div>
+          <div class="step-text">
+            <h5>Buka di Chrome atau Huawei Browser</h5>
+            <p>Akses RavenCard di ponsel Android atau tablet Huawei MatePad.</p>
+          </div>
+        </div>
+
+        <div class="install-step-item">
+          <div class="step-num">2</div>
+          <div class="step-text">
+            <h5>Buka Menu Browser (⋮ atau ⠇)</h5>
+            <p>Ketuk menu titik tiga di Chrome atau bilah menu di Huawei Browser.</p>
+          </div>
+        </div>
+
+        <div class="install-step-item">
+          <div class="step-num">3</div>
+          <div class="step-text">
+            <h5>Pilih Pasang / Tambahkan</h5>
+            <p>Pilih <strong>Instal aplikasi</strong> atau <strong>Tambahkan ke layar beranda</strong>.</p>
+          </div>
+        </div>
+
+        <div class="install-step-item">
+          <div class="step-num">4</div>
+          <div class="step-text">
+            <h5>Siap Digunakan Offline</h5>
+            <p>RavenCard terpasang di layar utama dan siap digunakan tanpa koneksi internet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="install-steps-list hidden" id="install-steps-ios">
+        <div class="install-step-item">
+          <div class="step-num">1</div>
+          <div class="step-text">
+            <h5>Buka di Safari</h5>
+            <p>Buka RavenCard di Safari pada iPhone atau iPad.</p>
+          </div>
+        </div>
+
+        <div class="install-step-item">
+          <div class="step-num">2</div>
+          <div class="step-text">
+            <h5>Ketuk Tombol Bagikan (Share)</h5>
+            <p>Ketuk ikon Bagikan <span class="step-badge">[↑]</span> di bilah bawah iPhone atau bilah atas iPad.</p>
+          </div>
+        </div>
+
+        <div class="install-step-item">
+          <div class="step-num">3</div>
+          <div class="step-text">
+            <h5>Pilih "Add to Home Screen"</h5>
+            <p>Gulir daftar menu ke bawah lalu pilih opsi <strong>Tambahkan ke Layar Utama</strong>.</p>
+          </div>
+        </div>
+
+        <div class="install-step-item">
+          <div class="step-num">4</div>
+          <div class="step-text">
+            <h5>Ketuk "Tambah"</h5>
+            <p>RavenCard akan terpasang di layar utama iPad/iPhone dan berjalan layar penuh.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-control btn-flip-main" style="width: 100%; margin-top: 14px;" data-close="">
+        Mengerti
+      </button>
+    </div>
+  </section>
+
+  <!-- Liquid Glass Sheet: Pengaturan Kuis -->
+  <div class="lg-scrim" id="quiz-settings-scrim"></div>
+  <section class="lg lg-sheet" id="quiz-settings-sheet" role="dialog" aria-modal="true" aria-labelledby="quiz-settings-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="quiz-settings-title" tabindex="-1">Pengaturan Kuis</h3>
+      <button class="lg-done" type="button" id="close-quiz-settings-btn" data-close="">Selesai</button>
+    </div>
+
+    <div class="lg-sheet-body quiz-settings-sheet-box">
+      <div class="quiz-settings-section">
+        <label class="quiz-settings-label">Mode Soal</label>
+        <div class="quiz-sheet-mode-grid">
+          <button type="button" class="quiz-sheet-mode-card active" id="quiz-sheet-mode-text" data-mode="text">
+            <div class="quiz-sheet-mode-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 7V4h16v3M9 20h6M12 4v16"></path>
+              </svg>
+            </div>
+            <div class="quiz-sheet-mode-text">
+              <span class="quiz-sheet-mode-title">Mode Teks</span>
+              <span class="quiz-sheet-mode-desc">Karakter Jepang &rarr; arti & cara baca</span>
+            </div>
+            <span class="quiz-sheet-check-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+          </button>
+          <button type="button" class="quiz-sheet-mode-card" id="quiz-sheet-mode-audio" data-mode="audio">
+            <div class="quiz-sheet-mode-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <div class="quiz-sheet-mode-text">
+              <span class="quiz-sheet-mode-title">Mode Suara (Choukai)</span>
+              <span class="quiz-sheet-mode-desc">Dengarkan audio &rarr; tebak karakter</span>
+            </div>
+            <span class="quiz-sheet-check-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="quiz-settings-section">
+        <label class="quiz-settings-label">Jumlah Soal</label>
+        <div class="quiz-sheet-count-chips" id="quiz-sheet-count-chips">
+          <button type="button" class="quiz-sheet-count-chip" data-count="5">5</button>
+          <button type="button" class="quiz-sheet-count-chip active" data-count="10">10</button>
+          <button type="button" class="quiz-sheet-count-chip" data-count="20">20</button>
+          <button type="button" class="quiz-sheet-count-chip" data-count="30">30</button>
+          <button type="button" class="quiz-sheet-count-chip" data-count="50">50</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liquid Glass Sheet: Pemilih Huruf Menulis -->
+  <div class="lg-scrim" id="writing-char-scrim"></div>
+  <section class="lg lg-sheet" id="writing-char-sheet" role="dialog" aria-modal="true" aria-labelledby="writing-char-title">
+    <div class="lg-sheet-head">
+      <span class="lg-grab" aria-hidden="true"></span>
+      <h3 id="writing-char-title" tabindex="-1">Pilih Huruf Pertama</h3>
+      <button class="lg-done" type="button" id="close-writing-char-btn" data-close="">Selesai</button>
+    </div>
+
+    <div class="lg-sheet-body writing-char-sheet-box">
+      <div class="writing-char-grid" id="writing-char-grid">
+      </div>
+    </div>
+  </section>
+
+  <div id="app-toast" class="toast-notification"></div>
+
+  <script type="module" src="./js/beta.js?v=6"></script>
+</body>
+</html>
